@@ -1,0 +1,375 @@
+{
+  "deploymentId": "dpl_FyUM28jFiKQuTHqvGx1CBsqiYVYb",
+  "url": "https://hust-t6-demo-624oth83o-linhozz.vercel.app",
+  "model": "gemini-3.5-flash-lite",
+  "trace": false,
+  "policyValidation": false,
+  "records": [
+    {
+      "case": "date",
+      "request": {
+        "messages": [
+          "Thông tin chuyến đi đã khai báo.",
+          "Vẫn chuyến đó, sửa ngày hoạt động thành 31/04/2027."
+        ],
+        "inputs": [
+          {
+            "kind": "restore",
+            "state": {
+              "facts": {
+                "activity": "work",
+                "location": "domestic",
+                "date": "2027-04-14",
+                "funding": "unit"
+              },
+              "preparationOnly": false,
+              "consultation": true
+            }
+          }
+        ],
+        "profile": "standard",
+        "requestId": "release-date"
+      },
+      "status": 503,
+      "response": {
+        "error": "Gemini chưa trả nội dung hợp lệ với dữ kiện và căn cứ được cấp. Dữ kiện đang có được giữ nguyên; không có kết luận mới được tạo.",
+        "code": "GEMINI_SCHEMA"
+      },
+      "elapsedMs": 11816.355959002976,
+      "errors": [
+        "HTTP 503"
+      ]
+    },
+    {
+      "case": "rate",
+      "request": {
+        "messages": [
+          "Tôi dự hội thảo ở Hà Nội ngày 08/06/2027, chỉ dùng kinh phí đơn vị. Tiền lưu trú ba triệu một đêm có đúng định mức không?"
+        ],
+        "inputs": [],
+        "profile": "standard",
+        "requestId": "release-rate"
+      },
+      "status": 503,
+      "response": {
+        "error": "Gemini chưa trả nội dung hợp lệ với dữ kiện và căn cứ được cấp. Dữ kiện đang có được giữ nguyên; không có kết luận mới được tạo.",
+        "code": "GEMINI_SCHEMA"
+      },
+      "elapsedMs": 4463.502917002188,
+      "errors": [
+        "HTTP 503"
+      ]
+    },
+    {
+      "case": "funding",
+      "request": {
+        "messages": [
+          "Thông tin hội thảo đã khai báo.",
+          "Chỉ dùng nguồn đơn vị thay hoàn toàn kinh phí nhiệm vụ, vẫn hội thảo đó."
+        ],
+        "inputs": [
+          {
+            "kind": "restore",
+            "state": {
+              "facts": {
+                "activity": "conference",
+                "location": "foreign",
+                "date": "2027-06-02",
+                "funding": "task",
+                "related": true
+              },
+              "preparationOnly": false,
+              "consultation": true
+            }
+          }
+        ],
+        "profile": "standard",
+        "requestId": "release-funding"
+      },
+      "status": 200,
+      "response": {
+        "requestId": "release-funding",
+        "answer": {
+          "intent": "consult",
+          "turn": 2,
+          "mode": "gemini",
+          "text": "Thông tin hiện tại đã đủ để đối chiếu các điều kiện trong bộ tài liệu. Dưới đây là hướng dẫn dành cho tình huống của bạn.",
+          "facts": {
+            "activity": "conference",
+            "location": "foreign",
+            "date": "2027-06-02",
+            "funding": "unit",
+            "related": true
+          },
+          "conclusions": [
+            {
+              "id": "scope",
+              "group": "KL1",
+              "title": "Phạm vi nguồn đang xét",
+              "status": "scope",
+              "text": "Áp dụng hướng dẫn nguồn đơn vị và phần công tác chung; điều kiện riêng của kinh phí nhiệm vụ không còn áp dụng.",
+              "facts": [
+                "funding"
+              ],
+              "sources": [
+                {
+                  "id": "SIM-DV-1",
+                  "title": "Hướng dẫn hỗ trợ hội thảo, công tác từ nguồn đơn vị",
+                  "domain": "Đơn vị / TCKH",
+                  "version": "Bản 1.0",
+                  "from": "2025-01-01",
+                  "to": "2028-12-31",
+                  "paragraph": "1. Phạm vi nguồn đơn vị",
+                  "quote": "Nguồn đơn vị trong tình huống mẫu hỗ trợ hoạt động hội thảo và công tác. Khi nguồn đơn vị thay thế hoàn toàn kinh phí nhiệm vụ, ngừng áp dụng điều kiện chỉ dành cho kinh phí nhiệm vụ; tiếp tục đối chiếu hướng dẫn công tác chung và hướng dẫn nguồn đơn vị.",
+                  "documentId": "ho-tro-don-vi",
+                  "fragment": "pham-vi",
+                  "provenance": "synthetic_fixture",
+                  "publication": "demo_generated",
+                  "owner": null
+                }
+              ],
+              "next": "Xem điều kiện và hướng dẫn chuẩn bị tương ứng bên dưới.",
+              "reason": "Chọn nguồn theo kinh phí khai báo, không suy ra quyền được chi."
+            },
+            {
+              "id": "common",
+              "group": "KL2",
+              "title": "Điều kiện địa điểm chung",
+              "status": "meets",
+              "text": "Đáp ứng điều kiện địa điểm theo khai báo và bản 2026.",
+              "facts": [
+                "activity",
+                "location",
+                "date"
+              ],
+              "sources": [
+                {
+                  "id": "SIM-CT-2026",
+                  "title": "Hướng dẫn hội thảo và công tác — bản 2026",
+                  "domain": "TCKH",
+                  "version": "Bản 2026",
+                  "from": "2026-01-01",
+                  "to": "2028-12-31",
+                  "paragraph": "1. Điều kiện địa điểm",
+                  "quote": "Bản 2026 chấp nhận điều kiện địa điểm đối với hội thảo hoặc công tác trong nước và nước ngoài. Hội thảo quốc tế chưa đủ để xác định nơi diễn ra hoạt động; cần căn cứ địa điểm thực tế. Đáp ứng điều kiện này không xác nhận quyền được thanh toán.",
+                  "documentId": "cong-tac-2026",
+                  "fragment": "dia-diem",
+                  "provenance": "synthetic_fixture",
+                  "publication": "demo_generated",
+                  "owner": null
+                }
+              ],
+              "next": "Tiếp tục đối chiếu phần kinh phí và giấy tờ cần chuẩn bị.",
+              "reason": "Chọn phiên bản theo thời điểm, rồi đối chiếu địa điểm thực tế."
+            },
+            {
+              "id": "unit",
+              "group": "KL3",
+              "title": "Phần hỗ trợ từ đơn vị",
+              "status": "meets",
+              "text": "Hội thảo/công tác thuộc phạm vi hướng dẫn nguồn đơn vị. Bạn có thể chuẩn bị đề xuất sử dụng nguồn này theo tài liệu bên dưới.",
+              "facts": [
+                "funding",
+                "activity",
+                "date"
+              ],
+              "sources": [
+                {
+                  "id": "SIM-DV-1",
+                  "title": "Hướng dẫn hỗ trợ hội thảo, công tác từ nguồn đơn vị",
+                  "domain": "Đơn vị / TCKH",
+                  "version": "Bản 1.0",
+                  "from": "2025-01-01",
+                  "to": "2028-12-31",
+                  "paragraph": "1. Phạm vi nguồn đơn vị",
+                  "quote": "Nguồn đơn vị trong tình huống mẫu hỗ trợ hoạt động hội thảo và công tác. Khi nguồn đơn vị thay thế hoàn toàn kinh phí nhiệm vụ, ngừng áp dụng điều kiện chỉ dành cho kinh phí nhiệm vụ; tiếp tục đối chiếu hướng dẫn công tác chung và hướng dẫn nguồn đơn vị.",
+                  "documentId": "ho-tro-don-vi",
+                  "fragment": "pham-vi",
+                  "provenance": "synthetic_fixture",
+                  "publication": "demo_generated",
+                  "owner": null
+                }
+              ],
+              "next": "Chuẩn bị giấy mời hoặc chương trình, kế hoạch tham dự và đề xuất sử dụng nguồn đơn vị.",
+              "reason": "Đối chiếu phạm vi nguồn đơn vị và điều kiện kết hợp nếu có."
+            },
+            {
+              "id": "preparation",
+              "group": "KL3",
+              "title": "Giấy tờ cần chuẩn bị",
+              "status": "scope",
+              "text": "Hướng dẫn chuẩn bị cho hội thảo dùng kinh phí đơn vị ngày 02/06/2027.",
+              "points": [
+                "Trước khi đi: giấy mời hoặc chương trình, kế hoạch ghi thời gian và địa điểm, đề xuất nguồn hỗ trợ.",
+                "Chuẩn bị đề xuất sử dụng nguồn đơn vị và trao đổi với đầu mối tài chính đơn vị.",
+                "Sau hoạt động: giữ xác nhận tham dự, chứng từ đăng ký và di chuyển/lưu trú nếu phát sinh."
+              ],
+              "facts": [
+                "activity",
+                "funding",
+                "date"
+              ],
+              "sources": [
+                {
+                  "id": "SIM-HD-DOCS",
+                  "title": "Sổ tay chuẩn bị hội thảo và công tác",
+                  "domain": "KHCN – TCKH",
+                  "version": "Bản 1.0",
+                  "from": "2025-01-01",
+                  "to": "2028-12-31",
+                  "paragraph": "1. Giấy tờ nên chuẩn bị",
+                  "quote": "Trước hoạt động: giấy mời hoặc thông báo/chương trình, kế hoạch tham dự có thời gian và địa điểm, đề xuất nguồn hỗ trợ. Nếu dùng kinh phí nhiệm vụ, thêm mô tả quan hệ với nhiệm vụ. Sau hoạt động: giữ xác nhận tham dự, chứng từ đăng ký, vé hoặc chứng từ di chuyển/lưu trú nếu phát sinh để trao đổi với đầu mối tài chính. Danh mục này là hướng dẫn chuẩn bị, không phải kết quả tiền kiểm bộ hồ sơ.",
+                  "documentId": "so-tay-tham-du",
+                  "fragment": "giay-to",
+                  "provenance": "synthetic_fixture",
+                  "publication": "demo_generated",
+                  "owner": null
+                },
+                {
+                  "id": "SIM-DV-PREP",
+                  "title": "Hướng dẫn hỗ trợ hội thảo, công tác từ nguồn đơn vị",
+                  "domain": "Đơn vị / TCKH",
+                  "version": "Bản 1.0",
+                  "from": "2025-01-01",
+                  "to": "2028-12-31",
+                  "paragraph": "3. Chuẩn bị và đầu mối",
+                  "quote": "Chuẩn bị giấy mời hoặc chương trình, kế hoạch tham dự và đề xuất sử dụng nguồn đơn vị. Với nguồn kết hợp, kèm mô tả phần việc tương ứng từng nguồn. Trao đổi với đầu mối tài chính đơn vị về hướng dẫn áp dụng và chứng từ cần giữ; trợ lý không tiếp nhận hoặc phê duyệt hồ sơ.",
+                  "documentId": "ho-tro-don-vi",
+                  "fragment": "chuan-bi",
+                  "provenance": "synthetic_fixture",
+                  "publication": "demo_generated",
+                  "owner": null
+                }
+              ],
+              "next": "Trao đổi với đầu mối tài chính đơn vị về danh mục và mốc hoàn thiện; bạn có thể mở tài liệu đầy đủ trong căn cứ.",
+              "reason": "Chọn hướng dẫn chuẩn bị theo hoạt động, nguồn kinh phí và thời điểm; không phải kết quả kiểm tra điều kiện hoặc tiền kiểm hồ sơ."
+            }
+          ],
+          "revisions": [
+            {
+              "id": "scope",
+              "title": "Phạm vi nguồn đang xét",
+              "before": "Đối chiếu phần kinh phí nhiệm vụ cùng hướng dẫn hội thảo, công tác chung.",
+              "after": "Áp dụng hướng dẫn nguồn đơn vị và phần công tác chung; điều kiện riêng của kinh phí nhiệm vụ không còn áp dụng.",
+              "reason": "Đã đổi nguồn kinh phí; đã chọn lại nguồn và kiểm các kết luận phụ thuộc."
+            },
+            {
+              "id": "task",
+              "title": "Điều kiện liên hệ nhiệm vụ",
+              "before": "Hoạt động có phục vụ nhiệm vụ, đáp ứng điều kiện liên hệ theo khai báo.",
+              "after": "Không còn áp dụng cho nguồn hiện tại.",
+              "reason": "Đã đổi nguồn kinh phí; đã chọn lại nguồn và kiểm các kết luận phụ thuộc."
+            }
+          ],
+          "changed": [
+            "Nguồn kinh phí"
+          ],
+          "profile": "standard",
+          "pendingFunding": false,
+          "summary": "Theo bộ tài liệu mẫu · chưa thay thế hướng dẫn chính thức.\nHoạt động: Hội thảo\nĐịa điểm: Nước ngoài\nNgày hoạt động: 2027-06-02\nNguồn kinh phí: Kinh phí đơn vị\nQuan hệ nhiệm vụ: Có phục vụ nhiệm vụ\nPhạm vi nguồn đang xét: Áp dụng hướng dẫn nguồn đơn vị và phần công tác chung; điều kiện riêng của kinh phí nhiệm vụ không còn áp dụng.\nCăn cứ: SIM-DV-1, 1. Phạm vi nguồn đơn vị, Bản 1.0, 2025-01-01 → 2028-12-31\nBước tiếp theo: Xem điều kiện và hướng dẫn chuẩn bị tương ứng bên dưới.\nĐiều kiện địa điểm chung: Đáp ứng điều kiện địa điểm theo khai báo và bản 2026.\nCăn cứ: SIM-CT-2026, 1. Điều kiện địa điểm, Bản 2026, 2026-01-01 → 2028-12-31\nBước tiếp theo: Tiếp tục đối chiếu phần kinh phí và giấy tờ cần chuẩn bị.\nPhần hỗ trợ từ đơn vị: Hội thảo/công tác thuộc phạm vi hướng dẫn nguồn đơn vị. Bạn có thể chuẩn bị đề xuất sử dụng nguồn này theo tài liệu bên dưới.\nCăn cứ: SIM-DV-1, 1. Phạm vi nguồn đơn vị, Bản 1.0, 2025-01-01 → 2028-12-31\nBước tiếp theo: Chuẩn bị giấy mời hoặc chương trình, kế hoạch tham dự và đề xuất sử dụng nguồn đơn vị.\nGiấy tờ cần chuẩn bị: Hướng dẫn chuẩn bị cho hội thảo dùng kinh phí đơn vị ngày 02/06/2027.\n- Trước khi đi: giấy mời hoặc chương trình, kế hoạch ghi thời gian và địa điểm, đề xuất nguồn hỗ trợ.\n- Chuẩn bị đề xuất sử dụng nguồn đơn vị và trao đổi với đầu mối tài chính đơn vị.\n- Sau hoạt động: giữ xác nhận tham dự, chứng từ đăng ký và di chuyển/lưu trú nếu phát sinh.\nCăn cứ: SIM-HD-DOCS, 1. Giấy tờ nên chuẩn bị, Bản 1.0, 2025-01-01 → 2028-12-31; SIM-DV-PREP, 3. Chuẩn bị và đầu mối, Bản 1.0, 2025-01-01 → 2028-12-31\nBước tiếp theo: Trao đổi với đầu mối tài chính đơn vị về danh mục và mốc hoàn thiện; bạn có thể mở tài liệu đầy đủ trong căn cứ.\nDiễn giải Gemini:\nKhi sử dụng nguồn đơn vị thay thế hoàn toàn kinh phí nhiệm vụ, các điều kiện riêng của kinh phí nhiệm vụ không còn áp dụng mà chuyển sang áp dụng hướng dẫn nguồn đơn vị và phần công tác chung.\nCăn cứ: SIM-DV-1\nBản hướng dẫn 2026 chấp nhận điều kiện địa điểm đối với hoạt động hội thảo hoặc công tác trong nước và nước ngoài dựa trên địa điểm thực tế.\nCăn cứ: SIM-CT-2026\nTrước hoạt động, bạn cần chuẩn bị giấy mời hoặc chương trình, kế hoạch tham dự ghi rõ thời gian và địa điểm cùng đề xuất sử dụng nguồn đơn vị, sau đó trao đổi với đầu mối tài chính đơn vị.\nCăn cứ: SIM-HD-DOCS, SIM-DV-PREP",
+          "sourceLabel": "Theo bộ tài liệu mẫu · chưa thay thế hướng dẫn chính thức.",
+          "consultation": true,
+          "declined": false,
+          "preparationOnly": false,
+          "narrative": {
+            "paragraphs": [
+              {
+                "text": "Khi sử dụng nguồn đơn vị thay thế hoàn toàn kinh phí nhiệm vụ, các điều kiện riêng của kinh phí nhiệm vụ không còn áp dụng mà chuyển sang áp dụng hướng dẫn nguồn đơn vị và phần công tác chung.",
+                "sourceIds": [
+                  "SIM-DV-1"
+                ]
+              },
+              {
+                "text": "Bản hướng dẫn 2026 chấp nhận điều kiện địa điểm đối với hoạt động hội thảo hoặc công tác trong nước và nước ngoài dựa trên địa điểm thực tế.",
+                "sourceIds": [
+                  "SIM-CT-2026"
+                ]
+              },
+              {
+                "text": "Trước hoạt động, bạn cần chuẩn bị giấy mời hoặc chương trình, kế hoạch tham dự ghi rõ thời gian và địa điểm cùng đề xuất sử dụng nguồn đơn vị, sau đó trao đổi với đầu mối tài chính đơn vị.",
+                "sourceIds": [
+                  "SIM-HD-DOCS",
+                  "SIM-DV-PREP"
+                ]
+              }
+            ],
+            "model": "gemini-3.5-flash-lite"
+          },
+          "modelRun": {
+            "provider": "gemini",
+            "model": "gemini-3.5-flash-lite",
+            "stages": [
+              {
+                "attempt": 1,
+                "phase": "extract",
+                "elapsedMs": 1508.2225529999996,
+                "status": 200,
+                "usage": {
+                  "promptTokenCount": 796,
+                  "candidatesTokenCount": 289,
+                  "totalTokenCount": 1085,
+                  "promptTokensDetails": [
+                    {
+                      "modality": "TEXT",
+                      "tokenCount": 796
+                    }
+                  ],
+                  "serviceTier": "standard"
+                }
+              },
+              {
+                "attempt": 1,
+                "phase": "compose",
+                "elapsedMs": 1875.1970809999984,
+                "status": 200,
+                "usage": {
+                  "promptTokenCount": 3123,
+                  "candidatesTokenCount": 245,
+                  "totalTokenCount": 3368,
+                  "promptTokensDetails": [
+                    {
+                      "modality": "TEXT",
+                      "tokenCount": 3123
+                    }
+                  ],
+                  "serviceTier": "standard"
+                }
+              }
+            ]
+          }
+        },
+        "inputs": [
+          {
+            "kind": "restore",
+            "state": {
+              "facts": {
+                "activity": "conference",
+                "location": "foreign",
+                "date": "2027-06-02",
+                "funding": "task",
+                "related": true
+              },
+              "preparationOnly": false,
+              "consultation": true
+            }
+          },
+          {
+            "kind": "message",
+            "patch": {
+              "intent": "consult",
+              "clear": [],
+              "sameSituation": true,
+              "funding": "unit",
+              "fundingAction": "replace",
+              "personal": true,
+              "general": false,
+              "declined": false
+            }
+          }
+        ]
+      },
+      "elapsedMs": 5036.902749998262,
+      "errors": []
+    }
+  ]
+}

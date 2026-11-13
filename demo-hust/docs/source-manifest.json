@@ -1,0 +1,285 @@
+{
+  "recorded_on": "2026-10-27",
+  "purpose": "Provenance of demo design; hashes do not establish policy authority or publication rights.",
+  "sources": [
+    {
+      "path_from_workspace": "Artifact_De_tai_chinh/00_REQUIREMENTS_CHATBOT_THU_TUC_HUST.md",
+      "sha256": "59ed6d3ee6974ab6cde6ce28456c7b6248781852a700ef272555b0c47b2625b4",
+      "bytes": 13847,
+      "role": "design_reference",
+      "previous_sha256": "7c523a943d50339eb818a9aa87e9ee7f02444c268c3206ff8b6001ffee569db5",
+      "public_export": {
+        "included": true,
+        "sha256": "ae7a53fe1e9e376b7164cb464c168db034a97f8e99edc5bdb7d1bd35f66bc3f6",
+        "note": "Public copy may anonymize student details; original digest above identifies the private design reference."
+      }
+    },
+    {
+      "path_from_workspace": "Artifact_De_tai_chinh/08_BAO_CAO_TIEN_DO_02.md",
+      "sha256": "52b19cb8a9e0ac87e1454ea27258c88b85917a68dac110b982a799f15bdf6cb9",
+      "bytes": 35163,
+      "role": "design_reference",
+      "previous_sha256": "281ba753639cd610a6c494c65f1527a66dbb81b912155d595c6b91d131d67a53",
+      "public_export": {
+        "included": true,
+        "sha256": "f0b9fe27e06ecb4b99e13030ae159ec8b69186842b5a48dd8e55f014c78764f2",
+        "note": "Public copy may anonymize student details; original digest above identifies the private design reference."
+      }
+    },
+    {
+      "path_from_workspace": "Artifact_De_tai_chinh/04_TONG_HOP_DE_TAI_VA_PHAM_VI_HIEN_TAI.md",
+      "sha256": "844ddedc0cb33d8d6cf785d125c229f540cfb8b0448f69030699f09526446517",
+      "bytes": 22632,
+      "role": "design_reference",
+      "previous_sha256": "1da31ba610edf6663ed1656fac67acb184ee9768627d42a1f4e3755bb0628155",
+      "public_export": {
+        "included": true,
+        "sha256": "6cab1e2f43c3355382d58601f0b7fdd2195c97b832e2c18b499042e222932f67",
+        "note": "Public copy may anonymize student details; original digest above identifies the private design reference."
+      }
+    },
+    {
+      "path_from_workspace": "Tuan4_Student.pdf",
+      "sha256": "1b9f3051db7c0391ef3216e43e5c3a2a2ee143c35ced962dd0b2354db1df1526",
+      "bytes": 33544,
+      "role": "design_reference",
+      "previous_path_from_workspace": "Bao_cao_tien_do_02.pdf",
+      "previous_sha256": "4847ab54d92b6bad848a8ae7177d6126531a56b35da95a42f6b244633b5b0378",
+      "public_export": {
+        "included": false,
+        "sha256": null,
+        "note": "Public copy may anonymize student details; original digest above identifies the private design reference."
+      }
+    },
+    {
+      "path_from_workspace": "Artifact_tham_khao/Thầy đã xác nhận/Goi_y_noi_dung_chatbot_KHCN_TaiChinh_CanBo_HUST.docx",
+      "sha256": "a8779b7d51be414617ed90e983441ca63dbbabb80d39bcd77c392a044553108c",
+      "bytes": 67152,
+      "role": "design_reference",
+      "public_export": {
+        "included": false,
+        "sha256": null,
+        "note": "Public copy may anonymize student details; original digest above identifies the private design reference."
+      }
+    },
+    {
+      "path_from_workspace": "Artifact_tham_khao/Thầy đã xác nhận/Goi-y-chatbot-thu-tuc-Ban-KHCN-TCKH.md.pdf",
+      "sha256": "bd66bf26fa99da376cb1f7b3ae7ef06aa790b9e73431d52d1d26e12462a0c1ef",
+      "bytes": 132937,
+      "role": "design_reference",
+      "public_export": {
+        "included": false,
+        "sha256": null,
+        "note": "Public copy may anonymize student details; original digest above identifies the private design reference."
+      }
+    },
+    {
+      "path_from_workspace": "Artifact_De_tai_chinh/11_TRIEN_KHAI_DANH_MUC_DU_LIEU_BO_SUNG_2026-11-02.md",
+      "role": "design_reference",
+      "sha256": "7f48962ecae1a7c91721d566c7951f4491774d28e8431ffa8927f813b3870067",
+      "bytes": 6113,
+      "previous_sha256": "f6fadda1cc314a9e06a225f8a48180282883d035bea358a2a08078c62e985626",
+      "public_export": {
+        "included": true,
+        "sha256": "7f48962ecae1a7c91721d566c7951f4491774d28e8431ffa8927f813b3870067",
+        "note": "Public copy may anonymize student details; original digest above identifies the private design reference."
+      }
+    },
+    {
+      "path_from_workspace": "Artifact_De_tai_chinh/Tuan_6/PHIEU_XIN_DU_LIEU_2026-11-07.md",
+      "sha256": "2385ca01b2a539ba714cf5be45f124619d4516fed2114009f056f2bb2b53f996",
+      "bytes": 13879,
+      "role": "design_reference",
+      "note": "Hồ sơ chuẩn bị/chờ xác nhận; không là chính sách runtime hoặc bằng chứng nghiệp vụ đã duyệt.",
+      "public_export": {
+        "included": true,
+        "sha256": "faec522d216583f3928a6621f35e0ca07d6f7eef02b2e97e08e5cd18105d8198",
+        "note": "Public copy may anonymize student details; original digest above identifies the private design reference."
+      }
+    },
+    {
+      "path_from_workspace": "Artifact_De_tai_chinh/Tuan_6/CAN_CU_T6_2026-11-07.md",
+      "sha256": "67680d0207fb09a83ff7e31caa9631809cc71568a2bf25a0e91da5ff860fe224",
+      "bytes": 9753,
+      "role": "design_reference",
+      "note": "Hồ sơ chuẩn bị/chờ xác nhận; không là chính sách runtime hoặc bằng chứng nghiệp vụ đã duyệt.",
+      "public_export": {
+        "included": true,
+        "sha256": "aaf22d96e1b638de6ac0442b6f00a65558b45c03d5425ceb70f0328bd609b4d0",
+        "note": "Public copy may anonymize student details; original digest above identifies the private design reference."
+      }
+    }
+  ],
+  "last_reviewed_on": "2026-11-07",
+  "review_note": "Người làm đề tài chốt năm nhóm và nhánh phụ thuộc, lịch sử theo nhiệm vụ/nghĩa vụ/giấy tờ tồn; cập nhật requirement và thêm báo cáo danh mục nguồn. Chưa xác minh quy chế hoặc quyền công bố; runtime T6 không đổi.",
+  "workspace_migration": {
+    "date": "2026-11-07",
+    "note": "Updated only live links and project navigation; source authority/status and runtime rules unchanged."
+  },
+  "week6_review": {
+    "initial_review_as_of": "2026-11-07",
+    "runtime_policy_changed": false,
+    "live_model_called": false,
+    "note": "Bổ sung phiếu theo năm/đợt và sổ căn cứ ứng viên; nguồn gốc/hiệu lực/quyền dùng chưa được nâng trạng thái."
+  },
+  "ui_design_references": [
+    {
+      "path_from_workspace": "stitch_hust_procedural_assistant_redesign/DESIGN.md",
+      "sha256": "d6c5094bec0571a6d0e6e0c792fb7f80f44665e74ca0cd4621b1f06c7aae371f",
+      "bytes": 12660,
+      "role": "presentation_reference_only",
+      "note": "Ảnh và HTML làm chuẩn trình bày; DESIGN.md chỉ áp dụng phần phù hợp. Không bổ sung nội dung chính sách hoặc duyệt hồ sơ."
+    },
+    {
+      "path_from_workspace": "stitch_hust_procedural_assistant_redesign/code.html",
+      "sha256": "07fe0265113cb62b5d73c6a53a8aaf351831db23eeb8ab04a510de23f5c756f5",
+      "bytes": 34029,
+      "role": "presentation_reference_only",
+      "note": "Ảnh và HTML làm chuẩn trình bày; DESIGN.md chỉ áp dụng phần phù hợp. Không bổ sung nội dung chính sách hoặc duyệt hồ sơ."
+    },
+    {
+      "path_from_workspace": "stitch_hust_procedural_assistant_redesign/screen.png",
+      "sha256": "3fb9abdd211289f238e7a1a2546b08e310eab07000f3c0c7ea456f25b0f79142",
+      "bytes": 354069,
+      "role": "presentation_reference_only",
+      "note": "Ảnh và HTML làm chuẩn trình bày; DESIGN.md chỉ áp dụng phần phù hợp. Không bổ sung nội dung chính sách hoặc duyệt hồ sơ."
+    }
+  ],
+  "last_ui_reviewed_on": "2026-11-08",
+  "ui_revision": {
+    "date": "2026-11-08",
+    "name": "charcoal-motion",
+    "design_folder": "stitch_hust_procedural_assistant_redesign (1)",
+    "scope": "Presentation only; fixture policy, API, history schema and reports unchanged.",
+    "files": [
+      {
+        "path_from_workspace": "stitch_hust_procedural_assistant_redesign (1)/DESIGN.md",
+        "sha256": "d6c5094bec0571a6d0e6e0c792fb7f80f44665e74ca0cd4621b1f06c7aae371f",
+        "role": "presentation_reference_only"
+      },
+      {
+        "path_from_workspace": "stitch_hust_procedural_assistant_redesign (1)/code.html",
+        "sha256": "dbf3345aa4d31de6cd936129b757ec6134e77fd8d2a2bb3c4fe509ff7aba90cc",
+        "role": "presentation_reference_only"
+      },
+      {
+        "path_from_workspace": "stitch_hust_procedural_assistant_redesign (1)/screen.png",
+        "sha256": "f2df8f2b4c19abb0e72e2bc0b49978dc8f986a87f1e2f6358a64190ffdd3e96d",
+        "role": "presentation_reference_only"
+      }
+    ]
+  },
+  "local_model_trial": {
+    "date": "2026-11-10",
+    "mode": "ollama",
+    "model": "qwen3.5:9b",
+    "modelDigestPrefix": "d63f830f28d5",
+    "report": "docs/THU_MO_HINH_OLLAMA_2026-11-10.md",
+    "evidence": "artifacts/demo-runs/ollama-local-2026-11-10-134830",
+    "cohort": "tests/ollama-cases.json",
+    "cohortSha256": "f6bc5a0f27c3585c9eae303d59e91e04a994217f3c59d9e2b4945e9bb724046e",
+    "liveModelCalled": true,
+    "policyValidation": false,
+    "vercelRedeployed": false,
+    "note": "Local extraction experiment only; synthetic policy sources and submitted reports unchanged; 7/20 dialogues met frozen expectations."
+  },
+  "interactive_controls_release": {
+    "date": "2026-11-10",
+    "report": "docs/MO_CHUC_NANG_GIAO_DIEN_2026-11-10.md",
+    "evidence": "artifacts/demo-runs/unlock-ui-2026-11-10-161016",
+    "productionMode": "fixture",
+    "localMode": "ollama",
+    "deploymentId": "dpl_9cGiDLnu9587x7K6gfLgMfgahk69",
+    "sourcePolicyChanged": false,
+    "academicReportsChanged": false,
+    "modelRound": {
+      "cohortSha256": "f6bc5a0f27c3585c9eae303d59e91e04a994217f3c59d9e2b4945e9bb724046e",
+      "passedDialogues": 6,
+      "plannedDialogues": 20,
+      "policyValidation": false
+    }
+  },
+  "gemini_preparation": {
+    "date": "2026-11-10",
+    "report": "docs/GEMINI_VERCEL_2026-11-10.md",
+    "evidence": "artifacts/demo-runs/gemini-vercel-2026-11-10-204443",
+    "liveGeminiCalled": true,
+    "productionMode": "fixture",
+    "contextCohort": {
+      "frozen_on": "2026-11-10",
+      "sha256": "41deab966309cd4f4407321218d654fdcb5d96fe03944bc175724f9119773319",
+      "dialogues": 30,
+      "turns": 41,
+      "development": [
+        "X01",
+        "X02",
+        "X06",
+        "X07",
+        "X11",
+        "X12",
+        "X16",
+        "X17",
+        "X21",
+        "X26"
+      ],
+      "heldout": [
+        "X03",
+        "X04",
+        "X05",
+        "X08",
+        "X09",
+        "X10",
+        "X13",
+        "X14",
+        "X15",
+        "X18",
+        "X19",
+        "X20",
+        "X22",
+        "X23",
+        "X24",
+        "X25",
+        "X27",
+        "X28",
+        "X29",
+        "X30"
+      ],
+      "curation_note": "Trước lần chạy đầu: bỏ allocation khỏi trạng thái mong đợi sau khi đổi sang một nguồn, theo bất biến đặt lại phân định khi nguồn đổi."
+    },
+    "academicReportsChanged": false,
+    "runtimePolicyChanged": false,
+    "keysConfigured": [
+      "Preview",
+      "Production"
+    ],
+    "trialModel": "gemini-3.5-flash-lite",
+    "benchmarkComplete": true,
+    "freeTierConfirmedByUI": true
+  },
+  "gemini_verification": {
+    "updatedOn": "2026-11-11",
+    "report": "docs/GEMINI_VERCEL_2026-11-10.md",
+    "evidence": "docs/evidence/week6/SUMMARY.json",
+    "audit": "docs/AUDIT_HAI_KE_HOACH_2026-11-11.md",
+    "unitTestsPassed": 156,
+    "publicMode": "fixture",
+    "candidateTrace": false,
+    "candidateDeployment": "dpl_GYYrBcA9DAKcRsdbS9kbrGKtccCZ",
+    "releaseGatePassed": false,
+    "existingAcademicReportsChanged": false,
+    "newWeeklyReport": "Artifact_De_tai_chinh/Bao_cao_tuan_6_LaTeX/main.pdf",
+    "runtimePolicyChanged": false,
+    "sourceQueryCoverageChanged": true,
+    "candidateURL": "https://hust-t6-demo-1d0bcxgl4-linhozz.vercel.app",
+    "publicDeployment": "dpl_4FxJkbrDfh3hdHFPiCU4XtDGkpgd",
+    "finalFixtureAPIRequests": 36,
+    "finalFixtureBrowserChecks": 16,
+    "latestBrowserChecks": 8,
+    "latestAPIRequests": 36,
+    "contextSelectionChanged": true
+  },
+  "public_export": {
+    "history": "fresh_snapshot",
+    "originals_and_private_data_included": false
+  }
+}

@@ -1,0 +1,2 @@
+import { defineConfig } from '@playwright/test';
+export default defineConfig({testDir:'./tests/browser',timeout:30000,fullyParallel:false,workers:1,reporter:[['list'],['html',{open:'never'}],['json',{outputFile:`${process.env.HUST_TEST_ARTIFACT_DIR??'artifacts/demo-runs/local-2026-10-28'}/browser-results.json`}]],use:{baseURL:process.env.PLAYWRIGHT_BASE_URL??'http://127.0.0.1:3000',headless:true,trace:process.env.HUST_PROTECTED_TEST==='1'?'off':'retain-on-failure'},projects:[{name:'chromium',use:{browserName:'chromium',channel:'chrome',viewport:{width:1440,height:1000}}}]});

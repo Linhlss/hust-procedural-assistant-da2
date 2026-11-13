@@ -1,0 +1,1780 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-11-02T09:43:29.938947+00:00",
+  "note": "Bổ sung thông tin xác minh tại đây; build_catalog.py không ghi đè. Ngày công bố trên trang nguồn khác ngày đã xác minh để áp dụng. Một nguồn có thể có nhiều URL/bản trùng.",
+  "sources": [
+    {
+      "id": "SRC-3724d2696ca9f5d0",
+      "sha256": "3724d2696ca9f5d0bfd4e0eeafc506b5041857d20960662c1ee54e0c365efdcd",
+      "title": "Tập tin 1: 6.6.2026-bieu-mau-01-don-dang-ky.docx",
+      "catalog_ids": [
+        "74514c089d8277"
+      ],
+      "paths": [
+        "originals/74514c089d8277.docx"
+      ],
+      "urls": [
+        "https://hust.edu.vn/vi/nghien-cuu/de-tai-nghien-cuu-khoa-hoc/thong-bao-ve-viec-dat-hang-nhiem-vu-khoa-hoc-va-cong-nghe-cap-bo-thuc-hien-tu-nam-2027-650444.html?download=1&id=0"
+      ],
+      "declared_document_number": null,
+      "declared_issued_date": null,
+      "declared_effective_from": null,
+      "declared_date_evidence": null,
+      "verified_issued_date": null,
+      "verified_effective_from": null,
+      "verified_effective_to": null,
+      "temporal_evidence": [],
+      "amends": [],
+      "replaces": [],
+      "transitional_rules": [],
+      "issuer_confirmation": null,
+      "applicability": {
+        "task_types": [],
+        "unit_ids": [],
+        "subjects": [],
+        "verification": "not_verified"
+      },
+      "source_status": "unverified_original",
+      "content_owner_confirmation": null,
+      "publication_permission": "not_assessed",
+      "publication_permission_evidence": null,
+      "notes": [
+        "Chưa xác minh điều kiện áp dụng, quyền dùng và phiên bản hiện hành"
+      ]
+    },
+    {
+      "id": "SRC-dae90b3b1fa49dcd",
+      "sha256": "dae90b3b1fa49dcd75bd311dc95cd7d7644ed4c0bd5ed1b2a702aa8e57d2e88d",
+      "title": "Tập tin 2: 6.6.2026-bieu-mau-02-thuyet-minh-nhiem-vu.docx",
+      "catalog_ids": [
+        "6eb34117ab79f5"
+      ],
+      "paths": [
+        "originals/6eb34117ab79f5.docx"
+      ],
+      "urls": [
+        "https://hust.edu.vn/vi/nghien-cuu/de-tai-nghien-cuu-khoa-hoc/thong-bao-ve-viec-dat-hang-nhiem-vu-khoa-hoc-va-cong-nghe-cap-bo-thuc-hien-tu-nam-2027-650444.html?download=1&id=1"
+      ],
+      "declared_document_number": null,
+      "declared_issued_date": null,
+      "declared_effective_from": null,
+      "declared_date_evidence": null,
+      "verified_issued_date": null,
+      "verified_effective_from": null,
+      "verified_effective_to": null,
+      "temporal_evidence": [],
+      "amends": [],
+      "replaces": [],
+      "transitional_rules": [],
+      "issuer_confirmation": null,
+      "applicability": {
+        "task_types": [],
+        "unit_ids": [],
+        "subjects": [],
+        "verification": "not_verified"
+      },
+      "source_status": "unverified_original",
+      "content_owner_confirmation": null,
+      "publication_permission": "not_assessed",
+      "publication_permission_evidence": null,
+      "notes": [
+        "Chưa xác minh điều kiện áp dụng, quyền dùng và phiên bản hiện hành"
+      ]
+    },
+    {
+      "id": "SRC-9cd8bea2b8099251",
+      "sha256": "9cd8bea2b80992511c543989b41733469d4aed301c112353d81fa9749dee4dd1",
+      "title": "Tập tin 3: 6.6.2026-bieu-mau-03-ly-lich.docx",
+      "catalog_ids": [
+        "5bb0fe71263a3d"
+      ],
+      "paths": [
+        "originals/5bb0fe71263a3d.docx"
+      ],
+      "urls": [
+        "https://hust.edu.vn/vi/nghien-cuu/de-tai-nghien-cuu-khoa-hoc/thong-bao-ve-viec-dat-hang-nhiem-vu-khoa-hoc-va-cong-nghe-cap-bo-thuc-hien-tu-nam-2027-650444.html?download=1&id=2"
+      ],
+      "declared_document_number": null,
+      "declared_issued_date": null,
+      "declared_effective_from": null,
+      "declared_date_evidence": null,
+      "verified_issued_date": null,
+      "verified_effective_from": null,
+      "verified_effective_to": null,
+      "temporal_evidence": [],
+      "amends": [],
+      "replaces": [],
+      "transitional_rules": [],
+      "issuer_confirmation": null,
+      "applicability": {
+        "task_types": [],
+        "unit_ids": [],
+        "subjects": [],
+        "verification": "not_verified"
+      },
+      "source_status": "unverified_original",
+      "content_owner_confirmation": null,
+      "publication_permission": "not_assessed",
+      "publication_permission_evidence": null,
+      "notes": [
+        "Chưa xác minh điều kiện áp dụng, quyền dùng và phiên bản hiện hành"
+      ]
+    },
+    {
+      "id": "SRC-11f550c4498c47af",
+      "sha256": "11f550c4498c47affdc01ab5090a81112fc086056b6bb021f02198a01dc0e3d5",
+      "title": "Tập tin 4: 6.6.2026-bieu-mau-04-van-ban-cam-ket-phoi-hop.docx",
+      "catalog_ids": [
+        "7bdc560d260026"
+      ],
+      "paths": [
+        "originals/7bdc560d260026.docx"
+      ],
+      "urls": [
+        "https://hust.edu.vn/vi/nghien-cuu/de-tai-nghien-cuu-khoa-hoc/thong-bao-ve-viec-dat-hang-nhiem-vu-khoa-hoc-va-cong-nghe-cap-bo-thuc-hien-tu-nam-2027-650444.html?download=1&id=3"
+      ],
+      "declared_document_number": null,
+      "declared_issued_date": null,
+      "declared_effective_from": null,
+      "declared_date_evidence": null,
+      "verified_issued_date": null,
+      "verified_effective_from": null,
+      "verified_effective_to": null,
+      "temporal_evidence": [],
+      "amends": [],
+      "replaces": [],
+      "transitional_rules": [],
+      "issuer_confirmation": null,
+      "applicability": {
+        "task_types": [],
+        "unit_ids": [],
+        "subjects": [],
+        "verification": "not_verified"
+      },
+      "source_status": "unverified_original",
+      "content_owner_confirmation": null,
+      "publication_permission": "not_assessed",
+      "publication_permission_evidence": null,
+      "notes": [
+        "Chưa xác minh điều kiện áp dụng, quyền dùng và phiên bản hiện hành"
+      ]
+    },
+    {
+      "id": "SRC-fb432afc134f2af5",
+      "sha256": "fb432afc134f2af5c4e47658f24b2fed785788535c5e10b54bf6df51ea190caa",
+      "title": "Tập tin 5: 3663_bgddt_khcntt.signed.pdf",
+      "catalog_ids": [
+        "71d95c5f6f22f9"
+      ],
+      "paths": [
+        "originals/71d95c5f6f22f9.pdf"
+      ],
+      "urls": [
+        "https://hust.edu.vn/vi/nghien-cuu/de-tai-nghien-cuu-khoa-hoc/thong-bao-ve-viec-dat-hang-nhiem-vu-khoa-hoc-va-cong-nghe-cap-bo-thuc-hien-tu-nam-2027-650444.html?download=1&id=4"
+      ],
+      "declared_document_number": null,
+      "declared_issued_date": null,
+      "declared_effective_from": null,
+      "declared_date_evidence": null,
+      "verified_issued_date": null,
+      "verified_effective_from": null,
+      "verified_effective_to": null,
+      "temporal_evidence": [],
+      "amends": [],
+      "replaces": [],
+      "transitional_rules": [],
+      "issuer_confirmation": null,
+      "applicability": {
+        "task_types": [],
+        "unit_ids": [],
+        "subjects": [],
+        "verification": "not_verified"
+      },
+      "source_status": "unverified_original",
+      "content_owner_confirmation": null,
+      "publication_permission": "not_assessed",
+      "publication_permission_evidence": null,
+      "notes": [
+        "Chưa xác minh điều kiện áp dụng, quyền dùng và phiên bản hiện hành"
+      ]
+    },
+    {
+      "id": "SRC-9aa7ce2981e16a15",
+      "sha256": "9aa7ce2981e16a1517bb27505645de6ba46ebe76d586b1a852aaadf6d5f63c31",
+      "title": "Tập tin 6: 1632_qd_bgddt.signed.pdf",
+      "catalog_ids": [
+        "65956752b2709c"
+      ],
+      "paths": [
+        "originals/65956752b2709c.pdf"
+      ],
+      "urls": [
+        "https://hust.edu.vn/vi/nghien-cuu/de-tai-nghien-cuu-khoa-hoc/thong-bao-ve-viec-dat-hang-nhiem-vu-khoa-hoc-va-cong-nghe-cap-bo-thuc-hien-tu-nam-2027-650444.html?download=1&id=5"
+      ],
+      "declared_document_number": null,
+      "declared_issued_date": null,
+      "declared_effective_from": null,
+      "declared_date_evidence": null,
+      "verified_issued_date": null,
+      "verified_effective_from": null,
+      "verified_effective_to": null,
+      "temporal_evidence": [],
+      "amends": [],
+      "replaces": [],
+      "transitional_rules": [],
+      "issuer_confirmation": null,
+      "applicability": {
+        "task_types": [],
+        "unit_ids": [],
+        "subjects": [],
+        "verification": "not_verified"
+      },
+      "source_status": "unverified_original",
+      "content_owner_confirmation": null,
+      "publication_permission": "not_assessed",
+      "publication_permission_evidence": null,
+      "notes": [
+        "Chưa xác minh điều kiện áp dụng, quyền dùng và phiên bản hiện hành"
+      ]
+    },
+    {
+      "id": "SRC-7c45fb7cd60cb267",
+      "sha256": "7c45fb7cd60cb267943120e8ad90b0fb03faf30f845e6d6be128ac19002d17ac",
+      "title": "Tập tin 1: 15_2024_tt_bgddt.signed.pdf",
+      "catalog_ids": [
+        "78930e82fd77e0",
+        "81d4fcd38fc087",
+        "e5416c928a877e",
+        "00112ef37b418f"
+      ],
+      "paths": [
+        "originals/78930e82fd77e0.pdf",
+        "originals/81d4fcd38fc087.pdf",
+        "originals/e5416c928a877e.pdf",
+        "originals/00112ef37b418f.pdf"
+      ],
+      "urls": [
+        "https://hust.edu.vn/vi/nghien-cuu/de-tai-nghien-cuu-khoa-hoc/thong-bao-de-xuat-nhiem-vu-khoa-hoc-va-cong-nghe-cap-bo-giao-duc-va-dao-tao-nam-2027-650380.html?download=1&id=0",
+        "https://hust.edu.vn/vi/nghien-cuu/de-tai-nghien-cuu-khoa-hoc/thong-bao-ve-viec-tuyen-chon-to-chuc-ca-nhan-chu-tri-thuc-hien-de-tai-khoa-hoc-va-cong-nghe-cap-bo-thuoc-chuong-trinh-adge-ai-bo-sung-thuc-hien-tu-nam-2025-650146.html?download=1&id=2",
+        "https://hust.edu.vn/vi/nghien-cuu/hd-nghien-cuu-khoa-hoc-va-sang-tao/thong-bao-ve-viec-tuyen-chon-to-chuc-ca-nhan-chu-tri-thuc-hien-de-tai-khoa-hoc-va-cong-nghe-cap-bo-thuc-hien-tu-nam-2026-650129.html?download=1&id=3",
+        "https://datafiles.chinhphu.vn/cpp/files/vbpq/2024/11/15-bgddt.pdf"
+      ],
+      "declared_document_number": null,
+      "declared_issued_date": null,
+      "declared_effective_from": null,
+      "declared_date_evidence": null,
+      "verified_issued_date": null,
+      "verified_effective_from": null,
+      "verified_effective_to": null,
+      "temporal_evidence": [],
+      "amends": [],
+      "replaces": [],
+      "transitional_rules": [],
+      "issuer_confirmation": null,
+      "applicability": {
+        "task_types": [],
+        "unit_ids": [],
+        "subjects": [],
+        "verification": "not_verified"
+      },
+      "source_status": "unverified_original",
+      "content_owner_confirmation": null,
+      "publication_permission": "not_assessed",
+      "publication_permission_evidence": null,
+      "notes": [
+        "Chưa xác minh điều kiện áp dụng, quyền dùng và phiên bản hiện hành"
+      ]
+    },
+    {
+      "id": "SRC-e61dbe17d4afda57",
+      "sha256": "e61dbe17d4afda57bf472346d9b83de24fb259517c9f1b9b168ff0d00139a8f7",
+      "title": "Tập tin 2: 24-bkhcndanh-muc-phan-loai-linh-vuc-khcn-30.10.2025.pdf",
+      "catalog_ids": [
+        "74331457ee1de9"
+      ],
+      "paths": [
+        "originals/74331457ee1de9.pdf"
+      ],
+      "urls": [
+        "https://hust.edu.vn/vi/nghien-cuu/de-tai-nghien-cuu-khoa-hoc/thong-bao-de-xuat-nhiem-vu-khoa-hoc-va-cong-nghe-cap-bo-giao-duc-va-dao-tao-nam-2027-650380.html?download=1&id=1"
+      ],
+      "declared_document_number": null,
+      "declared_issued_date": null,
+      "declared_effective_from": null,
+      "declared_date_evidence": null,
+      "verified_issued_date": null,
+      "verified_effective_from": null,
+      "verified_effective_to": null,
+      "temporal_evidence": [],
+      "amends": [],
+      "replaces": [],
+      "transitional_rules": [],
+      "issuer_confirmation": null,
+      "applicability": {
+        "task_types": [],
+        "unit_ids": [],
+        "subjects": [],
+        "verification": "not_verified"
+      },
+      "source_status": "unverified_original",
+      "content_owner_confirmation": null,
+      "publication_permission": "not_assessed",
+      "publication_permission_evidence": null,
+      "notes": [
+        "Chưa xác minh điều kiện áp dụng, quyền dùng và phiên bản hiện hành"
+      ]
+    },
+    {
+      "id": "SRC-e78d0e4e7bb5ebb5",
+      "sha256": "e78d0e4e7bb5ebb57a100e804c5f459a367a90557bfd983b30e5ecb42e376228",
+      "title": "Tập tin 3: 24-bkhcn-thong-tu-ban-hanh-bang-phan-loai-linh-vuc-khcn-30.10.2025.pdf",
+      "catalog_ids": [
+        "ff67d65672fd1c"
+      ],
+      "paths": [
+        "originals/ff67d65672fd1c.pdf"
+      ],
+      "urls": [
+        "https://hust.edu.vn/vi/nghien-cuu/de-tai-nghien-cuu-khoa-hoc/thong-bao-de-xuat-nhiem-vu-khoa-hoc-va-cong-nghe-cap-bo-giao-duc-va-dao-tao-nam-2027-650380.html?download=1&id=2"
+      ],
+      "declared_document_number": null,
+      "declared_issued_date": null,
+      "declared_effective_from": null,
+      "declared_date_evidence": null,
+      "verified_issued_date": null,
+      "verified_effective_from": null,
+      "verified_effective_to": null,
+      "temporal_evidence": [],
+      "amends": [],
+      "replaces": [],
+      "transitional_rules": [],
+      "issuer_confirmation": null,
+      "applicability": {
+        "task_types": [],
+        "unit_ids": [],
+        "subjects": [],
+        "verification": "not_verified"
+      },
+      "source_status": "unverified_original",
+      "content_owner_confirmation": null,
+      "publication_permission": "not_assessed",
+      "publication_permission_evidence": null,
+      "notes": [
+        "Chưa xác minh điều kiện áp dụng, quyền dùng và phiên bản hiện hành"
+      ]
+    },
+    {
+      "id": "SRC-a9c4f0b38be01693",
+      "sha256": "a9c4f0b38be016939a39f632978ad3e75ceb38e357a70e33faf9e221fbc66c1a",
+      "title": "Tập tin 1: cv-826-gui-dhbkhn.pdf",
+      "catalog_ids": [
+        "49676008660878"
+      ],
+      "paths": [
+        "originals/49676008660878.pdf"
+      ],
+      "urls": [
+        "https://hust.edu.vn/vi/nghien-cuu/hd-nghien-cuu-khoa-hoc-va-sang-tao/thong-bao-de-xuat-nhiem-vu-khoa-hoc-cong-nghe-thuoc-chuong-trinh-edge-ai-dot-2-650189.html?download=1&id=0"
+      ],
+      "declared_document_number": null,
+      "declared_issued_date": null,
+      "declared_effective_from": null,
+      "declared_date_evidence": null,
+      "verified_issued_date": null,
+      "verified_effective_from": null,
+      "verified_effective_to": null,
+      "temporal_evidence": [],
+      "amends": [],
+      "replaces": [],
+      "transitional_rules": [],
+      "issuer_confirmation": null,
+      "applicability": {
+        "task_types": [],
+        "unit_ids": [],
+        "subjects": [],
+        "verification": "not_verified"
+      },
+      "source_status": "unverified_original",
+      "content_owner_confirmation": null,
+      "publication_permission": "not_assessed",
+      "publication_permission_evidence": null,
+      "notes": [
+        "Chưa xác minh điều kiện áp dụng, quyền dùng và phiên bản hiện hành"
+      ]
+    },
+    {
+      "id": "SRC-e49d74e4638d8b41",
+      "sha256": "e49d74e4638d8b41a260c5f521886e4043eaa8c7f565cfa2e7dde2493bfe290e",
+      "title": "Tập tin 2: 3651-qd-bgddtsigned-qd-phe-duyet-danh-muc-nhiem-vu-thuoc-ct-edge-ai-chinh-thuc.pdf",
+      "catalog_ids": [
+        "30eca4f7327e06"
+      ],
+      "paths": [
+        "originals/30eca4f7327e06.pdf"
+      ],
+      "urls": [
+        "https://hust.edu.vn/vi/nghien-cuu/hd-nghien-cuu-khoa-hoc-va-sang-tao/thong-bao-de-xuat-nhiem-vu-khoa-hoc-cong-nghe-thuoc-chuong-trinh-edge-ai-dot-2-650189.html?download=1&id=1"
+      ],
+      "declared_document_number": null,
+      "declared_issued_date": null,
+      "declared_effective_from": null,
+      "declared_date_evidence": null,
+      "verified_issued_date": null,
+      "verified_effective_from": null,
+      "verified_effective_to": null,
+      "temporal_evidence": [],
+      "amends": [],
+      "replaces": [],
+      "transitional_rules": [],
+      "issuer_confirmation": null,
+      "applicability": {
+        "task_types": [],
+        "unit_ids": [],
+        "subjects": [],
+        "verification": "not_verified"
+      },
+      "source_status": "unverified_original",
+      "content_owner_confirmation": null,
+      "publication_permission": "not_assessed",
+      "publication_permission_evidence": null,
+      "notes": [
+        "Chưa xác minh điều kiện áp dụng, quyền dùng và phiên bản hiện hành"
+      ]
+    },
+    {
+      "id": "SRC-cd76e63cdca5786d",
+      "sha256": "cd76e63cdca5786d398f615313f0169f20948f4154e1e3fbd3f284e5d6defeda",
+      "title": "Tập tin 3: 2530qd-phe-duyet-khung-chuong-trinh-edge-ai.pdf",
+      "catalog_ids": [
+        "12bb84c1ed08ef",
+        "d781763e6f26ee"
+      ],
+      "paths": [
+        "originals/12bb84c1ed08ef.pdf",
+        "originals/d781763e6f26ee.pdf"
+      ],
+      "urls": [
+        "https://hust.edu.vn/vi/nghien-cuu/hd-nghien-cuu-khoa-hoc-va-sang-tao/thong-bao-de-xuat-nhiem-vu-khoa-hoc-cong-nghe-thuoc-chuong-trinh-edge-ai-dot-2-650189.html?download=1&id=2",
+        "https://hust.edu.vn/vi/nghien-cuu/de-tai-nghien-cuu-khoa-hoc/thong-bao-de-xuat-nhiem-vu-khoa-hoc-cong-nghe-thuoc-chuong-trinh-edge-ai-650136.html?download=1&id=0"
+      ],
+      "declared_document_number": null,
+      "declared_issued_date": null,
+      "declared_effective_from": null,
+      "declared_date_evidence": null,
+      "verified_issued_date": null,
+      "verified_effective_from": null,
+      "verified_effective_to": null,
+      "temporal_evidence": [],
+      "amends": [],
+      "replaces": [],
+      "transitional_rules": [],
+      "issuer_confirmation": null,
+      "applicability": {
+        "task_types": [],
+        "unit_ids": [],
+        "subjects": [],
+        "verification": "not_verified"
+      },
+      "source_status": "unverified_original",
+      "content_owner_confirmation": null,
+      "publication_permission": "not_assessed",
+      "publication_permission_evidence": null,
+      "notes": [
+        "Chưa xác minh điều kiện áp dụng, quyền dùng và phiên bản hiện hành"
+      ]
+    },
+    {
+      "id": "SRC-706c0ec21dc7ec22",
+      "sha256": "706c0ec21dc7ec220b6b7710119086b14e5f43c115a135a1949c035d4ef6f35e",
+      "title": "Tập tin 1: 20251120074645583.pdf",
+      "catalog_ids": [
+        "cf5c23c8e68937"
+      ],
+      "paths": [
+        "originals/cf5c23c8e68937.pdf"
+      ],
+      "urls": [
+        "https://hust.edu.vn/vi/nghien-cuu/de-tai-nghien-cuu-khoa-hoc/thong-bao-ve-viec-tuyen-chon-to-chuc-ca-nhan-chu-tri-thuc-hien-de-tai-khoa-hoc-va-cong-nghe-cap-bo-thuoc-chuong-trinh-adge-ai-bo-sung-thuc-hien-tu-nam-2025-650146.html?download=1&id=0"
+      ],
+      "declared_document_number": null,
+      "declared_issued_date": null,
+      "declared_effective_from": null,
+      "declared_date_evidence": null,
+      "verified_issued_date": null,
+      "verified_effective_from": null,
+      "verified_effective_to": null,
+      "temporal_evidence": [],
+      "amends": [],
+      "replaces": [],
+      "transitional_rules": [],
+      "issuer_confirmation": null,
+      "applicability": {
+        "task_types": [],
+        "unit_ids": [],
+        "subjects": [],
+        "verification": "not_verified"
+      },
+      "source_status": "unverified_original",
+      "content_owner_confirmation": null,
+      "publication_permission": "not_assessed",
+      "publication_permission_evidence": null,
+      "notes": [
+        "Chưa xác minh điều kiện áp dụng, quyền dùng và phiên bản hiện hành"
+      ]
+    },
+    {
+      "id": "SRC-c4a4b128528d2a81",
+      "sha256": "c4a4b128528d2a815ac4d95991c2b56a029d0d1a2c8d568db9e90193a5bb0056",
+      "title": "Tập tin 2: 01qd-phe-duyet-dm-nhiem-vu-ct-edge-ai-1.pdf",
+      "catalog_ids": [
+        "da726513eaac3b"
+      ],
+      "paths": [
+        "originals/da726513eaac3b.pdf"
+      ],
+      "urls": [
+        "https://hust.edu.vn/vi/nghien-cuu/de-tai-nghien-cuu-khoa-hoc/thong-bao-ve-viec-tuyen-chon-to-chuc-ca-nhan-chu-tri-thuc-hien-de-tai-khoa-hoc-va-cong-nghe-cap-bo-thuoc-chuong-trinh-adge-ai-bo-sung-thuc-hien-tu-nam-2025-650146.html?download=1&id=1"
+      ],
+      "declared_document_number": null,
+      "declared_issued_date": null,
+      "declared_effective_from": null,
+      "declared_date_evidence": null,
+      "verified_issued_date": null,
+      "verified_effective_from": null,
+      "verified_effective_to": null,
+      "temporal_evidence": [],
+      "amends": [],
+      "replaces": [],
+      "transitional_rules": [],
+      "issuer_confirmation": null,
+      "applicability": {
+        "task_types": [],
+        "unit_ids": [],
+        "subjects": [],
+        "verification": "not_verified"
+      },
+      "source_status": "unverified_original",
+      "content_owner_confirmation": null,
+      "publication_permission": "not_assessed",
+      "publication_permission_evidence": null,
+      "notes": [
+        "Chưa xác minh điều kiện áp dụng, quyền dùng và phiên bản hiện hành"
+      ]
+    },
+    {
+      "id": "SRC-21eecb4a60be012a",
+      "sha256": "21eecb4a60be012ad1377eab1732774cdee175f8f1317756a73caf118b634fc1",
+      "title": "Tập tin 4: mau-7-thuyet-minh.docx",
+      "catalog_ids": [
+        "faeb7f994657e4",
+        "ebe45c6f003364"
+      ],
+      "paths": [
+        "originals/faeb7f994657e4.docx",
+        "originals/ebe45c6f003364.docx"
+      ],
+      "urls": [
+        "https://hust.edu.vn/vi/nghien-cuu/de-tai-nghien-cuu-khoa-hoc/thong-bao-ve-viec-tuyen-chon-to-chuc-ca-nhan-chu-tri-thuc-hien-de-tai-khoa-hoc-va-cong-nghe-cap-bo-thuoc-chuong-trinh-adge-ai-bo-sung-thuc-hien-tu-nam-2025-650146.html?download=1&id=3",
+        "https://hust.edu.vn/vi/nghien-cuu/hd-nghien-cuu-khoa-hoc-va-sang-tao/thong-bao-ve-viec-tuyen-chon-to-chuc-ca-nhan-chu-tri-thuc-hien-de-tai-khoa-hoc-va-cong-nghe-cap-bo-thuc-hien-tu-nam-2026-650129.html?download=1&id=4"
+      ],
+      "declared_document_number": null,
+      "declared_issued_date": null,
+      "declared_effective_from": null,
+      "declared_date_evidence": null,
+      "verified_issued_date": null,
+      "verified_effective_from": null,
+      "verified_effective_to": null,
+      "temporal_evidence": [],
+      "amends": [],
+      "replaces": [],
+      "transitional_rules": [],
+      "issuer_confirmation": null,
+      "applicability": {
+        "task_types": [],
+        "unit_ids": [],
+        "subjects": [],
+        "verification": "not_verified"
+      },
+      "source_status": "unverified_original",
+      "content_owner_confirmation": null,
+      "publication_permission": "not_assessed",
+      "publication_permission_evidence": null,
+      "notes": [
+        "Chưa xác minh điều kiện áp dụng, quyền dùng và phiên bản hiện hành"
+      ]
+    },
+    {
+      "id": "SRC-293b59a6d66e8dd6",
+      "sha256": "293b59a6d66e8dd681f7288ac28ec83e337406ee6d20b7c666fad350dac67106",
+      "title": "Tập tin 5: mau-8-ly-lich-khoa-hoc.docx",
+      "catalog_ids": [
+        "294a67430bf1fb",
+        "09b7a508c01108"
+      ],
+      "paths": [
+        "originals/294a67430bf1fb.docx",
+        "originals/09b7a508c01108.docx"
+      ],
+      "urls": [
+        "https://hust.edu.vn/vi/nghien-cuu/de-tai-nghien-cuu-khoa-hoc/thong-bao-ve-viec-tuyen-chon-to-chuc-ca-nhan-chu-tri-thuc-hien-de-tai-khoa-hoc-va-cong-nghe-cap-bo-thuoc-chuong-trinh-adge-ai-bo-sung-thuc-hien-tu-nam-2025-650146.html?download=1&id=4",
+        "https://hust.edu.vn/vi/nghien-cuu/hd-nghien-cuu-khoa-hoc-va-sang-tao/thong-bao-ve-viec-tuyen-chon-to-chuc-ca-nhan-chu-tri-thuc-hien-de-tai-khoa-hoc-va-cong-nghe-cap-bo-thuc-hien-tu-nam-2026-650129.html?download=1&id=5"
+      ],
+      "declared_document_number": null,
+      "declared_issued_date": null,
+      "declared_effective_from": null,
+      "declared_date_evidence": null,
+      "verified_issued_date": null,
+      "verified_effective_from": null,
+      "verified_effective_to": null,
+      "temporal_evidence": [],
+      "amends": [],
+      "replaces": [],
+      "transitional_rules": [],
+      "issuer_confirmation": null,
+      "applicability": {
+        "task_types": [],
+        "unit_ids": [],
+        "subjects": [],
+        "verification": "not_verified"
+      },
+      "source_status": "unverified_original",
+      "content_owner_confirmation": null,
+      "publication_permission": "not_assessed",
+      "publication_permission_evidence": null,
+      "notes": [
+        "Chưa xác minh điều kiện áp dụng, quyền dùng và phiên bản hiện hành"
+      ]
+    },
+    {
+      "id": "SRC-3a30fde8947fc3fb",
+      "sha256": "3a30fde8947fc3fbdb95d276b47d190874367aaab6c02d46378da1891545d4a2",
+      "title": "Tập tin : cong_van_thong_bao_moi_nop_ho_so_ncud-9.2025.pdf",
+      "catalog_ids": [
+        "57c091b1a5e495"
+      ],
+      "paths": [
+        "originals/57c091b1a5e495.pdf"
+      ],
+      "urls": [
+        "https://hust.edu.vn/vi/nghien-cuu/de-tai-nghien-cuu-khoa-hoc/thong-bao-nop-ho-so-dang-ky-thuc-hien-de-tai-nghien-cuu-ung-dung-dot-2-nam-2025-quy-nafosted-650137.html?download=1&id=0"
+      ],
+      "declared_document_number": null,
+      "declared_issued_date": null,
+      "declared_effective_from": null,
+      "declared_date_evidence": null,
+      "verified_issued_date": null,
+      "verified_effective_from": null,
+      "verified_effective_to": null,
+      "temporal_evidence": [],
+      "amends": [],
+      "replaces": [],
+      "transitional_rules": [],
+      "issuer_confirmation": null,
+      "applicability": {
+        "task_types": [],
+        "unit_ids": [],
+        "subjects": [],
+        "verification": "not_verified"
+      },
+      "source_status": "unverified_original",
+      "content_owner_confirmation": null,
+      "publication_permission": "not_assessed",
+      "publication_permission_evidence": null,
+      "notes": [
+        "Chưa xác minh điều kiện áp dụng, quyền dùng và phiên bản hiện hành"
+      ]
+    },
+    {
+      "id": "SRC-913c30e4b7c94911",
+      "sha256": "913c30e4b7c949112e330794aa749d795827f7f6ad441842a12ea5819a1ae8d6",
+      "title": "Tập tin 2: tt15-2024-tt-bgddt-20.11.2024.rar",
+      "catalog_ids": [
+        "65a69a143f2ee2"
+      ],
+      "paths": [
+        "originals/65a69a143f2ee2.rar"
+      ],
+      "urls": [
+        "https://hust.edu.vn/vi/nghien-cuu/de-tai-nghien-cuu-khoa-hoc/thong-bao-de-xuat-nhiem-vu-khoa-hoc-cong-nghe-thuoc-chuong-trinh-edge-ai-650136.html?download=1&id=1"
+      ],
+      "declared_document_number": null,
+      "declared_issued_date": null,
+      "declared_effective_from": null,
+      "declared_date_evidence": null,
+      "verified_issued_date": null,
+      "verified_effective_from": null,
+      "verified_effective_to": null,
+      "temporal_evidence": [],
+      "amends": [],
+      "replaces": [],
+      "transitional_rules": [],
+      "issuer_confirmation": null,
+      "applicability": {
+        "task_types": [],
+        "unit_ids": [],
+        "subjects": [],
+        "verification": "not_verified"
+      },
+      "source_status": "unverified_original",
+      "content_owner_confirmation": null,
+      "publication_permission": "not_assessed",
+      "publication_permission_evidence": null,
+      "notes": [
+        "Chưa xác minh điều kiện áp dụng, quyền dùng và phiên bản hiện hành"
+      ]
+    },
+    {
+      "id": "SRC-0118ab0b9c9d50ea",
+      "sha256": "0118ab0b9c9d50ea31955779f8f608163b0a18822a8a9b191c253461fed1b44d",
+      "title": "Tập tin 1: 3189-bgddt-khcnttsigned-1.pdf",
+      "catalog_ids": [
+        "61efbe5cf893d4"
+      ],
+      "paths": [
+        "originals/61efbe5cf893d4.pdf"
+      ],
+      "urls": [
+        "https://hust.edu.vn/vi/nghien-cuu/hd-nghien-cuu-khoa-hoc-va-sang-tao/thong-bao-tuyen-chon-chuong-trinh-khoa-hoc-cong-nghe-cap-bo-thuc-hien-tu-2025-bo-sung-650132.html?download=1&id=0"
+      ],
+      "declared_document_number": null,
+      "declared_issued_date": null,
+      "declared_effective_from": null,
+      "declared_date_evidence": null,
+      "verified_issued_date": null,
+      "verified_effective_from": null,
+      "verified_effective_to": null,
+      "temporal_evidence": [],
+      "amends": [],
+      "replaces": [],
+      "transitional_rules": [],
+      "issuer_confirmation": null,
+      "applicability": {
+        "task_types": [],
+        "unit_ids": [],
+        "subjects": [],
+        "verification": "not_verified"
+      },
+      "source_status": "unverified_original",
+      "content_owner_confirmation": null,
+      "publication_permission": "not_assessed",
+      "publication_permission_evidence": null,
+      "notes": [
+        "Chưa xác minh điều kiện áp dụng, quyền dùng và phiên bản hiện hành"
+      ]
+    },
+    {
+      "id": "SRC-43c7db62a55d2ba3",
+      "sha256": "43c7db62a55d2ba35789f013e1ff69336b502ddfe67dab55118d9caddc54a6f3",
+      "title": "Tập tin 2: 1-qd-phe-duyet-va-danh-muc-kem-theo.pdf",
+      "catalog_ids": [
+        "ce6cb3d7026094"
+      ],
+      "paths": [
+        "originals/ce6cb3d7026094.pdf"
+      ],
+      "urls": [
+        "https://hust.edu.vn/vi/nghien-cuu/hd-nghien-cuu-khoa-hoc-va-sang-tao/thong-bao-tuyen-chon-chuong-trinh-khoa-hoc-cong-nghe-cap-bo-thuc-hien-tu-2025-bo-sung-650132.html?download=1&id=1"
+      ],
+      "declared_document_number": null,
+      "declared_issued_date": null,
+      "declared_effective_from": null,
+      "declared_date_evidence": null,
+      "verified_issued_date": null,
+      "verified_effective_from": null,
+      "verified_effective_to": null,
+      "temporal_evidence": [],
+      "amends": [],
+      "replaces": [],
+      "transitional_rules": [],
+      "issuer_confirmation": null,
+      "applicability": {
+        "task_types": [],
+        "unit_ids": [],
+        "subjects": [],
+        "verification": "not_verified"
+      },
+      "source_status": "unverified_original",
+      "content_owner_confirmation": null,
+      "publication_permission": "not_assessed",
+      "publication_permission_evidence": null,
+      "notes": [
+        "Chưa xác minh điều kiện áp dụng, quyền dùng và phiên bản hiện hành"
+      ]
+    },
+    {
+      "id": "SRC-1afe9c559e4af63c",
+      "sha256": "1afe9c559e4af63ced24617cfeacc96fb91712f9cc583abe8f583bc4cd6c45e6",
+      "title": "Tập tin 3: 09_2018_tt_bgddt_quan-ly-ct-khcn-cap-bo.pdf",
+      "catalog_ids": [
+        "5341532e2fa853"
+      ],
+      "paths": [
+        "originals/5341532e2fa853.pdf"
+      ],
+      "urls": [
+        "https://hust.edu.vn/vi/nghien-cuu/hd-nghien-cuu-khoa-hoc-va-sang-tao/thong-bao-tuyen-chon-chuong-trinh-khoa-hoc-cong-nghe-cap-bo-thuc-hien-tu-2025-bo-sung-650132.html?download=1&id=2"
+      ],
+      "declared_document_number": null,
+      "declared_issued_date": null,
+      "declared_effective_from": null,
+      "declared_date_evidence": null,
+      "verified_issued_date": null,
+      "verified_effective_from": null,
+      "verified_effective_to": null,
+      "temporal_evidence": [],
+      "amends": [],
+      "replaces": [],
+      "transitional_rules": [],
+      "issuer_confirmation": null,
+      "applicability": {
+        "task_types": [],
+        "unit_ids": [],
+        "subjects": [],
+        "verification": "not_verified"
+      },
+      "source_status": "unverified_original",
+      "content_owner_confirmation": null,
+      "publication_permission": "not_assessed",
+      "publication_permission_evidence": null,
+      "notes": [
+        "Chưa xác minh điều kiện áp dụng, quyền dùng và phiên bản hiện hành"
+      ]
+    },
+    {
+      "id": "SRC-90e76b53ef059ff5",
+      "sha256": "90e76b53ef059ff54d513472c9a02c704ff47e974594abe1fce9401212ca0d82",
+      "title": "Tập tin : cv-360-nafosted-thong-bao-tai-tro-nam-2025.pdf",
+      "catalog_ids": [
+        "c87fd8601811ec"
+      ],
+      "paths": [
+        "originals/c87fd8601811ec.pdf"
+      ],
+      "urls": [
+        "https://hust.edu.vn/vi/nghien-cuu/de-tai-nghien-cuu-khoa-hoc/thong-bao-ke-hoach-tai-tro-nghien-cuu-co-ban-nam-2025-cua-quy-phat-trien-khoa-hoc-va-cong-nghe-quoc-gia-quy-nafosted-650131.html?download=1&id=0"
+      ],
+      "declared_document_number": null,
+      "declared_issued_date": null,
+      "declared_effective_from": null,
+      "declared_date_evidence": null,
+      "verified_issued_date": null,
+      "verified_effective_from": null,
+      "verified_effective_to": null,
+      "temporal_evidence": [],
+      "amends": [],
+      "replaces": [],
+      "transitional_rules": [],
+      "issuer_confirmation": null,
+      "applicability": {
+        "task_types": [],
+        "unit_ids": [],
+        "subjects": [],
+        "verification": "not_verified"
+      },
+      "source_status": "unverified_original",
+      "content_owner_confirmation": null,
+      "publication_permission": "not_assessed",
+      "publication_permission_evidence": null,
+      "notes": [
+        "Chưa xác minh điều kiện áp dụng, quyền dùng và phiên bản hiện hành"
+      ]
+    },
+    {
+      "id": "SRC-88b32966411c1cd5",
+      "sha256": "88b32966411c1cd5ccdda2c520639d08eb85918b7129af23901e175390aa7ba3",
+      "title": "Tập tin 1: 2236_bgddt_khcntt.signed.pdf",
+      "catalog_ids": [
+        "3f53cc1bc91277"
+      ],
+      "paths": [
+        "originals/3f53cc1bc91277.pdf"
+      ],
+      "urls": [
+        "https://hust.edu.vn/vi/nghien-cuu/hd-nghien-cuu-khoa-hoc-va-sang-tao/thong-bao-ve-viec-tuyen-chon-to-chuc-ca-nhan-chu-tri-thuc-hien-de-tai-khoa-hoc-va-cong-nghe-cap-bo-thuc-hien-tu-nam-2026-650129.html?download=1&id=0"
+      ],
+      "declared_document_number": null,
+      "declared_issued_date": null,
+      "declared_effective_from": null,
+      "declared_date_evidence": null,
+      "verified_issued_date": null,
+      "verified_effective_from": null,
+      "verified_effective_to": null,
+      "temporal_evidence": [],
+      "amends": [],
+      "replaces": [],
+      "transitional_rules": [],
+      "issuer_confirmation": null,
+      "applicability": {
+        "task_types": [],
+        "unit_ids": [],
+        "subjects": [],
+        "verification": "not_verified"
+      },
+      "source_status": "unverified_original",
+      "content_owner_confirmation": null,
+      "publication_permission": "not_assessed",
+      "publication_permission_evidence": null,
+      "notes": [
+        "Chưa xác minh điều kiện áp dụng, quyền dùng và phiên bản hiện hành"
+      ]
+    },
+    {
+      "id": "SRC-471c7fcf5276b571",
+      "sha256": "471c7fcf5276b57104f4cb6d2c9163e0c483c2ed0a65eab049fb3f9c6394731f",
+      "title": "Tập tin 2: danh-muc-cac-van-ban-lien-quan-den-lap-du-toan-kp-de-tai.docx",
+      "catalog_ids": [
+        "6d1c716cceaae4"
+      ],
+      "paths": [
+        "originals/6d1c716cceaae4.docx"
+      ],
+      "urls": [
+        "https://hust.edu.vn/vi/nghien-cuu/hd-nghien-cuu-khoa-hoc-va-sang-tao/thong-bao-ve-viec-tuyen-chon-to-chuc-ca-nhan-chu-tri-thuc-hien-de-tai-khoa-hoc-va-cong-nghe-cap-bo-thuc-hien-tu-nam-2026-650129.html?download=1&id=1"
+      ],
+      "declared_document_number": null,
+      "declared_issued_date": null,
+      "declared_effective_from": null,
+      "declared_date_evidence": null,
+      "verified_issued_date": null,
+      "verified_effective_from": null,
+      "verified_effective_to": null,
+      "temporal_evidence": [],
+      "amends": [],
+      "replaces": [],
+      "transitional_rules": [],
+      "issuer_confirmation": null,
+      "applicability": {
+        "task_types": [],
+        "unit_ids": [],
+        "subjects": [],
+        "verification": "not_verified"
+      },
+      "source_status": "unverified_original",
+      "content_owner_confirmation": null,
+      "publication_permission": "not_assessed",
+      "publication_permission_evidence": null,
+      "notes": [
+        "Chưa xác minh điều kiện áp dụng, quyền dùng và phiên bản hiện hành"
+      ]
+    },
+    {
+      "id": "SRC-ad97fb2bb1a67271",
+      "sha256": "ad97fb2bb1a672716fbb2cb80d8e38573d9108216aee74a6d00021398be4697f",
+      "title": "Tập tin 3: 1261-qd-phe-duyet-danh-muc-tuyen-chon-dtdm-dhbkhn.pdf",
+      "catalog_ids": [
+        "fd6c40ece6957a"
+      ],
+      "paths": [
+        "originals/fd6c40ece6957a.pdf"
+      ],
+      "urls": [
+        "https://hust.edu.vn/vi/nghien-cuu/hd-nghien-cuu-khoa-hoc-va-sang-tao/thong-bao-ve-viec-tuyen-chon-to-chuc-ca-nhan-chu-tri-thuc-hien-de-tai-khoa-hoc-va-cong-nghe-cap-bo-thuc-hien-tu-nam-2026-650129.html?download=1&id=2"
+      ],
+      "declared_document_number": null,
+      "declared_issued_date": null,
+      "declared_effective_from": null,
+      "declared_date_evidence": null,
+      "verified_issued_date": null,
+      "verified_effective_from": null,
+      "verified_effective_to": null,
+      "temporal_evidence": [],
+      "amends": [],
+      "replaces": [],
+      "transitional_rules": [],
+      "issuer_confirmation": null,
+      "applicability": {
+        "task_types": [],
+        "unit_ids": [],
+        "subjects": [],
+        "verification": "not_verified"
+      },
+      "source_status": "unverified_original",
+      "content_owner_confirmation": null,
+      "publication_permission": "not_assessed",
+      "publication_permission_evidence": null,
+      "notes": [
+        "Chưa xác minh điều kiện áp dụng, quyền dùng và phiên bản hiện hành"
+      ]
+    },
+    {
+      "id": "SRC-02ec73d09f85343e",
+      "sha256": "02ec73d09f85343e881dde8a0bb6a970d5ca079a3574a8a058939093fc58aae6",
+      "title": "Hướng dẫn của Bộ Giáo dục và Đào tạo",
+      "catalog_ids": [
+        "4966269d515a51"
+      ],
+      "paths": [
+        "originals/4966269d515a51.pdf"
+      ],
+      "urls": [
+        "https://hust.edu.vn/uploads/sys/nghien-cuu/2025_01/318_bgddt_khcnmt.signed.pdf"
+      ],
+      "declared_document_number": null,
+      "declared_issued_date": null,
+      "declared_effective_from": null,
+      "declared_date_evidence": null,
+      "verified_issued_date": null,
+      "verified_effective_from": null,
+      "verified_effective_to": null,
+      "temporal_evidence": [],
+      "amends": [],
+      "replaces": [],
+      "transitional_rules": [],
+      "issuer_confirmation": null,
+      "applicability": {
+        "task_types": [],
+        "unit_ids": [],
+        "subjects": [],
+        "verification": "not_verified"
+      },
+      "source_status": "unverified_original",
+      "content_owner_confirmation": null,
+      "publication_permission": "not_assessed",
+      "publication_permission_evidence": null,
+      "notes": [
+        "Chưa xác minh điều kiện áp dụng, quyền dùng và phiên bản hiện hành"
+      ]
+    },
+    {
+      "id": "SRC-53f47288b78d3f0c",
+      "sha256": "53f47288b78d3f0c96b07d9e9c0b383bd6eed2bf58ed76210a2942db0c5286a3",
+      "title": "Mẫu phiếu đề xuất",
+      "catalog_ids": [
+        "218d24a7356672"
+      ],
+      "paths": [
+        "originals/218d24a7356672.docx"
+      ],
+      "urls": [
+        "https://hust.edu.vn/uploads/sys/nghien-cuu/2025_01/20.11.2024mau-so-2.docx"
+      ],
+      "declared_document_number": null,
+      "declared_issued_date": null,
+      "declared_effective_from": null,
+      "declared_date_evidence": null,
+      "verified_issued_date": null,
+      "verified_effective_from": null,
+      "verified_effective_to": null,
+      "temporal_evidence": [],
+      "amends": [],
+      "replaces": [],
+      "transitional_rules": [],
+      "issuer_confirmation": null,
+      "applicability": {
+        "task_types": [],
+        "unit_ids": [],
+        "subjects": [],
+        "verification": "not_verified"
+      },
+      "source_status": "unverified_original",
+      "content_owner_confirmation": null,
+      "publication_permission": "not_assessed",
+      "publication_permission_evidence": null,
+      "notes": [
+        "Chưa xác minh điều kiện áp dụng, quyền dùng và phiên bản hiện hành"
+      ]
+    },
+    {
+      "id": "SRC-da844dd30c21f98b",
+      "sha256": "da844dd30c21f98b753532ab56bdc253c5850d9e0b47d088312695b207ba5c13",
+      "title": "Tập tin 1: cv.156.2024-669_bgddt_khcnmt.signedcv-huong-dan.pdf",
+      "catalog_ids": [
+        "20e8c9a587d396"
+      ],
+      "paths": [
+        "originals/20e8c9a587d396.pdf"
+      ],
+      "urls": [
+        "https://hust.edu.vn/vi/nghien-cuu/hd-nghien-cuu-khoa-hoc-va-sang-tao/thong-bao-de-xuat-de-tai-khoa-hoc-cap-gd-dt-nam-2025-650119.html?download=1&id=0"
+      ],
+      "declared_document_number": null,
+      "declared_issued_date": null,
+      "declared_effective_from": null,
+      "declared_date_evidence": null,
+      "verified_issued_date": null,
+      "verified_effective_from": null,
+      "verified_effective_to": null,
+      "temporal_evidence": [],
+      "amends": [],
+      "replaces": [],
+      "transitional_rules": [],
+      "issuer_confirmation": null,
+      "applicability": {
+        "task_types": [],
+        "unit_ids": [],
+        "subjects": [],
+        "verification": "not_verified"
+      },
+      "source_status": "unverified_original",
+      "content_owner_confirmation": null,
+      "publication_permission": "not_assessed",
+      "publication_permission_evidence": null,
+      "notes": [
+        "Chưa xác minh điều kiện áp dụng, quyền dùng và phiên bản hiện hành"
+      ]
+    },
+    {
+      "id": "SRC-c90b5abd122b6060",
+      "sha256": "c90b5abd122b606031f62b3fce7b1b30df05d8c110437bf743ecd702c7677895",
+      "title": "Tập tin 2: mau-de-xuat_ho-va-ten_don-vi-2025.docx",
+      "catalog_ids": [
+        "3486d096a8d094"
+      ],
+      "paths": [
+        "originals/3486d096a8d094.docx"
+      ],
+      "urls": [
+        "https://hust.edu.vn/vi/nghien-cuu/hd-nghien-cuu-khoa-hoc-va-sang-tao/thong-bao-de-xuat-de-tai-khoa-hoc-cap-gd-dt-nam-2025-650119.html?download=1&id=1"
+      ],
+      "declared_document_number": null,
+      "declared_issued_date": null,
+      "declared_effective_from": null,
+      "declared_date_evidence": null,
+      "verified_issued_date": null,
+      "verified_effective_from": null,
+      "verified_effective_to": null,
+      "temporal_evidence": [],
+      "amends": [],
+      "replaces": [],
+      "transitional_rules": [],
+      "issuer_confirmation": null,
+      "applicability": {
+        "task_types": [],
+        "unit_ids": [],
+        "subjects": [],
+        "verification": "not_verified"
+      },
+      "source_status": "unverified_original",
+      "content_owner_confirmation": null,
+      "publication_permission": "not_assessed",
+      "publication_permission_evidence": null,
+      "notes": [
+        "Chưa xác minh điều kiện áp dụng, quyền dùng và phiên bản hiện hành"
+      ]
+    },
+    {
+      "id": "SRC-88473f7159ebfc4d",
+      "sha256": "88473f7159ebfc4d323399480084d56cc0531d4cda478c6bc685a83b47820d52",
+      "title": "QĐ 2102/2026 về học bổng NCS — bằng chứng dẫn chiếu 1616",
+      "catalog_ids": [
+        "e1a0fa9c5796e5"
+      ],
+      "paths": [
+        "originals/e1a0fa9c5796e5.pdf"
+      ],
+      "urls": [
+        "https://sdh.hust.edu.vn/Upload/19/Files/Quyche/2026/Quyet_dinh_hoc_bong_NCS.pdf"
+      ],
+      "declared_document_number": null,
+      "declared_issued_date": null,
+      "declared_effective_from": null,
+      "declared_date_evidence": null,
+      "verified_issued_date": null,
+      "verified_effective_from": null,
+      "verified_effective_to": null,
+      "temporal_evidence": [],
+      "amends": [],
+      "replaces": [],
+      "transitional_rules": [],
+      "issuer_confirmation": null,
+      "applicability": {
+        "task_types": [],
+        "unit_ids": [],
+        "subjects": [],
+        "verification": "not_verified"
+      },
+      "source_status": "unverified_original",
+      "content_owner_confirmation": null,
+      "publication_permission": "not_assessed",
+      "publication_permission_evidence": null,
+      "notes": [
+        "Chỉ dùng trang 1 đối chiếu số hiệu; không thay bản gốc các quy chế được dẫn"
+      ]
+    },
+    {
+      "id": "SRC-b116236c9c50be43",
+      "sha256": "b116236c9c50be435976cdc541a7bcc246ef50f209cf847537c1630dd7cc2e3e",
+      "title": "QĐ 3040/2026 về Ban biên tập — bằng chứng dẫn chiếu 1606/1616",
+      "catalog_ids": [
+        "f01249ac2cfd3a"
+      ],
+      "paths": [
+        "originals/f01249ac2cfd3a.pdf"
+      ],
+      "urls": [
+        "https://hust.edu.vn/uploads/sys/news/2026_05/3040_qd-dhbk.pdf"
+      ],
+      "declared_document_number": null,
+      "declared_issued_date": null,
+      "declared_effective_from": null,
+      "declared_date_evidence": null,
+      "verified_issued_date": null,
+      "verified_effective_from": null,
+      "verified_effective_to": null,
+      "temporal_evidence": [],
+      "amends": [],
+      "replaces": [],
+      "transitional_rules": [],
+      "issuer_confirmation": null,
+      "applicability": {
+        "task_types": [],
+        "unit_ids": [],
+        "subjects": [],
+        "verification": "not_verified"
+      },
+      "source_status": "unverified_original",
+      "content_owner_confirmation": null,
+      "publication_permission": "not_assessed",
+      "publication_permission_evidence": null,
+      "notes": [
+        "Chỉ dùng trang 1 đối chiếu số hiệu; không thay bản gốc các quy chế được dẫn"
+      ]
+    },
+    {
+      "id": "SRC-2dae555cbc481be7",
+      "sha256": "2dae555cbc481be7f34d82b58a0ff078eecb42e41a4448ade582c99ef2b82dc3",
+      "title": "QĐ 658/2026 công khai ngân sách — bằng chứng dẫn chiếu NQ 04/40",
+      "catalog_ids": [
+        "b2c433f8dc3247"
+      ],
+      "paths": [
+        "originals/b2c433f8dc3247.pdf"
+      ],
+      "urls": [
+        "https://hust.edu.vn/uploads/sys/tai-chinh-dai-hoc/2026_01/qd-658-cong-bo-cong-khai-du-toan-ns-2026-theo-qdgdt-so-3695.bgddt1.pdf"
+      ],
+      "declared_document_number": null,
+      "declared_issued_date": null,
+      "declared_effective_from": null,
+      "declared_date_evidence": null,
+      "verified_issued_date": null,
+      "verified_effective_from": null,
+      "verified_effective_to": null,
+      "temporal_evidence": [],
+      "amends": [],
+      "replaces": [],
+      "transitional_rules": [],
+      "issuer_confirmation": null,
+      "applicability": {
+        "task_types": [],
+        "unit_ids": [],
+        "subjects": [],
+        "verification": "not_verified"
+      },
+      "source_status": "unverified_original",
+      "content_owner_confirmation": null,
+      "publication_permission": "not_assessed",
+      "publication_permission_evidence": null,
+      "notes": [
+        "Chỉ dùng trang 1 đối chiếu số hiệu; không thay bản gốc các quy chế được dẫn"
+      ]
+    },
+    {
+      "id": "SRC-8e0ecfb268ab6edb",
+      "sha256": "8e0ecfb268ab6edbb7f15804b6e4e168494c3d4c5931f1dc8cf379571a3b1d45",
+      "title": "TT 39/2025/TT-BKHCN — Thông tư số 39/2025/TT-BKHCN của Bộ Khoa học và Công nghệ: Quy định chi tiết và hướng dẫn về lập dự toán, quản lý sử dụng và quyết toán một số nội dung chi ngân sách nhà nước thực hiện nhiệm vụ khoa học, công nghệ và đổi mới sáng tạo",
+      "catalog_ids": [
+        "4ff386661edfae"
+      ],
+      "paths": [
+        "originals/4ff386661edfae.pdf"
+      ],
+      "urls": [
+        "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/01/39-bkhcn.pdf"
+      ],
+      "declared_document_number": "TT 39/2025/TT-BKHCN",
+      "declared_issued_date": "2025-11-30",
+      "declared_effective_from": "2026-01-01",
+      "declared_date_evidence": "Official landing page",
+      "verified_issued_date": null,
+      "verified_effective_from": null,
+      "verified_effective_to": null,
+      "temporal_evidence": [],
+      "amends": [],
+      "replaces": [],
+      "transitional_rules": [],
+      "issuer_confirmation": null,
+      "applicability": {
+        "task_types": [],
+        "unit_ids": [],
+        "subjects": [],
+        "verification": "not_verified"
+      },
+      "source_status": "unverified_original",
+      "content_owner_confirmation": null,
+      "publication_permission": "not_assessed",
+      "publication_permission_evidence": null,
+      "notes": [
+        "Kinh phí nhiệm vụ; điều 17, 44–45"
+      ]
+    },
+    {
+      "id": "SRC-54bbfb84be8f0d66",
+      "sha256": "54bbfb84be8f0d66bed35e87eda94bf808ea6318e10773714b038e657722c66b",
+      "title": "NĐ 267/2025/NĐ-CP — Nghị định số 267/2025/NĐ-CP của Chính phủ: Quy định chi tiết và hướng dẫn một số điều của Luật Khoa học, công nghệ và đổi mới sáng tạo về chương trình, nhiệm vụ khoa học, công nghệ và đổi mới sáng tạo và một số quy định về thúc đẩy hoạt động nghiên cứu khoa học, phát triển công nghệ và đổi mới sáng tạo",
+      "catalog_ids": [
+        "0a16231a660c0f"
+      ],
+      "paths": [
+        "originals/0a16231a660c0f.pdf"
+      ],
+      "urls": [
+        "https://datafiles.chinhphu.vn/cpp/files/vbpq/2025/10/267-cp.signed.pdf"
+      ],
+      "declared_document_number": "NĐ 267/2025/NĐ-CP",
+      "declared_issued_date": "2025-10-14",
+      "declared_effective_from": "2025-10-14",
+      "declared_date_evidence": "Official landing page",
+      "verified_issued_date": null,
+      "verified_effective_from": null,
+      "verified_effective_to": null,
+      "temporal_evidence": [],
+      "amends": [],
+      "replaces": [],
+      "transitional_rules": [],
+      "issuer_confirmation": null,
+      "applicability": {
+        "task_types": [],
+        "unit_ids": [],
+        "subjects": [],
+        "verification": "not_verified"
+      },
+      "source_status": "unverified_original",
+      "content_owner_confirmation": null,
+      "publication_permission": "not_assessed",
+      "publication_permission_evidence": null,
+      "notes": [
+        "Chương trình/nhiệm vụ; nguồn ngân sách"
+      ]
+    },
+    {
+      "id": "SRC-46d07f05d7c7d696",
+      "sha256": "46d07f05d7c7d696a9b6a0a378deefabf80bb31cbd0505b3e394b4a8eee0d7b7",
+      "title": "TT 40/2017/TT-BTC — Thông tư số 40/2017/TT-BTC của Bộ Tài chính: Quy định chế độ công tác phí, chế độ chi hội nghị",
+      "catalog_ids": [
+        "3227b82e7f3676"
+      ],
+      "paths": [
+        "originals/3227b82e7f3676.pdf"
+      ],
+      "urls": [
+        "https://datafiles.chinhphu.vn/cpp/files/vbpq/2017/06/40-btc.signed.pdf"
+      ],
+      "declared_document_number": "TT 40/2017/TT-BTC",
+      "declared_issued_date": "2017-04-28",
+      "declared_effective_from": "2017-07-01",
+      "declared_date_evidence": "Official landing page",
+      "verified_issued_date": null,
+      "verified_effective_from": null,
+      "verified_effective_to": null,
+      "temporal_evidence": [],
+      "amends": [],
+      "replaces": [],
+      "transitional_rules": [],
+      "issuer_confirmation": null,
+      "applicability": {
+        "task_types": [],
+        "unit_ids": [],
+        "subjects": [],
+        "verification": "not_verified"
+      },
+      "source_status": "unverified_original",
+      "content_owner_confirmation": null,
+      "publication_permission": "not_assessed",
+      "publication_permission_evidence": null,
+      "notes": [
+        "Đọc cùng TT 12/2025; không dùng bản chưa sửa"
+      ]
+    },
+    {
+      "id": "SRC-2ead4dbd4531e4e9",
+      "sha256": "2ead4dbd4531e4e9515b04fab18272b8c0b6ea9e6eafffc1101af47b38b9d334",
+      "title": "TT 100/2025/TT-BTC — Thông tư số 100/2025/TT-BTC của Bộ Tài chính: Hướng dẫn việc lập dự toán, quản lý, sử dụng và quyết toán kinh phí dành cho công tác đào tạo, bồi dưỡng công chức, viên chức",
+      "catalog_ids": [
+        "83f466669243b2"
+      ],
+      "paths": [
+        "originals/83f466669243b2.pdf"
+      ],
+      "urls": [
+        "https://datafiles.chinhphu.vn/cpp/files/vbpq/2025/11/100-btc.pdf"
+      ],
+      "declared_document_number": "TT 100/2025/TT-BTC",
+      "declared_issued_date": "2025-10-28",
+      "declared_effective_from": "2025-10-28",
+      "declared_date_evidence": "Official landing page",
+      "verified_issued_date": null,
+      "verified_effective_from": null,
+      "verified_effective_to": null,
+      "temporal_evidence": [],
+      "amends": [],
+      "replaces": [],
+      "transitional_rules": [],
+      "issuer_confirmation": null,
+      "applicability": {
+        "task_types": [],
+        "unit_ids": [],
+        "subjects": [],
+        "verification": "not_verified"
+      },
+      "source_status": "unverified_original",
+      "content_owner_confirmation": null,
+      "publication_permission": "not_assessed",
+      "publication_permission_evidence": null,
+      "notes": [
+        "Kinh phí đào tạo/bồi dưỡng, kiểm đối tượng/nguồn"
+      ]
+    },
+    {
+      "id": "SRC-dfc2f732738e6f78",
+      "sha256": "dfc2f732738e6f7823589c70b6790d45321ba85cc04631cd02eca4b25a2dfd6a",
+      "title": "NĐ 125/2026/NĐ-CP — Nghị định số 125/2026/NĐ-CP của Chính phủ: Quy định về hoạt động khoa học, công nghệ và đổi mới sáng tạo trong cơ sở giáo dục đại học",
+      "catalog_ids": [
+        "76b5db45a64e47"
+      ],
+      "paths": [
+        "originals/76b5db45a64e47.pdf"
+      ],
+      "urls": [
+        "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/4/125-ndcp.signed.pdf"
+      ],
+      "declared_document_number": "NĐ 125/2026/NĐ-CP",
+      "declared_issued_date": "2026-04-06",
+      "declared_effective_from": "2026-04-06",
+      "declared_date_evidence": "Official landing page",
+      "verified_issued_date": null,
+      "verified_effective_from": null,
+      "verified_effective_to": null,
+      "temporal_evidence": [],
+      "amends": [],
+      "replaces": [],
+      "transitional_rules": [],
+      "issuer_confirmation": null,
+      "applicability": {
+        "task_types": [],
+        "unit_ids": [],
+        "subjects": [],
+        "verification": "not_verified"
+      },
+      "source_status": "unverified_original",
+      "content_owner_confirmation": null,
+      "publication_permission": "not_assessed",
+      "publication_permission_evidence": null,
+      "notes": [
+        "Hoạt động KHCN trong cơ sở GDĐH"
+      ]
+    },
+    {
+      "id": "SRC-b5654f528610a5c5",
+      "sha256": "b5654f528610a5c5d5b4dd76dbe367da4503c57981a86dda5de5585273012196",
+      "title": "Luật 93/2025/QH15 — Luật số 93/2025/QH15 của Quốc hội: Luật Khoa học, công nghệ và đổi mới sáng tạo",
+      "catalog_ids": [
+        "48ac56878cf56d"
+      ],
+      "paths": [
+        "originals/48ac56878cf56d.pdf"
+      ],
+      "urls": [
+        "https://datafiles.chinhphu.vn/cpp/files/vbpq/2025/7/93qh.signed.pdf"
+      ],
+      "declared_document_number": "Luật 93/2025/QH15",
+      "declared_issued_date": "2025-06-27",
+      "declared_effective_from": "2025-10-01",
+      "declared_date_evidence": "Official landing page",
+      "verified_issued_date": null,
+      "verified_effective_from": null,
+      "verified_effective_to": null,
+      "temporal_evidence": [],
+      "amends": [],
+      "replaces": [],
+      "transitional_rules": [],
+      "issuer_confirmation": null,
+      "applicability": {
+        "task_types": [],
+        "unit_ids": [],
+        "subjects": [],
+        "verification": "not_verified"
+      },
+      "source_status": "unverified_original",
+      "content_owner_confirmation": null,
+      "publication_permission": "not_assessed",
+      "publication_permission_evidence": null,
+      "notes": [
+        "Đọc điều khoản chuyển tiếp, không mặc định mọi khoản cùng mốc"
+      ]
+    },
+    {
+      "id": "SRC-5abdf257a6cae970",
+      "sha256": "5abdf257a6cae9706bd4a089eed02db66c55c373b57f9babf1013081aab67774",
+      "title": "TT 03/2023/TT-BTC — Thông tư số 03/2023/TT-BTC của Bộ Tài chính: Quy định lập dự toán, quản lý sử dụng và quyết toán kinh phí ngân sách nhà nước thực hiện nhiệm vụ khoa học và công nghệ",
+      "catalog_ids": [
+        "d3e0816ad5f44f"
+      ],
+      "paths": [
+        "originals/d3e0816ad5f44f.pdf"
+      ],
+      "urls": [
+        "https://datafiles.chinhphu.vn/cpp/files/vbpq/2023/01/03-btc.pdf"
+      ],
+      "declared_document_number": "TT 03/2023/TT-BTC",
+      "declared_issued_date": "2023-01-10",
+      "declared_effective_from": "2023-02-26",
+      "declared_date_evidence": "Official landing page",
+      "verified_issued_date": null,
+      "verified_effective_from": null,
+      "verified_effective_to": null,
+      "temporal_evidence": [],
+      "amends": [],
+      "replaces": [],
+      "transitional_rules": [],
+      "issuer_confirmation": null,
+      "applicability": {
+        "task_types": [],
+        "unit_ids": [],
+        "subjects": [],
+        "verification": "not_verified"
+      },
+      "source_status": "unverified_original",
+      "content_owner_confirmation": null,
+      "publication_permission": "not_assessed",
+      "publication_permission_evidence": null,
+      "notes": [
+        "Nhánh nguồn/chuyển tiếp; chưa kết luận áp dụng chung 2026"
+      ]
+    },
+    {
+      "id": "SRC-a53f519d8fd7b3c6",
+      "sha256": "a53f519d8fd7b3c6ee5d76561819aced8c18586c44104e8a67e3d91d337a6342",
+      "title": "TT 65/2024/TT-BTC — Thông tư số 65/2024/TT-BTC của Bộ Tài chính: Sửa đổi, bổ sung khoản 1 Điều 2 Thông tư số 03/2023/TT-BTC ngày 10 tháng 01 năm 2023 của Bộ Tài chính quy định lập dự toán, quản lý sử dụng và quyết toán kinh phí ngân sách nhà nước thực hiện nhiệm vụ khoa học và công nghệ",
+      "catalog_ids": [
+        "9269db9d4dee18"
+      ],
+      "paths": [
+        "originals/9269db9d4dee18.pdf"
+      ],
+      "urls": [
+        "https://datafiles.chinhphu.vn/cpp/files/vbpq/2024/9/65-btc.signed.pdf"
+      ],
+      "declared_document_number": "TT 65/2024/TT-BTC",
+      "declared_issued_date": "2024-09-05",
+      "declared_effective_from": "2024-10-25",
+      "declared_date_evidence": "Official landing page",
+      "verified_issued_date": null,
+      "verified_effective_from": null,
+      "verified_effective_to": null,
+      "temporal_evidence": [],
+      "amends": [],
+      "replaces": [],
+      "transitional_rules": [],
+      "issuer_confirmation": null,
+      "applicability": {
+        "task_types": [],
+        "unit_ids": [],
+        "subjects": [],
+        "verification": "not_verified"
+      },
+      "source_status": "unverified_original",
+      "content_owner_confirmation": null,
+      "publication_permission": "not_assessed",
+      "publication_permission_evidence": null,
+      "notes": [
+        "Sửa khoản 1 điều 2 TT 03/2023"
+      ]
+    },
+    {
+      "id": "SRC-db3d58819cdfb907",
+      "sha256": "db3d58819cdfb90732cb9a199446c5b44a0aca7f551c253fe92344997b299a6d",
+      "title": "TT 12/2025/TT-BTC — sửa đổi công tác phí, hội nghị",
+      "catalog_ids": [
+        "0256e454d6e699"
+      ],
+      "paths": [
+        "originals/0256e454d6e699.pdf"
+      ],
+      "urls": [
+        "https://maa.gov.vn/uploads/document/odv5o4ymtvtv5jf-265-thong-tu-so-12-2025-tt-btc-cua-bo-truong-bo-tai-chinh-sua-doi-bo-sung-mot-so-dieu-cua-thong-tu-so-40-2017-tt-btc-ngay-28.pdf"
+      ],
+      "declared_document_number": "12/2025/TT-BTC",
+      "declared_issued_date": "2025-03-19",
+      "declared_effective_from": "2025-05-04",
+      "declared_date_evidence": "Official landing page",
+      "verified_issued_date": null,
+      "verified_effective_from": null,
+      "verified_effective_to": null,
+      "temporal_evidence": [],
+      "amends": [],
+      "replaces": [],
+      "transitional_rules": [],
+      "issuer_confirmation": null,
+      "applicability": {
+        "task_types": [],
+        "unit_ids": [],
+        "subjects": [],
+        "verification": "not_verified"
+      },
+      "source_status": "unverified_original",
+      "content_owner_confirmation": null,
+      "publication_permission": "not_assessed",
+      "publication_permission_evidence": null,
+      "notes": [
+        "Trang 1 có dấu chìm Thư Viện Pháp Luật; chưa phải bản sao trực tiếp từ cơ quan ban hành."
+      ]
+    },
+    {
+      "id": "SRC-cdafda94822231ed",
+      "sha256": "cdafda94822231edf0ca2cb59a11c801c74803171194a339f68f607ceee88ddd",
+      "title": "TT 140/2025/TT-BTC — Thông tư số 140/2025/TT-BTC của Bộ Tài chính: Quy định chế độ công tác phí đi công tác ngắn hạn ở nước ngoài do ngân sách nhà nước bảo đảm kinh phí",
+      "catalog_ids": [
+        "7306e5e0745cf1"
+      ],
+      "paths": [
+        "originals/7306e5e0745cf1.pdf"
+      ],
+      "urls": [
+        "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/01/140-btc.pdf"
+      ],
+      "declared_document_number": "TT 140/2025/TT-BTC",
+      "declared_issued_date": "2025-12-30",
+      "declared_effective_from": "2026-02-14",
+      "declared_date_evidence": "Official landing page",
+      "verified_issued_date": null,
+      "verified_effective_from": null,
+      "verified_effective_to": null,
+      "temporal_evidence": [],
+      "amends": [],
+      "replaces": [],
+      "transitional_rules": [],
+      "issuer_confirmation": null,
+      "applicability": {
+        "task_types": [],
+        "unit_ids": [],
+        "subjects": [],
+        "verification": "not_verified"
+      },
+      "source_status": "unverified_original",
+      "content_owner_confirmation": null,
+      "publication_permission": "not_assessed",
+      "publication_permission_evidence": null,
+      "notes": [
+        "Điều 11.4 chuyển tiếp; thay TT 102/2012 từ hiệu lực"
+      ]
+    },
+    {
+      "id": "SRC-95893a451323e4e2",
+      "sha256": "95893a451323e4e260bfde7ede2a8db384426b7b3d48e191314fc650173ef43e",
+      "title": "TT 44/2026/TT-BGDĐT — Thông tư số 44/2026/TT-BGDĐT của Bộ Giáo dục và Đào tạo: Quy định về trình tự, thủ tục xây dựng, thẩm định, ban hành, quản lý, tổ chức thực hiện và đánh giá chương trình khoa học, công nghệ và đổi mới sáng tạo của Bộ Giáo dục và Đào tạo",
+      "catalog_ids": [
+        "c178e394de4e01"
+      ],
+      "paths": [
+        "originals/c178e394de4e01.pdf"
+      ],
+      "urls": [
+        "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/6/44-bgddt.pdf"
+      ],
+      "declared_document_number": "TT 44/2026/TT-BGDĐT",
+      "declared_issued_date": "2026-06-09",
+      "declared_effective_from": "2026-07-25",
+      "declared_date_evidence": "Official landing page",
+      "verified_issued_date": null,
+      "verified_effective_from": null,
+      "verified_effective_to": null,
+      "temporal_evidence": [],
+      "amends": [],
+      "replaces": [],
+      "transitional_rules": [],
+      "issuer_confirmation": null,
+      "applicability": {
+        "task_types": [],
+        "unit_ids": [],
+        "subjects": [],
+        "verification": "not_verified"
+      },
+      "source_status": "unverified_original",
+      "content_owner_confirmation": null,
+      "publication_permission": "not_assessed",
+      "publication_permission_evidence": null,
+      "notes": [
+        "Nhánh chương trình KHCN; đọc chuyển tiếp"
+      ]
+    },
+    {
+      "id": "SRC-ed631a01b88d5586",
+      "sha256": "ed631a01b88d558604dad08c650c809192c4cc192981fcbfad7059ea9210b31d",
+      "title": "TT 71/2018/TT-BTC — hội nghị quốc tế/tiếp khách",
+      "catalog_ids": [
+        "8af731c80794b0"
+      ],
+      "paths": [
+        "originals/8af731c80794b0.pdf"
+      ],
+      "urls": [
+        "https://vkist.mst.gov.vn/vkist-media/page/h-thng-vn-bn-/cap-bo/37--71_2018_tt-btc.pdf"
+      ],
+      "declared_document_number": "71/2018/TT-BTC",
+      "declared_issued_date": "2018-08-10",
+      "declared_effective_from": null,
+      "declared_date_evidence": null,
+      "verified_issued_date": null,
+      "verified_effective_from": null,
+      "verified_effective_to": null,
+      "temporal_evidence": [],
+      "amends": [],
+      "replaces": [],
+      "transitional_rules": [],
+      "issuer_confirmation": null,
+      "applicability": {
+        "task_types": [],
+        "unit_ids": [],
+        "subjects": [],
+        "verification": "not_verified"
+      },
+      "source_status": "unverified_original",
+      "content_owner_confirmation": null,
+      "publication_permission": "not_assessed",
+      "publication_permission_evidence": null,
+      "notes": [
+        "Trang đăng lại VKIST ghi mốc hiệu lực khác Công báo (10/08 so với 01/11/2018); cần kiểm bản gốc trước sử dụng"
+      ]
+    },
+    {
+      "id": "SRC-96f6026dda2638e9",
+      "sha256": "96f6026dda2638e988e6dcb1a6d3a7dc4e5cb5657187b1d521799a77bf41dc4b",
+      "title": "TT 54/2021/TT-BTC — Thông tư số 54/2021/TT-BTC của Bộ Tài chính: Sửa đổi, bổ sung khoản 4 Điều 35 Thông tư số 71/2018/TT-BTC ngày 10 tháng 8 năm 2018 của Bộ trưởng Bộ Tài chính quy định chế độ tiếp khách nước ngoài vào làm việc tại Việt Nam, chế độ chi tổ chức hội nghị, hội thảo quốc tế tại Việt Nam và chế độ tiếp khách trong nước",
+      "catalog_ids": [
+        "9b1c9b1d123d18"
+      ],
+      "paths": [
+        "originals/9b1c9b1d123d18.pdf"
+      ],
+      "urls": [
+        "https://datafiles.chinhphu.vn/cpp/files/vbpq/2021/07/54.signed.pdf"
+      ],
+      "declared_document_number": "TT 54/2021/TT-BTC",
+      "declared_issued_date": "2021-07-06",
+      "declared_effective_from": "2021-08-25",
+      "declared_date_evidence": "Official landing page",
+      "verified_issued_date": null,
+      "verified_effective_from": null,
+      "verified_effective_to": null,
+      "temporal_evidence": [],
+      "amends": [],
+      "replaces": [],
+      "transitional_rules": [],
+      "issuer_confirmation": null,
+      "applicability": {
+        "task_types": [],
+        "unit_ids": [],
+        "subjects": [],
+        "verification": "not_verified"
+      },
+      "source_status": "unverified_original",
+      "content_owner_confirmation": null,
+      "publication_permission": "not_assessed",
+      "publication_permission_evidence": null,
+      "notes": [
+        "Sửa khoản 4 điều 35 TT 71/2018; nhánh tổ chức/tiếp khách"
+      ]
+    }
+  ]
+}

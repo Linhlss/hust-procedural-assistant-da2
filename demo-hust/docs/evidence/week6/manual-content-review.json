@@ -1,0 +1,1282 @@
+{
+  "reviewedAt": "2026-11-10T17:24:51.526617+00:00",
+  "reviewer": "Codex transcript/source review, not expert business confirmation",
+  "policyValidation": false,
+  "suites": {
+    "legacy": {
+      "allDimensionsPassedTurns": 24,
+      "allDimensionsPassedDialogues": 10,
+      "dimensionCounts": {
+        "bám nhu cầu": {
+          "pass": 28,
+          "partial": 0,
+          "fail": 0,
+          "not_assessed": 11
+        },
+        "đủ nội dung": {
+          "pass": 26,
+          "partial": 2,
+          "fail": 0,
+          "not_assessed": 11
+        },
+        "nhất quán ngữ cảnh": {
+          "pass": 25,
+          "partial": 0,
+          "fail": 3,
+          "not_assessed": 11
+        },
+        "căn cứ hỗ trợ": {
+          "pass": 27,
+          "partial": 1,
+          "fail": 0,
+          "not_assessed": 11
+        },
+        "dừng đúng": {
+          "pass": 25,
+          "partial": 0,
+          "fail": 3,
+          "not_assessed": 11
+        }
+      },
+      "records": [
+        {
+          "id": "L01",
+          "turns": [
+            {
+              "turn": 1,
+              "automaticErrors": [],
+              "error": null,
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "pass",
+                "đủ nội dung": "pass",
+                "nhất quán ngữ cảnh": "pass",
+                "căn cứ hỗ trợ": "pass",
+                "dừng đúng": "pass"
+              },
+              "note": "Giữ hoạt động/ngày/nguồn/quan hệ đã khai; dùng đúng bản 2026 và hướng dẫn nhiệm vụ. Nội dung sau hoạt động vẫn có trong thẻ chuẩn."
+            }
+          ]
+        },
+        {
+          "id": "L02",
+          "turns": [
+            {
+              "turn": 1,
+              "automaticErrors": [],
+              "error": null,
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "pass",
+                "đủ nội dung": "pass",
+                "nhất quán ngữ cảnh": "pass",
+                "căn cứ hỗ trợ": "pass",
+                "dừng đúng": "pass"
+              },
+              "note": "Đối chiếu nguồn đơn vị và địa điểm theo bản 2026, không xác nhận được thanh toán."
+            }
+          ]
+        },
+        {
+          "id": "L03",
+          "turns": [
+            {
+              "turn": 1,
+              "automaticErrors": [],
+              "error": null,
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "pass",
+                "đủ nội dung": "pass",
+                "nhất quán ngữ cảnh": "pass",
+                "căn cứ hỗ trợ": "pass",
+                "dừng đúng": "pass"
+              },
+              "note": "Chưa có nguồn kinh phí thì chỉ hỏi nguồn; không bổ sung dữ kiện thay người hỏi. Narrative lặp câu dẫn, không tạo kết luận thêm."
+            },
+            {
+              "turn": 2,
+              "automaticErrors": null,
+              "error": {
+                "status": 503,
+                "body": {
+                  "error": "Chưa kết nối được Gemini. Dữ kiện đang có được giữ nguyên; bạn có thể thử lại.",
+                  "code": "GEMINI_UNAVAILABLE"
+                }
+              },
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "not_assessed",
+                "đủ nội dung": "not_assessed",
+                "nhất quán ngữ cảnh": "not_assessed",
+                "căn cứ hỗ trợ": "not_assessed",
+                "dừng đúng": "not_assessed"
+              },
+              "note": "Không có phản hồi để chấm nội dung; lỗi/lượt phụ thuộc được tính riêng."
+            },
+            {
+              "turn": 3,
+              "automaticErrors": null,
+              "error": "Not run: previous turn failed",
+              "skipped": true,
+              "review": {
+                "bám nhu cầu": "not_assessed",
+                "đủ nội dung": "not_assessed",
+                "nhất quán ngữ cảnh": "not_assessed",
+                "căn cứ hỗ trợ": "not_assessed",
+                "dừng đúng": "not_assessed"
+              },
+              "note": "Không có phản hồi để chấm nội dung; lỗi/lượt phụ thuộc được tính riêng."
+            }
+          ]
+        },
+        {
+          "id": "L04",
+          "turns": [
+            {
+              "turn": 1,
+              "automaticErrors": [],
+              "error": null,
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "pass",
+                "đủ nội dung": "pass",
+                "nhất quán ngữ cảnh": "pass",
+                "căn cứ hỗ trợ": "pass",
+                "dừng đúng": "pass"
+              },
+              "note": "Hỏi đúng nguồn còn thiếu, không tự điền."
+            },
+            {
+              "turn": 2,
+              "automaticErrors": [],
+              "error": null,
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "pass",
+                "đủ nội dung": "pass",
+                "nhất quán ngữ cảnh": "pass",
+                "căn cứ hỗ trợ": "pass",
+                "dừng đúng": "pass"
+              },
+              "note": "Giữ nguồn nhiệm vụ, hỏi địa điểm tiếp theo."
+            },
+            {
+              "turn": 3,
+              "automaticErrors": null,
+              "error": {
+                "status": 503,
+                "body": {
+                  "error": "Gemini chưa hoàn tất trong thời gian cho phép. Dữ kiện đang có được giữ nguyên; bạn có thể thử lại.",
+                  "code": "GEMINI_TIMEOUT"
+                }
+              },
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "not_assessed",
+                "đủ nội dung": "not_assessed",
+                "nhất quán ngữ cảnh": "not_assessed",
+                "căn cứ hỗ trợ": "not_assessed",
+                "dừng đúng": "not_assessed"
+              },
+              "note": "Không có phản hồi để chấm nội dung; lỗi/lượt phụ thuộc được tính riêng."
+            },
+            {
+              "turn": 4,
+              "automaticErrors": null,
+              "error": "Not run: previous turn failed",
+              "skipped": true,
+              "review": {
+                "bám nhu cầu": "not_assessed",
+                "đủ nội dung": "not_assessed",
+                "nhất quán ngữ cảnh": "not_assessed",
+                "căn cứ hỗ trợ": "not_assessed",
+                "dừng đúng": "not_assessed"
+              },
+              "note": "Không có phản hồi để chấm nội dung; lỗi/lượt phụ thuộc được tính riêng."
+            },
+            {
+              "turn": 5,
+              "automaticErrors": null,
+              "error": "Not run: previous turn failed",
+              "skipped": true,
+              "review": {
+                "bám nhu cầu": "not_assessed",
+                "đủ nội dung": "not_assessed",
+                "nhất quán ngữ cảnh": "not_assessed",
+                "căn cứ hỗ trợ": "not_assessed",
+                "dừng đúng": "not_assessed"
+              },
+              "note": "Không có phản hồi để chấm nội dung; lỗi/lượt phụ thuộc được tính riêng."
+            }
+          ]
+        },
+        {
+          "id": "L05",
+          "turns": [
+            {
+              "turn": 1,
+              "automaticErrors": null,
+              "error": {
+                "status": 503,
+                "body": {
+                  "error": "Gemini chưa hoàn tất trong thời gian cho phép. Dữ kiện đang có được giữ nguyên; bạn có thể thử lại.",
+                  "code": "GEMINI_TIMEOUT"
+                }
+              },
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "not_assessed",
+                "đủ nội dung": "not_assessed",
+                "nhất quán ngữ cảnh": "not_assessed",
+                "căn cứ hỗ trợ": "not_assessed",
+                "dừng đúng": "not_assessed"
+              },
+              "note": "Không có phản hồi để chấm nội dung; lỗi/lượt phụ thuộc được tính riêng."
+            }
+          ]
+        },
+        {
+          "id": "L06",
+          "turns": [
+            {
+              "turn": 1,
+              "automaticErrors": [],
+              "error": null,
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "pass",
+                "đủ nội dung": "pass",
+                "nhất quán ngữ cảnh": "pass",
+                "căn cứ hỗ trợ": "pass",
+                "dừng đúng": "pass"
+              },
+              "note": "Đúng phần nhiệm vụ/công tác và căn cứ hiện hành."
+            },
+            {
+              "turn": 2,
+              "automaticErrors": [],
+              "error": null,
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "pass",
+                "đủ nội dung": "pass",
+                "nhất quán ngữ cảnh": "pass",
+                "căn cứ hỗ trợ": "pass",
+                "dừng đúng": "pass"
+              },
+              "note": "Đổi quan hệ thành không, giữ điều kiện địa điểm riêng; không suy ra đủ điều kiện từ phần còn đạt."
+            }
+          ]
+        },
+        {
+          "id": "L07",
+          "turns": [
+            {
+              "turn": 1,
+              "automaticErrors": [],
+              "error": null,
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "pass",
+                "đủ nội dung": "pass",
+                "nhất quán ngữ cảnh": "pass",
+                "căn cứ hỗ trợ": "pass",
+                "dừng đúng": "pass"
+              },
+              "note": "Đúng căn cứ nhiệm vụ và công tác theo khai báo."
+            },
+            {
+              "turn": 2,
+              "automaticErrors": [
+                "facts.related: expected true, got undefined"
+              ],
+              "error": null,
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "pass",
+                "đủ nội dung": "pass",
+                "nhất quán ngữ cảnh": "fail",
+                "căn cứ hỗ trợ": "pass",
+                "dừng đúng": "fail"
+              },
+              "note": "Đã đổi sang nguồn đơn vị đúng, nhưng xóa related dù người hỏi không rút dữ kiện đó; dữ kiện thay vì điều kiện bị xóa."
+            }
+          ]
+        },
+        {
+          "id": "L08",
+          "turns": [
+            {
+              "turn": 1,
+              "automaticErrors": [],
+              "error": null,
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "pass",
+                "đủ nội dung": "pass",
+                "nhất quán ngữ cảnh": "pass",
+                "căn cứ hỗ trợ": "pass",
+                "dừng đúng": "pass"
+              },
+              "note": "Đúng dữ kiện và nguồn trước khi đổi kinh phí."
+            },
+            {
+              "turn": 2,
+              "automaticErrors": [
+                "clarification: expected allocation, got undefined",
+                "Unstated fact allocation: true"
+              ],
+              "error": null,
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "pass",
+                "đủ nội dung": "partial",
+                "nhất quán ngữ cảnh": "fail",
+                "căn cứ hỗ trợ": "pass",
+                "dừng đúng": "fail"
+              },
+              "note": "Tự thêm allocation=true trước khi người hỏi xác nhận đã phân định, khiến phần nguồn kết hợp được đánh giá meets sai theo lời khai. Narrative vẫn nhắc cần phân định."
+            },
+            {
+              "turn": 3,
+              "automaticErrors": [],
+              "error": null,
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "pass",
+                "đủ nội dung": "pass",
+                "nhất quán ngữ cảnh": "pass",
+                "căn cứ hỗ trợ": "pass",
+                "dừng đúng": "pass"
+              },
+              "note": "Sau lời xác nhận phân định rõ, ghi nhận allocation=true có căn cứ trong câu hỏi."
+            }
+          ]
+        },
+        {
+          "id": "L09",
+          "turns": [
+            {
+              "turn": 1,
+              "automaticErrors": [],
+              "error": null,
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "pass",
+                "đủ nội dung": "pass",
+                "nhất quán ngữ cảnh": "pass",
+                "căn cứ hỗ trợ": "pass",
+                "dừng đúng": "pass"
+              },
+              "note": "Đúng dữ kiện nhiệm vụ và các căn cứ đang áp dụng."
+            },
+            {
+              "turn": 2,
+              "automaticErrors": [],
+              "error": null,
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "pass",
+                "đủ nội dung": "pass",
+                "nhất quán ngữ cảnh": "pass",
+                "căn cứ hỗ trợ": "partial",
+                "dừng đúng": "pass"
+              },
+              "note": "Hỏi đúng thay thế hay kết hợp, chưa tự đổi nguồn; gắn SIM-CT-2026 vào câu hỏi quan hệ hai nguồn là dẫn chứng không liên quan."
+            }
+          ]
+        },
+        {
+          "id": "L10",
+          "turns": [
+            {
+              "turn": 1,
+              "automaticErrors": [],
+              "error": null,
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "pass",
+                "đủ nội dung": "pass",
+                "nhất quán ngữ cảnh": "pass",
+                "căn cứ hỗ trợ": "pass",
+                "dừng đúng": "pass"
+              },
+              "note": "Đúng dữ kiện và căn cứ trước khi rút nguồn."
+            },
+            {
+              "turn": 2,
+              "automaticErrors": [],
+              "error": null,
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "pass",
+                "đủ nội dung": "partial",
+                "nhất quán ngữ cảnh": "fail",
+                "căn cứ hỗ trợ": "pass",
+                "dừng đúng": "fail"
+              },
+              "note": "Rút nguồn đúng nhưng patch xóa cả related, dù người hỏi không rút quan hệ nhiệm vụ. Kiểm tra tự động cũ không bắt mất dữ kiện trước đó nếu lượt hiện tại không nhắc lại trường này; ghi lỗi thủ công, không thay điểm/bộ cũ."
+            }
+          ]
+        },
+        {
+          "id": "L11",
+          "turns": [
+            {
+              "turn": 1,
+              "automaticErrors": [],
+              "error": null,
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "pass",
+                "đủ nội dung": "pass",
+                "nhất quán ngữ cảnh": "pass",
+                "căn cứ hỗ trợ": "pass",
+                "dừng đúng": "pass"
+              },
+              "note": "Đúng căn cứ nhiệm vụ/công tác trước khi rút ngày."
+            },
+            {
+              "turn": 2,
+              "automaticErrors": [],
+              "error": null,
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "pass",
+                "đủ nội dung": "pass",
+                "nhất quán ngữ cảnh": "pass",
+                "căn cứ hỗ trợ": "pass",
+                "dừng đúng": "pass"
+              },
+              "note": "Rút ngày, giữ các dữ kiện khác, tạm dừng căn cứ phụ thuộc và hỏi lại."
+            }
+          ]
+        },
+        {
+          "id": "L12",
+          "turns": [
+            {
+              "turn": 1,
+              "automaticErrors": [],
+              "error": null,
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "pass",
+                "đủ nội dung": "pass",
+                "nhất quán ngữ cảnh": "pass",
+                "căn cứ hỗ trợ": "pass",
+                "dừng đúng": "pass"
+              },
+              "note": "Đúng trạng thái ban đầu trước câu ngày sai."
+            },
+            {
+              "turn": 2,
+              "automaticErrors": null,
+              "error": {
+                "status": 503,
+                "body": {
+                  "error": "Gemini chưa trả nội dung hợp lệ với dữ kiện và căn cứ được cấp. Dữ kiện đang có được giữ nguyên; không có kết luận mới được tạo.",
+                  "code": "GEMINI_SCHEMA"
+                }
+              },
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "not_assessed",
+                "đủ nội dung": "not_assessed",
+                "nhất quán ngữ cảnh": "not_assessed",
+                "căn cứ hỗ trợ": "not_assessed",
+                "dừng đúng": "not_assessed"
+              },
+              "note": "Không có phản hồi để chấm nội dung; lỗi/lượt phụ thuộc được tính riêng."
+            }
+          ]
+        },
+        {
+          "id": "L13",
+          "turns": [
+            {
+              "turn": 1,
+              "automaticErrors": [],
+              "error": null,
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "pass",
+                "đủ nội dung": "pass",
+                "nhất quán ngữ cảnh": "pass",
+                "căn cứ hỗ trợ": "pass",
+                "dừng đúng": "pass"
+              },
+              "note": "Dùng đúng bản 2026, không xác nhận tiền hay hồ sơ."
+            },
+            {
+              "turn": 2,
+              "automaticErrors": [],
+              "error": null,
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "pass",
+                "đủ nội dung": "pass",
+                "nhất quán ngữ cảnh": "pass",
+                "căn cứ hỗ trợ": "pass",
+                "dừng đúng": "pass"
+              },
+              "note": "Thực sự thay SIM-CT-2026 bằng SIM-CT-2025 và nêu thay phiên bản; dữ kiện khác giữ đúng."
+            }
+          ]
+        },
+        {
+          "id": "L14",
+          "turns": [
+            {
+              "turn": 1,
+              "automaticErrors": [],
+              "error": null,
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "pass",
+                "đủ nội dung": "pass",
+                "nhất quán ngữ cảnh": "pass",
+                "căn cứ hỗ trợ": "pass",
+                "dừng đúng": "pass"
+              },
+              "note": "Đúng dữ kiện và căn cứ chuyến đầu."
+            },
+            {
+              "turn": 2,
+              "automaticErrors": [],
+              "error": null,
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "pass",
+                "đủ nội dung": "pass",
+                "nhất quán ngữ cảnh": "pass",
+                "căn cứ hỗ trợ": "pass",
+                "dừng đúng": "pass"
+              },
+              "note": "Giữ thông tin Nhật Bản riêng trong pendingSituation và hỏi quan hệ; không dùng lại ngày/nguồn cũ cho chuyến mới."
+            }
+          ]
+        },
+        {
+          "id": "L15",
+          "turns": [
+            {
+              "turn": 1,
+              "automaticErrors": null,
+              "error": {
+                "status": 503,
+                "body": {
+                  "error": "Chưa kết nối được Gemini. Dữ kiện đang có được giữ nguyên; bạn có thể thử lại.",
+                  "code": "GEMINI_UNAVAILABLE"
+                }
+              },
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "not_assessed",
+                "đủ nội dung": "not_assessed",
+                "nhất quán ngữ cảnh": "not_assessed",
+                "căn cứ hỗ trợ": "not_assessed",
+                "dừng đúng": "not_assessed"
+              },
+              "note": "Không có phản hồi để chấm nội dung; lỗi/lượt phụ thuộc được tính riêng."
+            },
+            {
+              "turn": 2,
+              "automaticErrors": null,
+              "error": "Not run: previous turn failed",
+              "skipped": true,
+              "review": {
+                "bám nhu cầu": "not_assessed",
+                "đủ nội dung": "not_assessed",
+                "nhất quán ngữ cảnh": "not_assessed",
+                "căn cứ hỗ trợ": "not_assessed",
+                "dừng đúng": "not_assessed"
+              },
+              "note": "Không có phản hồi để chấm nội dung; lỗi/lượt phụ thuộc được tính riêng."
+            },
+            {
+              "turn": 3,
+              "automaticErrors": null,
+              "error": "Not run: previous turn failed",
+              "skipped": true,
+              "review": {
+                "bám nhu cầu": "not_assessed",
+                "đủ nội dung": "not_assessed",
+                "nhất quán ngữ cảnh": "not_assessed",
+                "căn cứ hỗ trợ": "not_assessed",
+                "dừng đúng": "not_assessed"
+              },
+              "note": "Không có phản hồi để chấm nội dung; lỗi/lượt phụ thuộc được tính riêng."
+            }
+          ]
+        },
+        {
+          "id": "L16",
+          "turns": [
+            {
+              "turn": 1,
+              "automaticErrors": [],
+              "error": null,
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "pass",
+                "đủ nội dung": "pass",
+                "nhất quán ngữ cảnh": "pass",
+                "căn cứ hỗ trợ": "pass",
+                "dừng đúng": "pass"
+              },
+              "note": "Đúng trạng thái trước khi đổi địa điểm."
+            },
+            {
+              "turn": 2,
+              "automaticErrors": null,
+              "error": {
+                "status": 503,
+                "body": {
+                  "error": "Gemini chưa trả nội dung hợp lệ với dữ kiện và căn cứ được cấp. Dữ kiện đang có được giữ nguyên; không có kết luận mới được tạo.",
+                  "code": "GEMINI_SCHEMA"
+                }
+              },
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "not_assessed",
+                "đủ nội dung": "not_assessed",
+                "nhất quán ngữ cảnh": "not_assessed",
+                "căn cứ hỗ trợ": "not_assessed",
+                "dừng đúng": "not_assessed"
+              },
+              "note": "Không có phản hồi để chấm nội dung; lỗi/lượt phụ thuộc được tính riêng."
+            }
+          ]
+        },
+        {
+          "id": "L17",
+          "turns": [
+            {
+              "turn": 1,
+              "automaticErrors": [],
+              "error": null,
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "pass",
+                "đủ nội dung": "pass",
+                "nhất quán ngữ cảnh": "pass",
+                "căn cứ hỗ trợ": "pass",
+                "dừng đúng": "pass"
+              },
+              "note": "Phần chung có căn cứ vẫn trả lời, thẻ nguồn đơn vị/chuẩn bị hiển thị insufficient. Narrative nên nhắc thiếu nguồn rõ hơn nhưng không tự xác nhận hỗ trợ đơn vị."
+            }
+          ]
+        },
+        {
+          "id": "L18",
+          "turns": [
+            {
+              "turn": 1,
+              "automaticErrors": [],
+              "error": null,
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "pass",
+                "đủ nội dung": "pass",
+                "nhất quán ngữ cảnh": "pass",
+                "căn cứ hỗ trợ": "pass",
+                "dừng đúng": "pass"
+              },
+              "note": "Tạm dừng riêng địa điểm do hai nguồn mâu thuẫn, giữ phần nhiệm vụ."
+            }
+          ]
+        },
+        {
+          "id": "L19",
+          "turns": [
+            {
+              "turn": 1,
+              "automaticErrors": [],
+              "error": null,
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "pass",
+                "đủ nội dung": "pass",
+                "nhất quán ngữ cảnh": "pass",
+                "căn cứ hỗ trợ": "pass",
+                "dừng đúng": "pass"
+              },
+              "note": "Nhận T10 chưa triển khai, không dùng hướng dẫn T6 thay."
+            }
+          ]
+        },
+        {
+          "id": "L20",
+          "turns": [
+            {
+              "turn": 1,
+              "automaticErrors": [],
+              "error": null,
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "pass",
+                "đủ nội dung": "pass",
+                "nhất quán ngữ cảnh": "pass",
+                "căn cứ hỗ trợ": "pass",
+                "dừng đúng": "pass"
+              },
+              "note": "Từ chối bịa nguồn và xác nhận được thanh toán."
+            }
+          ]
+        }
+      ]
+    },
+    "context": {
+      "allDimensionsPassedTurns": 20,
+      "allDimensionsPassedDialogues": 12,
+      "dimensionCounts": {
+        "bám nhu cầu": {
+          "pass": 21,
+          "partial": 4,
+          "fail": 1,
+          "not_assessed": 2
+        },
+        "đủ nội dung": {
+          "pass": 21,
+          "partial": 2,
+          "fail": 3,
+          "not_assessed": 2
+        },
+        "nhất quán ngữ cảnh": {
+          "pass": 23,
+          "partial": 1,
+          "fail": 2,
+          "not_assessed": 2
+        },
+        "căn cứ hỗ trợ": {
+          "pass": 24,
+          "partial": 1,
+          "fail": 1,
+          "not_assessed": 2
+        },
+        "dừng đúng": {
+          "pass": 23,
+          "partial": 2,
+          "fail": 1,
+          "not_assessed": 2
+        }
+      },
+      "records": [
+        {
+          "id": "X03",
+          "turns": [
+            {
+              "turn": 1,
+              "automaticErrors": [],
+              "error": null,
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "pass",
+                "đủ nội dung": "pass",
+                "nhất quán ngữ cảnh": "pass",
+                "căn cứ hỗ trợ": "pass",
+                "dừng đúng": "pass"
+              },
+              "note": "Trả thời điểm trước/sau, nêu nguồn mẫu không có hạn chót số ngày."
+            }
+          ]
+        },
+        {
+          "id": "X04",
+          "turns": [
+            {
+              "turn": 1,
+              "automaticErrors": [],
+              "error": null,
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "pass",
+                "đủ nội dung": "pass",
+                "nhất quán ngữ cảnh": "pass",
+                "căn cứ hỗ trợ": "pass",
+                "dừng đúng": "pass"
+              },
+              "note": "Hướng dẫn tổng quan, không ép khai chuyến đi; có nút căn cứ mở tài liệu."
+            }
+          ]
+        },
+        {
+          "id": "X05",
+          "turns": [
+            {
+              "turn": 1,
+              "automaticErrors": [],
+              "error": null,
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "pass",
+                "đủ nội dung": "pass",
+                "nhất quán ngữ cảnh": "pass",
+                "căn cứ hỗ trợ": "pass",
+                "dừng đúng": "pass"
+              },
+              "note": "Tóm tắt Huế/ngày/nguồn đơn vị và bước trao đổi tài chính; câu xác định thông tin còn thừa."
+            }
+          ]
+        },
+        {
+          "id": "X08",
+          "turns": [
+            {
+              "turn": 1,
+              "automaticErrors": [],
+              "error": null,
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "pass",
+                "đủ nội dung": "pass",
+                "nhất quán ngữ cảnh": "pass",
+                "căn cứ hỗ trợ": "pass",
+                "dừng đúng": "pass"
+              },
+              "note": "Trình tự bắt đầu bằng xác định nguồn/thời gian, không tự đặt dữ kiện."
+            }
+          ]
+        },
+        {
+          "id": "X09",
+          "turns": [
+            {
+              "turn": 1,
+              "automaticErrors": [],
+              "error": null,
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "pass",
+                "đủ nội dung": "pass",
+                "nhất quán ngữ cảnh": "pass",
+                "căn cứ hỗ trợ": "pass",
+                "dừng đúng": "pass"
+              },
+              "note": "Giấy tờ trước/sau theo đúng nguồn đơn vị."
+            },
+            {
+              "turn": 2,
+              "automaticErrors": [],
+              "error": null,
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "partial",
+                "đủ nội dung": "fail",
+                "nhất quán ngữ cảnh": "partial",
+                "căn cứ hỗ trợ": "pass",
+                "dừng đúng": "pass"
+              },
+              "note": "Giữ dữ kiện chuyến đi nhưng hỏi địa điểm thay vì hướng dẫn bước sau khi đã về/đã giữ xác nhận; chưa đáp ứng trọng tâm rubric."
+            }
+          ]
+        },
+        {
+          "id": "X10",
+          "turns": [
+            {
+              "turn": 1,
+              "automaticErrors": [],
+              "error": null,
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "pass",
+                "đủ nội dung": "pass",
+                "nhất quán ngữ cảnh": "pass",
+                "căn cứ hỗ trợ": "pass",
+                "dừng đúng": "pass"
+              },
+              "note": "Nêu mô tả liên hệ nhiệm vụ và đầu mối, không tự xác nhận có phục vụ; còn lặp kế hoạch đã có."
+            }
+          ]
+        },
+        {
+          "id": "X13",
+          "turns": [
+            {
+              "turn": 1,
+              "automaticErrors": [],
+              "error": null,
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "partial",
+                "đủ nội dung": "partial",
+                "nhất quán ngữ cảnh": "pass",
+                "căn cứ hỗ trợ": "pass",
+                "dừng đúng": "partial"
+              },
+              "note": "Chỉ dẫn danh mục chung mà chưa hỏi ngày theo rubric đã đóng băng; chưa nêu rõ giới hạn chưa chọn hướng dẫn nhiệm vụ theo thời điểm."
+            },
+            {
+              "turn": 2,
+              "automaticErrors": [],
+              "error": null,
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "pass",
+                "đủ nội dung": "pass",
+                "nhất quán ngữ cảnh": "pass",
+                "căn cứ hỗ trợ": "pass",
+                "dừng đúng": "pass"
+              },
+              "note": "Không tự thêm năm, hỏi rõ ngày để chọn căn cứ."
+            }
+          ]
+        },
+        {
+          "id": "X14",
+          "turns": [
+            {
+              "turn": 1,
+              "automaticErrors": [],
+              "error": null,
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "pass",
+                "đủ nội dung": "pass",
+                "nhất quán ngữ cảnh": "pass",
+                "căn cứ hỗ trợ": "pass",
+                "dừng đúng": "pass"
+              },
+              "note": "Giữ quan hệ nhiệm vụ chưa biết, hỏi làm rõ; không dùng false thay chưa xác định."
+            }
+          ]
+        },
+        {
+          "id": "X15",
+          "turns": [
+            {
+              "turn": 1,
+              "automaticErrors": [],
+              "error": null,
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "partial",
+                "đủ nội dung": "partial",
+                "nhất quán ngữ cảnh": "pass",
+                "căn cứ hỗ trợ": "fail",
+                "dừng đúng": "fail"
+              },
+              "note": "Giữ địa điểm mơ hồ nhưng diễn giải bắt chuẩn bị đề xuất/giấy mời/kế hoạch chỉ dẫn SIM-DV-1. Đoạn này chỉ nói phạm vi và thay nguồn, không hỗ trợ danh mục giấy tờ: ID hợp lệ nhưng chứng cứ không hỗ trợ câu."
+            }
+          ]
+        },
+        {
+          "id": "X18",
+          "turns": [
+            {
+              "turn": 1,
+              "automaticErrors": [],
+              "error": null,
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "pass",
+                "đủ nội dung": "pass",
+                "nhất quán ngữ cảnh": "pass",
+                "căn cứ hỗ trợ": "pass",
+                "dừng đúng": "pass"
+              },
+              "note": "Nhận đúng quan hệ có và các điều kiện nguồn nhiệm vụ/công tác."
+            },
+            {
+              "turn": 2,
+              "automaticErrors": null,
+              "error": {
+                "status": 503,
+                "body": {
+                  "error": "Gemini chưa trả nội dung hợp lệ với dữ kiện và căn cứ được cấp. Dữ kiện đang có được giữ nguyên; không có kết luận mới được tạo.",
+                  "code": "GEMINI_SCHEMA"
+                }
+              },
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "not_assessed",
+                "đủ nội dung": "not_assessed",
+                "nhất quán ngữ cảnh": "not_assessed",
+                "căn cứ hỗ trợ": "not_assessed",
+                "dừng đúng": "not_assessed"
+              },
+              "note": "Không có phản hồi để chấm nội dung; lỗi/lượt phụ thuộc được tính riêng."
+            }
+          ]
+        },
+        {
+          "id": "X19",
+          "turns": [
+            {
+              "turn": 1,
+              "automaticErrors": [],
+              "error": null,
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "pass",
+                "đủ nội dung": "pass",
+                "nhất quán ngữ cảnh": "pass",
+                "căn cứ hỗ trợ": "pass",
+                "dừng đúng": "pass"
+              },
+              "note": "Ghi đúng chuyến đầu và nguồn đơn vị."
+            },
+            {
+              "turn": 2,
+              "automaticErrors": [
+                "facts.activity: expected \"conference\", got undefined",
+                "facts.location: expected \"foreign\", got undefined"
+              ],
+              "error": null,
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "partial",
+                "đủ nội dung": "fail",
+                "nhất quán ngữ cảnh": "fail",
+                "căn cứ hỗ trợ": "pass",
+                "dừng đúng": "pass"
+              },
+              "note": "Không lẫn ngày/nguồn cũ nhưng xóa cả hoạt động hội thảo và địa điểm Bangkok của tình huống mới, hỏi lại thông tin đã nói."
+            }
+          ]
+        },
+        {
+          "id": "X20",
+          "turns": [
+            {
+              "turn": 1,
+              "automaticErrors": [],
+              "error": null,
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "pass",
+                "đủ nội dung": "pass",
+                "nhất quán ngữ cảnh": "pass",
+                "căn cứ hỗ trợ": "pass",
+                "dừng đúng": "pass"
+              },
+              "note": "Phân biệt chưa phân định, giữ phần nhiệm vụ và địa điểm; nêu cần làm rõ từng nguồn, không kết luận được chi trả."
+            },
+            {
+              "turn": 2,
+              "automaticErrors": null,
+              "error": {
+                "status": 503,
+                "body": {
+                  "error": "Gemini chưa trả nội dung hợp lệ với dữ kiện và căn cứ được cấp. Dữ kiện đang có được giữ nguyên; không có kết luận mới được tạo.",
+                  "code": "GEMINI_SCHEMA"
+                }
+              },
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "not_assessed",
+                "đủ nội dung": "not_assessed",
+                "nhất quán ngữ cảnh": "not_assessed",
+                "căn cứ hỗ trợ": "not_assessed",
+                "dừng đúng": "not_assessed"
+              },
+              "note": "Không có phản hồi để chấm nội dung; lỗi/lượt phụ thuộc được tính riêng."
+            }
+          ]
+        },
+        {
+          "id": "X22",
+          "turns": [
+            {
+              "turn": 1,
+              "automaticErrors": [],
+              "error": null,
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "pass",
+                "đủ nội dung": "pass",
+                "nhất quán ngữ cảnh": "pass",
+                "căn cứ hỗ trợ": "pass",
+                "dừng đúng": "pass"
+              },
+              "note": "Đúng ngày đầu, nguồn và các căn cứ 2026."
+            },
+            {
+              "turn": 2,
+              "automaticErrors": [],
+              "error": null,
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "pass",
+                "đủ nội dung": "pass",
+                "nhất quán ngữ cảnh": "pass",
+                "căn cứ hỗ trợ": "pass",
+                "dừng đúng": "pass"
+              },
+              "note": "Loại ngày 31/11 không tồn tại, không giữ kết luận theo ngày cũ; hỏi lại ngày."
+            }
+          ]
+        },
+        {
+          "id": "X23",
+          "turns": [
+            {
+              "turn": 1,
+              "automaticErrors": [],
+              "error": null,
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "pass",
+                "đủ nội dung": "pass",
+                "nhất quán ngữ cảnh": "pass",
+                "căn cứ hỗ trợ": "partial",
+                "dừng đúng": "pass"
+              },
+              "note": "Dừng đúng vì ngoài khoảng phiên bản. Văn bản không dấu và gọi phòng Tài chính Kế hoạch trong khi thiết kế dùng đầu mối/Ban; cần chuẩn hóa diễn đạt."
+            }
+          ]
+        },
+        {
+          "id": "X24",
+          "turns": [
+            {
+              "turn": 1,
+              "automaticErrors": [],
+              "error": null,
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "pass",
+                "đủ nội dung": "pass",
+                "nhất quán ngữ cảnh": "pass",
+                "căn cứ hỗ trợ": "pass",
+                "dừng đúng": "pass"
+              },
+              "note": "Nêu không có số ngày quyết toán cố định trong nguồn mẫu, hướng dẫn xác nhận với tài chính."
+            }
+          ]
+        },
+        {
+          "id": "X25",
+          "turns": [
+            {
+              "turn": 1,
+              "automaticErrors": [],
+              "error": null,
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "pass",
+                "đủ nội dung": "pass",
+                "nhất quán ngữ cảnh": "pass",
+                "căn cứ hỗ trợ": "pass",
+                "dừng đúng": "pass"
+              },
+              "note": "Ghi nhận đúng ngày, nhiệm vụ, quan hệ và nguồn."
+            },
+            {
+              "turn": 2,
+              "automaticErrors": [],
+              "error": null,
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "pass",
+                "đủ nội dung": "pass",
+                "nhất quán ngữ cảnh": "pass",
+                "căn cứ hỗ trợ": "pass",
+                "dừng đúng": "pass"
+              },
+              "note": "Xóa ngày, giữ dữ kiện còn lại và tạm dừng phần phụ thuộc."
+            },
+            {
+              "turn": 3,
+              "automaticErrors": [],
+              "error": null,
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "pass",
+                "đủ nội dung": "pass",
+                "nhất quán ngữ cảnh": "pass",
+                "căn cứ hỗ trợ": "pass",
+                "dừng đúng": "pass"
+              },
+              "note": "Dùng ngày mới 16/12, không dùng ngày đã rút; nguồn và quan hệ giữ đúng."
+            }
+          ]
+        },
+        {
+          "id": "X27",
+          "turns": [
+            {
+              "turn": 1,
+              "automaticErrors": [],
+              "error": null,
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "pass",
+                "đủ nội dung": "pass",
+                "nhất quán ngữ cảnh": "pass",
+                "căn cứ hỗ trợ": "pass",
+                "dừng đúng": "pass"
+              },
+              "note": "Dừng riêng điều kiện địa điểm vì hai nguồn mâu thuẫn, không cho người hỏi chọn tùy ý."
+            }
+          ]
+        },
+        {
+          "id": "X28",
+          "turns": [
+            {
+              "turn": 1,
+              "automaticErrors": [
+                "facts.activity: expected \"conference\", got undefined",
+                "facts.location: expected \"domestic\", got undefined",
+                "facts.date: expected \"2026-12-19\", got undefined",
+                "facts.funding: expected \"unit\", got undefined"
+              ],
+              "error": null,
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "fail",
+                "đủ nội dung": "fail",
+                "nhất quán ngữ cảnh": "fail",
+                "căn cứ hỗ trợ": "pass",
+                "dừng đúng": "partial"
+              },
+              "note": "Từ chối toàn câu hỏi về khoản chi, bỏ cả dữ kiện đã khai và không giải thích thiếu căn cứ định mức/đầu mối theo rubric. Không bịa mức 5 triệu, nhưng tư vấn chưa đáp ứng nhu cầu."
+            }
+          ]
+        },
+        {
+          "id": "X29",
+          "turns": [
+            {
+              "turn": 1,
+              "automaticErrors": [],
+              "error": null,
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "pass",
+                "đủ nội dung": "pass",
+                "nhất quán ngữ cảnh": "pass",
+                "căn cứ hỗ trợ": "pass",
+                "dừng đúng": "pass"
+              },
+              "note": "Nhận đúng T10 chưa triển khai, không mượn luồng T6 trả thay."
+            }
+          ]
+        },
+        {
+          "id": "X30",
+          "turns": [
+            {
+              "turn": 1,
+              "automaticErrors": [],
+              "error": null,
+              "skipped": false,
+              "review": {
+                "bám nhu cầu": "pass",
+                "đủ nội dung": "pass",
+                "nhất quán ngữ cảnh": "pass",
+                "căn cứ hỗ trợ": "pass",
+                "dừng đúng": "pass"
+              },
+              "note": "Từ chối nộp/duyệt thay, không giả làm đã thực hiện."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

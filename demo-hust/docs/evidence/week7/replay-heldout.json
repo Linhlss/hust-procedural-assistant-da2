@@ -1,0 +1,268 @@
+{
+  "at": "2026-11-13T11:29:06.540Z",
+  "inputSha256": "fa951ce5c4fee973b627352d4eb73ecf70e8bac83d9b9fcf28caf1c4d691f431",
+  "code": {
+    "src/lib/gemini.ts": "5207d6286f0cbf1bd670789324f0f5d6f0bcd22c95bfd278ad9cdaf332364bf3",
+    "src/lib/replay-evaluation.ts": "765cf7e7e01e5be9dbbbf31087fb0f350807a7892872d40bcd2c656199ce19c5",
+    "src/lib/conversation-inputs.ts": "dcb1d1558795773624a08f7fd2c52b42c988ca315daa4cdfd829321e70159aa0",
+    "src/lib/engine.ts": "580be9d100df342f0e3e2d520a59458f2b9e6576f6e215f365aef2b84de525c2"
+  },
+  "kind": "offline_replay",
+  "modelCalls": 0,
+  "modelQualityReevaluated": false,
+  "rows": [
+    {
+      "id": "X03",
+      "turn": 1,
+      "recordedResponse": true,
+      "engine": "pass",
+      "engineErrors": [],
+      "narrative": "accepted"
+    },
+    {
+      "id": "X04",
+      "turn": 1,
+      "recordedResponse": true,
+      "engine": "pass",
+      "engineErrors": [],
+      "narrative": "accepted"
+    },
+    {
+      "id": "X05",
+      "turn": 1,
+      "recordedResponse": true,
+      "engine": "pass",
+      "engineErrors": [],
+      "narrative": "accepted"
+    },
+    {
+      "id": "X08",
+      "turn": 1,
+      "recordedResponse": true,
+      "engine": "pass",
+      "engineErrors": [],
+      "narrative": "accepted"
+    },
+    {
+      "id": "X09",
+      "turn": 1,
+      "recordedResponse": true,
+      "engine": "pass",
+      "engineErrors": [],
+      "narrative": "accepted"
+    },
+    {
+      "id": "X09",
+      "turn": 2,
+      "recordedResponse": true,
+      "engine": "pass",
+      "engineErrors": [],
+      "narrative": "accepted"
+    },
+    {
+      "id": "X10",
+      "turn": 1,
+      "recordedResponse": true,
+      "engine": "pass",
+      "engineErrors": [],
+      "narrative": "accepted"
+    },
+    {
+      "id": "X13",
+      "turn": 1,
+      "recordedResponse": true,
+      "engine": "pass",
+      "engineErrors": [],
+      "narrative": "accepted"
+    },
+    {
+      "id": "X13",
+      "turn": 2,
+      "recordedResponse": true,
+      "engine": "pass",
+      "engineErrors": [],
+      "narrative": "accepted"
+    },
+    {
+      "id": "X14",
+      "turn": 1,
+      "recordedResponse": true,
+      "engine": "pass",
+      "engineErrors": [],
+      "narrative": "accepted"
+    },
+    {
+      "id": "X15",
+      "turn": 1,
+      "recordedResponse": true,
+      "engine": "pass",
+      "engineErrors": [],
+      "narrative": "rejected",
+      "rejectionReason": "unsupported_document_claim"
+    },
+    {
+      "id": "X18",
+      "turn": 1,
+      "recordedResponse": true,
+      "engine": "pass",
+      "engineErrors": [],
+      "narrative": "accepted"
+    },
+    {
+      "id": "X18",
+      "turn": 2,
+      "recordedResponse": false,
+      "engine": "not_replayable",
+      "engineErrors": [],
+      "narrative": "not_recorded",
+      "originalError": {
+        "status": 503,
+        "code": "GEMINI_SCHEMA",
+        "skipped": false
+      }
+    },
+    {
+      "id": "X19",
+      "turn": 1,
+      "recordedResponse": true,
+      "engine": "pass",
+      "engineErrors": [],
+      "narrative": "accepted"
+    },
+    {
+      "id": "X19",
+      "turn": 2,
+      "recordedResponse": true,
+      "engine": "fail",
+      "engineErrors": [
+        "facts.activity: expected \"conference\", got undefined",
+        "facts.location: expected \"foreign\", got undefined"
+      ],
+      "narrative": "accepted"
+    },
+    {
+      "id": "X20",
+      "turn": 1,
+      "recordedResponse": true,
+      "engine": "pass",
+      "engineErrors": [],
+      "narrative": "accepted"
+    },
+    {
+      "id": "X20",
+      "turn": 2,
+      "recordedResponse": false,
+      "engine": "not_replayable",
+      "engineErrors": [],
+      "narrative": "not_recorded",
+      "originalError": {
+        "status": 503,
+        "code": "GEMINI_SCHEMA",
+        "skipped": false
+      }
+    },
+    {
+      "id": "X22",
+      "turn": 1,
+      "recordedResponse": true,
+      "engine": "pass",
+      "engineErrors": [],
+      "narrative": "accepted"
+    },
+    {
+      "id": "X22",
+      "turn": 2,
+      "recordedResponse": true,
+      "engine": "pass",
+      "engineErrors": [],
+      "narrative": "accepted"
+    },
+    {
+      "id": "X23",
+      "turn": 1,
+      "recordedResponse": true,
+      "engine": "pass",
+      "engineErrors": [],
+      "narrative": "rejected",
+      "rejectionReason": "unsupported_organization"
+    },
+    {
+      "id": "X24",
+      "turn": 1,
+      "recordedResponse": true,
+      "engine": "pass",
+      "engineErrors": [],
+      "narrative": "accepted"
+    },
+    {
+      "id": "X25",
+      "turn": 1,
+      "recordedResponse": true,
+      "engine": "pass",
+      "engineErrors": [],
+      "narrative": "accepted"
+    },
+    {
+      "id": "X25",
+      "turn": 2,
+      "recordedResponse": true,
+      "engine": "pass",
+      "engineErrors": [],
+      "narrative": "accepted"
+    },
+    {
+      "id": "X25",
+      "turn": 3,
+      "recordedResponse": true,
+      "engine": "pass",
+      "engineErrors": [],
+      "narrative": "accepted"
+    },
+    {
+      "id": "X27",
+      "turn": 1,
+      "recordedResponse": true,
+      "engine": "pass",
+      "engineErrors": [],
+      "narrative": "accepted"
+    },
+    {
+      "id": "X28",
+      "turn": 1,
+      "recordedResponse": true,
+      "engine": "fail",
+      "engineErrors": [
+        "facts.activity: expected \"conference\", got undefined",
+        "facts.location: expected \"domestic\", got undefined",
+        "facts.date: expected \"2026-12-19\", got undefined",
+        "facts.funding: expected \"unit\", got undefined"
+      ],
+      "narrative": "not_recorded"
+    },
+    {
+      "id": "X29",
+      "turn": 1,
+      "recordedResponse": true,
+      "engine": "pass",
+      "engineErrors": [],
+      "narrative": "not_recorded"
+    },
+    {
+      "id": "X30",
+      "turn": 1,
+      "recordedResponse": true,
+      "engine": "pass",
+      "engineErrors": [],
+      "narrative": "not_recorded"
+    }
+  ],
+  "summary": {
+    "recordedTurns": 28,
+    "recordedResponses": 26,
+    "enginePassed": 24,
+    "engineFailed": 2,
+    "notReplayable": 2,
+    "narrativesAccepted": 21,
+    "narrativesRejected": 2
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "language": "vie",
+  "training_source": "https://raw.githubusercontent.com/tesseract-ocr/tessdata_fast/main/vie.traineddata",
+  "training_sha256": "79df64caf7bcfb2a27df5042ecb6121e196eada34da774956995747636d5bfa1",
+  "derived_text_is_not_verified_quote": true,
+  "rendering": "pdftoppm -scale-to 2400, PNG"
+}

@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-13",
+  "status": "passed_before_publication",
+  "node": "22.23.5",
+  "npm": "11.13.0",
+  "dependencyInstall": "npm ci from existing lockfile; 0 reported vulnerabilities",
+  "typecheck": "passed",
+  "unitTests": {
+    "passed": 168,
+    "failed": 0,
+    "liveModelCalled": false
+  },
+  "pythonTests": {
+    "intakePassed": 3,
+    "publicExporterPassed": 3
+  },
+  "build": {
+    "command": "npm run build",
+    "status": "passed",
+    "bundler": "default Turbopack"
+  },
+  "privacyAudit": {
+    "filesChecked": 309,
+    "identityOrSecretFindings": [],
+    "jsonParseErrors": [],
+    "exportDigestMismatches": [],
+    "runtimeSourceChanges": [],
+    "compiledPersonalReportsIncluded": false,
+    "privateOriginalDocumentsIncluded": false,
+    "realEnvironmentOrVercelConfigIncluded": false,
+    "localMarkdownLinksChecked": 158,
+    "missingLinks": [],
+    "missingTexInputs": []
+  },
+  "sourceWorkspaceChanged": false,
+  "originalGitHistoryIncluded": false,
+  "websiteDeployed": false,
+  "liveModelCalled": false,
+  "note": "Checks above are for this public export. Historic API/browser/model evidence is preserved separately with its own modes, errors, dates and limits.",
+  "originalWorkspacePreservation": {
+    "filesChecked": 1031,
+    "changedFiles": 0,
+    "gitHeadStatusAndRemotesUnchanged": true
+  }
+}

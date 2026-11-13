@@ -1,0 +1,39 @@
+{
+  "canonical_source": "${HOME}/Documents/Khảo sát/output/latex/Bao_cao_giua_ky_LaTeX_theo_mau_DA1",
+  "canonical_pdf": "${HOME}/Documents/Khảo sát/output/latex/Bao_cao_giua_ky_LaTeX_theo_mau_DA1/main.pdf",
+  "compile_command": "./Bien_dich.command --no-open",
+  "exit_code": 0,
+  "pages": 27,
+  "chapter_1_pages": 18,
+  "bibliography_entries": 10,
+  "sections": 7,
+  "subsections": 25,
+  "figures": 4,
+  "tables": 5,
+  "changed_source_files": [
+    "chapters/01_boi_canh.tex",
+    "chapters/02_bai_toan.tex"
+  ],
+  "updated_subsections": [
+    "1.1.b",
+    "1.1.d",
+    "1.2.a",
+    "1.2.c",
+    "1.2.e"
+  ],
+  "requirement_audit": {
+    "source_product_descriptions_and_citations_in_1_1_b_preserved": true,
+    "1_1_b_unnecessary_caveat_replaced_by_neutral_transition": true,
+    "1_1_d_product_direction_stated_as_design_decision": true,
+    "role_responsibilities_stated_without_HUST_operational_approval_disclaimer": true,
+    "audience_scope_definite_with_postgraduate_staff_case_preserved": true,
+    "access_principle_stated_without_login_meta_explanation": true,
+    "1_2_c_objectives_and_required_deliverables_identified": true,
+    "IP_and_research_collaboration_excluded_explicitly": true,
+    "genuine_data_source_and_transitional_uncertainty_preserved": true,
+    "no_claim_of_completed_implementation_or_measured_improvement_added": true
+  },
+  "global_heading_alignment_preserved": true,
+  "layout_or_reference_errors": [],
+  "output_link_resolves_to_canonical": true
+}

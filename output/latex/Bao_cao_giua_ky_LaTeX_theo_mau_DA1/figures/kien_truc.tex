@@ -1,0 +1,19 @@
+\begin{tikzpicture}[node distance=9mm and 12mm]
+\node[block,text width=35mm] (ui) {Giao diện hội thoại};
+\node[block,text width=43mm,right=of ui] (state) {Trạng thái phiên\\Dữ kiện và thay đổi};
+\node[block,text width=35mm,right=of state] (nlp) {Mô hình ngôn ngữ\\Hiểu và diễn đạt};
+\node[block,text width=35mm,below=of ui] (retrieve) {Truy xuất nguồn\\Lọc quyền và phạm vi};
+\node[block,text width=43mm,right=of retrieve] (check) {Kiểm tra điều kiện\\và phụ thuộc kết luận};
+\node[block,text width=35mm,right=of check] (compose) {Tạo câu trả lời\\Có bằng chứng};
+\node[block,text width=35mm,below=of retrieve] (store) {Kho văn bản\\Phiên bản và đoạn nguồn};
+\node[block,text width=43mm,right=of store] (cards) {Thẻ tư vấn\\Điều kiện đã xác nhận};
+\draw[arrow] (ui)--(state);
+\draw[{Stealth[length=2mm]}-{Stealth[length=2mm]},line width=0.55pt] (state)--(nlp);
+\draw[arrow] (state)--(check);
+\draw[{Stealth[length=2mm]}-{Stealth[length=2mm]},line width=0.55pt] (nlp)--(compose);
+\draw[arrow] (store)--(retrieve);
+\draw[arrow] (retrieve)--(check);
+\draw[arrow] (cards)--(check);
+\draw[arrow] (check)--(compose);
+\draw[arrow] (state.south west)--(retrieve.north east);
+\end{tikzpicture}

@@ -1,0 +1,9 @@
+{
+  "checkedAt": "2026-11-10T17:58:57.569449+00:00",
+  "url": "https://hust-t6-demo.vercel.app",
+  "anonymous": true,
+  "status": 200,
+  "mode": "fixture",
+  "intent": "out",
+  "modelCallsExpected": 0
+}

@@ -1,0 +1,538 @@
+{
+  "schema_version": 1,
+  "initial_review_as_of": "2026-11-07",
+  "final_collection_frozen_at": null,
+  "card": "T6",
+  "corpus_path_from_workspace": "Artifact_tham_khao/Quy_dinh_HUST_2026",
+  "runtime_policy_modified": false,
+  "business_validation_complete": false,
+  "available_originals": [
+    {
+      "id": "SRC-8e0ecfb268ab6edb",
+      "title": "TT 39/2025/TT-BKHCN — Thông tư số 39/2025/TT-BKHCN của Bộ Khoa học và Công nghệ: Quy định chi tiết và hướng dẫn về lập dự toán, quản lý sử dụng và quyết toán một số nội dung chi ngân sách nhà nước thực hiện nhiệm vụ khoa học, công nghệ và đổi mới sáng tạo",
+      "sha256": "8e0ecfb268ab6edbb7f15804b6e4e168494c3d4c5931f1dc8cf379571a3b1d45",
+      "paths": [
+        "originals/4ff386661edfae.pdf"
+      ],
+      "source_status": "unverified_original",
+      "publication_permission": "not_assessed",
+      "declared_effective_from": "2026-01-01",
+      "verified_effective_from": null,
+      "content_owner_confirmation": null
+    },
+    {
+      "id": "SRC-46d07f05d7c7d696",
+      "title": "TT 40/2017/TT-BTC — Thông tư số 40/2017/TT-BTC của Bộ Tài chính: Quy định chế độ công tác phí, chế độ chi hội nghị",
+      "sha256": "46d07f05d7c7d696a9b6a0a378deefabf80bb31cbd0505b3e394b4a8eee0d7b7",
+      "paths": [
+        "originals/3227b82e7f3676.pdf"
+      ],
+      "source_status": "unverified_original",
+      "publication_permission": "not_assessed",
+      "declared_effective_from": "2017-07-01",
+      "verified_effective_from": null,
+      "content_owner_confirmation": null
+    },
+    {
+      "id": "SRC-db3d58819cdfb907",
+      "title": "TT 12/2025/TT-BTC — sửa đổi công tác phí, hội nghị",
+      "sha256": "db3d58819cdfb90732cb9a199446c5b44a0aca7f551c253fe92344997b299a6d",
+      "paths": [
+        "originals/0256e454d6e699.pdf"
+      ],
+      "source_status": "unverified_original",
+      "publication_permission": "not_assessed",
+      "declared_effective_from": "2025-05-04",
+      "verified_effective_from": null,
+      "content_owner_confirmation": null
+    },
+    {
+      "id": "SRC-cdafda94822231ed",
+      "title": "TT 140/2025/TT-BTC — Thông tư số 140/2025/TT-BTC của Bộ Tài chính: Quy định chế độ công tác phí đi công tác ngắn hạn ở nước ngoài do ngân sách nhà nước bảo đảm kinh phí",
+      "sha256": "cdafda94822231edf0ca2cb59a11c801c74803171194a339f68f607ceee88ddd",
+      "paths": [
+        "originals/7306e5e0745cf1.pdf"
+      ],
+      "source_status": "unverified_original",
+      "publication_permission": "not_assessed",
+      "declared_effective_from": "2026-02-14",
+      "verified_effective_from": null,
+      "content_owner_confirmation": null
+    }
+  ],
+  "evidence_pointers": [
+    {
+      "id": "P17",
+      "source_id": "SRC-8e0ecfb268ab6edb",
+      "original_path_from_corpus": "originals/4ff386661edfae.pdf",
+      "ocr_path_from_corpus": "text_ocr/4ff386661edfae.txt",
+      "ocr_sha256": "d7664591f18f66da522187b115f8b481e80dc33f2d9a3817ca193319639ddf10",
+      "pdf_page": 22,
+      "heading": "Điều 17.",
+      "ocr_excerpt": "Điều 17. Dự toán chỉ công tác tô chức và phí tham gia hội nghị, hội\nthảo khoa học, diễn tu tọa đàm khoa học, công tác phí trong nước và\n\nngoài nước; hợp tác quốc tế (đoàn ra, đoàn vào) phục vụ thực hiện nhiệm\nvụ khoa học, công nghệ và đỗi m",
+      "reviewed_quote": null,
+      "verification": "ocr_candidate_not_checked_against_original",
+      "note": "Vị trí ứng viên từ OCR để người duyệt đối chiếu; không phải trích dẫn đã xác nhận hoặc điều kiện runtime."
+    },
+    {
+      "id": "P44",
+      "source_id": "SRC-8e0ecfb268ab6edb",
+      "original_path_from_corpus": "originals/4ff386661edfae.pdf",
+      "ocr_path_from_corpus": "text_ocr/4ff386661edfae.txt",
+      "ocr_sha256": "d7664591f18f66da522187b115f8b481e80dc33f2d9a3817ca193319639ddf10",
+      "pdf_page": 47,
+      "heading": "Điều 44.",
+      "ocr_excerpt": "Điều 44. Điều khoản chuyển tiếp\n\n1. Đối với các nhiệm vụ khoa học, công nghệ và đôi mới sáng tạo đã được\ncấp có thâm quyền phê duyệt nhiệm vụ trước ngày Thông tư này có hiệu lực thi\n\nLy  V.\n\n\n--- PDF PAGE 48 / OCR, MUST CHECK ORIGINAL ---\n4",
+      "reviewed_quote": null,
+      "verification": "ocr_candidate_not_checked_against_original",
+      "note": "Vị trí ứng viên từ OCR để người duyệt đối chiếu; không phải trích dẫn đã xác nhận hoặc điều kiện runtime."
+    },
+    {
+      "id": "P45",
+      "source_id": "SRC-8e0ecfb268ab6edb",
+      "original_path_from_corpus": "originals/4ff386661edfae.pdf",
+      "ocr_path_from_corpus": "text_ocr/4ff386661edfae.txt",
+      "ocr_sha256": "d7664591f18f66da522187b115f8b481e80dc33f2d9a3817ca193319639ddf10",
+      "pdf_page": 48,
+      "heading": "Điều 45. Hiệu lực",
+      "ocr_excerpt": "Điều 45. Hiệu lực thi hành\n1. Thông tư này có hiệu lực thi hành kể từ ngày 01 tháng 01 năm 2026.\n\n2. Trường hợp các văn bản dẫn chiếu tại Thông tư này được sửa đổi, bỗ\nsung, thay thế thì thực hiện theo các văn bản sửa đổi, bổ sung hoặc thay",
+      "reviewed_quote": null,
+      "verification": "ocr_candidate_not_checked_against_original",
+      "note": "Vị trí ứng viên từ OCR để người duyệt đối chiếu; không phải trích dẫn đã xác nhận hoặc điều kiện runtime."
+    },
+    {
+      "id": "P140-1",
+      "source_id": "SRC-cdafda94822231ed",
+      "original_path_from_corpus": "originals/7306e5e0745cf1.pdf",
+      "ocr_path_from_corpus": "text_ocr/7306e5e0745cf1.txt",
+      "ocr_sha256": "35f162ec73a5d724d2bbfbefe347c568e0277d2ca9d294ff75a791a5ceedf6be",
+      "pdf_page": 1,
+      "heading": "Điều 1.",
+      "ocr_excerpt": "Điều 1. Phạm vi điều chỉnh và đối tượng áp dụng\n\n1. Thông tư này quy định về chế độ công tác phí đối với cán bộ, công chức,\nviên chức và người lao động trong các cơ quan của Đảng, cơ quan Nhà nước, Mặt\ntrận Tổ quốc Việt Nam, đơn vị sự nghiệ",
+      "reviewed_quote": null,
+      "verification": "ocr_candidate_not_checked_against_original",
+      "note": "Vị trí ứng viên từ OCR để người duyệt đối chiếu; không phải trích dẫn đã xác nhận hoặc điều kiện runtime."
+    },
+    {
+      "id": "P140-11",
+      "source_id": "SRC-cdafda94822231ed",
+      "original_path_from_corpus": "originals/7306e5e0745cf1.pdf",
+      "ocr_path_from_corpus": "text_ocr/7306e5e0745cf1.txt",
+      "ocr_sha256": "35f162ec73a5d724d2bbfbefe347c568e0277d2ca9d294ff75a791a5ceedf6be",
+      "pdf_page": 12,
+      "heading": "Điều 11.",
+      "ocr_excerpt": "Điều 11. Hiệu lực thi hành\n\n1. Thông tư này có hiệu lực thi hành kề từ ngày 14 tháng 02 năm 2026.\n\n2. Thông tư số 102/2012/TT-BTC ngày 21 tháng 6 năm 2012 của Bộ trưởng\nBộ Tài chính quy định chế độ công tác phí cho cán bộ, công chức Nhà nướ",
+      "reviewed_quote": null,
+      "verification": "ocr_candidate_not_checked_against_original",
+      "note": "Vị trí ứng viên từ OCR để người duyệt đối chiếu; không phải trích dẫn đã xác nhận hoặc điều kiện runtime."
+    }
+  ],
+  "conditions": [
+    {
+      "id": "T6-C01",
+      "title": "Xác định loại hoạt động và phạm vi",
+      "status": "candidate_pending_original_and_review",
+      "candidate_fact_fields": [
+        "activity",
+        "attendance_or_organization",
+        "location"
+      ],
+      "missing_dependencies": [
+        "H01",
+        "H03",
+        "H08"
+      ],
+      "evidence_pointer_ids": [
+        "P17",
+        "P140-1"
+      ],
+      "request_ids": [
+        "W6-01",
+        "W6-02",
+        "W6-04"
+      ],
+      "review_question": "Đây là tham dự hay tổ chức hội thảo, công tác; trong hay ngoài nước? Chỉ hỏi dữ kiện làm đổi nhánh hướng dẫn.",
+      "stop_rule": "Chưa dùng tên hội thảo quốc tế để suy ra nước ngoài; chưa xác nhận một quy định áp dụng cho cả dự và tổ chức hội thảo.",
+      "rule_expression": null,
+      "verified_policy_answer": null,
+      "owner_confirmation": null,
+      "runtime_enabled": false
+    },
+    {
+      "id": "T6-C02",
+      "title": "Quan hệ giữa hoạt động và kinh phí nhiệm vụ",
+      "status": "candidate_pending_original_and_review",
+      "candidate_fact_fields": [
+        "funding",
+        "task_type",
+        "related",
+        "task_approval_date"
+      ],
+      "missing_dependencies": [
+        "H01",
+        "H03"
+      ],
+      "evidence_pointer_ids": [
+        "P17"
+      ],
+      "request_ids": [
+        "W6-01",
+        "W6-02"
+      ],
+      "review_question": "Với đúng loại nhiệm vụ và nguồn đang dùng, hoạt động cần đáp ứng điều kiện liên hệ nào?",
+      "stop_rule": "Thiếu bản nhiệm vụ/chi tiêu thì không chuyển điều kiện mẫu về phục vụ nhiệm vụ thành quy tắc HUST.",
+      "rule_expression": null,
+      "verified_policy_answer": null,
+      "owner_confirmation": null,
+      "runtime_enabled": false
+    },
+    {
+      "id": "T6-C03",
+      "title": "Phân biệt nhánh công tác trong và ngoài nước",
+      "status": "candidate_pending_original_and_review",
+      "candidate_fact_fields": [
+        "activity",
+        "location",
+        "funding",
+        "subject"
+      ],
+      "missing_dependencies": [
+        "H03",
+        "H08"
+      ],
+      "evidence_pointer_ids": [
+        "P140-1",
+        "P17"
+      ],
+      "request_ids": [
+        "W6-02",
+        "W6-04"
+      ],
+      "review_question": "Đối tượng và loại nguồn của chuyến đi thuộc phạm vi văn bản nào?",
+      "stop_rule": "Tìm được thông tư phụ thuộc chưa chứng minh đủ điều kiện cử đi hoặc được thanh toán tại HUST.",
+      "rule_expression": null,
+      "verified_policy_answer": null,
+      "owner_confirmation": null,
+      "runtime_enabled": false
+    },
+    {
+      "id": "T6-C04",
+      "title": "Chọn phiên bản và xét chuyển tiếp",
+      "status": "candidate_pending_original_and_review",
+      "candidate_fact_fields": [
+        "event_date",
+        "task_approval_date",
+        "travel_decision_date",
+        "trip_start_date",
+        "trip_end_date",
+        "document_submission_date"
+      ],
+      "missing_dependencies": [
+        "H01",
+        "H03",
+        "H08",
+        "H14",
+        "H15"
+      ],
+      "evidence_pointer_ids": [
+        "P44",
+        "P45",
+        "P140-11"
+      ],
+      "request_ids": [
+        "W6-01",
+        "W6-02",
+        "W6-04",
+        "W6-12"
+      ],
+      "review_question": "Điều khoản nào chọn mốc áp dụng cho phần đang hỏi? Chỉ thu thêm ngày nếu căn cứ yêu cầu.",
+      "stop_rule": "Không dùng ngày hỏi/ngày tải thay ngày sự việc; không suy giấy tờ tồn phải dùng bản cũ.",
+      "rule_expression": null,
+      "verified_policy_answer": null,
+      "owner_confirmation": null,
+      "runtime_enabled": false
+    },
+    {
+      "id": "T6-C05",
+      "title": "Điều kiện riêng của nguồn đơn vị",
+      "status": "candidate_pending_original_and_review",
+      "candidate_fact_fields": [
+        "funding",
+        "unit_id",
+        "event_date"
+      ],
+      "missing_dependencies": [
+        "H09"
+      ],
+      "evidence_pointer_ids": [],
+      "request_ids": [
+        "W6-05"
+      ],
+      "review_question": "Đơn vị nào áp dụng; có quy định riêng hay xác nhận dùng quy định chung?",
+      "stop_rule": "Đơn vị chưa chốt hoặc thiếu nguồn riêng thì phần hỗ trợ đơn vị chưa có đáp án xác nhận.",
+      "rule_expression": null,
+      "verified_policy_answer": null,
+      "owner_confirmation": null,
+      "runtime_enabled": false
+    },
+    {
+      "id": "T6-C06",
+      "title": "Thay thế hoặc kết hợp nguồn",
+      "status": "candidate_pending_original_and_review",
+      "candidate_fact_fields": [
+        "funding",
+        "funding_relation",
+        "allocation",
+        "unit_id"
+      ],
+      "missing_dependencies": [
+        "H01",
+        "H03",
+        "H09",
+        "H16"
+      ],
+      "evidence_pointer_ids": [],
+      "request_ids": [
+        "W6-01",
+        "W6-02",
+        "W6-05",
+        "W6-06"
+      ],
+      "review_question": "Nguồn mới thay thế hay bổ sung? Cần phân định nội dung chi và tránh trùng theo căn cứ nào?",
+      "stop_rule": "Không chỉ đổi tên nguồn trong câu trả lời cũ; không tự tính/xác nhận khoản chi.",
+      "rule_expression": null,
+      "verified_policy_answer": null,
+      "owner_confirmation": null,
+      "runtime_enabled": false
+    },
+    {
+      "id": "T6-C07",
+      "title": "Danh mục tài liệu và mẫu cần chuẩn bị",
+      "status": "candidate_pending_original_and_review",
+      "candidate_fact_fields": [
+        "activity",
+        "funding",
+        "location",
+        "event_date"
+      ],
+      "missing_dependencies": [
+        "H03",
+        "H08"
+      ],
+      "evidence_pointer_ids": [],
+      "request_ids": [
+        "W6-02",
+        "W6-04"
+      ],
+      "review_question": "Danh mục chứng từ, mẫu và phiên bản nào áp dụng cho đúng hoạt động/nguồn?",
+      "stop_rule": "Không dùng danh sách giấy tờ tự tạo trong fixture làm checklist HUST đã xác nhận.",
+      "rule_expression": null,
+      "verified_policy_answer": null,
+      "owner_confirmation": null,
+      "runtime_enabled": false
+    },
+    {
+      "id": "T6-C08",
+      "title": "Mốc chuẩn bị, tạm ứng và quyết toán",
+      "status": "candidate_pending_original_and_review",
+      "candidate_fact_fields": [
+        "event_date",
+        "trip_end_date",
+        "document_submission_date",
+        "funding"
+      ],
+      "missing_dependencies": [
+        "H03",
+        "H08"
+      ],
+      "evidence_pointer_ids": [],
+      "request_ids": [
+        "W6-02",
+        "W6-04"
+      ],
+      "review_question": "Mốc bắt đầu tính hạn, thời hạn và ngoại lệ được nêu ở đâu?",
+      "stop_rule": "Chưa có đoạn quy định thì chưa điền số ngày hoặc tự kết luận quá hạn.",
+      "rule_expression": null,
+      "verified_policy_answer": null,
+      "owner_confirmation": null,
+      "runtime_enabled": false
+    },
+    {
+      "id": "T6-C09",
+      "title": "Đầu mối và thẩm quyền cần liên hệ",
+      "status": "candidate_pending_original_and_review",
+      "candidate_fact_fields": [
+        "unit_id",
+        "activity",
+        "funding"
+      ],
+      "missing_dependencies": [
+        "H05",
+        "H06",
+        "H07",
+        "H08"
+      ],
+      "evidence_pointer_ids": [],
+      "request_ids": [
+        "W6-04",
+        "W6-11",
+        "W6-14"
+      ],
+      "review_question": "Đơn vị nào xác nhận nội dung đang thiếu, theo phân cấp nào?",
+      "stop_rule": "Trang giới thiệu Ban chỉ hỗ trợ tìm đầu mối; không chứng minh quy tắc hoặc tuyến duyệt hồ sơ.",
+      "rule_expression": null,
+      "verified_policy_answer": null,
+      "owner_confirmation": null,
+      "runtime_enabled": false
+    }
+  ],
+  "temporal_cases": [
+    {
+      "id": "TIME-12",
+      "title": "Hiện hành",
+      "prompt": "Tôi đi hội thảo trong nước bằng kinh phí nhiệm vụ.",
+      "expected_behavior": "Hỏi thời điểm/quan hệ nhiệm vụ khi ảnh hưởng; đối chiếu đúng nguồn.",
+      "condition_ids": [
+        "T6-C01",
+        "T6-C02",
+        "T6-C03"
+      ],
+      "expected_policy_answer": null,
+      "owner_confirmation": null,
+      "business_execution_status": "not_run",
+      "technical_fixture_tests_are_not_business_validation": true
+    },
+    {
+      "id": "TIME-13",
+      "title": "Trước mốc thay đổi",
+      "prompt": "Chuyến công tác diễn ra trước ngày quy định mới có hiệu lực.",
+      "expected_behavior": "Kiểm bản trước mốc và chuyển tiếp; không lấy bản mới mặc định.",
+      "condition_ids": [
+        "T6-C04"
+      ],
+      "expected_policy_answer": null,
+      "owner_confirmation": null,
+      "business_execution_status": "not_run",
+      "technical_fixture_tests_are_not_business_validation": true
+    },
+    {
+      "id": "TIME-14",
+      "title": "Đúng mốc thay đổi",
+      "prompt": "Chuyến đi của tôi bắt đầu đúng ngày thay đổi quy định.",
+      "expected_behavior": "Đối chiếu chính xác mốc và phạm vi điều khoản; không tự chọn biên hiệu lực.",
+      "condition_ids": [
+        "T6-C04"
+      ],
+      "expected_policy_answer": null,
+      "owner_confirmation": null,
+      "business_execution_status": "not_run",
+      "technical_fixture_tests_are_not_business_validation": true
+    },
+    {
+      "id": "TIME-15",
+      "title": "Sau mốc thay đổi",
+      "prompt": "Chuyến đi bắt đầu sau mốc thay đổi quy định.",
+      "expected_behavior": "Kiểm phiên bản và điều kiện chuyển tiếp, không chỉ so ngày.",
+      "condition_ids": [
+        "T6-C04"
+      ],
+      "expected_policy_answer": null,
+      "owner_confirmation": null,
+      "business_execution_status": "not_run",
+      "technical_fixture_tests_are_not_business_validation": true
+    },
+    {
+      "id": "TIME-16",
+      "title": "Quyết định và chuyến đi khác thời kỳ",
+      "prompt": "Quyết định cử đi ký trước, chuyến đi bắt đầu sau quy định mới.",
+      "expected_behavior": "Giữ riêng hai ngày; tìm mốc quyết định áp dụng trong nguồn.",
+      "condition_ids": [
+        "T6-C04"
+      ],
+      "expected_policy_answer": null,
+      "owner_confirmation": null,
+      "business_execution_status": "not_run",
+      "technical_fixture_tests_are_not_business_validation": true
+    },
+    {
+      "id": "TIME-17",
+      "title": "Chứng từ tồn đọng",
+      "prompt": "Chuyến đi đã từ lâu, chứng từ vẫn đang chờ xử lý.",
+      "expected_behavior": "Tách ngày đi/ngày nộp/ngày hỏi; kiểm nguồn cho từng phần; không khẳng định được chi.",
+      "condition_ids": [
+        "T6-C04"
+      ],
+      "expected_policy_answer": null,
+      "owner_confirmation": null,
+      "business_execution_status": "not_run",
+      "technical_fixture_tests_are_not_business_validation": true
+    },
+    {
+      "id": "TIME-18",
+      "title": "Sửa ngày qua mốc",
+      "prompt": "Tôi nói nhầm ngày, chuyến đi thực ra diễn ra trước mốc thay đổi.",
+      "expected_behavior": "Chọn lại nguồn, rút kết luận phụ thuộc và giải thích thay đổi; giữ phần không bị ảnh hưởng.",
+      "condition_ids": [
+        "T6-C04"
+      ],
+      "expected_policy_answer": null,
+      "owner_confirmation": null,
+      "business_execution_status": "not_run",
+      "technical_fixture_tests_are_not_business_validation": true
+    },
+    {
+      "id": "TIME-19",
+      "title": "Chỉ nhớ tháng",
+      "prompt": "Tôi chỉ nhớ chuyến đi vào tháng có thay đổi quy định.",
+      "expected_behavior": "Nếu ảnh hưởng kết luận thì hỏi ngày; nếu chưa biết, trả giới hạn/các khả năng có căn cứ.",
+      "condition_ids": [
+        "T6-C04"
+      ],
+      "expected_policy_answer": null,
+      "owner_confirmation": null,
+      "business_execution_status": "not_run",
+      "technical_fixture_tests_are_not_business_validation": true
+    },
+    {
+      "id": "TIME-20",
+      "title": "Đổi nguồn đơn vị",
+      "prompt": "Tôi đổi sang dùng hoàn toàn kinh phí đơn vị.",
+      "expected_behavior": "Bỏ kết luận chỉ dành nguồn nhiệm vụ; yêu cầu nguồn đơn vị đúng; không mượn đơn vị khác.",
+      "condition_ids": [
+        "T6-C05",
+        "T6-C06"
+      ],
+      "expected_policy_answer": null,
+      "owner_confirmation": null,
+      "business_execution_status": "not_run",
+      "technical_fixture_tests_are_not_business_validation": true
+    },
+    {
+      "id": "TIME-21",
+      "title": "Nguồn kết hợp",
+      "prompt": "Một phần từ nhiệm vụ, phần còn lại do đơn vị hỗ trợ.",
+      "expected_behavior": "Làm rõ nguồn thay thế hay kết hợp; xét từng phần và tránh suy đoán hỗ trợ trùng.",
+      "condition_ids": [
+        "T6-C05",
+        "T6-C06"
+      ],
+      "expected_policy_answer": null,
+      "owner_confirmation": null,
+      "business_execution_status": "not_run",
+      "technical_fixture_tests_are_not_business_validation": true
+    },
+    {
+      "id": "TIME-26",
+      "title": "Thiếu bản lịch sử",
+      "prompt": "Ca của tôi cần quy định cũ mà kho chưa có.",
+      "expected_behavior": "Nêu đúng phần thiếu nguồn và đầu mối; không lấy bản hiện hành thay thế.",
+      "condition_ids": [
+        "T6-C04"
+      ],
+      "expected_policy_answer": null,
+      "owner_confirmation": null,
+      "business_execution_status": "not_run",
+      "technical_fixture_tests_are_not_business_validation": true
+    }
+  ]
+}

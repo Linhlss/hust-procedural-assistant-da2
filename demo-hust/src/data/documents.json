@@ -1,0 +1,25 @@
+[
+ {"id":"nhiem-vu","title":"Hướng dẫn sử dụng kinh phí nhiệm vụ cho hội thảo, công tác","domain":"KHCN","version":"Bản 1.0","from":"2025-01-01","to":"2028-12-31","sections":[
+  {"id":"pham-vi","sourceId":"SIM-NV-1","title":"1. Phạm vi liên hệ với nhiệm vụ","text":"Khi dùng kinh phí nhiệm vụ, hoạt động tham dự hội thảo hoặc công tác cần phục vụ nội dung của nhiệm vụ theo khai báo. Nếu hoạt động không phục vụ nhiệm vụ, điều kiện liên hệ này không đáp ứng. Điều kiện này không xác nhận khoản chi thực tế."},
+  {"id":"chuan-bi","sourceId":"SIM-NV-PREP","title":"2. Nội dung chuẩn bị","text":"Chuẩn bị giấy mời hoặc chương trình hoạt động; mô tả ngắn nội dung liên quan đến nhiệm vụ; kế hoạch tham dự ghi địa điểm, thời gian và nguồn hỗ trợ dự kiến. Đầu mối KHCN hoặc đơn vị chủ trì là nơi trao đổi về phạm vi nhiệm vụ trước khi thực hiện."}
+ ]},
+ {"id":"cong-tac-2025","title":"Hướng dẫn hội thảo và công tác — bản 2025","domain":"TCKH","version":"Bản 2025","from":"2025-01-01","to":"2025-12-31","sections":[
+  {"id":"dia-diem","sourceId":"SIM-CT-2025","title":"1. Điều kiện địa điểm","text":"Bản 2025 chấp nhận điều kiện địa điểm đối với hội thảo hoặc công tác trong nước. Hoạt động ở nước ngoài không đáp ứng điều kiện địa điểm của bản này. Đây chỉ là một điều kiện, không suy ra quyền được thanh toán."}
+ ]},
+ {"id":"cong-tac-2026","title":"Hướng dẫn hội thảo và công tác — bản 2026","domain":"TCKH","version":"Bản 2026","from":"2026-01-01","to":"2028-12-31","sections":[
+  {"id":"dia-diem","sourceId":"SIM-CT-2026","title":"1. Điều kiện địa điểm","text":"Bản 2026 chấp nhận điều kiện địa điểm đối với hội thảo hoặc công tác trong nước và nước ngoài. Hội thảo quốc tế chưa đủ để xác định nơi diễn ra hoạt động; cần căn cứ địa điểm thực tế. Đáp ứng điều kiện này không xác nhận quyền được thanh toán."}
+ ]},
+ {"id":"ho-tro-don-vi","title":"Hướng dẫn hỗ trợ hội thảo, công tác từ nguồn đơn vị","domain":"Đơn vị / TCKH","version":"Bản 1.0","from":"2025-01-01","to":"2028-12-31","sections":[
+  {"id":"pham-vi","sourceId":"SIM-DV-1","title":"1. Phạm vi nguồn đơn vị","text":"Nguồn đơn vị trong tình huống mẫu hỗ trợ hoạt động hội thảo và công tác. Khi nguồn đơn vị thay thế hoàn toàn kinh phí nhiệm vụ, ngừng áp dụng điều kiện chỉ dành cho kinh phí nhiệm vụ; tiếp tục đối chiếu hướng dẫn công tác chung và hướng dẫn nguồn đơn vị."},
+  {"id":"ket-hop","sourceId":"SIM-DV-COMBINE","title":"2. Kết hợp nhiều nguồn","text":"Khi kinh phí nhiệm vụ và đơn vị cùng hỗ trợ, cần phân định các nội dung do từng nguồn hỗ trợ, tránh đề nghị cùng một nội dung ở cả hai nguồn. Nếu chưa phân định, cần làm rõ trước khi kết luận điều kiện kết hợp. Không cần cung cấp số tiền cho trợ lý."},
+  {"id":"chuan-bi","sourceId":"SIM-DV-PREP","title":"3. Chuẩn bị và đầu mối","text":"Chuẩn bị giấy mời hoặc chương trình, kế hoạch tham dự và đề xuất sử dụng nguồn đơn vị. Với nguồn kết hợp, kèm mô tả phần việc tương ứng từng nguồn. Trao đổi với đầu mối tài chính đơn vị về hướng dẫn áp dụng và chứng từ cần giữ; trợ lý không tiếp nhận hoặc phê duyệt hồ sơ."}
+ ]},
+ {"id":"so-tay-tham-du","title":"Sổ tay chuẩn bị hội thảo và công tác","domain":"KHCN – TCKH","version":"Bản 1.0","from":"2025-01-01","to":"2028-12-31","sections":[
+  {"id":"giay-to","sourceId":"SIM-HD-DOCS","title":"1. Giấy tờ nên chuẩn bị","text":"Trước hoạt động: giấy mời hoặc thông báo/chương trình, kế hoạch tham dự có thời gian và địa điểm, đề xuất nguồn hỗ trợ. Nếu dùng kinh phí nhiệm vụ, thêm mô tả quan hệ với nhiệm vụ. Sau hoạt động: giữ xác nhận tham dự, chứng từ đăng ký, vé hoặc chứng từ di chuyển/lưu trú nếu phát sinh để trao đổi với đầu mối tài chính. Danh mục này là hướng dẫn chuẩn bị, không phải kết quả tiền kiểm bộ hồ sơ."},
+  {"id":"cac-buoc","sourceId":"SIM-HD-STEPS","title":"2. Các bước trao đổi","text":"Bước 1: xác định hoạt động, thời gian, địa điểm và nguồn hỗ trợ. Bước 2: đối chiếu điều kiện nhiệm vụ nếu dùng nguồn nhiệm vụ; hỏi đầu mối tài chính đơn vị nếu dùng nguồn đơn vị. Bước 3: chuẩn bị giấy tờ tương ứng và lưu chứng từ phát sinh. Khi đổi nguồn hỗ trợ, kiểm lại phần hướng dẫn phụ thuộc nguồn; phần chung vẫn được giữ nếu còn phù hợp."},
+  {"id":"thoi-diem","sourceId":"SIM-HD-TIME","title":"3. Thời điểm chuẩn bị","text":"Trao đổi về nguồn hỗ trợ và giấy tờ trước ngày hoạt động; giữ chứng từ trong quá trình tham dự và hỏi đầu mối tài chính về thời điểm hoàn thiện sau hoạt động. Bộ tài liệu mẫu không đặt một hạn chót cố định theo số ngày; cần xác nhận mốc cụ thể với đơn vị phụ trách."}
+ ]},
+ {"id":"doi-chieu-xung-dot","title":"Tình huống kiểm thử mâu thuẫn nguồn","domain":"TCKH","version":"Bản kiểm thử 2026","from":"2026-01-01","to":"2028-12-31","sections":[
+  {"id":"dia-diem","sourceId":"SIM-CT-CONFLICT","title":"1. Điều kiện xung đột","text":"Trong tình huống kiểm thử này, hoạt động trong nước không đáp ứng điều kiện địa điểm. Nguồn này cùng phạm vi với SIM-CT-2026; chưa có quy tắc ưu tiên, nên cần dừng kết luận bị ảnh hưởng để xác minh."}
+ ]}
+]

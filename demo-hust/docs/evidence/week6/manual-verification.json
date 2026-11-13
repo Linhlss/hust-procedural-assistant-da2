@@ -1,0 +1,56 @@
+{
+  "reviewer": "Codex reading against rubric; not expert business confirmation",
+  "notes": {
+    "W01/1": {
+      "scores": [
+        "pass",
+        "pass",
+        "pass",
+        "pass",
+        "pass"
+      ],
+      "note": "Nhận đăng ký dự hội thảo là T6; không tự thêm quan hệ nhiệm vụ; nguồn và giấy tờ đúng phần."
+    },
+    "W01/2": {
+      "scores": [
+        "pass",
+        "pass",
+        "pass",
+        "pass",
+        "pass"
+      ],
+      "note": "Chuyển nguồn đơn vị, giữ mục đích/ngày/địa điểm; không dùng nguồn chỉ dành nhiệm vụ."
+    },
+    "W02/1": {
+      "scores": [
+        "pass",
+        "pass",
+        "pass",
+        "pass",
+        "pass"
+      ],
+      "note": "Nhận đúng chuyến cũ và nguồn đơn vị."
+    },
+    "W02/2": {
+      "scores": [
+        "partial",
+        "partial",
+        "pass",
+        "pass",
+        "pass"
+      ],
+      "note": "Nhận đúng tình huống mới, không giữ ngày/nguồn cũ. Lý do bổ sung nhắc ngày sai/mơ hồ trong khi câu hỏi chính là nguồn; cần diễn đạt khớp câu hỏi."
+    },
+    "W04/1": {
+      "scores": [
+        "pass",
+        "pass",
+        "pass",
+        "pass",
+        "pass"
+      ],
+      "note": "Dừng do ngoài khoảng phiên bản, không bịa mức lưu trú."
+    }
+  },
+  "W03": "No answer for content review; provider unavailable, dependent turns skipped."
+}

@@ -1,0 +1,51 @@
+[
+  {
+    "file": "originals/7306e5e0745cf1.pdf",
+    "sha256": "cdafda94822231edf0ca2cb59a11c801c74803171194a339f68f607ceee88ddd",
+    "reviewed_pdf_pages": [
+      1,
+      12,
+      13,
+      14,
+      15
+    ],
+    "checked": "Số hiệu/ngày; điều 11 hiệu lực, thay thế và chuyển tiếp; phụ lục",
+    "limit": "Không phải xác minh mật mã chữ ký số hoặc kiểm mọi điều kiện áp dụng"
+  },
+  {
+    "file": "originals/f01249ac2cfd3a.pdf",
+    "sha256": "b116236c9c50be435976cdc541a7bcc246ef50f209cf847537c1630dd7cc2e3e",
+    "reviewed_pdf_pages": [
+      1
+    ],
+    "checked": "QĐ 3040: dẫn chiếu 1606 và 1616, số/ngày",
+    "limit": "Không phải xác minh mật mã chữ ký số hoặc kiểm mọi điều kiện áp dụng"
+  },
+  {
+    "file": "originals/4ff386661edfae.pdf",
+    "sha256": "8e0ecfb268ab6edbb7f15804b6e4e168494c3d4c5931f1dc8cf379571a3b1d45",
+    "reviewed_pdf_pages": [
+      48
+    ],
+    "checked": "Điều 45 hiệu lực/cập nhật dẫn chiếu; một phần điều 44",
+    "limit": "Không phải xác minh mật mã chữ ký số hoặc kiểm mọi điều kiện áp dụng"
+  },
+  {
+    "file": "originals/0256e454d6e699.pdf",
+    "sha256": "db3d58819cdfb90732cb9a199446c5b44a0aca7f551c253fe92344997b299a6d",
+    "reviewed_pdf_pages": [
+      1
+    ],
+    "checked": "Số hiệu/ngày; nhận diện dấu chìm bản đăng lại",
+    "limit": "Không phải xác minh mật mã chữ ký số hoặc kiểm mọi điều kiện áp dụng"
+  },
+  {
+    "file": "originals/00112ef37b418f.pdf",
+    "sha256": "7c45fb7cd60cb267943120e8ad90b0fb03faf30f845e6d6be128ac19002d17ac",
+    "reviewed_pdf_pages": [
+      17
+    ],
+    "checked": "Điều 22, ngày hiệu lực viết tay và chuyển tiếp",
+    "limit": "Không phải xác minh mật mã chữ ký số hoặc kiểm mọi điều kiện áp dụng"
+  }
+]

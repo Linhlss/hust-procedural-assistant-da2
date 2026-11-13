@@ -1,0 +1,95 @@
+\Needspace{0.9\textheight}
+\section{Kiến trúc tổng thể và tổ chức tri thức}
+\label{sec:kien-truc}
+\subsection{Lựa chọn hướng giải quyết}
+Các yêu cầu ở Mục~\ref{sec:yeu-cau} đòi hỏi hệ thống vừa hiểu cách diễn đạt
+của người hỏi, vừa sử dụng được căn cứ và duy trì thông tin qua nhiều lượt.
+Bảng~\ref{tab:so-sanh} đối chiếu những hướng giải quyết theo vai trò của chúng
+đối với bài toán; các hướng có thể được kết hợp trong cùng một hệ thống.
+
+\begin{table}[H]
+\centering\small
+\begin{tabularx}{\textwidth}{|P{27mm}|Y|Y|}
+\hline
+\textbf{Hướng} & \textbf{Vai trò phù hợp} & \textbf{Phần cần bổ sung cho bài toán} \\\hline
+Tra cứu, hỏi đáp thường gặp & Cung cấp nguồn hoặc đáp án đã biên soạn theo chủ đề. & Chọn hướng dẫn theo dữ kiện và theo dõi thay đổi của tình huống. \\ \hline
+Dựa trên luật & Đối chiếu điều kiện rõ ràng và truy vết căn cứ của kết luận. & Tiếp nhận cách diễn đạt tự do; duy trì quy tắc khi nguồn thay đổi. \\ \hline
+Mô hình ngôn ngữ & Hiểu câu hỏi và diễn đạt phản hồi bằng ngôn ngữ tự nhiên. & Ràng buộc câu trả lời bằng nguồn và điều kiện áp dụng. \\ \hline
+Hỏi đáp có truy xuất & Đưa đoạn tài liệu liên quan vào quá trình tạo câu trả lời. & Kiểm tra đối tượng, thời điểm và cập nhật kết luận khi dữ kiện đổi. \\
+\hline
+\end{tabularx}
+\caption{Đối chiếu các hướng giải quyết theo yêu cầu tư vấn}
+\label{tab:so-sanh}
+\end{table}
+
+Phương án đề xuất phân chia trách nhiệm giữa mô hình ngôn ngữ, truy xuất,
+kiểm tra điều kiện và quản lý ngữ cảnh. Mô hình xử lý ngôn ngữ; truy xuất tìm
+căn cứ; điều kiện đã xác nhận ràng buộc kết luận; ngữ cảnh duy trì tình huống
+đang xét. Sự phối hợp này là cơ sở thiết kế để đáp ứng F01--F05; mức đáp ứng
+thực tế được kiểm tra theo định hướng tại Mục~\ref{sec:kiem-chung}.
+
+\Needspace{18\baselineskip}
+\subsection{Kiến trúc tổng thể}
+Hình~\ref{fig:kien-truc} mô tả các thành phần và quan hệ trao đổi thông tin.
+Giao diện tiếp nhận câu hỏi; trạng thái phiên giữ thông tin hiện tại; kho
+văn bản và thẻ tư vấn cung cấp căn cứ cho bước đối chiếu. Bộ tạo phản hồi
+nhận các kết luận cùng nguồn hỗ trợ để diễn đạt thành hướng dẫn.
+
+\begin{figure}[H]
+\centering\input{figures/kien_truc}
+\caption{Kiến trúc tổng thể của hệ thống đề xuất}
+\label{fig:kien-truc}
+\end{figure}
+
+Các mô hình ngôn ngữ dựa trên kiến trúc Transformer~\cite{vaswani2017attention}
+cung cấp khả năng xử lý ngữ cảnh và tạo văn bản. Trong hệ thống, mô hình
+ngôn ngữ lớn (LLM) được dùng để nhận diện mục đích hỏi, trích xuất dữ kiện
+ứng viên và diễn đạt phản hồi. Thông tin còn mơ hồ cần được xác nhận lại;
+mô hình không tự suy ra hồ sơ cá nhân hoặc đặt điều kiện nghiệp vụ.
+
+RAG kết hợp truy xuất tài liệu với mô hình sinh~\cite{lewis2020rag}. Thành
+phần truy xuất đưa các đoạn căn cứ liên quan vào ngữ cảnh tạo câu trả lời,
+đồng thời lọc theo quyền và phạm vi sử dụng. Các phương pháp mã hóa câu hỏi
+và đoạn văn như Dense Passage Retrieval (DPR)~\cite{karpukhin2020dpr} cung cấp cơ sở cho tìm kiếm theo
+ngữ nghĩa. Đối với đề tài, đoạn có nội dung gần câu hỏi vẫn phải được kiểm
+tra điều kiện áp dụng trước khi dùng để đưa ra kết luận.
+
+Bộ kiểm tra điều kiện sử dụng dữ kiện hiện tại và những quy tắc đã được
+xác nhận từ nguồn. Trạng thái phiên liên kết dữ kiện với căn cứ và hướng
+dẫn đang dùng, phục vụ việc xét lại khi người hỏi thay đổi thông tin. Cách
+phối hợp các thành phần trong một lượt hỏi đáp được trình bày ở
+Mục~\ref{sec:co-che}.
+
+\subsection{Tổ chức tri thức tư vấn}
+\label{subsec:tri-thuc}
+Tri thức được tổ chức thành văn bản gốc, đoạn căn cứ, điều kiện và thẻ tư
+vấn. Đoạn căn cứ giữ vị trí điều, khoản, trang hoặc bảng để kiểm tra nội
+dung. Điều kiện biểu diễn yêu cầu cần đối chiếu với dữ kiện. Thẻ tư vấn
+tập hợp mục đích hỏi, phạm vi, các dữ kiện quyết định, điều kiện liên quan
+và đầu mối cần trao đổi; đây là đơn vị tổ chức nội dung, không phải đáp án
+cố định hay biểu mẫu bắt buộc người dùng điền.
+
+\begin{table}[H]
+\centering\small
+\begin{tabularx}{\textwidth}{|P{30mm}|Y|}
+\hline
+\textbf{Thành phần} & \textbf{Thông tin cần lưu} \\\hline
+Nguồn và đoạn căn cứ & Xuất xứ, vị trí trích dẫn, phiên bản, hiệu lực, đối tượng, đơn vị, sửa đổi, chuyển tiếp và quyền sử dụng. \\ \hline
+Điều kiện & Nội dung cần kiểm tra, dữ kiện có ảnh hưởng, phạm vi áp dụng và đoạn nguồn xác lập điều kiện. \\ \hline
+Thẻ tư vấn & Mục đích, phạm vi hỗ trợ, dữ kiện cần làm rõ, điều kiện liên quan, điểm dừng và chủ nội dung. \\
+\hline
+\end{tabularx}
+\caption{Các thành phần thông tin của kho tri thức tư vấn}
+\label{tab:du-lieu}
+\end{table}
+
+Quá trình chuẩn bị nguồn gồm thu thập bản gốc, kiểm tra độ đầy đủ, xác minh
+phiên bản và phạm vi, trích đoạn, xây điều kiện và xác nhận nội dung. Khi
+chia đoạn, cần giữ liên kết tới định nghĩa, ngoại lệ, phụ lục và văn bản dẫn
+chiếu có ảnh hưởng. Một điều kiện có thể được nhiều thẻ tham chiếu để hạn
+chế sao chép cùng quy tắc thành các bản khác nhau.
+
+Khi nguồn thay đổi, những thẻ và điều kiện liên quan được xác định để rà
+soát. Phiên bản cũ được giữ khi còn cần xét chuyển tiếp; tài liệu chưa xác
+minh được quản lý riêng. Kho nguồn và trạng thái xác nhận nội dung là điều
+kiện để lựa chọn căn cứ phù hợp cho mỗi tình huống.

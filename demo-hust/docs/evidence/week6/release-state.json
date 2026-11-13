@@ -1,0 +1,33 @@
+{
+  "at": "2026-11-11T00:34:03.873848+00:00",
+  "publicMode": "fixture",
+  "publicDeployment": "dpl_4FxJkbrDfh3hdHFPiCU4XtDGkpgd",
+  "publicURL": "https://hust-t6-demo.vercel.app",
+  "candidateURL": "https://hust-t6-demo-1d0bcxgl4-linhozz.vercel.app",
+  "candidateDeployment": "dpl_GYYrBcA9DAKcRsdbS9kbrGKtccCZ",
+  "releaseGatePassed": false,
+  "releaseNote": "Gemini chưa đạt gate công khai: hai câu định mức mới vẫn bị kiểm đầu ra từ chối (GEMINI_SCHEMA). Giữ public fixture; không fallback âm thầm và không gọi là đã phát hành Gemini.",
+  "latestBrowserPassed": 8,
+  "latestAPIPassed": 36,
+  "unitTestsPassed": 156,
+  "typecheckPassed": true,
+  "policyValidation": false,
+  "browser": {
+    "dark": {
+      "startTime": "2026-11-11T00:31:05.100Z",
+      "duration": 13020.651,
+      "expected": 4,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "light": {
+      "startTime": "2026-11-11T00:31:18.422Z",
+      "duration": 10508.186,
+      "expected": 4,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    }
+  }
+}

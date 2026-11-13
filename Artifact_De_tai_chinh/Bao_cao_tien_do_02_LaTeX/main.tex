@@ -1,0 +1,95 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[margin=19mm,top=16mm,bottom=17mm]{geometry}
+\usepackage{fontspec}
+\setmainfont{lmroman10-regular.otf}[
+  Path=/usr/local/texlive/2026/texmf-dist/fonts/opentype/public/lm/,
+  BoldFont=lmroman10-bold.otf,
+  ItalicFont=lmroman10-italic.otf,
+  BoldItalicFont=lmroman10-bolditalic.otf]
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{booktabs,tabularx,array}
+\usepackage{ragged2e}
+\usepackage{titlesec}
+\usepackage{fancyhdr,lastpage}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Báo cáo tiến độ 02 - Thiết kế chatbot tư vấn thủ tục tại HUST},pdfauthor={}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3pt}
+\setlength{\emergencystretch}{1.5em}
+\renewcommand{\arraystretch}{1.08}
+\setlist[itemize]{leftmargin=14pt,itemsep=2pt,topsep=2pt,parsep=0pt}
+\setlist[enumerate]{leftmargin=17pt,itemsep=3pt,topsep=2pt,parsep=0pt}
+\titleformat{\section}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{7pt}{3pt}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\small \thepage/\pageref{LastPage}}
+\begin{document}
+\begin{center}
+{\small\bfseries BÁO CÁO TIẾN ĐỘ 02}\\[3pt]
+{\Large\bfseries Thiết kế chatbot tư vấn thủ tục theo tình huống}\\[3pt]
+{\small Khoa học--Công nghệ \(\cdot\) Tài chính--Kế hoạch \(\cdot\) Tổ chức--Nhân sự}\\[1pt]
+{\small Đại học Bách khoa Hà Nội (HUST)}
+\end{center}
+\vspace{-5pt}
+\noindent\rule{\textwidth}{0.5pt}
+
+\section*{1. Mục tiêu và kết quả kỳ này}
+Thiết kế chatbot tiếng Việt giúp cán bộ làm rõ tình huống, đối chiếu điều kiện của các Ban và nhận hướng dẫn có căn cứ; khi dữ kiện đổi, kết luận liên quan phải được kiểm tra lại. Trọng tâm là \textbf{tư vấn theo điều kiện và giải thích căn cứ}.
+\begin{itemize}
+\item \textbf{Đã thực hiện:} đối chiếu hai tài liệu người hướng dẫn cung cấp; xác định phạm vi, năm năng lực; lập danh mục thẻ ban đầu, cấu trúc tri thức, luồng hội thoại và phương án đánh giá.
+\item \textbf{Chưa thực hiện:} cài đặt/demo, kiểm chứng đầy đủ văn bản gốc, chấm đáp án và đo hiệu quả. Nội dung dưới đây là \textbf{thiết kế đề xuất}, chưa phải kết quả hệ thống chạy.
+\end{itemize}
+
+\section*{2. Nội dung ưu tiên đặc tả}
+Chọn năm thẻ từ bộ nội dung ba miền [2], giữ mã thẻ để đối chiếu. Các thẻ có nhánh điều kiện, điểm giao nguồn và đại diện phạm vi ba Ban; chưa xếp hạng theo tần suất câu hỏi:
+
+\begin{tabularx}{\textwidth}{@{}>{\bfseries}p{12mm}X@{}}
+\toprule
+\textbf{Thẻ} & \textbf{Phần tư vấn được chọn và miền liên quan}\\
+\midrule
+T1 & Đăng ký nhiệm vụ: điều kiện, hồ sơ và đầu mối hướng dẫn (KHCN).\\
+T3 & Điều chỉnh/gia hạn: trường hợp, điều kiện và mốc; KHCN, thêm TCKH khi câu hỏi liên quan quy định kinh phí.\\
+T4 & Nghiệm thu: yêu cầu, mốc và thành phần hồ sơ; nêu điểm chưa thống nhất để xác nhận (KHCN).\\
+T6 & Hội thảo/công tác bằng kinh phí nhiệm vụ: đối chiếu quy định nghiên cứu và tài chính (KHCN--TCKH).\\
+T10 & Cử đi đào tạo/nghiên cứu: điều kiện, thời gian, nghĩa vụ (TCNS); đối chiếu KHCN/TCKH khi có căn cứ liên quan.\\
+\bottomrule
+\end{tabularx}
+
+\textbf{Phạm vi mở rộng:} ưu tiên nhóm câu hỏi chưa được bao phủ, có nguồn kiểm chứng và ca đánh giá tương ứng. Phạm vi nguồn được xác định theo yêu cầu của từng tình huống.
+
+\section*{3. Vì sao chia thẻ và thẻ được thiết kế thế nào?}
+\textbf{Thẻ tư vấn là đơn vị tri thức có cấu trúc cho một mục đích tư vấn}, liên kết điều kiện và căn cứ thay vì lưu một đáp án cố định. Văn bản gốc vẫn là căn cứ; thẻ liên kết các đoạn cần đối chiếu, dữ kiện cần hỏi và điểm phải dừng.
+\begin{itemize}
+\item \textbf{Cấu trúc:} mã/tên, phạm vi và chủ nội dung; dữ kiện quyết định; điều kiện và kết luận phụ thuộc; đoạn nguồn/phiên bản/hiệu lực; mức kết luận và đầu mối.
+\item \textbf{Lý do:} biết thông tin nào thực sự cần hỏi; dùng lại quy tắc giữa các tình huống; kiểm lại đúng kết luận khi thông tin đổi. Một thẻ có thể dẫn nhiều nguồn và một đoạn nguồn được nhiều thẻ dùng lại.
+\item \textbf{Tách ba lớp:} văn bản gốc giữ bằng chứng; thẻ tổ chức điều kiện; dữ kiện phiên lưu thông tin người dùng cung cấp và thay đổi. Thẻ không thay quy định, dữ kiện phiên không phải hồ sơ chính thức.
+\end{itemize}
+
+\newpage
+\section*{4. Thiết kế hội thoại và năm năng lực}
+Luồng dự kiến: \textbf{câu hỏi $\rightarrow$ chọn thẻ/nguồn $\rightarrow$ hỏi thiếu khi cần $\rightarrow$ đối chiếu $\rightarrow$ kết luận có căn cứ}. Mô hình ngôn ngữ hỗ trợ hiểu/diễn đạt; bộ điều kiện và trạng thái phiên giúp kiểm tra kết quả.
+\begin{enumerate}
+\item \textbf{Hỏi bổ sung có mục đích:} chỉ hỏi dữ kiện còn thiếu và có thể làm đổi đáp án; thu thập thông tin cần thiết để xác định hướng dẫn phù hợp.
+\item \textbf{Đối chiếu giữa các Ban:} áp dụng các nguồn cho từng phần của cùng tình huống, nêu điều kiện thuộc nguồn nào; không tự suy ra tuyến duyệt.
+\item \textbf{Kiểm tra lại khi dữ kiện đổi:} xét lại thẻ và nguồn đang áp dụng, rồi kiểm các kết luận phụ thuộc; nêu phần thay đổi và đánh dấu kết luận đã thay thế.
+\item \textbf{Phân biệt mức kết luận:} \emph{đáp ứng theo khai báo / không đáp ứng theo khai báo / chưa đủ căn cứ}; chỉ rõ phần cần chuyên viên xác nhận.
+\item \textbf{Giải thích có thể kiểm tra:} mỗi kết luận kèm dữ kiện, điều kiện, đoạn nguồn, phiên bản/mốc áp dụng và bước tiếp theo.
+\end{enumerate}
+Câu đơn giản đủ căn cứ được trả lời ngay. Thiếu dữ kiện tình huống thì hỏi bổ sung; thiếu hoặc mâu thuẫn căn cứ chưa giải quyết thì dừng phần liên quan, cung cấp tóm tắt để người dùng trao đổi với đầu mối phụ trách.
+
+\section*{5. Phương pháp và cách đánh giá dự kiến}
+\begin{itemize}
+\item \textbf{Chuẩn hóa:} kiểm tra nguồn gốc/hiệu lực, liên kết thẻ--điều kiện--đoạn căn cứ. Không biến khuyến nghị trong tài liệu phân tích thành quy tắc chính thức.
+\item \textbf{Đối chứng:} C0 hỏi đáp truy xuất; C1 thêm hỏi bổ sung; C2 thêm kiểm tra điều kiện và cập nhật kết luận. Giữ cùng nguồn, mô hình nền, dữ kiện đầu và bộ phản hồi khi được hỏi.
+\item \textbf{Ca thử:} bộ kiểm thử dự kiến gồm 120--150 ca theo phạm vi được xác nhận; có ca một Ban, giao Ban, thiếu/đổi dữ kiện, mâu thuẫn. Tách tập theo tình huống gốc; chuyên viên xác nhận đáp án trước đánh giá cuối.
+\item \textbf{Chấm riêng:} đúng/đủ kết luận, nguồn hỗ trợ, câu hỏi cần thiết/thừa, nhất quán sau thay đổi, dừng đúng và thời gian. Bảng chấm mẫu ở bản chi tiết; chưa có kết quả thực nghiệm hoặc ngưỡng nghiệm thu được chốt.
+\end{itemize}
+
+\section*{6. Ranh giới và phần cần xác nhận}
+Ngoài phạm vi: truy xuất hồ sơ cá nhân sinh viên, tuyển dụng, kNC/đánh giá cá nhân; tiền kiểm, tiếp nhận, luân chuyển, duyệt/ký hồ sơ; tự xác nhận số tiền, ghi sổ, chi trả hoặc ghi vào iGov/eHUST/BKOffice. Cần xác nhận văn bản gốc, chủ nội dung và đáp án; chưa có thống kê tần suất hoặc mức giảm công việc.
+
+{\footnotesize\textit{Căn cứ: [1] Gợi ý chatbot thủ tục KHCN--TCKH, mục 2.2, 2.5--2.6. [2] Bộ nội dung KHCN--Tài chính--Cán bộ, mục 3.3, 3.7, 3.9--3.10. Hai tài liệu do người hướng dẫn cung cấp là nguồn định hướng, không thay văn bản gốc. Đặc tả đầy đủ được lưu trong báo cáo chi tiết.}}
+\end{document}

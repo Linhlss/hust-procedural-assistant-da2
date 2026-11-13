@@ -1,0 +1,135 @@
+\section{Phát biểu bài toán, mục tiêu và phạm vi}
+\label{sec:bai-toan}
+\subsection{Đối tượng sử dụng và vai trò hỗ trợ}
+Chatbot được thiết kế để hỗ trợ cán bộ, giảng viên tại Đại học Bách khoa
+Hà Nội tìm hiểu và chuẩn bị các thủ tục thuộc phạm vi đề tài; đồng thời
+hỗ trợ chuyên viên tra cứu căn cứ khi giải đáp những trường hợp này.
+Các vai trò được phân thành hai nhóm: sử dụng trực tiếp và chuẩn bị nội
+dung, vận hành hệ thống.
+
+\Needspace{6\baselineskip}
+\NhomTuVan{Đối tượng sử dụng trực tiếp}
+\begin{itemize}[leftmargin=*,itemsep=2pt,topsep=3pt,before={\interlinepenalty=10000}]
+\item \textbf{Cán bộ, giảng viên HUST:} mô tả công việc cần thực hiện và cung
+ cấp dữ kiện liên quan để nhận hướng dẫn về điều kiện, tài liệu cần chuẩn
+ bị và đầu mối liên hệ.
+\item \textbf{Chuyên viên tại Ban Khoa học--Công nghệ, Ban Tài chính--Kế
+ hoạch, Ban Tổ chức--Nhân sự và các đơn vị liên quan:} tra cứu quy định,
+ kiểm tra căn cứ và tham khảo hướng dẫn khi giải đáp một trường hợp thuộc
+ phạm vi chatbot.
+\end{itemize}
+
+\Needspace{6\baselineskip}
+\NhomTuVan{Vai trò chuẩn bị nội dung và vận hành}
+\begin{itemize}[leftmargin=*,itemsep=2pt,topsep=3pt,before={\interlinepenalty=10000}]
+\item \textbf{Chuyên viên phụ trách nội dung nghiệp vụ:} kiểm tra văn bản
+ nguồn, phạm vi áp dụng, điều kiện và đáp án tư vấn thuộc lĩnh vực phụ
+ trách; xác nhận nội dung trước khi đưa vào sử dụng.
+\item \textbf{Quản trị viên hệ thống:} cập nhật tài liệu và nội dung đã được
+ xác nhận, đồng thời quản lý quyền truy cập theo phạm vi sử dụng được phép.
+\end{itemize}
+Trong thiết kế hệ thống, một cá nhân có thể đảm nhiệm nhiều vai trò.
+Chuyên viên phụ trách nội dung và quản trị viên được sử dụng chức năng
+hội thoại với tư cách người hỏi. Hoạt động nhận tư vấn được phân biệt
+với trách nhiệm xác nhận nghiệp vụ và vận hành hệ thống.
+
+Đề tài không phục vụ cá nhân ngoài HUST hoặc sinh viên không đồng thời
+đảm nhiệm vai trò cán bộ, giảng viên hay chuyên viên. Cán bộ đang học sau
+đại học được tư vấn theo vai trò công tác và thủ tục liên quan.
+
+Quyền sử dụng chức năng và truy cập tài liệu được thiết kế theo vai trò
+và phạm vi nguồn được phép sử dụng. Việc thuộc nhóm đối tượng phục vụ
+không mặc nhiên cấp quyền khai thác toàn bộ tài liệu nội bộ.
+
+\subsection{Phát biểu bài toán}
+Bài toán đặt ra là từ yêu cầu về một thủ tục và thông tin của người hỏi,
+hệ thống hình thành hướng dẫn phù hợp với trường hợp đó. Trong báo cáo,
+\emph{tình huống} được hiểu là công việc cần thực hiện cùng những dữ kiện
+có ảnh hưởng đến hướng dẫn. Bài toán gồm các thành phần sau:
+
+\textbf{Đầu vào} là câu hỏi tiếng Việt, dữ kiện người dùng cung cấp, nội
+dung đã trao đổi và tập nguồn được phép sử dụng. Dữ kiện có thể gồm loại
+nhiệm vụ, vai trò của người hỏi, đơn vị, nguồn kinh phí và thời điểm. Chỉ
+những thông tin ảnh hưởng đến câu trả lời mới cần được làm rõ; thông tin
+người dùng khai báo chưa được coi là dữ kiện đã xác minh.
+
+\textbf{Nhiệm vụ cần giải quyết} là xác định quy định liên quan, làm rõ
+dữ kiện quyết định và đối chiếu điều kiện áp dụng cho trường hợp đang hỏi.
+Nếu một yêu cầu liên quan đến nhiều nội dung, từng phần phải được xét trên
+cùng thông tin của tình huống.
+
+\textbf{Đầu ra} là hướng dẫn về điều kiện, tài liệu hoặc biểu mẫu cần
+chuẩn bị, mốc cần lưu ý và bước hoặc đầu mối tiếp theo. Hướng dẫn kèm dữ
+kiện đang sử dụng và đoạn nguồn hỗ trợ. Khi chưa đủ thông tin hoặc căn cứ,
+hệ thống trả lời phần đã rõ, đồng thời nêu câu hỏi bổ sung hoặc phần chưa
+thể kết luận.
+
+Với ví dụ hội thảo ở Mục~\ref{sec:boi-canh}, đầu vào ban đầu là dự định
+tham dự bằng kinh phí đề tài. Sau khi làm rõ các dữ kiện cần thiết, đầu ra
+cần chỉ ra quy định áp dụng, tài liệu cần chuẩn bị và đầu mối liên hệ.
+Nếu người hỏi sửa nguồn kinh phí hoặc thời điểm, hướng dẫn liên quan phải
+được cập nhật và chỉ rõ phần thay đổi.
+
+\subsection{Mục tiêu và sản phẩm của đề tài}
+Mục tiêu sử dụng là giúp người hỏi biết mình cần đáp ứng điều kiện nào,
+chuẩn bị những gì và thực hiện bước nào tiếp theo. Người hỏi cần kiểm tra
+được căn cứ của hướng dẫn và nhận biết phần còn phải trao đổi với đơn vị
+phụ trách.
+
+Các sản phẩm cần xây dựng gồm ứng dụng chatbot tiếng Việt, kho tri thức
+cho năm nhóm thủ tục và bộ tình huống kiểm thử có nguồn, đáp án đối chiếu.
+Những yêu cầu về sự phù hợp của hướng dẫn với dữ kiện, khả năng truy vết
+căn cứ và tính nhất quán qua hội thoại được cụ thể hóa thành F01--F05 tại
+Mục~\ref{sec:yeu-cau}.
+
+\subsection{Phạm vi tư vấn}
+Ba miền nội dung của đề tài tương ứng với Ban Khoa học--Công nghệ (KHCN),
+Ban Tài chính--Kế hoạch (TCKH) và Ban Tổ chức--Nhân sự (TCNS) tại HUST.
+Phạm vi được giới hạn ở năm nhóm thủ tục trong Bảng~\ref{tab:pham-vi}, gồm
+các nhánh tài chính và nhân sự liên quan trực tiếp. Năm nhóm này không bao
+phủ toàn bộ công việc của ba Ban.
+
+\begin{table}[H]
+\centering\small
+\begin{tabularx}{\textwidth}{|P{28mm}|Y|Y|}
+\hline
+\textbf{Nhóm thủ tục} & \textbf{Câu hỏi đại diện} & \textbf{Nội dung hướng dẫn} \\\hline
+T1\newline Đăng ký nhiệm vụ & Tôi cần đáp ứng điều kiện gì và chuẩn bị những tài liệu nào để đăng ký nhiệm vụ khoa học và công nghệ? & Đối tượng, điều kiện theo loại nhiệm vụ; đợt đăng ký, tài liệu, biểu mẫu và đầu mối. \\ \hline
+T3\newline Điều chỉnh, gia hạn & Khi cần thay đổi tiến độ, nội dung, chủ nhiệm hoặc kinh phí, tôi phải lưu ý điều kiện và mốc đề nghị nào? & Trường hợp cần điều chỉnh; điều kiện, thời hạn đề nghị và tài liệu theo nội dung thay đổi. \\ \hline
+T4\newline Nghiệm thu & Trước khi đề nghị nghiệm thu, tôi cần chuẩn bị sản phẩm, báo cáo và tài liệu gì? & Yêu cầu sản phẩm, báo cáo, thời hạn và thành phần tài liệu phục vụ nghiệm thu. \\ \hline
+T6\newline Hội thảo, công tác & Với hoạt động và nguồn kinh phí đang sử dụng, tôi cần đối chiếu quy định và chuẩn bị chứng từ nào? & Quy định nhiệm vụ, nguồn và phạm vi định mức; chứng từ, thời hạn tạm ứng hoặc quyết toán liên quan. \\ \hline
+T10\newline Cử đi đào tạo, nghiên cứu & Tôi cần đáp ứng điều kiện, chuẩn bị tài liệu và thực hiện nghĩa vụ nào liên quan đến việc cử đi? & Điều kiện, thời gian, tài liệu, nghĩa vụ và hỗ trợ liên quan đến việc cử đi. \\
+\hline
+\end{tabularx}
+\caption{Phạm vi năm nhóm nội dung tư vấn}
+\label{tab:pham-vi}
+\end{table}
+
+Một câu hỏi có thể cần nguồn thuộc một hoặc nhiều Ban. Chẳng hạn, cán bộ
+được cử đi đào tạo khi đang chủ trì nhiệm vụ có thể cần xem cả điều kiện
+cử đi, trách nhiệm với nhiệm vụ và phần hỗ trợ tài chính được hỏi. Các
+nguồn được đối chiếu theo nội dung liên quan; điều này không xác định một
+tuyến luân chuyển hồ sơ qua các Ban.
+
+\subsection{Giới hạn hỗ trợ và điều kiện áp dụng}
+Chatbot hướng dẫn người dùng chuẩn bị thủ tục; không tiếp nhận, thẩm định,
+luân chuyển, ký, nộp hoặc duyệt hồ sơ. Hệ thống không tính hay xác nhận
+khoản chi thực tế, thực hiện thanh toán hoặc ghi dữ liệu vào hệ thống
+nghiệp vụ của HUST. Việc liệt kê tài liệu và biểu mẫu trong câu trả lời
+không xác nhận bộ hồ sơ của người hỏi đã hợp lệ.
+
+Phạm vi không gồm tuyển dụng, tính kNC, đánh giá hoặc xếp loại cá nhân,
+tra cứu hồ sơ nhân sự hay sinh viên. Sở hữu trí tuệ và hợp tác nghiên cứu
+không thuộc phạm vi đề tài.
+Giới hạn tra cứu hồ sơ cá nhân áp dụng cho mọi người sử dụng, kể cả cán
+bộ, giảng viên và chuyên viên thuộc nhóm được phục vụ.
+
+Nguồn tư vấn phải được kiểm tra và được phép sử dụng, đúng đối tượng, đơn
+vị, loại nhiệm vụ và phiên bản áp dụng. Nguồn lịch sử được bổ sung khi nhiệm
+vụ đang thực hiện, nghĩa vụ kéo dài hoặc giấy tờ tồn đọng cần xét chuyển
+tiếp; không cam kết tra cứu mọi sự việc đã kết thúc từ một năm tùy chọn.
+Nhánh còn thiếu nguồn phải được ghi nhận là chưa hoàn thành, kèm giới hạn
+trả lời; không tự đặt quy tắc hoặc loại nhánh đó khỏi phạm vi đã chốt.
+
+% Kết thúc phần xác định phạm vi trước khi chuyển sang phân tích yêu cầu.
+\clearpage

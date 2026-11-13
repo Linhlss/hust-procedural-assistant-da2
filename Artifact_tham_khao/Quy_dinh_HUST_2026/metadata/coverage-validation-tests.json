@@ -1,0 +1,60 @@
+{
+  "checked_at": "2026-11-02T09:52:43.013775+00:00",
+  "checks": [
+    {
+      "check": "Kho hiện tại hợp lệ về cấu trúc nhưng chưa hoàn thành",
+      "passed": true
+    },
+    {
+      "check": "Chặn đóng mục thiếu nguồn và xác nhận",
+      "passed": true
+    },
+    {
+      "check": "Chặn ngày không tồn tại",
+      "passed": true
+    },
+    {
+      "check": "Chặn nâng nguồn thành đã xác minh khi thiếu bằng chứng",
+      "passed": true
+    },
+    {
+      "check": "Chặn báo đạt ca nghiệp vụ chưa có đáp án/kết quả",
+      "passed": true
+    },
+    {
+      "check": "Chặn dấu kiểm chốt không khớp",
+      "passed": true
+    },
+    {
+      "check": "Cổng hoàn thành có thể đạt khi đủ toàn bộ điều kiện trong fixture kiểm tra bộ kiểm tra",
+      "passed": true
+    },
+    {
+      "check": "Quyền nghiên cứu nội bộ không đủ cho bản chốt công khai",
+      "passed": true
+    },
+    {
+      "check": "Chặn tham chiếu nguồn không tồn tại",
+      "passed": true
+    },
+    {
+      "check": "Đồng bộ lần nữa giữ nguyên quyết định xác minh",
+      "passed": true
+    },
+    {
+      "check": "Lệnh yêu cầu hoàn thành báo mã 2 cho kho còn thiếu",
+      "passed": true
+    },
+    {
+      "check": "Liên kết nội bộ tài liệu bàn giao không bị gãy",
+      "passed": true
+    },
+    {
+      "check": "Bảy nguồn thiết kế khớp mã băm sau đồng bộ",
+      "passed": true
+    }
+  ],
+  "passed": 13,
+  "note": "Chỉ kiểm bộ quản lý danh mục. Fixture hoàn thành là dữ liệu giả định chỉ trong bộ nhớ, không lưu vào sổ nguồn hoặc ca nghiệp vụ. Không phải 28 ca nghiệp vụ đã chạy.",
+  "final_manifest_rechecked_at": "2026-11-02T09:53:45.138678+00:00"
+}

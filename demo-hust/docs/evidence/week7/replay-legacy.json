@@ -1,0 +1,386 @@
+{
+  "at": "2026-11-13T11:29:06.231Z",
+  "inputSha256": "5e9c619b84a6a46aae4f4cc9d69a51ea3e53d561dc9079d7f69586f64010b49e",
+  "code": {
+    "src/lib/gemini.ts": "5207d6286f0cbf1bd670789324f0f5d6f0bcd22c95bfd278ad9cdaf332364bf3",
+    "src/lib/replay-evaluation.ts": "765cf7e7e01e5be9dbbbf31087fb0f350807a7892872d40bcd2c656199ce19c5",
+    "src/lib/conversation-inputs.ts": "dcb1d1558795773624a08f7fd2c52b42c988ca315daa4cdfd829321e70159aa0",
+    "src/lib/engine.ts": "580be9d100df342f0e3e2d520a59458f2b9e6576f6e215f365aef2b84de525c2"
+  },
+  "kind": "offline_replay",
+  "modelCalls": 0,
+  "modelQualityReevaluated": false,
+  "rows": [
+    {
+      "id": "L01",
+      "turn": 1,
+      "recordedResponse": true,
+      "engine": "pass",
+      "engineErrors": [],
+      "narrative": "accepted"
+    },
+    {
+      "id": "L02",
+      "turn": 1,
+      "recordedResponse": true,
+      "engine": "pass",
+      "engineErrors": [],
+      "narrative": "accepted"
+    },
+    {
+      "id": "L03",
+      "turn": 1,
+      "recordedResponse": true,
+      "engine": "pass",
+      "engineErrors": [],
+      "narrative": "accepted"
+    },
+    {
+      "id": "L03",
+      "turn": 2,
+      "recordedResponse": false,
+      "engine": "not_replayable",
+      "engineErrors": [],
+      "narrative": "not_recorded",
+      "originalError": {
+        "status": 503,
+        "code": "GEMINI_UNAVAILABLE",
+        "skipped": false
+      }
+    },
+    {
+      "id": "L03",
+      "turn": 3,
+      "recordedResponse": false,
+      "engine": "not_replayable",
+      "engineErrors": [],
+      "narrative": "not_recorded",
+      "originalError": {
+        "skipped": true
+      }
+    },
+    {
+      "id": "L04",
+      "turn": 1,
+      "recordedResponse": true,
+      "engine": "pass",
+      "engineErrors": [],
+      "narrative": "accepted"
+    },
+    {
+      "id": "L04",
+      "turn": 2,
+      "recordedResponse": true,
+      "engine": "pass",
+      "engineErrors": [],
+      "narrative": "accepted"
+    },
+    {
+      "id": "L04",
+      "turn": 3,
+      "recordedResponse": false,
+      "engine": "not_replayable",
+      "engineErrors": [],
+      "narrative": "not_recorded",
+      "originalError": {
+        "status": 503,
+        "code": "GEMINI_TIMEOUT",
+        "skipped": false
+      }
+    },
+    {
+      "id": "L04",
+      "turn": 4,
+      "recordedResponse": false,
+      "engine": "not_replayable",
+      "engineErrors": [],
+      "narrative": "not_recorded",
+      "originalError": {
+        "skipped": true
+      }
+    },
+    {
+      "id": "L04",
+      "turn": 5,
+      "recordedResponse": false,
+      "engine": "not_replayable",
+      "engineErrors": [],
+      "narrative": "not_recorded",
+      "originalError": {
+        "skipped": true
+      }
+    },
+    {
+      "id": "L05",
+      "turn": 1,
+      "recordedResponse": false,
+      "engine": "not_replayable",
+      "engineErrors": [],
+      "narrative": "not_recorded",
+      "originalError": {
+        "status": 503,
+        "code": "GEMINI_TIMEOUT",
+        "skipped": false
+      }
+    },
+    {
+      "id": "L06",
+      "turn": 1,
+      "recordedResponse": true,
+      "engine": "pass",
+      "engineErrors": [],
+      "narrative": "accepted"
+    },
+    {
+      "id": "L06",
+      "turn": 2,
+      "recordedResponse": true,
+      "engine": "pass",
+      "engineErrors": [],
+      "narrative": "accepted"
+    },
+    {
+      "id": "L07",
+      "turn": 1,
+      "recordedResponse": true,
+      "engine": "pass",
+      "engineErrors": [],
+      "narrative": "accepted"
+    },
+    {
+      "id": "L07",
+      "turn": 2,
+      "recordedResponse": true,
+      "engine": "fail",
+      "engineErrors": [
+        "facts.related: expected true, got undefined"
+      ],
+      "narrative": "accepted"
+    },
+    {
+      "id": "L08",
+      "turn": 1,
+      "recordedResponse": true,
+      "engine": "pass",
+      "engineErrors": [],
+      "narrative": "accepted"
+    },
+    {
+      "id": "L08",
+      "turn": 2,
+      "recordedResponse": true,
+      "engine": "fail",
+      "engineErrors": [
+        "clarification: expected allocation, got undefined",
+        "Unstated fact allocation: true"
+      ],
+      "narrative": "accepted"
+    },
+    {
+      "id": "L08",
+      "turn": 3,
+      "recordedResponse": true,
+      "engine": "pass",
+      "engineErrors": [],
+      "narrative": "accepted"
+    },
+    {
+      "id": "L09",
+      "turn": 1,
+      "recordedResponse": true,
+      "engine": "pass",
+      "engineErrors": [],
+      "narrative": "accepted"
+    },
+    {
+      "id": "L09",
+      "turn": 2,
+      "recordedResponse": true,
+      "engine": "pass",
+      "engineErrors": [],
+      "narrative": "accepted"
+    },
+    {
+      "id": "L10",
+      "turn": 1,
+      "recordedResponse": true,
+      "engine": "pass",
+      "engineErrors": [],
+      "narrative": "accepted"
+    },
+    {
+      "id": "L10",
+      "turn": 2,
+      "recordedResponse": true,
+      "engine": "pass",
+      "engineErrors": [],
+      "narrative": "accepted"
+    },
+    {
+      "id": "L11",
+      "turn": 1,
+      "recordedResponse": true,
+      "engine": "pass",
+      "engineErrors": [],
+      "narrative": "accepted"
+    },
+    {
+      "id": "L11",
+      "turn": 2,
+      "recordedResponse": true,
+      "engine": "pass",
+      "engineErrors": [],
+      "narrative": "accepted"
+    },
+    {
+      "id": "L12",
+      "turn": 1,
+      "recordedResponse": true,
+      "engine": "pass",
+      "engineErrors": [],
+      "narrative": "accepted"
+    },
+    {
+      "id": "L12",
+      "turn": 2,
+      "recordedResponse": false,
+      "engine": "not_replayable",
+      "engineErrors": [],
+      "narrative": "not_recorded",
+      "originalError": {
+        "status": 503,
+        "code": "GEMINI_SCHEMA",
+        "skipped": false
+      }
+    },
+    {
+      "id": "L13",
+      "turn": 1,
+      "recordedResponse": true,
+      "engine": "pass",
+      "engineErrors": [],
+      "narrative": "accepted"
+    },
+    {
+      "id": "L13",
+      "turn": 2,
+      "recordedResponse": true,
+      "engine": "pass",
+      "engineErrors": [],
+      "narrative": "accepted"
+    },
+    {
+      "id": "L14",
+      "turn": 1,
+      "recordedResponse": true,
+      "engine": "pass",
+      "engineErrors": [],
+      "narrative": "accepted"
+    },
+    {
+      "id": "L14",
+      "turn": 2,
+      "recordedResponse": true,
+      "engine": "pass",
+      "engineErrors": [],
+      "narrative": "accepted"
+    },
+    {
+      "id": "L15",
+      "turn": 1,
+      "recordedResponse": false,
+      "engine": "not_replayable",
+      "engineErrors": [],
+      "narrative": "not_recorded",
+      "originalError": {
+        "status": 503,
+        "code": "GEMINI_UNAVAILABLE",
+        "skipped": false
+      }
+    },
+    {
+      "id": "L15",
+      "turn": 2,
+      "recordedResponse": false,
+      "engine": "not_replayable",
+      "engineErrors": [],
+      "narrative": "not_recorded",
+      "originalError": {
+        "skipped": true
+      }
+    },
+    {
+      "id": "L15",
+      "turn": 3,
+      "recordedResponse": false,
+      "engine": "not_replayable",
+      "engineErrors": [],
+      "narrative": "not_recorded",
+      "originalError": {
+        "skipped": true
+      }
+    },
+    {
+      "id": "L16",
+      "turn": 1,
+      "recordedResponse": true,
+      "engine": "pass",
+      "engineErrors": [],
+      "narrative": "accepted"
+    },
+    {
+      "id": "L16",
+      "turn": 2,
+      "recordedResponse": false,
+      "engine": "not_replayable",
+      "engineErrors": [],
+      "narrative": "not_recorded",
+      "originalError": {
+        "status": 503,
+        "code": "GEMINI_SCHEMA",
+        "skipped": false
+      }
+    },
+    {
+      "id": "L17",
+      "turn": 1,
+      "recordedResponse": true,
+      "engine": "pass",
+      "engineErrors": [],
+      "narrative": "accepted"
+    },
+    {
+      "id": "L18",
+      "turn": 1,
+      "recordedResponse": true,
+      "engine": "pass",
+      "engineErrors": [],
+      "narrative": "accepted"
+    },
+    {
+      "id": "L19",
+      "turn": 1,
+      "recordedResponse": true,
+      "engine": "pass",
+      "engineErrors": [],
+      "narrative": "not_recorded"
+    },
+    {
+      "id": "L20",
+      "turn": 1,
+      "recordedResponse": true,
+      "engine": "pass",
+      "engineErrors": [],
+      "narrative": "not_recorded"
+    }
+  ],
+  "summary": {
+    "recordedTurns": 39,
+    "recordedResponses": 28,
+    "enginePassed": 26,
+    "engineFailed": 2,
+    "notReplayable": 11,
+    "narrativesAccepted": 26,
+    "narrativesRejected": 0
+  }
+}

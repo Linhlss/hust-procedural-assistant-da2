@@ -1,0 +1,14 @@
+export const chatModes=['fixture','openai','ollama','gemini'] as const;
+export type ChatMode=(typeof chatModes)[number];
+export type ClarificationField=keyof Facts|'fundingRelation'|'situationRelation';
+export type Clarification={field:ClarificationField;question:string;reason:string;choices:{label:string;message:string}[];remaining:ClarificationField[];collected:number;total:number};
+export type Profile='standard'|'missing-unit'|'conflict';
+export type Funding = 'task' | 'unit' | 'combined';
+export type Facts = { activity?: 'conference' | 'work'; location?: 'domestic' | 'foreign'; date?: string; funding?: Funding; related?: boolean; allocation?: boolean };
+export type Patch = Partial<Facts> & { intent: 'consult' | 'out' | 'unknown' | 'unsupported'; unsupportedTopic?:'registration'|'extension'|'acceptance'|'training'; fundingAction?: 'replace' | 'combine' | 'unclear'; declined?: boolean; ambiguous?: boolean; topic?: 'documents'|'steps'|'timing'|'sources'; personal?:boolean; general?:boolean; newSituation?:boolean; sameSituation?:boolean; situationUnclear?:boolean; pendingSituationAction?:'replace'|'combine'|'unclear'; clear?: (keyof Facts)[] };
+export type Source = { id:string; title:string; domain:string; version:string; from:string; to:string; paragraph:string; quote:string; provenance:'synthetic_fixture'; publication:'demo_generated'; owner:null; documentId?:string; fragment?:string };
+export type Conclusion = {id:string; group:'KL1'|'KL2'|'KL3'; title:string; status:'scope'|'meets'|'fails'|'insufficient'; text:string; facts:(keyof Facts)[]; sources:Source[]; next:string; reason:string; points?:string[]};
+export type Revision = {id:string; title:string; before:string; after:string; reason:string};
+export type Narrative = {model:string;paragraphs:{text:string;sourceIds:string[]}[]};
+export type ModelRun = {provider:'gemini';model:string;guards?:{field:keyof Facts;reason:string}[];stages:{attempt?:number;phase:'extract'|'compose';elapsedMs:number;status:number;usage:unknown}[]};
+export type Answer = { knowledge?:import('./knowledge-meta').KnowledgeMeta; narrative?:Narrative; modelRun?:ModelRun; intent?:Patch['intent']; turn:number; mode:ChatMode; inputMethod?:'message'|'fact-edit'; text:string; question?:string; facts:Facts; conclusions:Conclusion[]; revisions:Revision[]; changed:string[]; profile:Profile; pendingFunding?:boolean; summary:string; sourceLabel:string; clarification?:Clarification; consultation?:boolean; pendingSituation?:Facts; pendingSituationAction?:Patch['fundingAction']; declined?:boolean; preparationOnly?:boolean; requestedTopic?:Patch['topic'] };

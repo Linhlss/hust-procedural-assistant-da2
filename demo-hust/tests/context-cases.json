@@ -1,0 +1,1315 @@
+{
+  "version": 1,
+  "frozen_on": "2026-11-10",
+  "origin": "Tự biên soạn theo luồng T6; không phải câu hỏi thu từ người dùng thực tế.",
+  "purpose": "Chấm tách dữ kiện, ngữ cảnh, nội dung và căn cứ; không xác nhận nghiệp vụ HUST.",
+  "split_policy": "Chỉ 10 ca development dùng để sửa; 20 ca heldout không dùng chỉnh prompt; phiên bản cũ và lần chạy lỗi được giữ nguyên.",
+  "cases": [
+    {
+      "id": "X01",
+      "split": "development",
+      "group": "muc-dich-hoi",
+      "title": "Xin danh sách chuẩn bị, không hỏi điều kiện chung",
+      "profile": "standard",
+      "turns": [
+        {
+          "text": "Tôi dự hội thảo ngày 20/11/2026 bằng tiền đề tài. Tôi cần chuẩn bị giấy tờ gì?",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "funding": "task",
+              "date": "2026-11-20"
+            },
+            "absent": [
+              "location",
+              "related",
+              "allocation"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Tập trung giấy tờ trước/sau hoạt động và nội dung gắn nhiệm vụ.",
+              "Không hỏi địa điểm nếu không ảnh hưởng danh mục chuẩn bị."
+            ],
+            "must_not_claim": [
+              "Không biến nguồn mẫu thành quy định HUST đã xác minh.",
+              "Không xác nhận hồ sơ, khoản chi hoặc quyền thanh toán."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "X02",
+      "split": "development",
+      "group": "muc-dich-hoi",
+      "title": "Hỏi thứ tự thực hiện",
+      "profile": "standard",
+      "turns": [
+        {
+          "text": "Đơn vị chi cho chuyến công tác ngày 23/11/2026. Cho tôi thứ tự các bước cần làm trước khi đi.",
+          "expected": {
+            "facts": {
+              "activity": "work",
+              "funding": "unit",
+              "date": "2026-11-23"
+            },
+            "absent": [
+              "location",
+              "related",
+              "allocation"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Trả lời theo trình tự, không chỉ chép danh sách điều kiện.",
+              "Nêu trao đổi nguồn và chuẩn bị giấy tờ theo nguồn đơn vị."
+            ],
+            "must_not_claim": [
+              "Không biến nguồn mẫu thành quy định HUST đã xác minh.",
+              "Không xác nhận hồ sơ, khoản chi hoặc quyền thanh toán."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "X03",
+      "split": "heldout",
+      "group": "muc-dich-hoi",
+      "title": "Hỏi thời điểm thay vì danh mục",
+      "profile": "standard",
+      "turns": [
+        {
+          "text": "Hội thảo ngày 26/11/2026, dùng kinh phí đơn vị. Tôi cần chuẩn bị từ lúc nào?",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "funding": "unit",
+              "date": "2026-11-26"
+            },
+            "absent": [
+              "location",
+              "related",
+              "allocation"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Tập trung thời điểm trước/sau hoạt động.",
+              "Nêu nguồn mẫu chưa có hạn chót cố định, không bịa số ngày."
+            ],
+            "must_not_claim": [
+              "Không biến nguồn mẫu thành quy định HUST đã xác minh.",
+              "Không xác nhận hồ sơ, khoản chi hoặc quyền thanh toán."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "X04",
+      "split": "heldout",
+      "group": "muc-dich-hoi",
+      "title": "Yêu cầu mở căn cứ",
+      "profile": "standard",
+      "turns": [
+        {
+          "text": "Tôi chỉ muốn xem tài liệu về giấy tờ cho hội thảo, chưa hỏi trường hợp cụ thể.",
+          "expected": {
+            "facts": {
+              "activity": "conference"
+            },
+            "absent": [
+              "location",
+              "date",
+              "funding",
+              "related",
+              "allocation"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Cho biết căn cứ chuẩn bị hiện có và cách mở.",
+              "Không ép khai toàn bộ dữ kiện của một chuyến đi."
+            ],
+            "must_not_claim": [
+              "Không biến nguồn mẫu thành quy định HUST đã xác minh.",
+              "Không xác nhận hồ sơ, khoản chi hoặc quyền thanh toán."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "X05",
+      "split": "heldout",
+      "group": "muc-dich-hoi",
+      "title": "Yêu cầu tóm tắt để tự trao đổi",
+      "profile": "standard",
+      "turns": [
+        {
+          "text": "Ngày 02/12/2026 tôi công tác ở Huế, đơn vị chi. Tóm tắt thông tin và bước tiếp theo để tôi tự trao đổi với đầu mối tài chính.",
+          "expected": {
+            "facts": {
+              "activity": "work",
+              "location": "domestic",
+              "date": "2026-12-02",
+              "funding": "unit"
+            },
+            "absent": [
+              "related",
+              "allocation"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Tóm tắt đúng dữ kiện, nguồn tiền và bước tiếp theo.",
+              "Không tự gửi tin nhắn hoặc tạo hồ sơ."
+            ],
+            "must_not_claim": [
+              "Không biến nguồn mẫu thành quy định HUST đã xác minh.",
+              "Không xác nhận hồ sơ, khoản chi hoặc quyền thanh toán."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "X06",
+      "split": "development",
+      "group": "giai-doan-cong-viec",
+      "title": "Đã có giấy mời",
+      "profile": "standard",
+      "turns": [
+        {
+          "text": "Tôi có giấy mời hội thảo ngày 24/11/2026 rồi, dùng tiền nhiệm vụ. Ngoài giấy mời tôi cần chuẩn bị thêm gì?",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "funding": "task",
+              "date": "2026-11-24"
+            },
+            "absent": [
+              "location",
+              "related",
+              "allocation"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Ghi nhận người hỏi nói đã có giấy mời, tập trung giấy tờ còn lại.",
+              "Không kết luận giấy mời hoặc hồ sơ đã hợp lệ."
+            ],
+            "must_not_claim": [
+              "Không biến nguồn mẫu thành quy định HUST đã xác minh.",
+              "Không xác nhận hồ sơ, khoản chi hoặc quyền thanh toán."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "X07",
+      "split": "development",
+      "group": "giai-doan-cong-viec",
+      "title": "Đã hoàn thành hoạt động",
+      "profile": "standard",
+      "turns": [
+        {
+          "text": "Tôi đã đi công tác ngày 05/11/2026 bằng kinh phí đơn vị và đã về. Bây giờ cần giữ những chứng từ gì?",
+          "expected": {
+            "facts": {
+              "activity": "work",
+              "funding": "unit",
+              "date": "2026-11-05"
+            },
+            "absent": [
+              "location",
+              "related",
+              "allocation"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Tập trung xác nhận tham dự và chứng từ phát sinh sau hoạt động.",
+              "Không chỉ hướng dẫn bước xin đi trong tương lai."
+            ],
+            "must_not_claim": [
+              "Không biến nguồn mẫu thành quy định HUST đã xác minh.",
+              "Không xác nhận hồ sơ, khoản chi hoặc quyền thanh toán."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "X08",
+      "split": "heldout",
+      "group": "giai-doan-cong-viec",
+      "title": "Mới dự định và chưa biết ngày",
+      "profile": "standard",
+      "turns": [
+        {
+          "text": "Tôi mới dự định tham dự hội thảo, chưa chốt ngày hoặc nguồn chi. Bây giờ bắt đầu từ đâu?",
+          "expected": {
+            "facts": {
+              "activity": "conference"
+            },
+            "absent": [
+              "location",
+              "date",
+              "funding",
+              "related",
+              "allocation"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Không tự đặt ngày hoặc nguồn.",
+              "Hỏi dữ kiện cần thiết hoặc hướng dẫn bước xác định nguồn và thời gian."
+            ],
+            "must_not_claim": [
+              "Không biến nguồn mẫu thành quy định HUST đã xác minh.",
+              "Không xác nhận hồ sơ, khoản chi hoặc quyền thanh toán."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "X09",
+      "split": "heldout",
+      "group": "giai-doan-cong-viec",
+      "title": "Chuyển giai đoạn trong cùng hội thoại",
+      "profile": "standard",
+      "turns": [
+        {
+          "text": "Tôi đi hội thảo ngày 12/11/2026 bằng kinh phí đơn vị, cần giấy tờ gì?",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "funding": "unit",
+              "date": "2026-11-12"
+            },
+            "absent": [
+              "location",
+              "related",
+              "allocation"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Hướng dẫn chuẩn bị theo nguồn đơn vị."
+            ],
+            "must_not_claim": [
+              "Không biến nguồn mẫu thành quy định HUST đã xác minh.",
+              "Không xác nhận hồ sơ, khoản chi hoặc quyền thanh toán."
+            ]
+          }
+        },
+        {
+          "text": "Chuyến đó xong rồi. Tôi đã giữ giấy xác nhận tham dự, giờ nên làm bước nào tiếp?",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "funding": "unit",
+              "date": "2026-11-12"
+            },
+            "absent": [
+              "location",
+              "related",
+              "allocation"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Giữ nguyên chuyến đi, chuyển trọng tâm sang sau hoạt động.",
+              "Nêu trao đổi tài chính về chứng từ và mốc hoàn thiện; không bịa hạn quyết toán."
+            ],
+            "must_not_claim": [
+              "Không biến nguồn mẫu thành quy định HUST đã xác minh.",
+              "Không xác nhận hồ sơ, khoản chi hoặc quyền thanh toán."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "X10",
+      "split": "heldout",
+      "group": "giai-doan-cong-viec",
+      "title": "Người dùng đã có kế hoạch",
+      "profile": "standard",
+      "turns": [
+        {
+          "text": "Tôi có kế hoạch công tác ngày 30/11/2026, nguồn nhiệm vụ. Cần bổ sung nội dung nào để làm rõ mối liên hệ với đề tài?",
+          "expected": {
+            "facts": {
+              "activity": "work",
+              "funding": "task",
+              "date": "2026-11-30"
+            },
+            "absent": [
+              "location",
+              "related",
+              "allocation"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Hướng dẫn mô tả nội dung gắn nhiệm vụ theo nguồn mẫu.",
+              "Không tự đánh giá chuyến đi đã phục vụ nhiệm vụ."
+            ],
+            "must_not_claim": [
+              "Không biến nguồn mẫu thành quy định HUST đã xác minh.",
+              "Không xác nhận hồ sơ, khoản chi hoặc quyền thanh toán."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "X11",
+      "split": "development",
+      "group": "thieu-mo-ho",
+      "title": "Không dấu và viết tắt",
+      "profile": "standard",
+      "turns": [
+        {
+          "text": "minh di ht o Ha Noi ngay 21/11/2026, de tai chi, co phuc vu nhiem vu. can giay to gi?",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "location": "domestic",
+              "date": "2026-11-21",
+              "funding": "task",
+              "related": true
+            },
+            "absent": [
+              "allocation"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Hiểu hội thảo, ngày và nguồn dù viết không dấu/viết tắt.",
+              "Trả lời giấy tờ bằng tiếng Việt rõ ràng."
+            ],
+            "must_not_claim": [
+              "Không biến nguồn mẫu thành quy định HUST đã xác minh.",
+              "Không xác nhận hồ sơ, khoản chi hoặc quyền thanh toán."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "X12",
+      "split": "development",
+      "group": "thieu-mo-ho",
+      "title": "Quốc tế không đồng nghĩa nước ngoài",
+      "profile": "standard",
+      "turns": [
+        {
+          "text": "Tôi dự hội thảo quốc tế tổ chức tại Hà Nội ngày 27/11/2026, do đơn vị chi. Thủ tục chuẩn bị thế nào?",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "location": "domestic",
+              "date": "2026-11-27",
+              "funding": "unit"
+            },
+            "absent": [
+              "related",
+              "allocation"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Xác định trong nước từ nơi tổ chức.",
+              "Không áp dụng nhánh nước ngoài chỉ vì tên hội thảo quốc tế."
+            ],
+            "must_not_claim": [
+              "Không biến nguồn mẫu thành quy định HUST đã xác minh.",
+              "Không xác nhận hồ sơ, khoản chi hoặc quyền thanh toán."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "X13",
+      "split": "heldout",
+      "group": "thieu-mo-ho",
+      "title": "Ngày thiếu năm",
+      "profile": "standard",
+      "turns": [
+        {
+          "text": "Tôi dự hội thảo bằng kinh phí nhiệm vụ, cần chuẩn bị những gì?",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "funding": "task"
+            },
+            "absent": [
+              "location",
+              "date",
+              "related",
+              "allocation"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Làm rõ ngày để chọn nguồn chuẩn bị."
+            ],
+            "must_not_claim": [
+              "Không biến nguồn mẫu thành quy định HUST đã xác minh.",
+              "Không xác nhận hồ sơ, khoản chi hoặc quyền thanh toán."
+            ]
+          }
+        },
+        {
+          "text": "Ngày 22/11, tôi chưa chắc năm ghi trên thư mời.",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "funding": "task"
+            },
+            "absent": [
+              "location",
+              "date",
+              "related",
+              "allocation"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Không tự ghép năm hiện tại.",
+              "Giữ thông tin ngày ở mức chưa xác định và hỏi rõ năm."
+            ],
+            "must_not_claim": [
+              "Không biến nguồn mẫu thành quy định HUST đã xác minh.",
+              "Không xác nhận hồ sơ, khoản chi hoặc quyền thanh toán."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "X14",
+      "split": "heldout",
+      "group": "thieu-mo-ho",
+      "title": "Chưa rõ quan hệ nhiệm vụ khác với không phục vụ",
+      "profile": "standard",
+      "turns": [
+        {
+          "text": "Tôi dự hội thảo ở Hải Phòng ngày 28/11/2026, tiền đề tài. Chưa rõ hoạt động có phục vụ nhiệm vụ hay không.",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "location": "domestic",
+              "date": "2026-11-28",
+              "funding": "task"
+            },
+            "absent": [
+              "related",
+              "allocation"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Quan hệ nhiệm vụ chưa biết, không phải false.",
+              "Hỏi làm rõ hoặc nêu phần chưa thể đối chiếu."
+            ],
+            "must_not_claim": [
+              "Không biến nguồn mẫu thành quy định HUST đã xác minh.",
+              "Không xác nhận hồ sơ, khoản chi hoặc quyền thanh toán."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "X15",
+      "split": "heldout",
+      "group": "thieu-mo-ho",
+      "title": "Hai địa điểm chưa chốt",
+      "profile": "standard",
+      "turns": [
+        {
+          "text": "Hội thảo ngày 29/11/2026, dùng tiền đơn vị. Có thể tổ chức ở Hà Nội hoặc Singapore, ban tổ chức chưa chốt.",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "date": "2026-11-29",
+              "funding": "unit"
+            },
+            "absent": [
+              "location",
+              "related",
+              "allocation"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Không chọn bừa trong nước/nước ngoài.",
+              "Giữ ngày và nguồn tiền, làm rõ địa điểm nếu cần cho kết luận."
+            ],
+            "must_not_claim": [
+              "Không biến nguồn mẫu thành quy định HUST đã xác minh.",
+              "Không xác nhận hồ sơ, khoản chi hoặc quyền thanh toán."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "X16",
+      "split": "development",
+      "group": "thay-doi-ngu-canh",
+      "title": "Chỉ yêu cầu phần thay đổi",
+      "profile": "standard",
+      "turns": [
+        {
+          "text": "Tôi tham dự hội thảo ở Hà Nội ngày 03/12/2026 bằng tiền nhiệm vụ, có phục vụ đề tài.",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "location": "domestic",
+              "date": "2026-12-03",
+              "funding": "task",
+              "related": true
+            },
+            "absent": [
+              "allocation"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Ghi nhận đủ dữ kiện."
+            ],
+            "must_not_claim": [
+              "Không biến nguồn mẫu thành quy định HUST đã xác minh.",
+              "Không xác nhận hồ sơ, khoản chi hoặc quyền thanh toán."
+            ]
+          }
+        },
+        {
+          "text": "Giờ đơn vị chi toàn bộ thay đề tài. Chỉ cho tôi biết phần hướng dẫn nào thay đổi.",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "location": "domestic",
+              "date": "2026-12-03",
+              "funding": "unit",
+              "related": true
+            },
+            "absent": [
+              "allocation"
+            ],
+            "excludeSources": [
+              "SIM-NV-1",
+              "SIM-NV-PREP"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Tập trung phần đổi nguồn, bỏ căn cứ chỉ dành nhiệm vụ.",
+              "Không liệt kê lại toàn bộ hướng dẫn như lần đầu."
+            ],
+            "must_not_claim": [
+              "Không biến nguồn mẫu thành quy định HUST đã xác minh.",
+              "Không xác nhận hồ sơ, khoản chi hoặc quyền thanh toán."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "X17",
+      "split": "development",
+      "group": "thay-doi-ngu-canh",
+      "title": "Sửa nhiều trường cùng lượt",
+      "profile": "standard",
+      "turns": [
+        {
+          "text": "Tôi đi công tác ở Đà Nẵng ngày 04/12/2026 do đơn vị chi.",
+          "expected": {
+            "facts": {
+              "activity": "work",
+              "location": "domestic",
+              "date": "2026-12-04",
+              "funding": "unit"
+            },
+            "absent": [
+              "related",
+              "allocation"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Ghi nhận chuyến công tác hiện tại."
+            ],
+            "must_not_claim": [
+              "Không biến nguồn mẫu thành quy định HUST đã xác minh.",
+              "Không xác nhận hồ sơ, khoản chi hoặc quyền thanh toán."
+            ]
+          }
+        },
+        {
+          "text": "Vẫn chuyến đó, sửa thành hội thảo ở Seoul ngày 06/12/2026; nguồn tiền giữ nguyên.",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "location": "foreign",
+              "date": "2026-12-06",
+              "funding": "unit"
+            },
+            "absent": [
+              "related",
+              "allocation"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Cập nhật đúng ba trường, giữ nguồn tiền.",
+              "Không tạo chuyến mới hoặc lẫn địa điểm cũ."
+            ],
+            "must_not_claim": [
+              "Không biến nguồn mẫu thành quy định HUST đã xác minh.",
+              "Không xác nhận hồ sơ, khoản chi hoặc quyền thanh toán."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "X18",
+      "split": "heldout",
+      "group": "thay-doi-ngu-canh",
+      "title": "Rút câu khẳng định quan hệ",
+      "profile": "standard",
+      "turns": [
+        {
+          "text": "Hội thảo ở Hà Nội ngày 07/12/2026, kinh phí nhiệm vụ, có phục vụ đề tài.",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "location": "domestic",
+              "date": "2026-12-07",
+              "funding": "task",
+              "related": true
+            },
+            "absent": [
+              "allocation"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Ghi nhận quan hệ nhiệm vụ có."
+            ],
+            "must_not_claim": [
+              "Không biến nguồn mẫu thành quy định HUST đã xác minh.",
+              "Không xác nhận hồ sơ, khoản chi hoặc quyền thanh toán."
+            ]
+          }
+        },
+        {
+          "text": "Tôi rút lại thông tin có phục vụ đề tài, cần hỏi chủ nhiệm trước.",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "location": "domestic",
+              "date": "2026-12-07",
+              "funding": "task"
+            },
+            "absent": [
+              "related",
+              "allocation"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Rút quan hệ về chưa biết, không đổi thành không phục vụ.",
+              "Giữ ngày, địa điểm và nguồn tiền."
+            ],
+            "must_not_claim": [
+              "Không biến nguồn mẫu thành quy định HUST đã xác minh.",
+              "Không xác nhận hồ sơ, khoản chi hoặc quyền thanh toán."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "X19",
+      "split": "heldout",
+      "group": "thay-doi-ngu-canh",
+      "title": "Chuyển hẳn sang chuyến mới",
+      "profile": "standard",
+      "turns": [
+        {
+          "text": "Tôi công tác ở Hà Nội ngày 08/12/2026, đơn vị chi.",
+          "expected": {
+            "facts": {
+              "activity": "work",
+              "location": "domestic",
+              "date": "2026-12-08",
+              "funding": "unit"
+            },
+            "absent": [
+              "related",
+              "allocation"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Ghi nhận chuyến đầu."
+            ],
+            "must_not_claim": [
+              "Không biến nguồn mẫu thành quy định HUST đã xác minh.",
+              "Không xác nhận hồ sơ, khoản chi hoặc quyền thanh toán."
+            ]
+          }
+        },
+        {
+          "text": "Bỏ chuyến đó nhé. Tôi hỏi một trường hợp mới: dự hội thảo ở Bangkok, chưa có ngày và nguồn tiền.",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "location": "foreign"
+            },
+            "absent": [
+              "date",
+              "funding",
+              "related",
+              "allocation"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Không dùng lại ngày và nguồn của chuyến cũ.",
+              "Hỏi thông tin cần thiết cho tình huống mới."
+            ],
+            "must_not_claim": [
+              "Không biến nguồn mẫu thành quy định HUST đã xác minh.",
+              "Không xác nhận hồ sơ, khoản chi hoặc quyền thanh toán."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "X20",
+      "split": "heldout",
+      "group": "thay-doi-ngu-canh",
+      "title": "Kết hợp rồi rút về một nguồn",
+      "profile": "standard",
+      "turns": [
+        {
+          "text": "Tôi đi hội thảo ở Huế ngày 09/12/2026, tiền nhiệm vụ và đơn vị cùng chi, có phục vụ đề tài; chưa phân định phần chi.",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "location": "domestic",
+              "date": "2026-12-09",
+              "funding": "combined",
+              "related": true,
+              "allocation": false
+            },
+            "absent": []
+          },
+          "rubric": {
+            "must_address": [
+              "Chưa phân định khác với đã phân định.",
+              "Nêu phần cần làm rõ về hai nguồn."
+            ],
+            "must_not_claim": [
+              "Không biến nguồn mẫu thành quy định HUST đã xác minh.",
+              "Không xác nhận hồ sơ, khoản chi hoặc quyền thanh toán."
+            ]
+          }
+        },
+        {
+          "text": "Chốt lại chỉ đơn vị chi, không dùng nhiệm vụ nữa. Phần phân định còn cần không?",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "location": "domestic",
+              "date": "2026-12-09",
+              "funding": "unit",
+              "related": true
+            },
+            "absent": [
+              "allocation"
+            ],
+            "excludeSources": [
+              "SIM-NV-1",
+              "SIM-NV-PREP"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Giải thích không còn xét điều kiện kết hợp cho hai nguồn.",
+              "Không dùng căn cứ chỉ dành nhiệm vụ."
+            ],
+            "must_not_claim": [
+              "Không biến nguồn mẫu thành quy định HUST đã xác minh.",
+              "Không xác nhận hồ sơ, khoản chi hoặc quyền thanh toán."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "X21",
+      "split": "development",
+      "group": "thoi-diem-phien-ban",
+      "title": "Đổi năm cần giải thích phiên bản",
+      "profile": "standard",
+      "turns": [
+        {
+          "text": "Tôi công tác ở Nhật Bản ngày 10/12/2026 bằng kinh phí đơn vị.",
+          "expected": {
+            "facts": {
+              "activity": "work",
+              "location": "foreign",
+              "date": "2026-12-10",
+              "funding": "unit"
+            },
+            "absent": [
+              "related",
+              "allocation"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Dùng phiên bản nguồn mẫu 2026."
+            ],
+            "must_not_claim": [
+              "Không biến nguồn mẫu thành quy định HUST đã xác minh.",
+              "Không xác nhận hồ sơ, khoản chi hoặc quyền thanh toán."
+            ]
+          }
+        },
+        {
+          "text": "Tôi ghi nhầm năm, chuyến này là ngày 10/12/2025. Căn cứ có thay đổi không?",
+          "expected": {
+            "facts": {
+              "activity": "work",
+              "location": "foreign",
+              "date": "2025-12-10",
+              "funding": "unit"
+            },
+            "absent": [
+              "related",
+              "allocation"
+            ],
+            "includeSources": [
+              "SIM-CT-2025"
+            ],
+            "excludeSources": [
+              "SIM-CT-2026"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Giải thích xét lại nguồn theo ngày sự việc, không theo ngày hỏi.",
+              "Phản ánh trạng thái điều kiện bản mẫu 2025."
+            ],
+            "must_not_claim": [
+              "Không biến nguồn mẫu thành quy định HUST đã xác minh.",
+              "Không xác nhận hồ sơ, khoản chi hoặc quyền thanh toán."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "X22",
+      "split": "heldout",
+      "group": "thoi-diem-phien-ban",
+      "title": "Ngày sai sau khi đã có ngày đúng",
+      "profile": "standard",
+      "turns": [
+        {
+          "text": "Tôi đi hội thảo ở Hà Nội ngày 11/12/2026 bằng kinh phí nhiệm vụ, có phục vụ đề tài.",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "location": "domestic",
+              "date": "2026-12-11",
+              "funding": "task",
+              "related": true
+            },
+            "absent": [
+              "allocation"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Ghi nhận ngày đầu."
+            ],
+            "must_not_claim": [
+              "Không biến nguồn mẫu thành quy định HUST đã xác minh.",
+              "Không xác nhận hồ sơ, khoản chi hoặc quyền thanh toán."
+            ]
+          }
+        },
+        {
+          "text": "Sửa ngày thành 31/11/2026 giúp tôi.",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "location": "domestic",
+              "funding": "task",
+              "related": true
+            },
+            "absent": [
+              "date",
+              "allocation"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Phát hiện ngày không tồn tại và dừng phần phụ thuộc ngày.",
+              "Không tiếp tục kết luận theo ngày cũ."
+            ],
+            "must_not_claim": [
+              "Không biến nguồn mẫu thành quy định HUST đã xác minh.",
+              "Không xác nhận hồ sơ, khoản chi hoặc quyền thanh toán."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "X23",
+      "split": "heldout",
+      "group": "thoi-diem-phien-ban",
+      "title": "Ngoài khoảng nguồn mẫu",
+      "profile": "standard",
+      "turns": [
+        {
+          "text": "Tôi công tác trong nước ngày 12/12/2029, dùng tiền đơn vị. Áp dụng hướng dẫn nào?",
+          "expected": {
+            "facts": {
+              "activity": "work",
+              "location": "domestic",
+              "date": "2029-12-12",
+              "funding": "unit"
+            },
+            "absent": [
+              "related",
+              "allocation"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Nêu chưa có phiên bản bao phủ thời điểm này.",
+              "Không áp dụng bản mới nhất đang có cho mọi năm."
+            ],
+            "must_not_claim": [
+              "Không biến nguồn mẫu thành quy định HUST đã xác minh.",
+              "Không xác nhận hồ sơ, khoản chi hoặc quyền thanh toán."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "X24",
+      "split": "heldout",
+      "group": "thoi-diem-phien-ban",
+      "title": "Thời hạn chưa có trong nguồn",
+      "profile": "standard",
+      "turns": [
+        {
+          "text": "Tôi dự hội thảo ngày 13/12/2026 bằng tiền đơn vị. Sau khi về phải quyết toán trong mấy ngày?",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "date": "2026-12-13",
+              "funding": "unit"
+            },
+            "absent": [
+              "location",
+              "related",
+              "allocation"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Nêu chưa có hạn quyết toán cụ thể trong nguồn mẫu.",
+              "Hướng dẫn xác nhận với đầu mối, không tự nêu 7/15/30 ngày."
+            ],
+            "must_not_claim": [
+              "Không biến nguồn mẫu thành quy định HUST đã xác minh.",
+              "Không xác nhận hồ sơ, khoản chi hoặc quyền thanh toán."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "X25",
+      "split": "heldout",
+      "group": "thoi-diem-phien-ban",
+      "title": "Rút ngày rồi bổ sung lại",
+      "profile": "standard",
+      "turns": [
+        {
+          "text": "Tôi dự hội thảo ở Hà Nội ngày 14/12/2026, tiền nhiệm vụ và có phục vụ đề tài.",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "location": "domestic",
+              "date": "2026-12-14",
+              "funding": "task",
+              "related": true
+            },
+            "absent": [
+              "allocation"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Ghi nhận ngày và nguồn."
+            ],
+            "must_not_claim": [
+              "Không biến nguồn mẫu thành quy định HUST đã xác minh.",
+              "Không xác nhận hồ sơ, khoản chi hoặc quyền thanh toán."
+            ]
+          }
+        },
+        {
+          "text": "Ngày đó chưa chắc, xóa ngày giúp tôi.",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "location": "domestic",
+              "funding": "task",
+              "related": true
+            },
+            "absent": [
+              "date",
+              "allocation"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Xóa ngày, giữ các dữ kiện còn lại."
+            ],
+            "must_not_claim": [
+              "Không biến nguồn mẫu thành quy định HUST đã xác minh.",
+              "Không xác nhận hồ sơ, khoản chi hoặc quyền thanh toán."
+            ]
+          }
+        },
+        {
+          "text": "Tôi đã kiểm tra: ngày 16/12/2026, vẫn chuyến cũ.",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "location": "domestic",
+              "date": "2026-12-16",
+              "funding": "task",
+              "related": true
+            },
+            "absent": [
+              "allocation"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Khôi phục hướng dẫn theo ngày mới, không dùng ngày đã rút."
+            ],
+            "must_not_claim": [
+              "Không biến nguồn mẫu thành quy định HUST đã xác minh.",
+              "Không xác nhận hồ sơ, khoản chi hoặc quyền thanh toán."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "X26",
+      "split": "development",
+      "group": "gioi-han-can-cu",
+      "title": "Thiếu tài liệu đơn vị",
+      "profile": "missing-unit",
+      "turns": [
+        {
+          "text": "Tôi đi công tác ở Đà Nẵng ngày 17/12/2026 do đơn vị chi. Cần đối chiếu những gì?",
+          "expected": {
+            "facts": {
+              "activity": "work",
+              "location": "domestic",
+              "date": "2026-12-17",
+              "funding": "unit"
+            },
+            "absent": [
+              "related",
+              "allocation"
+            ],
+            "excludeSources": [
+              "SIM-DV-1"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Giữ phần chung đủ căn cứ; nêu thiếu nguồn đơn vị.",
+              "Không hỏi thêm dữ kiện để thay thế tài liệu còn thiếu."
+            ],
+            "must_not_claim": [
+              "Không biến nguồn mẫu thành quy định HUST đã xác minh.",
+              "Không xác nhận hồ sơ, khoản chi hoặc quyền thanh toán."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "X27",
+      "split": "heldout",
+      "group": "gioi-han-can-cu",
+      "title": "Nguồn mâu thuẫn",
+      "profile": "conflict",
+      "turns": [
+        {
+          "text": "Hội thảo tại Hà Nội ngày 18/12/2026, nguồn nhiệm vụ, có phục vụ đề tài. Tôi có đáp ứng điều kiện địa điểm không?",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "location": "domestic",
+              "date": "2026-12-18",
+              "funding": "task",
+              "related": true
+            },
+            "absent": [
+              "allocation"
+            ],
+            "includeSources": [
+              "SIM-CT-2026",
+              "SIM-CT-CONFLICT"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Nêu hai nguồn cùng phạm vi mâu thuẫn và dừng đúng phần.",
+              "Không yêu cầu người hỏi chọn quy định mình thích."
+            ],
+            "must_not_claim": [
+              "Không biến nguồn mẫu thành quy định HUST đã xác minh.",
+              "Không xác nhận hồ sơ, khoản chi hoặc quyền thanh toán."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "X28",
+      "split": "heldout",
+      "group": "gioi-han-can-cu",
+      "title": "Hỏi khoản tiền chưa có căn cứ",
+      "profile": "standard",
+      "turns": [
+        {
+          "text": "Tôi dự hội thảo ở Hà Nội ngày 19/12/2026 bằng tiền đơn vị. Có được chi 5 triệu tiền khách sạn không?",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "location": "domestic",
+              "date": "2026-12-19",
+              "funding": "unit"
+            },
+            "absent": [
+              "related",
+              "allocation"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Không xác nhận được chi hay hạn mức 5 triệu từ nguồn mẫu.",
+              "Nêu cần căn cứ định mức và đầu mối; không lảng sang chỉ liệt kê giấy tờ."
+            ],
+            "must_not_claim": [
+              "Không biến nguồn mẫu thành quy định HUST đã xác minh.",
+              "Không xác nhận hồ sơ, khoản chi hoặc quyền thanh toán."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "X29",
+      "split": "heldout",
+      "group": "gioi-han-can-cu",
+      "title": "Nhận diện T10 chưa triển khai",
+      "profile": "standard",
+      "turns": [
+        {
+          "text": "Tôi đang chủ trì đề tài, muốn được cử đi nghiên cứu dài hạn thì làm thủ tục nào?",
+          "expected": {
+            "facts": {},
+            "absent": [
+              "activity",
+              "location",
+              "date",
+              "funding",
+              "related",
+              "allocation"
+            ],
+            "intent": "unsupported",
+            "noConclusions": true
+          },
+          "rubric": {
+            "must_address": [
+              "Nhận diện thuộc T10 chưa có luồng hiện thực.",
+              "Không mượn hướng dẫn hội thảo để trả thay."
+            ],
+            "must_not_claim": [
+              "Không biến nguồn mẫu thành quy định HUST đã xác minh.",
+              "Không xác nhận hồ sơ, khoản chi hoặc quyền thanh toán."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "X30",
+      "split": "heldout",
+      "group": "gioi-han-can-cu",
+      "title": "Yêu cầu thực hiện thay",
+      "profile": "standard",
+      "turns": [
+        {
+          "text": "Bạn nộp hồ sơ công tác và phê duyệt khoản chi giúp tôi luôn nhé.",
+          "expected": {
+            "facts": {},
+            "absent": [
+              "activity",
+              "location",
+              "date",
+              "funding",
+              "related",
+              "allocation"
+            ],
+            "intent": "out",
+            "noConclusions": true
+          },
+          "rubric": {
+            "must_address": [
+              "Nêu giới hạn không nộp hoặc phê duyệt thay.",
+              "Không giả lập đã tạo hồ sơ hoặc đã gửi."
+            ],
+            "must_not_claim": [
+              "Không biến nguồn mẫu thành quy định HUST đã xác minh.",
+              "Không xác nhận hồ sơ, khoản chi hoặc quyền thanh toán."
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

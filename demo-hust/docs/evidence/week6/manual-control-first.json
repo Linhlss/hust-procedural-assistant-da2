@@ -1,0 +1,103 @@
+{
+  "reviewer": "Codex technical review; not specialist",
+  "at": "2026-11-11T00:01:01.837678+00:00",
+  "automatic": {
+    "plannedDialogues": 5,
+    "plannedTurns": 9,
+    "returnedAnswers": 6,
+    "passedTurns": 5,
+    "passedDialogues": 2,
+    "requestErrors": 2,
+    "skipped": 1
+  },
+  "records": [
+    {
+      "id": "T01",
+      "turn": 1,
+      "automaticErrors": [],
+      "review": "pass",
+      "note": "Facts và nguồn được giữ đúng; chưa phải chuyên viên xác nhận.",
+      "error": null
+    },
+    {
+      "id": "T01",
+      "turn": 2,
+      "automaticErrors": [],
+      "review": "pass",
+      "note": "Facts và nguồn được giữ đúng; chưa phải chuyên viên xác nhận.",
+      "error": null
+    },
+    {
+      "id": "T02",
+      "turn": 1,
+      "automaticErrors": null,
+      "review": "not-ratable",
+      "note": "Không có phản hồi hợp lệ; giữ nguyên lỗi hoặc lượt phụ thuộc chưa chạy.",
+      "error": {
+        "status": 503,
+        "body": {
+          "error": "Gemini chưa trả nội dung hợp lệ với dữ kiện và căn cứ được cấp. Dữ kiện đang có được giữ nguyên; không có kết luận mới được tạo.",
+          "code": "GEMINI_SCHEMA"
+        }
+      }
+    },
+    {
+      "id": "T03",
+      "turn": 1,
+      "automaticErrors": [],
+      "review": "pass",
+      "note": "Facts và nguồn được giữ đúng; chưa phải chuyên viên xác nhận.",
+      "error": null
+    },
+    {
+      "id": "T03",
+      "turn": 2,
+      "automaticErrors": null,
+      "review": "not-ratable",
+      "note": "Không có phản hồi hợp lệ; giữ nguyên lỗi hoặc lượt phụ thuộc chưa chạy.",
+      "error": {
+        "status": 503,
+        "body": {
+          "error": "Gemini chưa trả nội dung hợp lệ với dữ kiện và căn cứ được cấp. Dữ kiện đang có được giữ nguyên; không có kết luận mới được tạo.",
+          "code": "GEMINI_SCHEMA"
+        }
+      }
+    },
+    {
+      "id": "T03",
+      "turn": 3,
+      "automaticErrors": null,
+      "review": "not-ratable",
+      "note": "Không có phản hồi hợp lệ; giữ nguyên lỗi hoặc lượt phụ thuộc chưa chạy.",
+      "error": "Not run: previous turn failed"
+    },
+    {
+      "id": "T04",
+      "turn": 1,
+      "automaticErrors": [],
+      "review": "partial",
+      "note": "T04/1 nhắc lại hỏi nguồn dù nguồn đã rõ; T04/2 tự gán topic sources khiến không hỏi quan hệ vừa rút. Facts vẫn unknown, không lặp lại false. Đã chỉnh kiểm topic sau vòng này.",
+      "error": null
+    },
+    {
+      "id": "T04",
+      "turn": 2,
+      "automaticErrors": [
+        "clarification: expected related, got undefined"
+      ],
+      "review": "partial",
+      "note": "T04/1 nhắc lại hỏi nguồn dù nguồn đã rõ; T04/2 tự gán topic sources khiến không hỏi quan hệ vừa rút. Facts vẫn unknown, không lặp lại false. Đã chỉnh kiểm topic sau vòng này.",
+      "error": null
+    },
+    {
+      "id": "T05",
+      "turn": 1,
+      "automaticErrors": [],
+      "review": "pass",
+      "note": "Facts và nguồn được giữ đúng; chưa phải chuyên viên xác nhận.",
+      "error": null
+    }
+  ],
+  "releaseGatePassed": false,
+  "diagnostic": "Fixed reason logs: unsupported_number caused composition rejection; only reason codes saved, no raw logs."
+}

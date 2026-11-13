@@ -1,0 +1,41 @@
+{
+  "frozen_on": "2026-11-10",
+  "sha256": "41deab966309cd4f4407321218d654fdcb5d96fe03944bc175724f9119773319",
+  "dialogues": 30,
+  "turns": 41,
+  "development": [
+    "X01",
+    "X02",
+    "X06",
+    "X07",
+    "X11",
+    "X12",
+    "X16",
+    "X17",
+    "X21",
+    "X26"
+  ],
+  "heldout": [
+    "X03",
+    "X04",
+    "X05",
+    "X08",
+    "X09",
+    "X10",
+    "X13",
+    "X14",
+    "X15",
+    "X18",
+    "X19",
+    "X20",
+    "X22",
+    "X23",
+    "X24",
+    "X25",
+    "X27",
+    "X28",
+    "X29",
+    "X30"
+  ],
+  "curation_note": "Trước lần chạy đầu: bỏ allocation khỏi trạng thái mong đợi sau khi đổi sang một nguồn, theo bất biến đặt lại phân định khi nguồn đổi."
+}

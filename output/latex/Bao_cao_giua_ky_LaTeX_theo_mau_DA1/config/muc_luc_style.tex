@@ -1,0 +1,12 @@
+% Dàn mục lục theo DoAn.tex của bản Đồ án 1.
+\renewcommand*\contentsname{MỤC LỤC}
+\titlecontents{chapter}
+ [0.0cm]{\bfseries\vspace{0.3cm}}
+ {{\bfseries{\scshape}CHƯƠNG \thecontentslabel.\ }}{}
+ {\titlerule*[0.3pc]{.}\contentspage}
+\titlecontents{section}
+ [0.0cm]{\vspace{0.3cm}}{\thecontentslabel \ }{}
+ {\titlerule*[0.3pc]{.}\contentspage}
+\titlecontents{subsection}
+ [1.0cm]{\vspace{0.3cm}}{\thecontentslabel \ }{}
+ {\titlerule*[0.3pc]{.}\contentspage}

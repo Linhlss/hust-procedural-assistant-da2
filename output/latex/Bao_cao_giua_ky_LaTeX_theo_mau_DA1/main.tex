@@ -1,0 +1,54 @@
+% !TEX program = latexmk
+% !TEX root = main.tex
+\documentclass[a4paper]{report}
+\input{config/thong_tin}
+\input{config/preamble}
+\begin{document}
+\input{frontmatter/bia}
+\input{frontmatter/bia_lot}
+% Giữ thứ tự phần đầu quyển; không tạo nhận xét hoặc lời cảm ơn chưa có.
+\pagestyle{empty}
+\pagenumbering{roman}
+\input{config/muc_luc_style}
+\addtocontents{toc}{\protect\thispagestyle{empty}}
+\tableofcontents
+\thispagestyle{empty}
+\cleardoublepage
+\renewcommand{\listfigurename}{DANH MỤC HÌNH VẼ}
+{\let\oldnumberline\numberline
+\renewcommand{\numberline}{Hình~\oldnumberline}
+\listoffigures}
+\newpage
+\renewcommand{\listtablename}{DANH MỤC BẢNG BIỂU}
+{\let\oldnumberline\numberline
+\renewcommand{\numberline}{Bảng~\oldnumberline}
+\listoftables}
+\glsaddall
+\renewcommand*{\glossaryname}{Danh sách thuật ngữ}
+\renewcommand*{\acronymname}{DANH MỤC THUẬT NGỮ VÀ TỪ VIẾT TẮT}
+\renewcommand*{\entryname}{Thuật ngữ}
+\renewcommand*{\descriptionname}{Ý nghĩa}
+\printnoidxglossary[type=\acronymtype]
+\newpage
+\pagenumbering{arabic}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\leftmark}
+\fancyfoot[C]{\thepage}
+\chapter{BÀI TOÁN VÀ GIẢI PHÁP}
+\label{chap:bai-toan}
+\input{config/chuong_mot_style}
+\input{chapters/01_boi_canh}
+\input{chapters/02_bai_toan}
+\input{chapters/03_yeu_cau}
+\input{chapters/04_kien_truc}
+\input{chapters/05_co_che}
+\input{chapters/06_danh_gia}
+\input{chapters/07_ket_chuong}
+\newpage
+\renewcommand\bibname{TÀI LIỆU THAM KHẢO}
+\begingroup
+\emergencystretch=1.5em
+\printbibliography[heading=bibintoc,title={TÀI LIỆU THAM KHẢO}]
+\endgroup
+\end{document}

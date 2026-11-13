@@ -1,0 +1,115 @@
+% !TEX program = xelatex
+\documentclass[12pt,a4paper]{article}
+\usepackage[margin=19mm,top=16mm,bottom=17mm]{geometry}
+\usepackage{fontspec}
+\IfFileExists{/usr/local/texlive/2026/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf}{%
+  \setmainfont{lmroman10-regular.otf}[
+    Path=/usr/local/texlive/2026/texmf-dist/fonts/opentype/public/lm/,
+    BoldFont=lmroman10-bold.otf,
+    ItalicFont=lmroman10-italic.otf,
+    BoldItalicFont=lmroman10-bolditalic.otf]
+}{\setmainfont{Latin Modern Roman}}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{booktabs,tabularx,array}
+\usepackage{ragged2e}
+\usepackage{titlesec}
+\usepackage{fancyhdr,lastpage}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+  pdftitle={Báo cáo tiến độ tuần 5 - Chatbot tư vấn theo tình huống về thủ tục khoa học-công nghệ, tài chính và nhân sự tại Đại học Bách khoa Hà Nội},
+  pdfauthor={Sinh viên}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3pt}
+\setlength{\emergencystretch}{1.5em}
+\renewcommand{\arraystretch}{1.08}
+\setlist[itemize]{leftmargin=14pt,itemsep=2pt,topsep=2pt,parsep=0pt}
+\setlist[enumerate]{leftmargin=17pt,itemsep=3pt,topsep=2pt,parsep=0pt}
+\titleformat{\section}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{7pt}{3pt}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\small \thepage/\pageref{LastPage}}
+
+\begin{document}
+\begin{center}
+{\Large\bfseries Chatbot tư vấn theo tình huống về thủ tục\\
+khoa học--công nghệ, tài chính và nhân sự\\
+tại Đại học Bách khoa Hà Nội}
+\end{center}
+
+\section*{1. Mục tiêu và kết quả kỳ này}
+Đã hiện thực thiết kế tuần 4 thành \textbf{nguyên mẫu T6 về hội thảo/công tác trong nước hoặc nước ngoài}, dùng kinh phí nhiệm vụ, đơn vị hoặc kết hợp. Đã triển khai và kiểm thử luồng hỏi bổ sung, đối chiếu điều kiện, cập nhật hướng dẫn khi người hỏi sửa thông tin.
+
+\section*{2. Nguyên mẫu đã xây dựng}
+\begin{itemize}
+\item \textbf{Dữ kiện tình huống:} theo dõi loại hoạt động, trong/nước ngoài, ngày hoạt động, nguồn kinh phí và quan hệ với nhiệm vụ; nhánh kết hợp hai nguồn hỏi thêm việc phân định phần chi khi chưa rõ.
+\item \textbf{Phản hồi theo từng phần:} tách điều kiện liên hệ nhiệm vụ, điều kiện công tác và hỗ trợ từ đơn vị khi liên quan. Mỗi phần có kết luận, lý do, nguồn áp dụng và bước tiếp theo.
+\item \textbf{Kiểm tra căn cứ và tiếp tục hội thoại:} mở từng kết luận để xem dữ kiện, đoạn nguồn và phiên bản; lưu lịch sử trên trình duyệt, mở lại để tiếp tục với dữ kiện đã trao đổi.
+\item \textbf{Triển khai:} đã đưa lên Vercel tại \href{https://hust-t6-demo.vercel.app}{\textbf{hust-t6-demo.vercel.app}} và kiểm thử truy cập không cần đăng nhập ngày 28/10/2026.
+\end{itemize}
+
+\section*{3. Các hành vi tư vấn đã hiện thực}
+Các ca dưới đây cụ thể hóa năm năng lực F01--F05 trong nguyên mẫu T6:
+
+\begin{tabularx}{\textwidth}{@{}>{\RaggedRight\arraybackslash\bfseries}p{36mm}>{\RaggedRight\arraybackslash}X@{}}
+\toprule
+Năng lực & \textbf{Hành vi trong nguyên mẫu}\\
+\midrule
+F01 -- Hỏi bổ sung &
+Với câu \emph{Tôi muốn đi hội thảo}, hỏi nguồn kinh phí trước; chỉ hỏi thêm địa điểm, ngày và quan hệ nhiệm vụ khi cần để hướng dẫn.\\[3pt]
+F02 -- Đối chiếu nguồn &
+Hội thảo tại Hà Nội, ngày 15/11/2026, kinh phí nhiệm vụ, có phục vụ nhiệm vụ: tách kết luận liên hệ nhiệm vụ (KHCN) và công tác (TCKH).\\[3pt]
+F03 -- Cập nhật kết luận &
+Khi đổi sang hoàn toàn kinh phí đơn vị, bỏ điều kiện riêng của kinh phí nhiệm vụ, đánh dấu kết luận cũ đã thay thế và giữ phần công tác còn áp dụng.\\[3pt]
+F04 -- Phân biệt mức kết luận &
+Trong bộ kiểm thử thiếu nguồn đơn vị, trả \emph{chưa đủ căn cứ} cho phần hỗ trợ của đơn vị; phần công tác có đủ nguồn vẫn được giữ riêng.\\[3pt]
+F05 -- Giải thích căn cứ &
+Ở kết luận địa điểm, xem được ngày và phạm vi trong/nước ngoài đã dùng, đoạn hướng dẫn công tác, phiên bản và bước tiếp theo.\\
+\bottomrule
+\end{tabularx}
+
+\section*{4. Kết quả kiểm thử kỹ thuật}
+Biên bản kiểm chứng ngày \textbf{28/10/2026} ghi nhận các kết quả sau [1]:
+
+\begin{tabularx}{\textwidth}{@{}>{\RaggedRight\arraybackslash\bfseries}p{35mm}>{\RaggedRight\arraybackslash}p{30mm}>{\RaggedRight\arraybackslash}X@{}}
+\toprule
+Hạng mục & \textbf{Kết quả} & \textbf{Nội dung đã kiểm tra}\\
+\midrule
+Xử lý hội thoại & 77 ca đạt & Ngày sai, đổi nguồn, chuyển tình huống, thiếu/mâu thuẫn căn cứ và nhận diện câu ngoài T6.\\[3pt]
+Trình duyệt & 37 ca đạt & Gửi/sửa dữ kiện, mở căn cứ, khôi phục lịch sử trên bản triển khai; giao diện máy tính/điện thoại.\\[3pt]
+Giao tiếp API & 23 yêu cầu đạt & Luồng tư vấn F01--F05 và kiểm tra đầu vào trên bản triển khai, truy cập không đăng nhập.\\
+\bottomrule
+\end{tabularx}
+
+\newpage
+\textbf{Ba trường hợp lỗi đã sửa và kiểm tra lại:}
+\begin{itemize}
+\item \emph{Dùng kinh phí nhiệm vụ, không dùng kinh phí đơn vị}: nhận đúng nguồn nhiệm vụ, không đưa căn cứ nguồn đơn vị vào kết luận.
+\item \emph{Sửa ngày thành 31/02/2026}: loại ngày sai, hỏi lại ngày và dừng kết luận phụ thuộc thay vì tiếp tục dùng ngày cũ.
+\item \emph{Một hội thảo khác ở Nhật Bản thì sao?}: hỏi đây là tình huống mới hay tiếp tục; nếu là mới, bỏ ngày và nguồn kinh phí cũ, giữ thông tin mới đã nêu.
+\end{itemize}
+\textbf{Trước--sau sửa:} trong 28 ca nhắm vào lỗi, 23 ca chưa đạt trước sửa; sau sửa cả 28 ca và 6 biến thể đều đạt. Nhóm 34 ca này là một phần của tổng 77 ca xử lý.
+
+\section*{5. Chuẩn bị dữ liệu nghiệp vụ}
+Ngày \textbf{02/11/2026}, đã hoàn thành các phần chuẩn bị dữ liệu sau [2]:
+\begin{itemize}
+\item \textbf{Kiểm kê 45 nội dung tài liệu khác nhau từ 51 lượt tải:} gộp bản trùng, lập sổ lưu đường dẫn, URL, phiên bản, mốc hiệu lực, phạm vi và quyền dùng; tách thông tin đã công bố với phần đã xác minh.
+\item \textbf{Xác định 21 mục cần bổ sung thuộc 10 nhóm:} chỉ rõ thiếu tài liệu nào, cần cho thủ tục nào và căn cứ để xác định đủ. Ví dụ, bộ mẫu đăng ký/thuyết minh nhiệm vụ cấp Bộ đã có chưa thay thế hướng dẫn nhiệm vụ cấp Đại học.
+\item \textbf{Thiết kế 28 ca thời gian/chuyển tiếp:} gồm chuyến đi trước/sau mốc hiệu lực, nhiệm vụ được duyệt trước quy định mới, chứng từ còn chờ và người hỏi sửa ngày qua mốc thay đổi. Các ca chưa chạy kiểm chứng nghiệp vụ.
+\end{itemize}
+
+\textbf{Hạn chế hiện tại:}
+mới có luồng T6; đăng ký nhiệm vụ (T1), điều chỉnh/gia hạn (T3), nghiệm thu (T4) và cử đi đào tạo/nghiên cứu (T10) chưa được triển khai. Kết luận đang dựa trên văn bản mẫu tự tạo; chưa có bộ nguồn HUST và đáp án được chuyên viên xác nhận để đánh giá độ đúng nghiệp vụ. Nhận diện câu hỏi dùng quy tắc trích xuất và các dạng diễn đạt đã định nghĩa; chưa chạy mô hình ngôn ngữ thật hoặc đánh giá trên tập câu hỏi thực tế.
+
+\section*{6. Công việc tiếp theo}
+\begin{enumerate}
+\item \textbf{Bổ sung tài liệu mấu chốt:} thu bản ký và phụ lục của quy định nhiệm vụ khoa học và công nghệ cấp Đại học, Quy chế Chi tiêu nội bộ và Quy chế Công tác cán bộ. Với T6, ưu tiên hướng dẫn hội thảo/công tác, chứng từ, thời hạn tạm ứng/quyết toán và quy định kinh phí đơn vị; đối chiếu danh mục để tránh xin trùng.
+\item \textbf{Chuẩn hóa và kiểm chứng T6:} xác minh phiên bản, hiệu lực, quyền dùng; gắn điều kiện với đoạn nguồn; xác nhận đáp án cho ca đủ dữ kiện, đổi kinh phí, sửa ngày và thiếu nguồn. Đầu ra là bộ nguồn và đáp án đối chiếu để thay dữ liệu mẫu.
+\item \textbf{Tinh chỉnh giao diện chatbot:} rà cỡ chữ, khoảng cách, bố cục hội thoại--dữ kiện--căn cứ; làm nổi bật câu hỏi cần trả lời, kết luận hiện hành và phần vừa thay đổi; rút gọn nhãn, câu dẫn lặp. Kiểm tra trên máy tính và điện thoại để người hỏi dễ theo dõi tư vấn.
+\item \textbf{Tích hợp mô hình và mở rộng nội dung:} thử mô hình ngôn ngữ trên cùng bộ ca, ghi nhận lỗi hiểu câu hỏi và cập nhật dữ kiện; sau đó xây thẻ, nguồn và ca kiểm thử cho T1/T3/T4/T10.
+\end{enumerate}
+
+{\footnotesize\textit{Căn cứ: [1] Báo cáo tồn đọng và cải thiện demo T6, kiểm chứng ngày 28/10/2026, kèm kết quả các ca đã chạy. [2] Triển khai danh mục dữ liệu bổ sung, ngày 02/11/2026.}}
+\end{document}

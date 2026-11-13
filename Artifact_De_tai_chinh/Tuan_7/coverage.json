@@ -1,0 +1,255 @@
+{
+  "schemaVersion": 1,
+  "receivedNewDocuments": 0,
+  "receivedFAQ": 0,
+  "status": "waiting_for_teacher",
+  "requestedSections": [
+    {
+      "id": "D01",
+      "title": "Quy định nhiệm vụ KHCN và đổi mới sáng tạo cấp Đại học",
+      "receivedSourceIds": [],
+      "status": "no_new_receipt_recorded",
+      "missingComponents": [],
+      "reviewNotes": [],
+      "baseline": "Đối chiếu kho đã thu và ma trận hiện có; không có nghĩa nhóm này chưa từng có tài liệu."
+    },
+    {
+      "id": "D02",
+      "title": "Quy chế Chi tiêu nội bộ",
+      "receivedSourceIds": [],
+      "status": "no_new_receipt_recorded",
+      "missingComponents": [],
+      "reviewNotes": [],
+      "baseline": "Đối chiếu kho đã thu và ma trận hiện có; không có nghĩa nhóm này chưa từng có tài liệu."
+    },
+    {
+      "id": "D03",
+      "title": "Quy chế Công tác cán bộ",
+      "receivedSourceIds": [],
+      "status": "no_new_receipt_recorded",
+      "missingComponents": [],
+      "reviewNotes": [],
+      "baseline": "Đối chiếu kho đã thu và ma trận hiện có; không có nghĩa nhóm này chưa từng có tài liệu."
+    },
+    {
+      "id": "D04",
+      "title": "T1 - Đăng ký nhiệm vụ khoa học và công nghệ",
+      "receivedSourceIds": [],
+      "status": "no_new_receipt_recorded",
+      "missingComponents": [],
+      "reviewNotes": [],
+      "baseline": "Đối chiếu kho đã thu và ma trận hiện có; không có nghĩa nhóm này chưa từng có tài liệu."
+    },
+    {
+      "id": "D05",
+      "title": "T3 - Điều chỉnh, gia hạn và thay đổi nhiệm vụ",
+      "receivedSourceIds": [],
+      "status": "no_new_receipt_recorded",
+      "missingComponents": [],
+      "reviewNotes": [],
+      "baseline": "Đối chiếu kho đã thu và ma trận hiện có; không có nghĩa nhóm này chưa từng có tài liệu."
+    },
+    {
+      "id": "D06",
+      "title": "T4 - Đánh giá và nghiệm thu nhiệm vụ",
+      "receivedSourceIds": [],
+      "status": "no_new_receipt_recorded",
+      "missingComponents": [],
+      "reviewNotes": [],
+      "baseline": "Đối chiếu kho đã thu và ma trận hiện có; không có nghĩa nhóm này chưa từng có tài liệu."
+    },
+    {
+      "id": "D07",
+      "title": "T6 - Hội thảo/công tác: hướng dẫn, định mức và chứng từ",
+      "receivedSourceIds": [],
+      "status": "no_new_receipt_recorded",
+      "missingComponents": [],
+      "reviewNotes": [],
+      "baseline": "Đối chiếu kho đã thu và ma trận hiện có; không có nghĩa nhóm này chưa từng có tài liệu."
+    },
+    {
+      "id": "D08",
+      "title": "T6 - Quy định áp dụng cho kinh phí của đơn vị",
+      "receivedSourceIds": [],
+      "status": "no_new_receipt_recorded",
+      "missingComponents": [],
+      "reviewNotes": [],
+      "baseline": "Đối chiếu kho đã thu và ma trận hiện có; không có nghĩa nhóm này chưa từng có tài liệu."
+    },
+    {
+      "id": "D09",
+      "title": "T6 - Phối hợp hoặc thay đổi nguồn kinh phí",
+      "receivedSourceIds": [],
+      "status": "no_new_receipt_recorded",
+      "missingComponents": [],
+      "reviewNotes": [],
+      "baseline": "Đối chiếu kho đã thu và ma trận hiện có; không có nghĩa nhóm này chưa từng có tài liệu."
+    },
+    {
+      "id": "D10",
+      "title": "T10 - Cử cán bộ đi đào tạo, nghiên cứu và nghĩa vụ liên quan",
+      "receivedSourceIds": [],
+      "status": "no_new_receipt_recorded",
+      "missingComponents": [],
+      "reviewNotes": [],
+      "baseline": "Đối chiếu kho đã thu và ma trận hiện có; không có nghĩa nhóm này chưa từng có tài liệu."
+    },
+    {
+      "id": "D11",
+      "title": "Quy chế Quản lý tài chính và nguyên tắc áp dụng nguồn",
+      "receivedSourceIds": [],
+      "status": "no_new_receipt_recorded",
+      "missingComponents": [],
+      "reviewNotes": [],
+      "baseline": "Đối chiếu kho đã thu và ma trận hiện có; không có nghĩa nhóm này chưa từng có tài liệu."
+    },
+    {
+      "id": "D12",
+      "title": "Tổ chức, hoạt động và phân cấp thẩm quyền",
+      "receivedSourceIds": [],
+      "status": "no_new_receipt_recorded",
+      "missingComponents": [],
+      "reviewNotes": [],
+      "baseline": "Đối chiếu kho đã thu và ma trận hiện có; không có nghĩa nhóm này chưa từng có tài liệu."
+    },
+    {
+      "id": "D13",
+      "title": "Chức năng, nhiệm vụ và đầu mối của các đơn vị",
+      "receivedSourceIds": [],
+      "status": "no_new_receipt_recorded",
+      "missingComponents": [],
+      "reviewNotes": [],
+      "baseline": "Đối chiếu kho đã thu và ma trận hiện có; không có nghĩa nhóm này chưa từng có tài liệu."
+    },
+    {
+      "id": "D14",
+      "title": "Phiên bản cũ và hướng dẫn chuyển tiếp",
+      "receivedSourceIds": [],
+      "status": "no_new_receipt_recorded",
+      "missingComponents": [],
+      "reviewNotes": [],
+      "baseline": "Đối chiếu kho đã thu và ma trận hiện có; không có nghĩa nhóm này chưa từng có tài liệu."
+    },
+    {
+      "id": "D15",
+      "title": "Văn bản dẫn chiếu và giải thích nghiệp vụ còn thiếu",
+      "receivedSourceIds": [],
+      "status": "no_new_receipt_recorded",
+      "missingComponents": [],
+      "reviewNotes": [],
+      "baseline": "Đối chiếu kho đã thu và ma trận hiện có; không có nghĩa nhóm này chưa từng có tài liệu."
+    }
+  ],
+  "conditions": [
+    {
+      "id": "T6-C01",
+      "title": "Xác định loại hoạt động và phạm vi",
+      "previousRegister": "../Tuan_6/t6-condition-register.json",
+      "requestIds": [
+        "D01",
+        "D02",
+        "D07"
+      ],
+      "verifiedSourceIds": [],
+      "status": "pending_original_and_review"
+    },
+    {
+      "id": "T6-C02",
+      "title": "Quan hệ giữa hoạt động và kinh phí nhiệm vụ",
+      "previousRegister": "../Tuan_6/t6-condition-register.json",
+      "requestIds": [
+        "D01",
+        "D02"
+      ],
+      "verifiedSourceIds": [],
+      "status": "pending_original_and_review"
+    },
+    {
+      "id": "T6-C03",
+      "title": "Phân biệt nhánh công tác trong và ngoài nước",
+      "previousRegister": "../Tuan_6/t6-condition-register.json",
+      "requestIds": [
+        "D02",
+        "D07"
+      ],
+      "verifiedSourceIds": [],
+      "status": "pending_original_and_review"
+    },
+    {
+      "id": "T6-C04",
+      "title": "Chọn phiên bản và xét chuyển tiếp",
+      "previousRegister": "../Tuan_6/t6-condition-register.json",
+      "requestIds": [
+        "D01",
+        "D02",
+        "D07",
+        "D14",
+        "D15"
+      ],
+      "verifiedSourceIds": [],
+      "status": "pending_original_and_review"
+    },
+    {
+      "id": "T6-C05",
+      "title": "Điều kiện riêng của nguồn đơn vị",
+      "previousRegister": "../Tuan_6/t6-condition-register.json",
+      "requestIds": [
+        "D08"
+      ],
+      "verifiedSourceIds": [],
+      "status": "pending_original_and_review"
+    },
+    {
+      "id": "T6-C06",
+      "title": "Thay thế hoặc kết hợp nguồn",
+      "previousRegister": "../Tuan_6/t6-condition-register.json",
+      "requestIds": [
+        "D01",
+        "D02",
+        "D08",
+        "D09"
+      ],
+      "verifiedSourceIds": [],
+      "status": "pending_original_and_review"
+    },
+    {
+      "id": "T6-C07",
+      "title": "Danh mục tài liệu và mẫu cần chuẩn bị",
+      "previousRegister": "../Tuan_6/t6-condition-register.json",
+      "requestIds": [
+        "D02",
+        "D07"
+      ],
+      "verifiedSourceIds": [],
+      "status": "pending_original_and_review"
+    },
+    {
+      "id": "T6-C08",
+      "title": "Mốc chuẩn bị, tạm ứng và quyết toán",
+      "previousRegister": "../Tuan_6/t6-condition-register.json",
+      "requestIds": [
+        "D02",
+        "D07"
+      ],
+      "verifiedSourceIds": [],
+      "status": "pending_original_and_review"
+    },
+    {
+      "id": "T6-C09",
+      "title": "Đầu mối và thẩm quyền cần liên hệ",
+      "previousRegister": "../Tuan_6/t6-condition-register.json",
+      "requestIds": [
+        "D07",
+        "D11",
+        "D12",
+        "D13",
+        "DOC:6"
+      ],
+      "verifiedSourceIds": [],
+      "status": "pending_original_and_review"
+    }
+  ],
+  "crosswalkOrigin": "../De_nghi_du_lieu_2026-11-13/coverage-crosswalk.json",
+  "crosswalkSha256": "35ca182e7be8d46f500771ccefd479b3ed6747786f7af9d6979a0c26195c032e",
+  "existingCorpusReference": "../../Artifact_tham_khao/Quy_dinh_HUST_2026/MA_TRAN_NGUON_CAN_CO.md"
+}

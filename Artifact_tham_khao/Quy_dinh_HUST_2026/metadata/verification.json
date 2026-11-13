@@ -1,0 +1,37 @@
+{
+  "checked_at": "2026-11-02T08:41:14.840172+00:00",
+  "download_hash_checks": 126,
+  "all_download_hashes_ok": true,
+  "orphan_download_files": [],
+  "local_link_errors": [],
+  "ocr_documents": 14,
+  "ocr_pages": 420,
+  "input_integrity": [
+    {
+      "path": "Artifact_De_tai_chinh/00_REQUIREMENTS_CHATBOT_THU_TUC_HUST.md",
+      "unchanged_against_manifest": true
+    },
+    {
+      "path": "Artifact_De_tai_chinh/08_BAO_CAO_TIEN_DO_02.md",
+      "unchanged_against_manifest": true
+    },
+    {
+      "path": "Artifact_De_tai_chinh/04_TONG_HOP_DE_TAI_VA_PHAM_VI_HIEN_TAI.md",
+      "unchanged_against_manifest": true
+    },
+    {
+      "path": "Tuan4_Student.pdf",
+      "unchanged_against_manifest": true
+    },
+    {
+      "path": "Artifact_tham_khao/Thầy đã xác nhận/Goi_y_noi_dung_chatbot_KHCN_TaiChinh_CanBo_HUST.docx",
+      "unchanged_against_manifest": true
+    },
+    {
+      "path": "Artifact_tham_khao/Thầy đã xác nhận/Goi-y-chatbot-thu-tuc-Ban-KHCN-TCKH.md.pdf",
+      "unchanged_against_manifest": true
+    }
+  ],
+  "scope_complete": false,
+  "missing_requirements": "See MA_TRAN_NGUON_CAN_CO.md H01–H17; especially H01/H03/H04 originals"
+}

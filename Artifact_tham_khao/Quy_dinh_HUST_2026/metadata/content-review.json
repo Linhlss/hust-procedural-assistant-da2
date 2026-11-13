@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "contact_sources": [
+    {
+      "owner_role": "KHCN",
+      "url": "https://hust.edu.vn/vi/co-cau-to-chuc-bai-viet/ban-khoa-hoc-cong-nghe.html",
+      "snapshot_path": "pages/5a1faac41676f4.html",
+      "scope": "Đầu mối xin tài liệu/xác nhận; chưa xác nhận người duyệt nội dung hoặc địa chỉ hiện hành.",
+      "named_reviewer": null,
+      "confirmation": null
+    },
+    {
+      "owner_role": "TCKH",
+      "url": "https://hust.edu.vn/vi/co-cau-to-chuc-bai-viet/ban-tai-chinh-ke-hoach.html",
+      "snapshot_path": "pages/a5c246db07655f.html",
+      "scope": "Đầu mối xin tài liệu/xác nhận; chưa xác nhận người duyệt nội dung hoặc địa chỉ hiện hành.",
+      "named_reviewer": null,
+      "confirmation": null
+    },
+    {
+      "owner_role": "TCNS",
+      "url": "https://hust.edu.vn/vi/co-cau-to-chuc-bai-viet/ban-to-chuc-nhan-su.html",
+      "snapshot_path": "pages/68a50fc2ce353d.html",
+      "scope": "Đầu mối xin tài liệu/xác nhận; chưa xác nhận người duyệt nội dung hoặc địa chỉ hiện hành.",
+      "named_reviewer": null,
+      "confirmation": null
+    }
+  ],
+  "clarifications": [
+    {
+      "id": "CL-1",
+      "topic": "Mốc nghiệm thu",
+      "cards": [
+        "T4"
+      ],
+      "question": "Các mốc có khác phạm vi hay mâu thuẫn? Điều khoản nào quyết định từng loại nhiệm vụ?",
+      "answer": null,
+      "source_ids": [],
+      "clause_evidence": [],
+      "owner_confirmation": null,
+      "status": "pending"
+    },
+    {
+      "id": "CL-2",
+      "topic": "Khoán và đoàn ra",
+      "cards": [
+        "T6"
+      ],
+      "question": "Phạm vi khoán/không khoán và quan hệ quy định nhiệm vụ với chi tiêu nội bộ được giải quyết theo căn cứ nào?",
+      "answer": null,
+      "source_ids": [],
+      "clause_evidence": [],
+      "owner_confirmation": null,
+      "status": "pending"
+    },
+    {
+      "id": "CL-3",
+      "topic": "Nguồn kết hợp",
+      "cards": [
+        "T6",
+        "T10"
+      ],
+      "question": "Khi nhiều nguồn hỗ trợ, phần nào dùng nguồn nào và điều kiện tránh hỗ trợ trùng là gì?",
+      "answer": null,
+      "source_ids": [],
+      "clause_evidence": [],
+      "owner_confirmation": null,
+      "status": "pending"
+    },
+    {
+      "id": "CL-4",
+      "topic": "Chuyển tiếp và giấy tờ tồn",
+      "cards": [
+        "T1",
+        "T3",
+        "T4",
+        "T6",
+        "T10"
+      ],
+      "question": "Mốc nào quyết định áp dụng với nhiệm vụ cũ hoặc giấy tờ chờ xử lý; cần phân biệt nghĩa vụ, điều kiện và biểu mẫu không?",
+      "answer": null,
+      "source_ids": [],
+      "clause_evidence": [],
+      "owner_confirmation": null,
+      "status": "pending"
+    }
+  ]
+}

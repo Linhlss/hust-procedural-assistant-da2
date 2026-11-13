@@ -1,0 +1,98 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[margin=19mm,top=16mm,bottom=17mm]{geometry}
+\usepackage{fontspec}
+\setmainfont{lmroman10-regular.otf}[
+  Path=/usr/local/texlive/2026/texmf-dist/fonts/opentype/public/lm/,
+  BoldFont=lmroman10-bold.otf,
+  ItalicFont=lmroman10-italic.otf,
+  BoldItalicFont=lmroman10-bolditalic.otf]
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{booktabs,tabularx,array}
+\usepackage{ragged2e}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Chatbot tư vấn thủ tục theo tình huống cho ba Ban tại HUST},pdfauthor={}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3pt}
+\setlength{\emergencystretch}{1.5em}
+\renewcommand{\arraystretch}{1.08}
+\setlist[itemize]{leftmargin=14pt,itemsep=2pt,topsep=2pt,parsep=0pt}
+\setlist[enumerate]{leftmargin=17pt,itemsep=3pt,topsep=2pt,parsep=0pt}
+\titleformat{\section}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{7pt}{3pt}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyfoot[C]{\small \thepage/\pageref{LastPage}}
+\begin{document}
+\begin{center}
+{\small\bfseries ĐỀ XUẤT ĐỀ TÀI ĐỒ ÁN 2}\\[3pt]
+{\Large\bfseries Chatbot tư vấn thủ tục theo tình huống}\\[3pt]
+{\small Khoa học--Công nghệ \(\cdot\) Tài chính--Kế hoạch \(\cdot\) Tổ chức--Nhân sự}\\[1pt]
+{\small Đại học Bách khoa Hà Nội (HUST)}
+\end{center}
+\vspace{-5pt}
+\noindent\rule{\textwidth}{0.5pt}
+
+\section*{1. Bài toán}
+Khi chuẩn bị một hoạt động nghiên cứu hoặc thủ tục công tác, cán bộ HUST cần biết quy định nào áp dụng và phải làm gì tiếp. Câu hỏi ban đầu có thể chưa nêu đủ loại việc, đơn vị, thời điểm hoặc nguồn kinh phí. Người tư vấn cần làm rõ tình huống, đối chiếu quy định của một hay nhiều Ban và xem lại hướng dẫn nếu dữ kiện thay đổi.
+
+\section*{2. Vấn đề cần giải quyết}
+\begin{itemize}
+\item Tìm đúng chủ đề chưa bảo đảm áp dụng đúng điều kiện; nhiều nguồn có thể dẫn đến hướng dẫn thiếu nhất quán.
+\item Khi người hỏi sửa thông tin, kết luận cũ có thể không còn phù hợp. Nguồn thiếu, mâu thuẫn hoặc cần xác nhận thực tế phải có điểm dừng rõ.
+\item Chưa có thống kê lượt hỏi và thời gian hỗ trợ theo nhóm; không khẳng định tần suất quanh năm hoặc mức giảm công việc khi chưa đo.
+\end{itemize}
+
+\section*{3. Giải pháp và năm năng lực cốt lõi}
+Xây \textbf{web/chatbot tiếng Việt làm giao diện chính}, tư vấn theo tình huống trên tập nội dung được duyệt của ba Ban. Không đặt mục tiêu thực hiện một quy trình hành chính tự động mới.
+\begin{enumerate}
+\item \textbf{Hỏi bổ sung có mục đích:} xác định dữ kiện có thể làm đổi đáp án; chỉ hỏi phần còn thiếu, chỉ thu thập thông tin cần thiết để xác định hướng dẫn phù hợp.
+\item \textbf{Đối chiếu điều kiện giữa các Ban:} áp dụng các nguồn liên quan theo cùng tình huống, chỉ rõ điều kiện thuộc nguồn nào và phần chưa thể thống nhất; không ghép nguồn thành một tuyến duyệt giả định.
+\item \textbf{Kiểm tra lại khi dữ kiện đổi:} khi đổi đơn vị, thời điểm hoặc nguồn kinh phí, xét lại thẻ/nguồn rồi kiểm các kết luận phụ thuộc; nêu phần thay đổi, lý do và đánh dấu hướng dẫn cũ đã được thay thế.
+\item \textbf{Phân biệt mức kết luận:} với từng điều kiện, trả \emph{đáp ứng theo khai báo / không đáp ứng theo khai báo / chưa đủ căn cứ}; nêu dữ kiện chưa xác minh và phần cần chuyên viên xác nhận.
+\item \textbf{Giải thích có thể kiểm tra:} mỗi kết luận kèm dữ kiện đã dùng, điều kiện, điều khoản/đoạn nguồn, phiên bản hoặc mốc hiệu lực và bước tiếp theo; không chỉ gắn đường dẫn chung.
+\end{enumerate}
+Câu đơn giản đủ căn cứ được trả lời ngay. Đây là \textbf{hỗ trợ tư vấn}, không phải xác nhận đủ điều kiện chính thức hay tiếp nhận hồ sơ.
+
+\newpage
+\section*{4. Phạm vi nội dung và giới hạn}
+\begin{tabularx}{\textwidth}{@{}>{\RaggedRight\arraybackslash}p{20mm}X@{}}
+\toprule
+\textbf{Ban} & \textbf{Tập chủ đề ưu tiên xác nhận}\\
+\midrule
+\textbf{KHCN} & Điều kiện, mốc và hướng dẫn nhiệm vụ nghiên cứu; thay đổi, gia hạn, nghiệm thu; SHTT/hợp tác khi đủ nguồn.\\
+\textbf{TCKH} & Nguồn kinh phí, phạm vi định mức, thành phần chứng từ, thời hạn và đầu mối theo tình huống; chỉ hướng dẫn, không thẩm định.\\
+\textbf{TCNS} & Phạm vi hẹp về cử cán bộ đi đào tạo/nghiên cứu/công tác: đối tượng, điều kiện, thời hạn và nghĩa vụ.\\
+\bottomrule
+\end{tabularx}
+\begin{itemize}
+\item \textbf{Độ rộng dự kiến:} chọn thẻ ưu tiên và tình huống giao Ban theo nguồn kiểm chứng; danh mục và số lượng chờ duyệt. Phạm vi nguồn được xác định theo yêu cầu của từng tình huống.
+\item \textbf{Giao Ban:} KHCN--TCKH về hoạt động nghiên cứu và quy định tài chính; TCNS--KHCN về đi đào tạo/nghiên cứu khi tham gia nhiệm vụ; TCNS--TCKH về điều kiện hỗ trợ. Chỉ chọn ca có nguồn/đáp án xác nhận; tình huống cần cả ba Ban chỉ xét mở rộng.
+\item \textbf{Ngoài phạm vi:} hồ sơ cá nhân sinh viên, tuyển dụng, tính kNC/đánh giá cá nhân, tiền kiểm hồ sơ, tiếp nhận--luân chuyển--duyệt--ký; xác nhận số tiền/số dư, ghi sổ, chi trả. Không ghi vào iGov/eHUST/BKOffice; không cam kết công cụ tính, điền mẫu, nhắc hạn.
+\end{itemize}
+
+\section*{5. Đầu vào, xử lý và đầu ra}
+\begin{itemize}
+\item \textbf{Đầu vào:} câu hỏi, dữ kiện tự khai, lịch sử phiên; văn bản HUST được phép dùng, thẻ và điều kiện được kiểm tra. Phân biệt dữ liệu thật với tình huống mô phỏng; dự thảo không làm căn cứ chính sách hiện hành.
+\item \textbf{Xử lý:} nhận diện tình huống $\rightarrow$ hỏi thiếu khi cần $\rightarrow$ đối chiếu điều kiện và nguồn $\rightarrow$ lập kết luận; khi dữ kiện đổi thì kiểm lại phần liên quan.
+\item \textbf{Đầu ra:} hướng dẫn, trạng thái từng kết luận, dữ kiện/giả định, đoạn nguồn và bước tiếp theo. Khi thiếu căn cứ, cung cấp tóm tắt để người dùng trao đổi với đầu mối phụ trách; không tự gửi hoặc tạo tác vụ.
+\end{itemize}
+
+\section*{6. Phương pháp và đánh giá}
+\begin{itemize}
+\item \textbf{Chuẩn hóa nguồn:} xác minh văn bản gốc, chủ nội dung, phiên bản và hiệu lực; lập thẻ thủ tục, dữ kiện quyết định và điều kiện cần kiểm tra.
+\item \textbf{Phương pháp:} kết hợp truy xuất tài liệu, bộ điều kiện và dữ kiện hội thoại; gắn kết luận với dữ kiện/nguồn để kiểm lại khi thông tin thay đổi.
+\item \textbf{Đối chứng:} so sánh C0 hỏi đáp cơ bản, C1 thêm hỏi bổ sung, C2 thêm kiểm tra điều kiện và cập nhật kết luận; dùng cùng nguồn, mô hình nền và tập kiểm thử.
+\item \textbf{Đánh giá:} dự kiến 120--150 ca có đáp án/nguồn do chuyên viên xác nhận, gồm một Ban, giao Ban, thiếu hoặc đổi dữ kiện, mâu thuẫn. Đo đúng kết luận/nguồn, câu hỏi thừa, nhất quán, dừng đúng và thời gian. Tách tập theo tình huống gốc; không đếm diễn đạt lại thành ca độc lập.
+\end{itemize}
+
+\section*{7. Kết luận đề xuất}
+Đề xuất lựa chọn hướng chatbot tư vấn theo tình huống cho ba Ban; trọng tâm là \textbf{hỏi đúng dữ kiện và giữ kết luận nhất quán, có căn cứ}. Hỏi đáp, nguồn và quyền đã có ở các sản phẩm khác; không mặc định là điểm mới. Phạm vi, văn bản gốc, chủ nội dung và tiêu chí nghiệm thu được trình người hướng dẫn xác nhận để chốt triển khai.
+
+{\footnotesize\textit{Căn cứ khảo sát: hai tài liệu định hướng KHCN--TCKH và KHCN--Tài chính--Cán bộ do người hướng dẫn cung cấp; đối chiếu MISA/HUST Assistant và báo cáo HR. Tài liệu định hướng không thay quy định chính thức; nguồn và phân tích chi tiết được lưu trong báo cáo đầy đủ.}}
+\end{document}

@@ -1,0 +1,45 @@
+{
+  "searched_at": "2026-11-02T09:43:29.938947+00:00",
+  "method": "Tìm kiếm web theo truy vấn; không phải crawl toàn website.",
+  "queries": [
+    "site:hust.edu.vn \"5299\" \"2023\" nhiệm vụ",
+    "site:hust.edu.vn \"9768\" \"chức năng\"",
+    "site:hust.edu.vn \"quy trình\" \"18 phụ lục\"",
+    "site:hust.edu.vn \"đề tài cấp trường\" \"gia hạn\" biểu mẫu",
+    "site:hust.edu.vn \"cử\" \"cán bộ\" \"biểu mẫu\" nước ngoài",
+    "site:hust.edu.vn \"quy chế quản lý tài chính\" \"04\"",
+    "site:hust.edu.vn \"chi tiêu nội bộ\" \"đơn vị\" quy chế",
+    "site:hust.edu.vn \"đăng ký\" \"nhiệm vụ\" \"cấp Đại học\" 2026",
+    "site:hust.edu.vn \"nghiệm thu\" \"cấp Trường\" \"biểu mẫu\"",
+    "site:hust.edu.vn \"đi công tác nước ngoài\" \"đơn\"",
+    "site:hust.edu.vn \"đi học\" \"cam kết\" \"cán bộ\" biểu mẫu"
+  ],
+  "findings": [
+    {
+      "url": "https://hust.edu.vn/vi/news/tin-tuc-su-kien/dai-hoc-bach-khoa-ha-noi-tap-huan-su-dung-quy-trinh-so-656086.html",
+      "decision": "Đã có bản chụp; tin tức nhắc 18 phụ lục nhưng chưa lấy được phụ lục; không đóng G05."
+    },
+    {
+      "url": "https://hust.edu.vn/vi/co-cau-to-chuc-bai-viet/phong-ban-trung-tam-50716.html",
+      "decision": "Tải thêm trang đầu mối. Liên kết email/địa chỉ trên trang có chỗ khác trang Ban; chưa chọn làm xác nhận liên hệ hiện hành."
+    },
+    {
+      "url": "https://hust.edu.vn/uploads/sys/quality-assurance/2019/04/ee-6-6-6-quy-che-chi-tieu-noi-bo-2018-dhbkhn.399978.19730.pdf",
+      "decision": "Loại khỏi nguồn tư vấn: kết quả tìm kiếm thể hiện cơ quan là Bách khoa TP.HCM dù URL nằm trên HUST. Không tải."
+    },
+    {
+      "url": "https://hust.edu.vn/uploads/sys/quality-assurance/2019/05/be-06-02-05.388063.21423.pdf",
+      "decision": "Bản chi tiêu năm 2014 theo kết quả tìm kiếm; chưa có phụ thuộc lịch sử cụ thể nên chưa tải/không coi là hiện hành."
+    },
+    {
+      "url": "https://hust.edu.vn/uploads/sys/quality-assurance/2019/05/be-06-01-27.387949.21391.pdf",
+      "decision": "Quy định cán bộ cũ, không thay bộ TCNS hiện hành; chưa có ca phụ thuộc cụ thể nên chưa tải."
+    },
+    {
+      "url": "https://hust.edu.vn/uploads/sys/quality-assurance/2019/05/tme-07-04-03-proposed-support-staff-development.395244.21346.pdf",
+      "decision": "Quyết định cá nhân, không phải mẫu trống; không tải/không nhập kho."
+    }
+  ],
+  "new_required_policy_originals_obtained": 0,
+  "note": "Không tìm thấy không chứng minh tài liệu không tồn tại."
+}

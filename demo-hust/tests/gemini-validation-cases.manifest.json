@@ -1,0 +1,7 @@
+{
+  "frozenAt": "2026-11-10T17:19:46.128429+00:00",
+  "sha256": "b704d4588d0ab66a31c166efbf77b12c9a0a0a5a19dd0ffd548dd703e6aeb3b6",
+  "dialogues": 12,
+  "turns": 20,
+  "note": "Questions/rubrics frozen before the new runtime first model call. Results are technical checks on synthetic sources, not expert business validation."
+}

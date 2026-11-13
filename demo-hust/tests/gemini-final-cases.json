@@ -1,0 +1,159 @@
+{
+  "purpose": "New questions for only the final affected date, amount and withdrawal controls. Frozen before first call on final revision; prior R/S/T results unchanged. Not a representative real-user sample.",
+  "cases": [
+    {
+      "id": "U01",
+      "profile": "standard",
+      "split": "heldout",
+      "group": "final-affected-controls",
+      "turns": [
+        {
+          "text": "Tôi công tác ở Paris ngày 05/10/2027, đơn vị chi. Tôi muốn đối chiếu căn cứ địa điểm.",
+          "expected": {
+            "facts": {
+              "activity": "work",
+              "location": "foreign",
+              "date": "2027-10-05",
+              "funding": "unit"
+            },
+            "absent": [
+              "related",
+              "allocation"
+            ],
+            "includeSources": [
+              "SIM-CT-2026"
+            ],
+            "statuses": {
+              "common": "meets"
+            }
+          },
+          "rubric": {
+            "must_address": [
+              "Chọn đúng nguồn theo thời điểm."
+            ],
+            "must_not_claim": [
+              "Không tự đặt định mức, nguồn hoặc dữ kiện. Không coi lời khai hoặc quy tắc mẫu là phê duyệt hay chính sách HUST đã xác minh."
+            ]
+          }
+        },
+        {
+          "text": "Vẫn chuyến này, sửa ngày thành 31/09/2027.",
+          "expected": {
+            "facts": {
+              "activity": "work",
+              "location": "foreign",
+              "funding": "unit"
+            },
+            "absent": [
+              "date",
+              "related",
+              "allocation"
+            ],
+            "clarification": "date"
+          },
+          "rubric": {
+            "must_address": [
+              "Gỡ ngày không tồn tại và hỏi ngày; không dùng ngày trước hoặc thêm danh mục từ nguồn thiếu thời điểm."
+            ],
+            "must_not_claim": [
+              "Không tự đặt định mức, nguồn hoặc dữ kiện. Không coi lời khai hoặc quy tắc mẫu là phê duyệt hay chính sách HUST đã xác minh."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "U02",
+      "profile": "missing-unit",
+      "split": "heldout",
+      "group": "final-affected-controls",
+      "turns": [
+        {
+          "text": "Tôi công tác tại Lào Cai ngày 08/10/2027 bằng kinh phí đơn vị. Giá phòng 2,4 triệu đồng một đêm có được hỗ trợ theo định mức không?",
+          "expected": {
+            "facts": {
+              "activity": "work",
+              "location": "domestic",
+              "date": "2027-10-08",
+              "funding": "unit"
+            },
+            "absent": [
+              "related",
+              "allocation"
+            ],
+            "noQuestion": true,
+            "statuses": {
+              "unit": "insufficient",
+              "rate-evidence": "insufficient"
+            }
+          },
+          "rubric": {
+            "must_address": [
+              "Nêu thiếu căn cứ mức chi và đầu mối; không tự xác nhận hoặc lặp số tiền như mức được chi."
+            ],
+            "must_not_claim": [
+              "Không tự đặt định mức, nguồn hoặc dữ kiện. Không coi lời khai hoặc quy tắc mẫu là phê duyệt hay chính sách HUST đã xác minh."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "U03",
+      "profile": "standard",
+      "split": "heldout",
+      "group": "final-affected-controls",
+      "turns": [
+        {
+          "text": "Hội thảo ở Pleiku ngày 11/10/2027 dùng cả kinh phí nhiệm vụ và đơn vị. Không phục vụ nhiệm vụ; từng nguồn đã phân định nội dung riêng. Nhờ kiểm tra điều kiện.",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "location": "domestic",
+              "date": "2027-10-11",
+              "funding": "combined",
+              "related": false,
+              "allocation": true
+            },
+            "absent": [],
+            "statuses": {
+              "task": "fails"
+            }
+          },
+          "rubric": {
+            "must_address": [
+              "Nhận đúng hai boolean khác nhau, không đổi false thành chưa biết."
+            ],
+            "must_not_claim": [
+              "Không tự đặt định mức, nguồn hoặc dữ kiện. Không coi lời khai hoặc quy tắc mẫu là phê duyệt hay chính sách HUST đã xác minh."
+            ]
+          }
+        },
+        {
+          "text": "Tôi rút lại lời khai về quan hệ phục vụ nhiệm vụ để xác minh lại. Những thông tin khác không thay đổi.",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "location": "domestic",
+              "date": "2027-10-11",
+              "funding": "combined",
+              "allocation": true
+            },
+            "absent": [
+              "related"
+            ],
+            "clarification": "related"
+          },
+          "rubric": {
+            "must_address": [
+              "Rút quan hệ về chưa biết, giữ phân định true; không tự đổi sang tra tài liệu hoặc khẳng định vẫn không phục vụ."
+            ],
+            "must_not_claim": [
+              "Không tự đặt định mức, nguồn hoặc dữ kiện. Không coi lời khai hoặc quy tắc mẫu là phê duyệt hay chính sách HUST đã xác minh."
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "state": "stopped_before_teacher_data",
+  "reason": "User requested finishing only the work possible before receiving teacher documents/FAQ, then stopping.",
+  "newTeacherDocumentsReceived": 0,
+  "newTeacherFAQReceived": 0,
+  "sourcePackActivated": "t6-fixture",
+  "publicURL": "https://hust-t6-demo.vercel.app",
+  "publicMode": "fixture",
+  "apiBudgetVND": 0,
+  "modelAttempt": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "vercelOnly": true,
+    "requestedTurns": 2,
+    "timeouts": 2,
+    "dependentTurnsNotRun": 2,
+    "developmentDialoguesNotRun": 8,
+    "billingChanged": false
+  },
+  "completedBeforeData": [
+    "main narrative with expandable conditions",
+    "deduplicated copy summary",
+    "offline replay and bounded validator fixes",
+    "original receipt and provenance tools",
+    "source package validation and keyword retrieval preparation",
+    "FAQ grouping and heldout leakage checks",
+    "API/history knowledge metadata with legacy fixture default"
+  ],
+  "nextAfterFiles": [
+    "Receive explicit files using tools/intake.py; preserve original bytes and provenance.",
+    "Record receipt coverage against D01–D15 and separate FAQ.",
+    "Review dates, applicability, permissions and original paragraphs; do not enable by merely naming a pack.",
+    "Select domestic/task-funded T6 only if sufficiently supported; otherwise record missing items.",
+    "Only use permitted excerpts on model service/public demo; fixture rules never fill gaps."
+  ],
+  "doNotDo": [
+    "Do not rerun old failed model requests to replace the scores.",
+    "Do not treat the 8 self-authored development dialogues as FAQ or independent evaluation.",
+    "Do not activate candidate-pack.json before source and expert review.",
+    "Do not modify academic reports, Excel, old sources or user deletions."
+  ]
+}

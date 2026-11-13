@@ -1,0 +1,54 @@
+\section{Định hướng kiểm thử và đánh giá}
+\label{sec:kiem-chung}
+\subsection{Tình huống kiểm thử}
+Kiểm thử được tổ chức theo các nhóm thủ tục trong phạm vi, gồm câu hỏi đã
+đủ thông tin, câu hỏi thiếu hoặc mơ hồ và hội thoại có bổ sung, sửa dữ kiện.
+Cần có cả tình huống một miền và nhiều miền, khác thời điểm áp dụng, nhiệm
+vụ chuyển tiếp, giấy tờ tồn đọng, nguồn thiếu hoặc mâu thuẫn và yêu cầu
+ngoài phạm vi. Các biến thể này giúp kiểm tra hành vi tư vấn trong những
+điều kiện khác nhau thay vì chỉ thử một câu hỏi có sẵn đầy đủ dữ kiện.
+
+Mỗi ca cần có câu hỏi, dữ kiện ban đầu, thông tin được cung cấp ở các lượt
+sau, nguồn và phiên bản đúng, kết luận mong đợi, điểm cần hỏi hoặc dừng.
+Tình huống được dùng ở dạng được phép hoặc đã ẩn danh; các ví dụ giả định
+được nhận diện riêng. Đáp án trọng yếu cần được xác nhận chuyên môn trước
+khi dùng để chấm kết quả.
+
+\subsection{Tiêu chí đánh giá}
+Các tiêu chí được gắn với F01--F05 để kiểm tra trực tiếp yêu cầu sản phẩm:
+\begin{itemize}[leftmargin=*,itemsep=2pt,topsep=3pt]
+\item Hướng dẫn đúng và đủ đối với dữ kiện đã cung cấp, không kết luận vượt
+ phạm vi căn cứ.
+\item Câu hỏi bổ sung thu được thông tin cần thiết; nhận diện cả thông tin
+ bị bỏ sót và những câu hỏi thừa.
+\item Nguồn và phiên bản được chọn đúng; đoạn trích hỗ trợ nội dung kết luận.
+\item Phản hồi sau khi sửa dữ kiện dùng thông tin mới, cập nhật đúng phần
+ bị ảnh hưởng và giữ phần còn phù hợp.
+\item Phân biệt được phần đáp ứng, không đáp ứng và chưa đủ căn cứ; dừng đúng
+ khi nguồn chưa hỗ trợ kết luận.
+\end{itemize}
+Khả năng sử dụng và thời gian phản hồi cũng cần được ghi nhận trên cấu hình
+chạy cụ thể. Các chỉ tiêu và kết quả đo sẽ được trình bày trong Chương~2.
+
+\subsection{Nguyên tắc kiểm thử và đối chiếu}
+Các cấu hình dự kiến gồm C0 là hỏi đáp truy xuất cơ bản, C1 bổ sung hỏi làm
+rõ và C2 bổ sung đối chiếu điều kiện cùng cập nhật kết luận. So sánh C0--C1
+cho phép xem tác động của hỏi bổ sung; so sánh C1--C2 xem tác động của nhóm
+cơ chế đối chiếu và cập nhật, chưa tách riêng từng cơ chế.
+
+Các cấu hình dùng cùng nguồn, dữ kiện đầu, phản hồi người dùng đã chuẩn bị,
+mô hình nền và ngân sách xử lý. Tập phát triển và tập kiểm thử cần được
+phân chia theo tình huống gốc; các cách diễn đạt lại của cùng một ca không
+được xem như các trường hợp độc lập để đánh giá khả năng tổng quát. Cấu
+hình chạy, bộ ca và số liệu cụ thể được trình bày ở Chương~2.
+
+\subsection{Điều kiện áp dụng và giới hạn đánh giá}
+Trước khi đánh giá cần chốt phiên bản kho nguồn, phạm vi từng nhánh và trạng
+thái xác nhận đáp án. Một nhánh biết thông báo thiếu căn cứ chưa được coi
+là hoàn thành nội dung tư vấn nếu nguồn cần thiết vẫn thiếu. Việc cập nhật
+văn bản sau thời điểm chốt kho thuộc công tác duy trì hệ thống.
+
+Kết quả chỉ có ý nghĩa trong phạm vi nguồn, đối tượng và tập tình huống đã
+kiểm tra. Việc ứng dụng được vào hỗ trợ thực tế còn phụ thuộc quyền sử dụng
+tài liệu, bảo vệ thông tin và xác nhận chuyên môn. Hiệu quả giảm thời gian
+hoặc công việc cần được đo trong điều kiện sử dụng tương ứng.

@@ -1,0 +1,15 @@
+{
+  "generated_at": "2026-11-02T09:52:40.607449+00:00",
+  "downloaded_file_records": 51,
+  "distinct_file_hashes": 45,
+  "pdf_downloads": 39,
+  "docx_downloads": 11,
+  "archive_downloads": 1,
+  "page_or_index_records": 76,
+  "failed_download_records": 3,
+  "ocr_documents": 14,
+  "ocr_pages": 420,
+  "hust_core_regulations_2026_obtained": 0,
+  "collection_complete": false,
+  "reason": "H01/H03/H04 and other required HUST sources in coverage matrix remain missing"
+}

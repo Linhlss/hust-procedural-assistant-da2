@@ -1,0 +1,606 @@
+{
+  "purpose": "Fresh post-evaluation validation questions; created after reviewing earlier cohort, not a re-labeling of that heldout. Do not tune on this cohort after first run.",
+  "cases": [
+    {
+      "id": "V01",
+      "group": "boolean-evidence",
+      "split": "heldout",
+      "profile": "standard",
+      "turns": [
+        {
+          "text": "Tôi đăng ký tham dự hội thảo ngày 22/01/2027, tiền nhiệm vụ. Xin danh sách giấy tờ để chuẩn bị.",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "date": "2027-01-22",
+              "funding": "task"
+            },
+            "absent": [
+              "location",
+              "related",
+              "allocation"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Giấy tờ theo nguồn nhiệm vụ; không tự khai có phục vụ."
+            ],
+            "must_not_claim": [
+              "Không xác nhận chính sách HUST thật, hồ sơ hợp lệ hay quyền thanh toán.",
+              "Không tự thêm dữ kiện hoặc điều kiện không có nguồn."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "V02",
+      "group": "boolean-evidence",
+      "split": "heldout",
+      "profile": "standard",
+      "turns": [
+        {
+          "text": "Hội thảo tại Cần Thơ ngày 25/01/2027 có liên quan đến đề tài, dùng cả tiền nhiệm vụ lẫn đơn vị.",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "location": "domestic",
+              "date": "2027-01-25",
+              "funding": "combined",
+              "related": true
+            },
+            "absent": [
+              "allocation"
+            ],
+            "clarification": "allocation"
+          },
+          "rubric": {
+            "must_address": [
+              "Hỏi phân định nguồn, không mặc định đã phân định."
+            ],
+            "must_not_claim": [
+              "Không xác nhận chính sách HUST thật, hồ sơ hợp lệ hay quyền thanh toán.",
+              "Không tự thêm dữ kiện hoặc điều kiện không có nguồn."
+            ]
+          }
+        },
+        {
+          "text": "Từng nguồn đã được phân chia phần việc riêng rồi.",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "location": "domestic",
+              "date": "2027-01-25",
+              "funding": "combined",
+              "related": true,
+              "allocation": true
+            },
+            "absent": []
+          },
+          "rubric": {
+            "must_address": [
+              "Ghi nhận đã phân chia nguồn."
+            ],
+            "must_not_claim": [
+              "Không xác nhận chính sách HUST thật, hồ sơ hợp lệ hay quyền thanh toán.",
+              "Không tự thêm dữ kiện hoặc điều kiện không có nguồn."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "V03",
+      "group": "preserve-facts",
+      "split": "heldout",
+      "profile": "standard",
+      "turns": [
+        {
+          "text": "Tôi dự hội thảo tại Hải Dương ngày 23/01/2027, dùng kinh phí đề tài và có phục vụ nhiệm vụ.",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "location": "domestic",
+              "date": "2027-01-23",
+              "funding": "task",
+              "related": true
+            },
+            "absent": [
+              "allocation"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Nhận thông tin ban đầu."
+            ],
+            "must_not_claim": [
+              "Không xác nhận chính sách HUST thật, hồ sơ hợp lệ hay quyền thanh toán.",
+              "Không tự thêm dữ kiện hoặc điều kiện không có nguồn."
+            ]
+          }
+        },
+        {
+          "text": "Chốt nguồn đơn vị chi toàn bộ thay cho kinh phí nhiệm vụ.",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "location": "domestic",
+              "date": "2027-01-23",
+              "funding": "unit",
+              "related": true
+            },
+            "absent": [
+              "allocation"
+            ],
+            "excludeSources": [
+              "SIM-NV-1",
+              "SIM-NV-PREP"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Bỏ điều kiện nhiệm vụ nhưng giữ quan hệ đã khai trong dữ kiện."
+            ],
+            "must_not_claim": [
+              "Không xác nhận chính sách HUST thật, hồ sơ hợp lệ hay quyền thanh toán.",
+              "Không tự thêm dữ kiện hoặc điều kiện không có nguồn."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "V04",
+      "group": "new-situation",
+      "split": "heldout",
+      "profile": "standard",
+      "turns": [
+        {
+          "text": "Tôi đi công tác ở Huế ngày 17/02/2027, dùng kinh phí đơn vị.",
+          "expected": {
+            "facts": {
+              "activity": "work",
+              "location": "domestic",
+              "date": "2027-02-17",
+              "funding": "unit"
+            },
+            "absent": [
+              "related",
+              "allocation"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Nhận chuyến cũ."
+            ],
+            "must_not_claim": [
+              "Không xác nhận chính sách HUST thật, hồ sơ hợp lệ hay quyền thanh toán.",
+              "Không tự thêm dữ kiện hoặc điều kiện không có nguồn."
+            ]
+          }
+        },
+        {
+          "text": "Bỏ chuyến cũ. Tôi hỏi trường hợp mới hoàn toàn: tham dự hội thảo tại Kuala Lumpur, chưa có lịch và chưa biết nguồn chi.",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "location": "foreign"
+            },
+            "absent": [
+              "date",
+              "funding",
+              "related",
+              "allocation"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Giữ hoạt động/địa điểm mới, không kế thừa ngày hay nguồn cũ."
+            ],
+            "must_not_claim": [
+              "Không xác nhận chính sách HUST thật, hồ sơ hợp lệ hay quyền thanh toán.",
+              "Không tự thêm dữ kiện hoặc điều kiện không có nguồn."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "V05",
+      "group": "withdrawal",
+      "split": "heldout",
+      "profile": "standard",
+      "turns": [
+        {
+          "text": "Hội thảo ở Hà Nội ngày 20/02/2027 do nhiệm vụ chi, có phục vụ đề tài.",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "location": "domestic",
+              "date": "2027-02-20",
+              "funding": "task",
+              "related": true
+            },
+            "absent": [
+              "allocation"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Nhận quan hệ có."
+            ],
+            "must_not_claim": [
+              "Không xác nhận chính sách HUST thật, hồ sơ hợp lệ hay quyền thanh toán.",
+              "Không tự thêm dữ kiện hoặc điều kiện không có nguồn."
+            ]
+          }
+        },
+        {
+          "text": "Tôi xin rút lại thông tin có phục vụ đề tài vì chưa biết rõ.",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "location": "domestic",
+              "date": "2027-02-20",
+              "funding": "task"
+            },
+            "absent": [
+              "related",
+              "allocation"
+            ],
+            "clarification": "related"
+          },
+          "rubric": {
+            "must_address": [
+              "Rút về chưa biết, không gán false."
+            ],
+            "must_not_claim": [
+              "Không xác nhận chính sách HUST thật, hồ sơ hợp lệ hay quyền thanh toán.",
+              "Không tự thêm dữ kiện hoặc điều kiện không có nguồn."
+            ]
+          }
+        },
+        {
+          "text": "Không.",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "location": "domestic",
+              "date": "2027-02-20",
+              "funding": "task",
+              "related": false
+            },
+            "absent": [
+              "allocation"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Hiểu câu ngắn theo câu hỏi quan hệ nhiệm vụ."
+            ],
+            "must_not_claim": [
+              "Không xác nhận chính sách HUST thật, hồ sơ hợp lệ hay quyền thanh toán.",
+              "Không tự thêm dữ kiện hoặc điều kiện không có nguồn."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "V06",
+      "group": "invalid-date",
+      "split": "heldout",
+      "profile": "standard",
+      "turns": [
+        {
+          "text": "Công tác trong nước ngày 14/04/2027, chỉ dùng tiền đơn vị.",
+          "expected": {
+            "facts": {
+              "activity": "work",
+              "location": "domestic",
+              "date": "2027-04-14",
+              "funding": "unit"
+            },
+            "absent": [
+              "related",
+              "allocation"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Nhận ngày ban đầu."
+            ],
+            "must_not_claim": [
+              "Không xác nhận chính sách HUST thật, hồ sơ hợp lệ hay quyền thanh toán.",
+              "Không tự thêm dữ kiện hoặc điều kiện không có nguồn."
+            ]
+          }
+        },
+        {
+          "text": "Ngày tôi vừa nói sửa thành 31/04/2027.",
+          "expected": {
+            "facts": {
+              "activity": "work",
+              "location": "domestic",
+              "funding": "unit"
+            },
+            "absent": [
+              "date",
+              "related",
+              "allocation"
+            ],
+            "clarification": "date"
+          },
+          "rubric": {
+            "must_address": [
+              "Bỏ ngày cũ và ngày không tồn tại; hỏi lại."
+            ],
+            "must_not_claim": [
+              "Không xác nhận chính sách HUST thật, hồ sơ hợp lệ hay quyền thanh toán.",
+              "Không tự thêm dữ kiện hoặc điều kiện không có nguồn."
+            ]
+          }
+        },
+        {
+          "text": "Tôi kiểm tra rồi: 30/04/2027, vẫn chuyến này.",
+          "expected": {
+            "facts": {
+              "activity": "work",
+              "location": "domestic",
+              "date": "2027-04-30",
+              "funding": "unit"
+            },
+            "absent": [
+              "related",
+              "allocation"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Dùng ngày mới hợp lệ."
+            ],
+            "must_not_claim": [
+              "Không xác nhận chính sách HUST thật, hồ sơ hợp lệ hay quyền thanh toán.",
+              "Không tự thêm dữ kiện hoặc điều kiện không có nguồn."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "V07",
+      "group": "phase-and-purpose",
+      "split": "heldout",
+      "profile": "standard",
+      "turns": [
+        {
+          "text": "Tôi đã có thư mời hội thảo ngày 09/03/2027, đơn vị chi. Cần chuẩn bị thêm giấy tờ nào?",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "date": "2027-03-09",
+              "funding": "unit"
+            },
+            "absent": [
+              "location",
+              "related",
+              "allocation"
+            ],
+            "noQuestion": true
+          },
+          "rubric": {
+            "must_address": [
+              "Tập trung giấy tờ còn lại, không xác nhận thư mời hợp lệ."
+            ],
+            "must_not_claim": [
+              "Không xác nhận chính sách HUST thật, hồ sơ hợp lệ hay quyền thanh toán.",
+              "Không tự thêm dữ kiện hoặc điều kiện không có nguồn."
+            ]
+          }
+        },
+        {
+          "text": "Tôi đã về và đã giữ xác nhận tham dự. Giờ cần làm bước tiếp theo nào?",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "date": "2027-03-09",
+              "funding": "unit"
+            },
+            "absent": [
+              "location",
+              "related",
+              "allocation"
+            ],
+            "noQuestion": true,
+            "includeSources": [
+              "SIM-HD-STEPS"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Tập trung trao đổi tài chính/chứng từ sau hoạt động, không quay lại hỏi địa điểm."
+            ],
+            "must_not_claim": [
+              "Không xác nhận chính sách HUST thật, hồ sơ hợp lệ hay quyền thanh toán.",
+              "Không tự thêm dữ kiện hoặc điều kiện không có nguồn."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "V08",
+      "group": "advice-vs-action",
+      "split": "heldout",
+      "profile": "standard",
+      "turns": [
+        {
+          "text": "Tôi công tác ở Đà Lạt ngày 12/03/2027, đơn vị chi. Tiền khách sạn hai triệu một đêm có đúng định mức không?",
+          "expected": {
+            "facts": {
+              "activity": "work",
+              "location": "domestic",
+              "date": "2027-03-12",
+              "funding": "unit"
+            },
+            "absent": [
+              "related",
+              "allocation"
+            ],
+            "intent": "consult"
+          },
+          "rubric": {
+            "must_address": [
+              "Nêu thiếu căn cứ định mức và đầu mối cần xác nhận; không từ chối toàn bộ câu hỏi hay xác nhận số tiền."
+            ],
+            "must_not_claim": [
+              "Không xác nhận chính sách HUST thật, hồ sơ hợp lệ hay quyền thanh toán.",
+              "Không tự thêm dữ kiện hoặc điều kiện không có nguồn."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "V09",
+      "group": "limited-evidence",
+      "split": "heldout",
+      "profile": "standard",
+      "turns": [
+        {
+          "text": "Hội thảo ngày 15/03/2027 do đơn vị chi, địa điểm có thể là Đà Lạt hoặc Seoul. Tôi chưa biết nơi tổ chức cuối cùng.",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "date": "2027-03-15",
+              "funding": "unit"
+            },
+            "absent": [
+              "location",
+              "related",
+              "allocation"
+            ],
+            "clarification": "location"
+          },
+          "rubric": {
+            "must_address": [
+              "Không tự chọn nơi tổ chức, không đưa danh mục giấy tờ từ nguồn chỉ nói phạm vi."
+            ],
+            "must_not_claim": [
+              "Không xác nhận chính sách HUST thật, hồ sơ hợp lệ hay quyền thanh toán.",
+              "Không tự thêm dữ kiện hoặc điều kiện không có nguồn."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "V10",
+      "group": "time-coverage",
+      "split": "heldout",
+      "profile": "standard",
+      "turns": [
+        {
+          "text": "Tôi công tác tại Hà Nội ngày 18/03/2024, dùng tiền đơn vị. Hướng dẫn nào áp dụng?",
+          "expected": {
+            "facts": {
+              "activity": "work",
+              "location": "domestic",
+              "date": "2024-03-18",
+              "funding": "unit"
+            },
+            "absent": [
+              "related",
+              "allocation"
+            ],
+            "statuses": {
+              "common": "insufficient",
+              "unit": "insufficient"
+            }
+          },
+          "rubric": {
+            "must_address": [
+              "Nêu thiếu phiên bản bao phủ 2024, không dùng bản 2026."
+            ],
+            "must_not_claim": [
+              "Không xác nhận chính sách HUST thật, hồ sơ hợp lệ hay quyền thanh toán.",
+              "Không tự thêm dữ kiện hoặc điều kiện không có nguồn."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "V11",
+      "group": "source-conflict",
+      "split": "heldout",
+      "profile": "conflict",
+      "turns": [
+        {
+          "text": "Hội thảo ở Hải Dương ngày 21/03/2027, kinh phí nhiệm vụ, có liên quan đề tài. Điều kiện địa điểm thế nào?",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "location": "domestic",
+              "date": "2027-03-21",
+              "funding": "task",
+              "related": true
+            },
+            "absent": [
+              "allocation"
+            ],
+            "statuses": {
+              "common": "insufficient"
+            },
+            "includeSources": [
+              "SIM-CT-2026",
+              "SIM-CT-CONFLICT"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Dừng riêng địa điểm vì nguồn mâu thuẫn."
+            ],
+            "must_not_claim": [
+              "Không xác nhận chính sách HUST thật, hồ sơ hợp lệ hay quyền thanh toán.",
+              "Không tự thêm dữ kiện hoặc điều kiện không có nguồn."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "V12",
+      "group": "unsupported",
+      "split": "heldout",
+      "profile": "standard",
+      "turns": [
+        {
+          "text": "Tôi muốn được cử đi học tiến sĩ dài hạn, đang là chủ nhiệm nhiệm vụ thì cần làm thủ tục nào?",
+          "expected": {
+            "facts": {},
+            "absent": [
+              "activity",
+              "location",
+              "date",
+              "funding",
+              "related",
+              "allocation"
+            ],
+            "intent": "unsupported",
+            "noConclusions": true
+          },
+          "rubric": {
+            "must_address": [
+              "Nhận T10 chưa triển khai; không thay bằng hướng dẫn công tác."
+            ],
+            "must_not_claim": [
+              "Không xác nhận chính sách HUST thật, hồ sơ hợp lệ hay quyền thanh toán.",
+              "Không tự thêm dữ kiện hoặc điều kiện không có nguồn."
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "purpose": "Fresh questions for the confirmed generic-records validation bug. Frozen before first call after the fix; prior U failure remains unchanged. Not a full new benchmark.",
+  "cases": [
+    {
+      "id": "V01",
+      "group": "contact-validation",
+      "profile": "missing-unit",
+      "split": "heldout",
+      "turns": [
+        {
+          "text": "Tôi công tác tại Đông Hà ngày 15/11/2027, đơn vị chi. Tiền khách sạn 1,7 triệu đồng một đêm có đúng định mức hỗ trợ không?",
+          "expected": {
+            "facts": {
+              "activity": "work",
+              "location": "domestic",
+              "date": "2027-11-15",
+              "funding": "unit"
+            },
+            "absent": [
+              "related",
+              "allocation"
+            ],
+            "noQuestion": true,
+            "statuses": {
+              "rate-evidence": "insufficient",
+              "unit": "insufficient"
+            }
+          },
+          "rubric": {
+            "must_address": [
+              "Nêu thiếu căn cứ định mức và đúng đầu mối để xác minh; không trả thay bằng danh mục giấy tờ."
+            ],
+            "must_not_claim": [
+              "Không xác nhận số tiền hay chính sách HUST; không tự bổ sung nguồn/dữ kiện; không viện dẫn đoạn chỉ nói địa điểm như định mức."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "V02",
+      "group": "contact-validation",
+      "profile": "standard",
+      "split": "heldout",
+      "turns": [
+        {
+          "text": "Tôi dự hội thảo tại TP.HCM ngày 17/11/2027, dùng tiền nhiệm vụ và có phục vụ đề tài. Lệ phí đăng ký 900 nghìn đồng có đúng định mức để được hỗ trợ không?",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "location": "domestic",
+              "date": "2027-11-17",
+              "funding": "task",
+              "related": true
+            },
+            "absent": [
+              "allocation"
+            ],
+            "noQuestion": true,
+            "statuses": {
+              "rate-evidence": "insufficient"
+            }
+          },
+          "rubric": {
+            "must_address": [
+              "Nêu thiếu căn cứ định mức và đúng đầu mối để xác minh; không trả thay bằng danh mục giấy tờ."
+            ],
+            "must_not_claim": [
+              "Không xác nhận số tiền hay chính sách HUST; không tự bổ sung nguồn/dữ kiện; không viện dẫn đoạn chỉ nói địa điểm như định mức."
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

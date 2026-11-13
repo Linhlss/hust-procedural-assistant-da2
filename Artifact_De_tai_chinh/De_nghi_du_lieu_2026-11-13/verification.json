@@ -1,0 +1,92 @@
+{
+  "date": "2026-11-13",
+  "revision": "Removed visible creation-date lines; clarified four categories of document components.",
+  "deliverables": {
+    "Danh_muc_tai_lieu_can_bo_sung.pdf": {
+      "pages": 10,
+      "sha256": "432c7fd29483b3d5c3a72feb016816ff7534ded0b211c32b8a66d215944da8c9",
+      "bytes": 119565,
+      "size": "A4",
+      "body_font": "Times New Roman",
+      "body_pt": 12,
+      "margins_mm": 20,
+      "used_fonts": [
+        "AAAAAA+TimesNewRomanPS-BoldMT",
+        "AAAAAA+TimesNewRomanPSMT"
+      ],
+      "embedded_fonts": [
+        "/AAAAAA+TimesNewRomanPS-BoldMT",
+        "/AAAAAA+TimesNewRomanPSMT"
+      ],
+      "used_font_sizes_pt": [
+        10.0,
+        12.0,
+        14.0,
+        16.0
+      ],
+      "body_chars_outside_margins": 0,
+      "colored_chars": 0,
+      "all_pages_visually_reviewed": true,
+      "author_metadata": ""
+    },
+    "De_nghi_cung_cap_FAQ_va_vuong_mac_thuc_te.pdf": {
+      "pages": 5,
+      "sha256": "2b36ad6edd5c0ba45b6a983851abdae1795ac851b173f9cd2aaf3ca940d6550f",
+      "bytes": 106213,
+      "size": "A4",
+      "body_font": "Times New Roman",
+      "body_pt": 12,
+      "margins_mm": 20,
+      "used_fonts": [
+        "AAAAAA+TimesNewRomanPS-BoldMT",
+        "AAAAAA+TimesNewRomanPSMT"
+      ],
+      "embedded_fonts": [
+        "/AAAAAA+TimesNewRomanPS-BoldMT",
+        "/AAAAAA+TimesNewRomanPSMT"
+      ],
+      "used_font_sizes_pt": [
+        10.0,
+        12.0,
+        14.0,
+        16.0
+      ],
+      "body_chars_outside_margins": 0,
+      "colored_chars": 0,
+      "all_pages_visually_reviewed": true,
+      "author_metadata": ""
+    }
+  },
+  "coverage": {
+    "weekly_requests": 14,
+    "additional_requirements": 21,
+    "source_matrix_groups": 17,
+    "all_mapped": true
+  },
+  "preservation": {
+    "protected_files_checked": 978,
+    "changed": []
+  },
+  "faq_content_unchanged_except_creation_date": true,
+  "no_model_calls": true,
+  "no_deployment": true,
+  "no_messages_sent": true,
+  "content_checks": {
+    "business_review_date_retained": true,
+    "reference_dates_retained": true,
+    "form_filling_guides": true,
+    "registration_confirmations": true,
+    "adjustment_explanation": true,
+    "travel_plan_budget_forms": true,
+    "training_plan_intake": true,
+    "acceptance_evidence": true,
+    "system_instructions_all_five": true,
+    "conditional_request": true,
+    "no_faq_request_in_document": true,
+    "appendix_counts_still_unverified": true,
+    "bounded_completeness": true
+  },
+  "visual_review": "All 15 final pages visually inspected, including revised page breaks. Final renders of document pages 1-4 and 10 and all FAQ pages match their reviewed images; revised document pages 5-9 reinspected. No clipping, overlapping content, missing Vietnamese glyphs or isolated section heading at page bottom.",
+  "visible_creation_date_labels_removed": true,
+  "render_logs_empty": true
+}

@@ -1,0 +1,271 @@
+{
+  "date": "13/11/2026",
+  "purpose": "Internal coverage crosswalk, not a teacher-facing deliverable",
+  "inputs": {
+    "weekly_request": {
+      "path": "Artifact_De_tai_chinh/Tuan_6/PHIEU_XIN_DU_LIEU_2026-11-07.md",
+      "sha256": "2385ca01b2a539ba714cf5be45f124619d4516fed2114009f056f2bb2b53f996"
+    },
+    "originals_request": {
+      "path": "Artifact_tham_khao/Quy_dinh_HUST_2026/DANH_MUC_CAN_XIN_BAN_GOC.md",
+      "sha256": "bcc38c9ebdebe39a839001d16b122317c12106c0e2d7be07ec83f88b3360850d"
+    },
+    "additional_requirements": {
+      "path": "Artifact_tham_khao/Quy_dinh_HUST_2026/DANH_MUC_BO_SUNG.md",
+      "sha256": "977dc079705f49f2c6cfdbe68cd8aa1432d1b7aac0e10c1482db10e5f6733ebc"
+    },
+    "source_matrix": {
+      "path": "Artifact_tham_khao/Quy_dinh_HUST_2026/MA_TRAN_NGUON_CAN_CO.md",
+      "sha256": "db78c2e58218ccd4939ab50ce11e33a8ce27fb90411bd0a2878b0706d3b4c60f"
+    },
+    "inventory": {
+      "path": "Artifact_tham_khao/Quy_dinh_HUST_2026/DANH_MUC_TEP.csv",
+      "sha256": "583dedcce50f6a6156d16a47ead4ecf2a0e74bf2735575c1d9ec7a823b1e5b85"
+    }
+  },
+  "document_sections": {
+    "D01": "Quy định nhiệm vụ KHCN và đổi mới sáng tạo cấp Đại học",
+    "D02": "Quy chế Chi tiêu nội bộ",
+    "D03": "Quy chế Công tác cán bộ",
+    "D04": "T1 - Đăng ký nhiệm vụ khoa học và công nghệ",
+    "D05": "T3 - Điều chỉnh, gia hạn và thay đổi nhiệm vụ",
+    "D06": "T4 - Đánh giá và nghiệm thu nhiệm vụ",
+    "D07": "T6 - Hội thảo/công tác: hướng dẫn, định mức và chứng từ",
+    "D08": "T6 - Quy định áp dụng cho kinh phí của đơn vị",
+    "D09": "T6 - Phối hợp hoặc thay đổi nguồn kinh phí",
+    "D10": "T10 - Cử cán bộ đi đào tạo, nghiên cứu và nghĩa vụ liên quan",
+    "D11": "Quy chế Quản lý tài chính và nguyên tắc áp dụng nguồn",
+    "D12": "Tổ chức, hoạt động và phân cấp thẩm quyền",
+    "D13": "Chức năng, nhiệm vụ và đầu mối của các đơn vị",
+    "D14": "Phiên bản cũ và hướng dẫn chuyển tiếp",
+    "D15": "Văn bản dẫn chiếu và giải thích nghiệp vụ còn thiếu"
+  },
+  "weekly_14": {
+    "W6-01": [
+      "D01"
+    ],
+    "W6-02": [
+      "D02"
+    ],
+    "W6-03": [
+      "D03"
+    ],
+    "W6-04": [
+      "D07"
+    ],
+    "W6-05": [
+      "D08"
+    ],
+    "W6-06": [
+      "D09"
+    ],
+    "W6-07": [
+      "D04"
+    ],
+    "W6-08": [
+      "D05"
+    ],
+    "W6-09": [
+      "D06"
+    ],
+    "W6-10": [
+      "D10"
+    ],
+    "W6-11": [
+      "D11",
+      "D12",
+      "D13"
+    ],
+    "W6-12": [
+      "D14",
+      "D15"
+    ],
+    "W6-13": [
+      "FAQ:2",
+      "FAQ:3",
+      "FAQ:5",
+      "FAQ:6"
+    ],
+    "W6-14": [
+      "DOC:6",
+      "FAQ:3",
+      "FAQ:6"
+    ]
+  },
+  "additional_21": {
+    "G01-R01": [
+      "D01",
+      "D04",
+      "D05",
+      "D06"
+    ],
+    "G01-R02": [
+      "D02",
+      "D07"
+    ],
+    "G01-R03": [
+      "D03",
+      "D10"
+    ],
+    "G02-R01": [
+      "D04"
+    ],
+    "G02-R02": [
+      "D04"
+    ],
+    "G03-R01": [
+      "D05"
+    ],
+    "G03-R02": [
+      "D05",
+      "D09",
+      "D10"
+    ],
+    "G04-R01": [
+      "D06"
+    ],
+    "G04-R02": [
+      "D06"
+    ],
+    "G05-R01": [
+      "D07"
+    ],
+    "G05-R02": [
+      "D07"
+    ],
+    "G05-R03": [
+      "D09",
+      "D04",
+      "D05"
+    ],
+    "G06-R01": [
+      "D10"
+    ],
+    "G06-R02": [
+      "D10"
+    ],
+    "G07-R01": [
+      "D11"
+    ],
+    "G07-R02": [
+      "D12"
+    ],
+    "G07-R03": [
+      "D13"
+    ],
+    "G08-R01": [
+      "D08"
+    ],
+    "G09-R01": [
+      "D15"
+    ],
+    "G10-R01": [
+      "D14"
+    ],
+    "G10-R02": [
+      "D14"
+    ]
+  },
+  "matrix_17": {
+    "H01": [
+      "D01"
+    ],
+    "H02": [
+      "D01"
+    ],
+    "H03": [
+      "D02"
+    ],
+    "H04": [
+      "D03"
+    ],
+    "H05": [
+      "D11"
+    ],
+    "H06": [
+      "D12"
+    ],
+    "H07": [
+      "D13"
+    ],
+    "H08": [
+      "D07"
+    ],
+    "H09": [
+      "D08"
+    ],
+    "H10": [
+      "D10"
+    ],
+    "H11": [
+      "D04"
+    ],
+    "H12": [
+      "D05"
+    ],
+    "H13": [
+      "D06"
+    ],
+    "H14": [
+      "D14"
+    ],
+    "H15": [
+      "D14"
+    ],
+    "H16": [
+      "D07",
+      "D09",
+      "D15"
+    ],
+    "H17": [
+      "D04",
+      "D05"
+    ]
+  },
+  "originals_request_coverage": {
+    "three_foundations": [
+      "D01",
+      "D02",
+      "D03"
+    ],
+    "KHCN": [
+      "D04",
+      "D05",
+      "D06",
+      "D07",
+      "D14",
+      "D15"
+    ],
+    "TCKH": [
+      "D02",
+      "D07",
+      "D08",
+      "D09",
+      "D11",
+      "D14"
+    ],
+    "TCNS": [
+      "D03",
+      "D05",
+      "D10",
+      "D14"
+    ],
+    "office": [
+      "D12",
+      "D13"
+    ],
+    "cases_and_explanations": [
+      "D15",
+      "FAQ:2",
+      "FAQ:3",
+      "FAQ:5",
+      "FAQ:6"
+    ]
+  },
+  "notes": [
+    "14/21/17 are overlapping views, never added as a file count.",
+    "Existing files and request registers are read-only inputs.",
+    "Appendix/form counts and identifiers remain references pending original-document confirmation.",
+    "FAQ and case requests are in the second PDF; no question-set request in the document PDF."
+  ]
+}

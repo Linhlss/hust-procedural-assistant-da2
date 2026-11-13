@@ -1,0 +1,100 @@
+% !TEX program = xelatex
+\documentclass[12pt,a4paper]{article}
+\usepackage[margin=19mm,top=16mm,bottom=17mm]{geometry}
+\usepackage{fontspec}
+\IfFileExists{/usr/local/texlive/2026/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf}{%
+  \setmainfont{lmroman10-regular.otf}[
+    Path=/usr/local/texlive/2026/texmf-dist/fonts/opentype/public/lm/,
+    BoldFont=lmroman10-bold.otf,
+    ItalicFont=lmroman10-italic.otf,
+    BoldItalicFont=lmroman10-bolditalic.otf]
+}{\setmainfont{Latin Modern Roman}}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{booktabs,tabularx,array}
+\usepackage{ragged2e}
+\usepackage{titlesec}
+\usepackage{fancyhdr,lastpage}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Chatbot tư vấn theo tình huống về thủ tục khoa học-công nghệ, tài chính và nhân sự tại Đại học Bách khoa Hà Nội},pdfauthor={}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3pt}
+\setlength{\emergencystretch}{1.5em}
+\renewcommand{\arraystretch}{1.08}
+\setlist[itemize]{leftmargin=14pt,itemsep=2pt,topsep=2pt,parsep=0pt}
+\setlist[enumerate]{leftmargin=17pt,itemsep=3pt,topsep=2pt,parsep=0pt}
+\titleformat{\section}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{7pt}{3pt}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\small \thepage/\pageref{LastPage}}
+
+\begin{document}
+\begin{center}
+{\Large\bfseries Chatbot tư vấn theo tình huống về thủ tục\\
+khoa học--công nghệ, tài chính và nhân sự\\
+tại Đại học Bách khoa Hà Nội}
+\end{center}
+
+\section*{1. Mục tiêu và kết quả kỳ này}
+Từ nguyên mẫu T6 đã có, đã hoàn thiện thao tác tìm và tiếp tục hội thoại, bổ sung hoặc sửa dữ kiện trực tiếp; đồng thời kết nối Gemini để trích thông tin và soạn phản hồi theo tình huống. Thử mô hình qua Vercel bằng nguồn mẫu, không sử dụng dịch vụ trả phí. URL chia sẻ \href{https://hust-t6-demo.vercel.app}{\textbf{hust-t6-demo.vercel.app}} tiếp tục dùng bộ trích xuất quy tắc; Gemini được kiểm tra trên deployment riêng của cùng project.
+
+\section*{2. Hai chức năng tương tác đã hoàn thiện}
+\begin{itemize}
+\item \textbf{Tìm toàn bộ lịch sử:} tìm theo tên cuộc, câu người hỏi, phản hồi, phần thay đổi và căn cứ; hỗ trợ tiếng Việt có hoặc không dấu, chữ hoa/thường và \emph{đ/d}. Có số kết quả, đoạn trích và đánh dấu từ khớp. Mở kết quả giữ bộ lọc; xóa rồi khôi phục hội thoại cập nhật danh sách ngay.
+\item \textbf{Bổ sung/Sửa tại từng dòng dữ kiện:} chọn hoạt động, phạm vi địa điểm, nguồn kinh phí, quan hệ nhiệm vụ và phân định nguồn; nhập ngày bằng lịch hoặc bàn phím. \emph{Chưa xác định} rút dữ kiện, khác với \emph{Không phục vụ}; có Gỡ ngày, Hủy và Thử lại. Bản nháp chat được giữ khi dùng phần nhập trực tiếp.
+\item \textbf{Cập nhật có kiểm soát:} chọn nguồn đơn vị thay thế nhiệm vụ làm ngừng áp dụng điều kiện riêng của nhiệm vụ; nguồn kết hợp yêu cầu làm rõ phân định. Chỉ nhận giá trị sau khi máy chủ trả thành công; không tự cuộn đến phản hồi mới. Đã kiểm trên máy tính, điện thoại và hai giao diện sáng/tối.
+\end{itemize}
+
+\section*{3. Kết nối mô hình và kiểm soát câu trả lời}
+Luồng xử lý gồm ba phần: Gemini trích ý định và dữ kiện; mã xử lý chọn nguồn và đối chiếu điều kiện; Gemini diễn đạt từ kết luận và đoạn nguồn được cấp. Thao tác chọn dữ kiện trực tiếp xử lý bằng mã, không gọi mô hình. Khi lỗi kết nối, hết thời gian hoặc đầu ra không hợp lệ, lượt mới không được ghi đè dữ kiện trước đó.
+
+Đã bổ sung kiểm tra dữ kiện tự thêm, nguồn không thuộc tập được cấp và một số số liệu tự đặt. Bộ trích xuất đã được sửa để phân biệt \emph{giữ--gán--rút} cho từng trường, yêu cầu đoạn lời khai hỗ trợ và chặn việc suy ra \emph{có phục vụ nhiệm vụ} chỉ từ \emph{dùng tiền đề tài}. Kiểm cấu trúc và mã trích dẫn vẫn cần đi kèm đọc, đối chiếu nội dung phản hồi.
+
+\section*{4. Kết quả kiểm thử kỹ thuật}
+\begin{tabularx}{\textwidth}{@{}>{\RaggedRight\arraybackslash\bfseries}p{33mm}>{\RaggedRight\arraybackslash}X@{}}
+\toprule
+Hạng mục & \textbf{Kết quả và phạm vi kiểm tra}\\
+\midrule
+Mã và kiểu dữ liệu & 156 ca mã đạt; kiểm tra kiểu dữ liệu đạt. Gồm hồi quy nhập dữ kiện, lịch sử, nguồn và kiểm đầu ra mô hình bằng phản hồi giả lập.\\[3pt]
+Trình duyệt Vercel & 16 ca UI vòng trước đạt; 8 ca kiểm phần định mức và hỏi lại ngày khi tra căn cứ trên bản cuối đạt; ở máy tính/điện thoại, sáng/tối.\\[3pt]
+API và nhập trực tiếp & 36 yêu cầu trên bản fixture đạt; kiểm riêng 13 yêu cầu nhập có kiểu trên bản Gemini đều đạt, không phát sinh bước gọi mô hình.\\
+\bottomrule
+\end{tabularx}
+
+\newpage
+\textbf{Đánh giá Gemini 3.5 Flash-Lite trên các bộ câu hỏi đã đóng băng:}
+
+\begin{tabularx}{\textwidth}{@{}>{\RaggedRight\arraybackslash}p{42mm}>{\RaggedRight\arraybackslash}X>{\RaggedRight\arraybackslash}p{25mm}>{\RaggedRight\arraybackslash}p{23mm}@{}}
+\toprule
+\textbf{Bộ câu hỏi} & \textbf{Cấu hình} & \textbf{Hội thoại đạt} & \textbf{Lượt đạt}\\
+\midrule
+Bộ cũ: 20 hội thoại & Fixture & 15/20 & 33/39\\
+ & Gemini 3.5 Flash-Lite & 12/20 & 26/39\\[3pt]
+Bộ giữ riêng: 20 hội thoại & Fixture & 12/20 & 19/28\\
+ & Gemini 3.5 Flash-Lite & 16/20 & 24/28\\
+\bottomrule
+\end{tabularx}
+
+Điểm trên kiểm dữ kiện, trạng thái và nguồn theo kỳ vọng. Bộ cũ nhận 28 phản hồi API, 6 lượt lỗi và 5 lượt phụ thuộc chưa chạy; bộ giữ riêng nhận 26 phản hồi, 2 lượt lỗi. Đọc và chấm riêng nội dung cho thấy chỉ \textbf{20/28 lượt của bộ giữ riêng} đáp ứng đủ năm tiêu chí: bám nhu cầu, đủ nội dung, nhất quán, căn cứ hỗ trợ và dừng đúng. Đây là rà soát kỹ thuật trên nguồn mẫu, chưa phải đánh giá của chuyên viên.
+
+\textbf{Các lỗi và xử lý:} đã phát hiện tự thêm nguồn thứ hai, lẫn dữ kiện đã rút với giá trị \emph{Không}, bỏ câu hỏi ngày khi đang tra căn cứ và trộn giấy tờ vào câu hỏi định mức. Đã bổ sung kiểm lời khai, trạng thái và ngữ cảnh cấp cho mô hình. Đầu ra sai được yêu cầu sửa tối đa một lần mỗi pha trong cùng giới hạn 50 giây; nếu vẫn sai, không tạo kết luận mới.
+
+\textbf{Kiểm chứng sau sửa:} vòng kiểm ngày và rút dữ kiện có 4/5 lượt đạt, một lượt bị từ chối đầu ra. Đã chẩn đoán thêm lỗi bộ kiểm nhầm lời hỏi đầu mối về chứng từ với yêu cầu giấy tờ. Hai câu định mức mới sau sửa đạt 0/2 lượt; đây là kiểm riêng phần chịu ảnh hưởng, không thay điểm bộ cũ hay chứng minh độ chính xác tổng quát. Gate phát hành Gemini chưa đạt; bản công khai tiếp tục fixture.
+
+\section*{5. Hạn chế hiện tại}
+\begin{itemize}
+\item \textbf{Hiểu câu và tính sẵn sàng:} chat tự do còn lỗi cập nhật dữ kiện, diễn đạt và giới hạn phạm vi; dịch vụ miễn phí có phản hồi tải cao hoặc hết thời gian. Các bộ câu hỏi tự biên soạn chưa đại diện cho phân bố câu hỏi thực tế của cán bộ, giảng viên.
+\item \textbf{Căn cứ nghiệp vụ:} chưa nhận thêm bộ quy định gốc, hướng dẫn T6 và đáp án được chuyên viên xác nhận. Phiếu xin dữ liệu có 14 mục; bảng chuẩn bị gồm 9 điều kiện ứng viên và 11 ca nghiệp vụ chưa được xác nhận. Các phần chuẩn bị này không được tính thành tài liệu mới đã thu trong kỳ.
+\item \textbf{Phạm vi:} mới hiện thực T6; T1/T3/T4/T10 còn ở kế hoạch. Chatbot không tiếp nhận, thẩm định, nộp hoặc duyệt hồ sơ, không xác nhận khoản chi hay thực hiện thanh toán.
+\end{itemize}
+
+\section*{6. Công việc tiếp theo}
+\begin{enumerate}
+\item \textbf{Bổ sung nguồn mấu chốt:} xin bản ký và phụ lục quy định nhiệm vụ khoa học và công nghệ cấp Đại học, Chi tiêu nội bộ, Công tác cán bộ; ưu tiên hướng dẫn công tác/hội thảo, chứng từ và kinh phí đúng đơn vị. Xác minh hiệu lực, quyền dùng và đầu mối kiểm đáp án.
+\item \textbf{Kiểm chứng phiên bản mô hình đã sửa:} đối chiếu đoạn lời khai với từng dữ kiện, kiểm phần rút/sửa và dẫn chứng; chấm cả nội dung, không chỉ đối chiếu dữ kiện tự động. Nếu chỉnh sau khi xem bộ giữ riêng, dùng nhóm câu mới cho lần đánh giá độc lập tiếp theo.
+\item \textbf{Hoàn thiện T6 trước khi mở rộng:} thay dữ liệu mẫu ở phần đủ căn cứ, xác nhận đáp án và kiểm lại toàn luồng; tiếp tục rà thao tác và bố cục khi nội dung dài. Chỉ cập nhật bản công khai sau khi qua các lỗi trọng yếu, rồi triển khai T1/T3/T4/T10 theo bộ nguồn tương ứng.
+\end{enumerate}
+{\footnotesize\textit{Minh chứng: các biên bản kiểm thử và transcript Vercel được lưu trong dự án.}}
+\end{document}

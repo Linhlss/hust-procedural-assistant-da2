@@ -1,0 +1,199 @@
+{
+  "url": "https://hust-t6-demo.vercel.app",
+  "deploymentId": "dpl_AKE31mVBehGiy1MMDMuzbTfefjxH",
+  "anonymous": true,
+  "mode": "fixture",
+  "date": "2026-11-10T18:27:59.320995+00:00",
+  "browser": {
+    "dark": {
+      "stats": {
+        "startTime": "2026-11-10T18:10:55.381Z",
+        "duration": 48961.591,
+        "expected": 8,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "tests": [
+        {
+          "name": "missing spending-rate evidence is shown without asking unrelated location at 1440px",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration": 2704
+            }
+          ]
+        },
+        {
+          "name": "missing spending-rate evidence is shown without asking unrelated location at 390px",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration": 1967
+            }
+          ]
+        },
+        {
+          "name": "explicit editing keeps draft, updates sources and restores typed history at 1440px",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration": 12366
+            }
+          ]
+        },
+        {
+          "name": "explicit editing keeps draft, updates sources and restores typed history at 390px",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration": 12487
+            }
+          ]
+        },
+        {
+          "name": "a failed/cancelled edit keeps selection and composer draft, then retry applies once",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration": 3760
+            }
+          ]
+        },
+        {
+          "name": "full-history Vietnamese search filters, opens, deletes and restores at 1440px",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration": 4857
+            }
+          ]
+        },
+        {
+          "name": "full-history Vietnamese search filters, opens, deletes and restores at 390px",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration": 5913
+            }
+          ]
+        },
+        {
+          "name": "success notice stays opaque and above the composer in a low window",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration": 2893
+            }
+          ]
+        }
+      ]
+    },
+    "light": {
+      "stats": {
+        "startTime": "2026-11-10T18:11:44.675Z",
+        "duration": 46500.79,
+        "expected": 8,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "tests": [
+        {
+          "name": "missing spending-rate evidence is shown without asking unrelated location at 1440px",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration": 2219
+            }
+          ]
+        },
+        {
+          "name": "missing spending-rate evidence is shown without asking unrelated location at 390px",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration": 1838
+            }
+          ]
+        },
+        {
+          "name": "explicit editing keeps draft, updates sources and restores typed history at 1440px",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration": 11808
+            }
+          ]
+        },
+        {
+          "name": "explicit editing keeps draft, updates sources and restores typed history at 390px",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration": 12452
+            }
+          ]
+        },
+        {
+          "name": "a failed/cancelled edit keeps selection and composer draft, then retry applies once",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration": 3687
+            }
+          ]
+        },
+        {
+          "name": "full-history Vietnamese search filters, opens, deletes and restores at 1440px",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration": 4815
+            }
+          ]
+        },
+        {
+          "name": "full-history Vietnamese search filters, opens, deletes and restores at 390px",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration": 5912
+            }
+          ]
+        },
+        {
+          "name": "success notice stays opaque and above the composer in a low window",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration": 2858
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "api": {
+    "legacyRequests": 23,
+    "typedRequests": 13,
+    "passed": 36
+  },
+  "note": "Repeated verification on final source, not additional independent questions. Some UI error cases intentionally mock failure; not live Gemini results."
+}

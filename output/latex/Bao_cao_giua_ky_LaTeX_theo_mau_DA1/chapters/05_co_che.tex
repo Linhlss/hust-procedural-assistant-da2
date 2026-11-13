@@ -1,0 +1,125 @@
+\section{Cơ chế tư vấn theo tình huống}
+\label{sec:co-che}
+\subsection{Luồng xử lý câu hỏi}
+Từ kiến trúc ở Mục~\ref{sec:kien-truc}, một lượt hỏi đáp bắt đầu bằng việc
+nhận diện mục đích, ghi nhận dữ kiện và xác định nội dung thuộc phạm vi hỗ
+trợ. Hệ thống lựa chọn thẻ và nguồn ứng viên, kiểm tra căn cứ rồi xác định
+phần có thể trả lời và phần cần hỏi bổ sung. Nghiên cứu về hỏi làm rõ trong
+hội thoại tìm kiếm thông tin~\cite{aliannejadi2019clarifying} cung cấp cơ sở
+cho việc lựa chọn câu hỏi tiếp nối thay vì chỉ tạo một câu trả lời cuối.
+Trong đề tài, câu hỏi bổ sung được ràng buộc bởi dữ kiện có ảnh hưởng đến
+điều kiện áp dụng, đáp ứng F01.
+
+\begin{figure}[H]
+\centering\input{figures/luong_tu_van}
+\caption{Luồng trả lời, hỏi bổ sung và dừng ở phần thiếu căn cứ}
+\label{fig:luong}
+\end{figure}
+
+Hình~\ref{fig:luong} thể hiện luồng đối với một phần câu hỏi. Với yêu cầu gồm
+nhiều nội dung, từng phần được xét theo căn cứ riêng; phản hồi có thể đồng
+thời đưa ra hướng dẫn và hỏi thông tin còn thiếu. Khi người dùng không cung
+cấp dữ kiện, hệ thống nêu giới hạn hoặc các khả năng có điều kiện, giữ nguyên
+những giá trị chưa xác định.
+
+\subsection{Quản lý ngữ cảnh và cập nhật thông tin}
+Theo dõi trạng thái hội thoại giúp duy trì thông tin theo miền và trường
+qua các lượt trao đổi~\cite{wu2019trade}. Để phục vụ F03, thiết kế của hệ
+thống tổ chức trạng thái tư vấn tại lượt $t$ thành:
+\begin{equation}
+S_t=(F_t,I_t,E_t,K_t),
+\label{eq:state}
+\end{equation}
+trong đó $F_t$ là dữ kiện hiện tại, $I_t$ là tập thẻ đang xét, $E_t$ là căn
+cứ cùng trạng thái áp dụng và $K_t$ là các kết luận với quan hệ phụ thuộc.
+Biểu diễn này xác định thông tin cần quản lý trong thiết kế; các lựa chọn
+lưu trữ cụ thể được thực hiện khi xây dựng ứng dụng.
+
+Mỗi dữ kiện lưu giá trị, mức rõ ràng, lượt cung cấp và quan hệ thay thế nếu
+được sửa. Thông tin cũ còn trong lịch sử để giải thích diễn tiến hội thoại,
+nhưng không được sử dụng như giá trị hiện tại. Một phát ngôn chuyển sang
+việc mới cần được phân biệt với việc sửa thông tin của tình huống đang xét.
+
+Khi người dùng bổ sung, sửa hoặc rút lại dữ kiện, hệ thống chọn lại thẻ và
+nguồn theo tình huống mới. Những hướng dẫn dựa trên dữ kiện hoặc căn cứ đã
+thay đổi được xét lại; phần vẫn phù hợp được giữ và phần được thay thế cần
+chỉ rõ lý do. Nếu người dùng nói ``đổi nguồn hỗ trợ'' mà chưa rõ thay hoàn
+toàn hay kết hợp các nguồn, hệ thống hỏi làm rõ trước khi loại nguồn cũ.
+
+\subsection{Đối chiếu điều kiện và lựa chọn căn cứ}
+F02 yêu cầu các nguồn liên quan được áp dụng trên cùng một tình huống.
+Chẳng hạn, điều kiện gắn với nhiệm vụ và quy định tài chính có thể cần đối
+chiếu cùng hoạt động, đơn vị và nguồn kinh phí. Hình~\ref{fig:phu-thuoc} mô
+tả quan hệ giữa dữ kiện, điều kiện, đoạn nguồn và kết luận. Việc lưu quan
+hệ này giúp giải thích căn cứ và xác định phần cần xét lại khi thông tin đổi.
+
+\begin{figure}[H]
+\centering\input{figures/phu_thuoc}
+\caption{Quan hệ dữ kiện, điều kiện, đoạn nguồn và kết luận}
+\label{fig:phu-thuoc}
+\end{figure}
+
+Nguồn được lựa chọn theo đối tượng, đơn vị, thời điểm và điều khoản áp dụng.
+Ngày ban hành, ngày hiệu lực, ngày sự việc và ngày hỏi cần được phân biệt.
+Một nhiệm vụ được phê duyệt trước quy định mới có thể cần xét điều khoản
+chuyển tiếp. Tương tự, giấy tờ tồn đọng không tự quyết định dùng quy định
+cũ hay mới; mốc áp dụng phải được xác định từ nguồn liên quan.
+
+Nếu người dùng chỉ nhớ tháng hoặc năm, dữ kiện đó có thể đủ khi không làm
+phát sinh nhiều khả năng áp dụng khác nhau. Khi khoảng khai báo đi qua mốc
+thay đổi quy định, hệ thống cần hỏi chính xác hơn hoặc nêu rõ giới hạn.
+Hai đoạn nguồn khác nhau về đối tượng hoặc thời điểm cũng cần được phân
+biệt với mâu thuẫn thực sự trong cùng một trường hợp.
+
+\subsection{Tạo phản hồi và xử lý giới hạn}
+Phản hồi tư vấn gồm dữ kiện đang dùng, kết luận theo từng phần, căn cứ hỗ
+trợ, thông tin còn thiếu và bước tiếp theo. Độ dài phụ thuộc câu hỏi; câu
+tra cứu đơn giản có thể được trả lời ngắn. Khi người dùng sửa thông tin,
+phản hồi cần chỉ rõ hướng dẫn nào thay đổi và vì sao.
+
+ALCE xem xét chất lượng câu trả lời có trích dẫn và mức hỗ trợ của căn cứ
+được dẫn~\cite{gao2023alce}. Thiết kế vận dụng nguyên tắc này cho F05: mỗi
+kết luận cần gắn với đoạn nguồn hỗ trợ đúng nội dung đang trả lời. Liên
+kết đến tài liệu cần kèm điều, khoản hoặc đoạn đã sử dụng để người hỏi
+kiểm tra được hướng dẫn.
+
+Ba mức kết luận của F04 là \emph{đáp ứng theo khai báo}, \emph{không đáp ứng
+theo khai báo} và \emph{chưa đủ căn cứ}. Chúng áp dụng cho từng điều kiện,
+không xác nhận dữ kiện khai báo hoặc thay quyết định của đơn vị có thẩm
+quyền. Nghiên cứu câu hỏi không có đáp án trong ngữ cảnh như
+SQuAD~\cite{rajpurkar2018squad} cung cấp cơ sở cho việc xác định khi nào
+nguồn không hỗ trợ một câu trả lời.
+
+Thiếu dữ kiện có thể được giải quyết bằng hỏi bổ sung. Khi thiếu nguồn,
+phạm vi chưa rõ hoặc còn mâu thuẫn chưa có cách giải quyết được xác nhận,
+hệ thống dừng phần liên quan, giữ phần vẫn đủ căn cứ và hướng dẫn đầu mối
+cần trao đổi. Với yêu cầu vượt phạm vi tư vấn, phản hồi giới hạn ở việc
+giải thích và định hướng; bản tóm tắt để người dùng trao đổi với chuyên
+viên không được tự chuyển thành hồ sơ hay gửi đi thay người hỏi.
+
+\subsection{Minh họa hội thoại}
+Xét tình huống hội thảo đã dùng ở Mục~\ref{sec:boi-canh}: người dùng dự kiến
+sử dụng kinh phí nhiệm vụ, sau đó đổi sang hoàn toàn kinh phí đơn vị.
+Bảng~\ref{tab:hoi-thoai} nối các cơ chế trên thành một quá trình hỏi đáp.
+Ví dụ mô tả hành vi mong đợi của thiết kế; điều kiện và định mức cụ thể phải
+được đối chiếu với nguồn đã xác nhận khi xây dựng nội dung ứng dụng.
+
+\begin{table}[H]
+\centering\small
+\begin{tabularx}{\textwidth}{|P{16mm}|Y|Y|}
+\hline
+\textbf{Lượt} & \textbf{Thông tin người hỏi} & \textbf{Xử lý cần thiết} \\\hline
+1 & Muốn dự hội thảo bằng kinh phí nhiệm vụ; chưa nêu thời điểm. & Ghi nhận hoạt động và nguồn; hỏi thời điểm hoặc dữ kiện khác chỉ khi ảnh hưởng. \\ \hline
+2 & Bổ sung địa điểm, ngày hoạt động và quan hệ với nhiệm vụ. & Xét nguồn theo dữ kiện; trả phần có căn cứ, nêu phần chưa xác minh. \\ \hline
+3 & Đổi sang hoàn toàn kinh phí đơn vị. & Chọn lại thẻ, nguồn; rút kết luận chỉ dành cho kinh phí nhiệm vụ. \\ \hline
+4 & Quy định riêng của đơn vị chưa có trong kho. & Dừng phần cần nguồn riêng; giữ phần quy định chung còn đủ căn cứ và chỉ đầu mối. \\
+\hline
+\end{tabularx}
+\caption{Minh họa cập nhật dữ kiện và căn cứ trong tình huống T6}
+\label{tab:hoi-thoai}
+\end{table}
+
+Nguồn riêng chưa có ở lượt cuối là cách bố trí ví dụ để kiểm tra điểm dừng,
+không phải nhận định HUST thiếu văn bản. Tình huống cho thấy việc đổi nguồn
+kinh phí có thể dẫn tới chọn lại căn cứ và xét lại hướng dẫn; dữ kiện mới
+không tự thay thế phần quy định đang thiếu trong kho.

@@ -1,0 +1,17 @@
+\begin{tikzpicture}[node distance=9mm and 12mm]
+\node[block,text width=31mm] (user) {Cán bộ, giảng viên\\Câu hỏi và dữ kiện};
+\node[block,text width=43mm,right=of user] (bot) {Chatbot tư vấn\\theo tình huống};
+\node[block,text width=30mm,right=of bot] (answer) {Hướng dẫn\\và căn cứ};
+\node[block,text width=43mm,below=of bot] (source) {Nguồn KHCN, TCKH, TCNS\\và phạm vi được phép};
+\node[block,text width=31mm,left=of source] (owner) {Chủ nội dung\\Xác nhận nguồn};
+\draw[arrow] (user)--(bot);
+\draw[arrow] (bot)--(answer);
+\draw[arrow] (owner)--(source);
+\draw[arrow] (source)--(bot);
+% Đường hồi tiếp đi phía trên cả hai khối, đầu mũi tên chạm đỉnh khối người dùng.
+\coordinate (clarify-left) at ([yshift=7mm]user.north);
+\coordinate (clarify-right) at (bot.north |- clarify-left);
+\draw[arrow] (bot.north) -- (clarify-right)
+  -- node[midway,above,font=\footnotesize,inner sep=2pt]{Hỏi bổ sung khi cần}
+  (clarify-left) -- (user.north);
+\end{tikzpicture}

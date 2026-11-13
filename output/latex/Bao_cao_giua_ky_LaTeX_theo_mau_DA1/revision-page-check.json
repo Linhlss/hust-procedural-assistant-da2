@@ -1,0 +1,49 @@
+{
+  "before_pages": 27,
+  "after_pages": 27,
+  "changed_source_files": [
+    "chapters/01_boi_canh.tex",
+    "chapters/02_bai_toan.tex"
+  ],
+  "updated_subsections": [
+    "1.1.b",
+    "1.1.d",
+    "1.2.a",
+    "1.2.c",
+    "1.2.e"
+  ],
+  "changed_pdf_pages": [
+    3,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "unchanged_pdf_glyph_pages": [
+    1,
+    2,
+    4,
+    5,
+    6,
+    7,
+    8,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+  ],
+  "content_visual_review_dpi": 95,
+  "toc_visual_review_dpi": 85,
+  "global_heading_style_unchanged": true
+}

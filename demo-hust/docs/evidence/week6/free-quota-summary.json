@@ -1,0 +1,24 @@
+{
+  "checkedOn": "2026-11-10",
+  "source": "Google AI Studio authenticated Rate Limit UI, current project",
+  "tier": "Free",
+  "billingChanged": false,
+  "limits": {
+    "gemini-3.8-flash": {
+      "rpm": 5,
+      "tpm": 250000,
+      "rpd": 20
+    },
+    "gemini-3.5-flash-lite": {
+      "rpm": 15,
+      "tpm": 250000,
+      "rpd": 500
+    },
+    "gemini-3.1-flash-lite": {
+      "rpm": 15,
+      "tpm": 250000,
+      "rpd": 500
+    }
+  },
+  "note": "Snapshot of this project only; quotas can change."
+}

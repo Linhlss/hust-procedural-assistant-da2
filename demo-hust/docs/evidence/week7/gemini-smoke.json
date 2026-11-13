@@ -1,0 +1,184 @@
+{
+  "target": {
+    "code": {
+      "src/lib/gemini.ts": "b5720e2ce12c0599db1548104ebc4c876b5fb097171b4b84ba6fe4d1f7f5cfa8",
+      "src/lib/gemini-extraction.ts": "068a04b1ef6cd9b0894fb12d4fab33fc257415d3ddf4a552f86d7a87fde09dbd",
+      "src/lib/narrative-grounding.ts": "1feff19514d6f76b1d61a4b1dce052e397680ab48ca7d8c73f1011ddeab73873",
+      "src/lib/answer-coverage.ts": "529e98eeb377567aaa4fc4f03a06e946a7272f322621b6d4cb5250350de5e900",
+      "src/lib/conversation-inputs.ts": "dcb1d1558795773624a08f7fd2c52b42c988ca315daa4cdfd829321e70159aa0",
+      "src/lib/engine.ts": "580be9d100df342f0e3e2d520a59458f2b9e6576f6e215f365aef2b84de525c2",
+      "src/lib/extractor.ts": "cd1208976ae331a39edcac2bc85d7a8cc3868732a0c8af9ef7d1f1f72f1790c6",
+      "scripts/evaluate-vercel.ts": "8bb3c8eb25d7d5e2a9f52b362ff8ca4175c87fd611dd0cc1b2047b60da364666"
+    },
+    "url": "https://hust-t6-demo-qjlymflxs-linhozz.vercel.app",
+    "transport": "vercel-cli",
+    "deploymentId": "dpl_6xMQcCrHHBWa5ihKZBgohGbYP5So",
+    "mode": "gemini",
+    "suite": "week7",
+    "split": "development",
+    "caseFilter": "W7-S01,W7-S03",
+    "cohortSha256": "145ef352c5ce7541f89ac51f8b3cc339b46a69af7fbc9a810058e166c8523e1a",
+    "startedAt": "2026-11-13T11:23:31.240Z",
+    "policyValidation": false,
+    "manualReviewComplete": false
+  },
+  "updatedAt": "2026-11-13T11:25:35.207Z",
+  "complete": true,
+  "paused": false,
+  "summary": {
+    "plannedDialogues": 2,
+    "plannedTurns": 4,
+    "successfulResponses": 0,
+    "manualReviewComplete": false
+  },
+  "records": [
+    {
+      "id": "W7-S01",
+      "group": "feasibility-short",
+      "split": "development",
+      "turns": [
+        {
+          "turn": 1,
+          "text": "Tôi muốn đi hội thảo.",
+          "expected": {
+            "facts": {
+              "activity": "conference"
+            },
+            "absent": [
+              "funding",
+              "date",
+              "location",
+              "related",
+              "allocation"
+            ],
+            "clarification": "funding"
+          },
+          "error": {
+            "status": 503,
+            "body": {
+              "error": "Gemini chưa hoàn tất trong thời gian cho phép. Dữ kiện đang có được giữ nguyên; bạn có thể thử lại.",
+              "code": "GEMINI_TIMEOUT"
+            }
+          },
+          "elapsedMs": 47270.165792,
+          "rubric": {
+            "must_address": [
+              "Hỏi nguồn kinh phí trước, chưa kết luận được hỗ trợ."
+            ],
+            "must_not_claim": [
+              "Tự điền ngày, địa điểm hoặc nguồn."
+            ]
+          },
+          "manualReview": {
+            "bám nhu cầu": null,
+            "đủ nội dung": null,
+            "nhất quán ngữ cảnh": null,
+            "căn cứ hỗ trợ": null,
+            "dừng đúng": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "W7-S03",
+      "group": "feasibility-three-turns",
+      "split": "development",
+      "turns": [
+        {
+          "turn": 1,
+          "text": "Tôi đi công tác tại Huế ngày 25/11/2026, chỉ dùng kinh phí đơn vị.",
+          "expected": {
+            "facts": {
+              "activity": "work",
+              "location": "domestic",
+              "date": "2026-11-25",
+              "funding": "unit"
+            },
+            "absent": [
+              "related",
+              "allocation"
+            ],
+            "noQuestion": true
+          },
+          "error": {
+            "status": 503,
+            "body": {
+              "error": "Gemini chưa hoàn tất trong thời gian cho phép. Dữ kiện đang có được giữ nguyên; bạn có thể thử lại.",
+              "code": "GEMINI_TIMEOUT"
+            }
+          },
+          "elapsedMs": 46691.579167,
+          "rubric": {
+            "must_address": [
+              "Đối chiếu nhánh đơn vị theo nguồn mẫu."
+            ],
+            "must_not_claim": [
+              "Xác nhận khoản chi."
+            ]
+          },
+          "manualReview": {
+            "bám nhu cầu": null,
+            "đủ nội dung": null,
+            "nhất quán ngữ cảnh": null,
+            "căn cứ hỗ trợ": null,
+            "dừng đúng": null
+          }
+        },
+        {
+          "turn": 2,
+          "text": "Đổi ngày sang 26/11/2026, các thông tin còn lại giữ nguyên.",
+          "expected": {
+            "facts": {
+              "activity": "work",
+              "location": "domestic",
+              "date": "2026-11-26",
+              "funding": "unit"
+            },
+            "absent": [
+              "related",
+              "allocation"
+            ],
+            "noQuestion": true
+          },
+          "error": "Not run: previous turn failed",
+          "skipped": true,
+          "elapsedMs": 0,
+          "manualReview": {
+            "bám nhu cầu": null,
+            "đủ nội dung": null,
+            "nhất quán ngữ cảnh": null,
+            "căn cứ hỗ trợ": null,
+            "dừng đúng": null
+          }
+        },
+        {
+          "turn": 3,
+          "text": "Tôi đã về, cần giữ chứng từ nào?",
+          "expected": {
+            "facts": {
+              "activity": "work",
+              "location": "domestic",
+              "date": "2026-11-26",
+              "funding": "unit"
+            },
+            "absent": [
+              "related",
+              "allocation"
+            ],
+            "noQuestion": true
+          },
+          "error": "Not run: previous turn failed",
+          "skipped": true,
+          "elapsedMs": 0,
+          "manualReview": {
+            "bám nhu cầu": null,
+            "đủ nội dung": null,
+            "nhất quán ngữ cảnh": null,
+            "căn cứ hỗ trợ": null,
+            "dừng đúng": null
+          }
+        }
+      ]
+    }
+  ]
+}

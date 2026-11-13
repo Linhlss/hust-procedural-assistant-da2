@@ -1,0 +1,356 @@
+{
+  "schema_version": 1,
+  "initial_review_as_of": "2026-11-07",
+  "final_collection_frozen_at": null,
+  "audience": [
+    "Cán bộ",
+    "Giảng viên",
+    "Chuyên viên"
+  ],
+  "student_cohort_default_filter": false,
+  "historical_policy": "Follow active tasks, continuing obligations, pending documents and applicable transition provisions; no arbitrary earliest year.",
+  "requests": [
+    {
+      "id": "W6-01",
+      "priority": "A",
+      "title": "Quy định xét chọn, thực hiện và đánh giá nhiệm vụ KHCN&ĐMST cấp Đại học",
+      "requested_period": "Bản được tài liệu thiết kế dẫn là phiên bản 2026; xác nhận bản áp dụng tại 07/11/2026 và mọi sửa đổi liên quan.",
+      "cards": [
+        "T1",
+        "T3",
+        "T4",
+        "T6",
+        "T10"
+      ],
+      "scope_description": "T1/T3/T4/T6; giao T10",
+      "owner_role": "KHCN",
+      "coverage_refs": [
+        "H01",
+        "G01-R01"
+      ],
+      "already_available": "Đã có tài liệu phân tích của người hướng dẫn; chưa có bộ gốc.",
+      "needed": "Bản ký, quyết định ban hành, toàn bộ quy định, phụ lục và mẫu; số hiệu/ngày ký/hiệu lực cần kiểm trên bản gốc.",
+      "status": "draft_not_sent",
+      "sent_at": null,
+      "received_source_ids": [],
+      "owner_confirmation": null,
+      "cohort_policy": "Only if a program rule makes cohort/intake relevant."
+    },
+    {
+      "id": "W6-02",
+      "priority": "A",
+      "title": "Quy chế Chi tiêu nội bộ",
+      "requested_period": "Xin bản được dẫn là năm 2026; xác nhận phiên bản đang áp dụng tại 07/11/2026, sửa đổi, thay thế và mốc hiệu lực.",
+      "cards": [
+        "T6",
+        "T1",
+        "T3",
+        "T4",
+        "T10"
+      ],
+      "scope_description": "T6; tài chính T1/T3/T4/T10 khi liên quan",
+      "owner_role": "TCKH",
+      "coverage_refs": [
+        "H03",
+        "G01-R02"
+      ],
+      "already_available": "Có dẫn chiếu gián tiếp trong văn bản đã tải; chưa có bộ quy chế gốc.",
+      "needed": "Bản ký và đủ phụ lục; phần công tác/hội thảo, nguồn nhiệm vụ, nguồn đơn vị, đào tạo/nghiên cứu trong phạm vi hỏi đáp.",
+      "status": "draft_not_sent",
+      "sent_at": null,
+      "received_source_ids": [],
+      "owner_confirmation": null,
+      "cohort_policy": "Only if a program rule makes cohort/intake relevant."
+    },
+    {
+      "id": "W6-03",
+      "priority": "A",
+      "title": "Quy chế Công tác cán bộ",
+      "requested_period": "Xin bản được dẫn là năm 2026; xác nhận phiên bản áp dụng tại 07/11/2026 và quy định với nghĩa vụ từ quyết định cử đi trước đó.",
+      "cards": [
+        "T10",
+        "T3"
+      ],
+      "scope_description": "T10; giao T3",
+      "owner_role": "TCNS",
+      "coverage_refs": [
+        "H04",
+        "G01-R03"
+      ],
+      "already_available": "Đã có chỉ dẫn thiết kế và dẫn chiếu gián tiếp; chưa có bộ gốc.",
+      "needed": "Bản ký, phụ lục, biểu mẫu, sửa đổi và điều khoản chuyển tiếp; không cần hồ sơ cá nhân.",
+      "status": "draft_not_sent",
+      "sent_at": null,
+      "received_source_ids": [],
+      "owner_confirmation": null,
+      "cohort_policy": "Only if a program rule makes cohort/intake relevant."
+    },
+    {
+      "id": "W6-04",
+      "priority": "A",
+      "title": "Hướng dẫn T6 và mẫu chứng từ công tác/hội thảo",
+      "requested_period": "Bộ áp dụng tại 07/11/2026; ghi ngày bắt đầu áp dụng và bộ bị thay thế. Nếu có bộ mới sau tập huấn tháng 10/2026, xin đúng phần đã ban hành.",
+      "cards": [
+        "T6"
+      ],
+      "scope_description": "T6 trong/nước ngoài; dự hội thảo và công tác",
+      "owner_role": "TCKH, phối hợp KHCN",
+      "coverage_refs": [
+        "H08",
+        "H16",
+        "G05-R01",
+        "G05-R02"
+      ],
+      "already_available": "Có tin giới thiệu quy trình số và văn bản Nhà nước phụ thuộc; chưa có bộ hướng dẫn nội bộ.",
+      "needed": "Điều kiện, danh mục chứng từ, mẫu trống, thời hạn tạm ứng/quyết toán, đầu mối; làm rõ khoán/không khoán và đoàn ra bằng căn cứ nếu ảnh hưởng.",
+      "status": "draft_not_sent",
+      "sent_at": null,
+      "received_source_ids": [],
+      "owner_confirmation": null,
+      "cohort_policy": "Only if a program rule makes cohort/intake relevant."
+    },
+    {
+      "id": "W6-05",
+      "priority": "A",
+      "title": "Quy định chi tiêu của đơn vị chọn làm ca thử",
+      "requested_period": "Đúng tên đơn vị và bản áp dụng tại 07/11/2026; ca cũ cần bản đúng thời điểm. Tên đơn vị hiện chưa được chốt.",
+      "cards": [
+        "T6",
+        "T10"
+      ],
+      "scope_description": "T6 nguồn đơn vị; hỗ trợ T10 khi liên quan",
+      "owner_role": "Đơn vị được chọn, phối hợp TCKH",
+      "coverage_refs": [
+        "H09",
+        "G08-R01"
+      ],
+      "already_available": "Chưa có quy định riêng; chưa có xác nhận đơn vị dùng toàn bộ quy định chung.",
+      "needed": "Nhờ chọn/giới thiệu một đơn vị phù hợp để kiểm chứng; xin quy định, phụ lục, văn bản thông qua hoặc xác nhận có căn cứ về dùng quy định chung.",
+      "status": "draft_not_sent",
+      "sent_at": null,
+      "received_source_ids": [],
+      "owner_confirmation": null,
+      "cohort_policy": "Only if a program rule makes cohort/intake relevant."
+    },
+    {
+      "id": "W6-06",
+      "priority": "A",
+      "title": "Hướng dẫn phối hợp nguồn kinh phí",
+      "requested_period": "Quy tắc áp dụng tại 07/11/2026; nếu phụ thuộc nhiệm vụ hoặc hợp đồng cũ, ghi mốc và bản chuyển tiếp tương ứng.",
+      "cards": [
+        "T6",
+        "T10"
+      ],
+      "scope_description": "T6 nguồn nhiệm vụ/đơn vị/kết hợp; giao T10",
+      "owner_role": "TCKH, KHCN và đơn vị liên quan",
+      "coverage_refs": [
+        "G05-R03"
+      ],
+      "already_available": "Có thiết kế hành vi thay/kết hợp nguồn; chưa có giải thích nghiệp vụ được xác nhận.",
+      "needed": "Căn cứ phân định phần hỗ trợ, điều kiện tránh hỗ trợ trùng nếu có; không xin sổ kế toán hoặc số dư cá nhân.",
+      "status": "draft_not_sent",
+      "sent_at": null,
+      "received_source_ids": [],
+      "owner_confirmation": null,
+      "cohort_policy": "Only if a program rule makes cohort/intake relevant."
+    },
+    {
+      "id": "W6-07",
+      "priority": "B",
+      "title": "Thông báo, hướng dẫn và bộ mẫu đăng ký nhiệm vụ cấp Đại học",
+      "requested_period": "Đợt năm 2026; bổ sung đợt thực hiện từ 2027 nếu đã công bố chính thức. Ghi riêng năm/đợt đăng ký và năm bắt đầu nhiệm vụ.",
+      "cards": [
+        "T1"
+      ],
+      "scope_description": "T1, đúng loại/cấp nhiệm vụ",
+      "owner_role": "KHCN",
+      "coverage_refs": [
+        "H11",
+        "G02-R01",
+        "G02-R02"
+      ],
+      "already_available": "Đã có một số thông báo/mẫu cấp Bộ và NAFOSTED; chưa thay thế được bộ cấp Đại học.",
+      "needed": "Thông báo mở đợt, đối tượng, hạn, hướng dẫn nộp và mẫu; phần đã đầy đủ trong W6-01 không xin lại.",
+      "status": "draft_not_sent",
+      "sent_at": null,
+      "received_source_ids": [],
+      "owner_confirmation": null,
+      "cohort_policy": "Only if a program rule makes cohort/intake relevant."
+    },
+    {
+      "id": "W6-08",
+      "priority": "B",
+      "title": "Hướng dẫn và mẫu điều chỉnh/gia hạn nhiệm vụ",
+      "requested_period": "Bản hiện hành tại 07/11/2026 và bản áp dụng cho nhiệm vụ từ đợt trước còn thực hiện; xác định năm theo ca được chọn.",
+      "cards": [
+        "T3"
+      ],
+      "scope_description": "T3; đổi kinh phí, chủ nhiệm đi học/nghiên cứu khi liên quan",
+      "owner_role": "KHCN, phối hợp TCKH/TCNS",
+      "coverage_refs": [
+        "H12",
+        "G03-R01",
+        "G03-R02"
+      ],
+      "already_available": "Có cấu trúc thẻ và ca thiết kế; chưa có hướng dẫn gốc đủ căn cứ.",
+      "needed": "Điều kiện, mốc đề nghị, thành phần tài liệu và mẫu thay tiến độ/nội dung/chủ nhiệm/kinh phí; không xin lại phần đủ trong W6-01.",
+      "status": "draft_not_sent",
+      "sent_at": null,
+      "received_source_ids": [],
+      "owner_confirmation": null,
+      "cohort_policy": "Only if a program rule makes cohort/intake relevant."
+    },
+    {
+      "id": "W6-09",
+      "priority": "B",
+      "title": "Hướng dẫn và bộ mẫu nghiệm thu",
+      "requested_period": "Bản hiện hành tại 07/11/2026; quy định cho nhiệm vụ các đợt trước còn chưa hoàn tất nghiệm thu và điều khoản chuyển tiếp.",
+      "cards": [
+        "T4"
+      ],
+      "scope_description": "T4",
+      "owner_role": "KHCN",
+      "coverage_refs": [
+        "H13",
+        "G04-R01",
+        "G04-R02"
+      ],
+      "already_available": "Có ca thiết kế; điểm mốc nghiệm thu chưa được chuyên viên giải thích.",
+      "needed": "Yêu cầu sản phẩm/báo cáo, mốc đề nghị/nghiệm thu, mẫu đánh giá/biên bản và căn cứ giải quyết mốc chưa thống nhất.",
+      "status": "draft_not_sent",
+      "sent_at": null,
+      "received_source_ids": [],
+      "owner_confirmation": null,
+      "cohort_policy": "Only if a program rule makes cohort/intake relevant."
+    },
+    {
+      "id": "W6-10",
+      "priority": "B",
+      "title": "Hướng dẫn và mẫu cử cán bộ đi đào tạo/nghiên cứu",
+      "requested_period": "Bản áp dụng tại 07/11/2026; thêm quyết định cử đi trước đó còn nghĩa vụ. Ghi ngắn/dài hạn, chương trình và đợt/khóa chỉ khi chúng làm đổi điều kiện.",
+      "cards": [
+        "T10",
+        "T3"
+      ],
+      "scope_description": "T10; giao T3 khi đang chủ trì nhiệm vụ",
+      "owner_role": "TCNS, phối hợp KHCN/TCKH",
+      "coverage_refs": [
+        "H10",
+        "G06-R01",
+        "G06-R02"
+      ],
+      "already_available": "Có thông tin một số chương trình trao đổi; chưa có bộ hướng dẫn TCNS hiện hành.",
+      "needed": "Điều kiện, mẫu trống, cam kết, nghĩa vụ, gia hạn, trở về, báo cáo; không lấy khóa sinh viên Kxx làm bộ lọc mặc định.",
+      "status": "draft_not_sent",
+      "sent_at": null,
+      "received_source_ids": [],
+      "owner_confirmation": null,
+      "cohort_policy": "Only if a program rule makes cohort/intake relevant."
+    },
+    {
+      "id": "W6-11",
+      "priority": "B",
+      "title": "Quy chế nền về tài chính, phân cấp và đầu mối",
+      "requested_period": "Bản còn áp dụng tại 07/11/2026 dù ban hành năm trước; xin sửa đổi/bản thay thế nếu có.",
+      "cards": [
+        "T1",
+        "T3",
+        "T4",
+        "T6",
+        "T10"
+      ],
+      "scope_description": "Các thẻ khi câu trả lời phụ thuộc thẩm quyền/nguồn",
+      "owner_role": "TCKH, Văn phòng và các Ban",
+      "coverage_refs": [
+        "H05",
+        "H06",
+        "H07",
+        "G07-R01",
+        "G07-R02",
+        "G07-R03"
+      ],
+      "already_available": "Có dẫn chiếu và trang giới thiệu các Ban; chưa có đủ toàn văn và cập nhật.",
+      "needed": "Phần liên quan của Quản lý tài chính, Tổ chức và hoạt động, chức năng/phân cấp. NQ 04/2024, NQ 40/2024, QĐ 9768/2023 chỉ là đầu mối cần kiểm phiên bản.",
+      "status": "draft_not_sent",
+      "sent_at": null,
+      "received_source_ids": [],
+      "owner_confirmation": null,
+      "cohort_policy": "Only if a program rule makes cohort/intake relevant."
+    },
+    {
+      "id": "W6-12",
+      "priority": "Theo ca",
+      "title": "Bản cũ, chuyển tiếp và dẫn chiếu còn thiếu",
+      "requested_period": "Xin bản bị thay thế trực tiếp và điều khoản chuyển tiếp cho ca đang xét. Không gom toàn bộ từ một năm tùy chọn; các đầu mối 2023/2025 cần kiểm quan hệ thay thế.",
+      "cards": [
+        "T1",
+        "T3",
+        "T4",
+        "T6",
+        "T10"
+      ],
+      "scope_description": "Nhiệm vụ/nghĩa vụ còn tiếp diễn, chứng từ tồn; các dẫn chiếu quyết định đáp án",
+      "owner_role": "Ban chủ nội dung và cơ quan ban hành",
+      "coverage_refs": [
+        "H14",
+        "H15",
+        "G09-R01",
+        "G10-R01",
+        "G10-R02"
+      ],
+      "already_available": "Đã có một số văn bản Nhà nước phụ thuộc; quan hệ thay thế và nguồn HUST cũ còn thiếu.",
+      "needed": "Bản cũ, mẫu cũ, điều/trang xác định mốc áp dụng; chỉ bổ sung dẫn chiếu thực sự ảnh hưởng câu trả lời và chưa có trong kho.",
+      "status": "draft_not_sent",
+      "sent_at": null,
+      "received_source_ids": [],
+      "owner_confirmation": null,
+      "cohort_policy": "Only if a program rule makes cohort/intake relevant."
+    },
+    {
+      "id": "W6-13",
+      "priority": "A",
+      "title": "Tình huống và đáp án đối chiếu T6",
+      "requested_period": "Ưu tiên tình huống năm 2026; thêm ca trước/sau mốc thay đổi và việc cũ còn tồn. Ngày thật phải lấy từ ca được phép hoặc ghi rõ tình huống giả định.",
+      "cards": [
+        "T6"
+      ],
+      "scope_description": "T6, trước khi mở rộng tập đánh giá",
+      "owner_role": "Chuyên viên KHCN/TCKH và đơn vị liên quan",
+      "coverage_refs": [
+        "DATA-CASES"
+      ],
+      "already_available": "Có 77 ca kỹ thuật và 28 ca thời gian thiết kế, trong đó 11 ca T6; chưa có đáp án nghiệp vụ được duyệt.",
+      "needed": "Câu hỏi đã ẩn danh hoặc tình huống do chuyên viên xây; dữ kiện cần hỏi, nguồn/phiên bản, đáp án từng phần và điểm dừng. Không cần hồ sơ hoàn chỉnh.",
+      "status": "draft_not_sent",
+      "sent_at": null,
+      "received_source_ids": [],
+      "owner_confirmation": null,
+      "cohort_policy": "Only if a program rule makes cohort/intake relevant."
+    },
+    {
+      "id": "W6-14",
+      "priority": "A",
+      "title": "Đầu mối xác nhận nội dung và quyền sử dụng",
+      "requested_period": "Ghi người/đơn vị xác nhận, ngày và bằng chứng cho từng tài liệu/đáp án; ngày nhận file không thay ngày hiệu lực.",
+      "cards": [
+        "T1",
+        "T3",
+        "T4",
+        "T6",
+        "T10"
+      ],
+      "scope_description": "Mọi nguồn và ca đem dùng",
+      "owner_role": "Người hướng dẫn giới thiệu chuyên viên phụ trách",
+      "coverage_refs": [
+        "DATA-REVIEW"
+      ],
+      "already_available": "Có trang đầu mối công khai; chưa có chuyên viên nhận xác nhận và quyết định quyền dùng.",
+      "needed": "Ai kiểm tra nguồn/đáp án; được nghiên cứu, gửi tới dịch vụ mô hình, trích trên demo hoặc công bố toàn văn đến đâu. Chưa rõ quyền thì giữ ngoài website.",
+      "status": "draft_not_sent",
+      "sent_at": null,
+      "received_source_ids": [],
+      "owner_confirmation": null,
+      "cohort_policy": "Only if a program rule makes cohort/intake relevant."
+    }
+  ]
+}

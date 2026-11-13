@@ -1,0 +1,9 @@
+\begin{tikzpicture}[node distance=9mm and 18mm]
+\node[block,text width=48mm] (facts) {Dữ kiện người dùng\\Hoạt động, nguồn, thời điểm};
+\node[block,text width=48mm,right=of facts] (evidence) {Đoạn nguồn\\Điều kiện và phạm vi áp dụng};
+\node[block,text width=55mm,below=12mm of $(facts.south)!.5!(evidence.south)$] (rule) {Điều kiện đã xác nhận\\Các dữ kiện quyết định};
+\node[block,text width=55mm,below=of rule] (claim) {Kết luận từng phần\\Trạng thái, căn cứ và giới hạn};
+\draw[arrow] (facts.south)--(rule.north west);
+\draw[arrow] (evidence.south)--(rule.north east);
+\draw[arrow] (rule)--(claim);
+\end{tikzpicture}

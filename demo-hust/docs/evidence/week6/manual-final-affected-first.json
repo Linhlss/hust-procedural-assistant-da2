@@ -1,0 +1,57 @@
+{
+  "at": "2026-11-11T00:16:33.218346+00:00",
+  "reviewer": "Codex technical review; not a HUST specialist",
+  "automatic": {
+    "plannedDialogues": 3,
+    "plannedTurns": 5,
+    "returnedAnswers": 4,
+    "passedTurns": 4,
+    "passedDialogues": 2,
+    "requestErrors": 1
+  },
+  "records": [
+    {
+      "id": "U01",
+      "turn": 1,
+      "review": "pass",
+      "note": "Đã đọc dữ kiện, câu hỏi và diễn giải. Ngày bị gỡ được hỏi lại; quan hệ rút về unknown và giữ allocation true.",
+      "error": null
+    },
+    {
+      "id": "U01",
+      "turn": 2,
+      "review": "pass",
+      "note": "Đã đọc dữ kiện, câu hỏi và diễn giải. Ngày bị gỡ được hỏi lại; quan hệ rút về unknown và giữ allocation true.",
+      "error": null
+    },
+    {
+      "id": "U02",
+      "turn": 1,
+      "review": "not-ratable",
+      "note": "Schema bị từ chối. Ca chẩn đoán sau đó xác nhận bộ kiểm nhầm lời hỏi đầu mối về chứng từ với yêu cầu giấy tờ.",
+      "error": {
+        "status": 503,
+        "body": {
+          "error": "Gemini chưa trả nội dung hợp lệ với dữ kiện và căn cứ được cấp. Dữ kiện đang có được giữ nguyên; không có kết luận mới được tạo.",
+          "code": "GEMINI_SCHEMA"
+        }
+      }
+    },
+    {
+      "id": "U03",
+      "turn": 1,
+      "review": "pass",
+      "note": "Đã đọc dữ kiện, câu hỏi và diễn giải. Ngày bị gỡ được hỏi lại; quan hệ rút về unknown và giữ allocation true.",
+      "error": null
+    },
+    {
+      "id": "U03",
+      "turn": 2,
+      "review": "pass",
+      "note": "Đã đọc dữ kiện, câu hỏi và diễn giải. Ngày bị gỡ được hỏi lại; quan hệ rút về unknown và giữ allocation true.",
+      "error": null
+    }
+  ],
+  "releaseGatePassed": false,
+  "note": "U result preserved; contact advice validator fixed afterward, separate fresh contact cohort follows."
+}

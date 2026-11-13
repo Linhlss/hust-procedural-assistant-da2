@@ -1,0 +1,295 @@
+{
+  "purpose": "Fresh final controls after S results; frozen before any call on source/date control revision. Synthetic technical checks; old scores and expectations unchanged.",
+  "cases": [
+    {
+      "id": "T01",
+      "profile": "standard",
+      "split": "heldout",
+      "group": "source-date-controls",
+      "turns": [
+        {
+          "text": "Tôi dự hội thảo tại Hội An ngày 03/09/2027. Chỉ kinh phí nhiệm vụ, có phục vụ nội dung đề tài; nhờ đối chiếu điều kiện.",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "location": "domestic",
+              "date": "2027-09-03",
+              "funding": "task",
+              "related": true
+            },
+            "absent": [
+              "allocation"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Chỉ nguồn nhiệm vụ, không tự thêm nguồn đơn vị."
+            ],
+            "must_not_claim": [
+              "Không thêm nguồn kinh phí, dữ kiện hoặc điều kiện không được người hỏi và đoạn nguồn hỗ trợ.",
+              "Không biến hướng dẫn mẫu thành phê duyệt, quyền chi hay chính sách HUST đã xác nhận."
+            ]
+          }
+        },
+        {
+          "text": "Vẫn hội thảo đó, tôi chỉ dùng kinh phí đơn vị, không dùng tiền nhiệm vụ nữa.",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "location": "domestic",
+              "date": "2027-09-03",
+              "funding": "unit",
+              "related": true
+            },
+            "absent": [
+              "allocation"
+            ],
+            "excludeSources": [
+              "SIM-NV-1",
+              "SIM-NV-PREP"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Giữ ngày, địa điểm và lời khai quan hệ; bỏ nguồn chỉ dành nhiệm vụ."
+            ],
+            "must_not_claim": [
+              "Không thêm nguồn kinh phí, dữ kiện hoặc điều kiện không được người hỏi và đoạn nguồn hỗ trợ.",
+              "Không biến hướng dẫn mẫu thành phê duyệt, quyền chi hay chính sách HUST đã xác nhận."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "T02",
+      "profile": "missing-unit",
+      "split": "heldout",
+      "group": "source-date-controls",
+      "turns": [
+        {
+          "text": "Tôi công tác tại Thanh Hóa ngày 05/09/2027, đơn vị chi. Tiền phòng 1,8 triệu đồng một đêm có đúng mức hỗ trợ không?",
+          "expected": {
+            "facts": {
+              "activity": "work",
+              "location": "domestic",
+              "date": "2027-09-05",
+              "funding": "unit"
+            },
+            "absent": [
+              "related",
+              "allocation"
+            ],
+            "noQuestion": true,
+            "statuses": {
+              "unit": "insufficient",
+              "rate-evidence": "insufficient"
+            }
+          },
+          "rubric": {
+            "must_address": [
+              "Nêu thiếu định mức/nguồn đơn vị và đầu mối xác minh, không xác nhận mức tiền hay hỏi dữ kiện không giải quyết thiếu nguồn."
+            ],
+            "must_not_claim": [
+              "Không thêm nguồn kinh phí, dữ kiện hoặc điều kiện không được người hỏi và đoạn nguồn hỗ trợ.",
+              "Không biến hướng dẫn mẫu thành phê duyệt, quyền chi hay chính sách HUST đã xác nhận."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "T03",
+      "profile": "standard",
+      "split": "heldout",
+      "group": "source-date-controls",
+      "turns": [
+        {
+          "text": "Tôi công tác tại Sydney ngày 07/09/2027, kinh phí đơn vị. Căn cứ địa điểm nào được áp dụng?",
+          "expected": {
+            "facts": {
+              "activity": "work",
+              "location": "foreign",
+              "date": "2027-09-07",
+              "funding": "unit"
+            },
+            "absent": [
+              "related",
+              "allocation"
+            ],
+            "includeSources": [
+              "SIM-CT-2026"
+            ],
+            "statuses": {
+              "common": "meets"
+            }
+          },
+          "rubric": {
+            "must_address": [
+              "Chọn đúng phiên bản theo ngày hoạt động."
+            ],
+            "must_not_claim": [
+              "Không thêm nguồn kinh phí, dữ kiện hoặc điều kiện không được người hỏi và đoạn nguồn hỗ trợ.",
+              "Không biến hướng dẫn mẫu thành phê duyệt, quyền chi hay chính sách HUST đã xác nhận."
+            ]
+          }
+        },
+        {
+          "text": "Tôi sửa ngày thành 31/06/2027, vẫn việc này.",
+          "expected": {
+            "facts": {
+              "activity": "work",
+              "location": "foreign",
+              "funding": "unit"
+            },
+            "absent": [
+              "date",
+              "related",
+              "allocation"
+            ],
+            "clarification": "date"
+          },
+          "rubric": {
+            "must_address": [
+              "Tạm dừng ngày cũ, hỏi lại ngày; không trả danh mục từ nguồn thiếu thời điểm."
+            ],
+            "must_not_claim": [
+              "Không thêm nguồn kinh phí, dữ kiện hoặc điều kiện không được người hỏi và đoạn nguồn hỗ trợ.",
+              "Không biến hướng dẫn mẫu thành phê duyệt, quyền chi hay chính sách HUST đã xác nhận."
+            ]
+          }
+        },
+        {
+          "text": "Ngày đúng là 30/06/2025.",
+          "expected": {
+            "facts": {
+              "activity": "work",
+              "location": "foreign",
+              "date": "2025-06-30",
+              "funding": "unit"
+            },
+            "absent": [
+              "related",
+              "allocation"
+            ],
+            "includeSources": [
+              "SIM-CT-2025"
+            ],
+            "excludeSources": [
+              "SIM-CT-2026"
+            ],
+            "statuses": {
+              "common": "fails"
+            }
+          },
+          "rubric": {
+            "must_address": [
+              "Dùng ngày đã làm rõ và chọn lại bản 2025, không giữ bản 2026."
+            ],
+            "must_not_claim": [
+              "Không thêm nguồn kinh phí, dữ kiện hoặc điều kiện không được người hỏi và đoạn nguồn hỗ trợ.",
+              "Không biến hướng dẫn mẫu thành phê duyệt, quyền chi hay chính sách HUST đã xác nhận."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "T04",
+      "profile": "standard",
+      "split": "heldout",
+      "group": "source-date-controls",
+      "turns": [
+        {
+          "text": "Hội thảo tại Nam Định ngày 09/09/2027 dùng cả nguồn nhiệm vụ và đơn vị. Không phục vụ nhiệm vụ; chưa xác định việc phân định nguồn.",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "location": "domestic",
+              "date": "2027-09-09",
+              "funding": "combined",
+              "related": false
+            },
+            "absent": [
+              "allocation"
+            ],
+            "clarification": "allocation"
+          },
+          "rubric": {
+            "must_address": [
+              "Giữ false khác chưa biết, không tự thêm phân định."
+            ],
+            "must_not_claim": [
+              "Không thêm nguồn kinh phí, dữ kiện hoặc điều kiện không được người hỏi và đoạn nguồn hỗ trợ.",
+              "Không biến hướng dẫn mẫu thành phê duyệt, quyền chi hay chính sách HUST đã xác nhận."
+            ]
+          }
+        },
+        {
+          "text": "Tôi rút lại thông tin về quan hệ phục vụ nhiệm vụ, cần hỏi lại đơn vị. Các dữ kiện khác giữ nguyên.",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "location": "domestic",
+              "date": "2027-09-09",
+              "funding": "combined"
+            },
+            "absent": [
+              "related",
+              "allocation"
+            ],
+            "clarification": "related"
+          },
+          "rubric": {
+            "must_address": [
+              "Rút related về chưa biết, không nói vẫn không phục vụ nhiệm vụ trong diễn giải hiện hành."
+            ],
+            "must_not_claim": [
+              "Không thêm nguồn kinh phí, dữ kiện hoặc điều kiện không được người hỏi và đoạn nguồn hỗ trợ.",
+              "Không biến hướng dẫn mẫu thành phê duyệt, quyền chi hay chính sách HUST đã xác nhận."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "T05",
+      "profile": "conflict",
+      "split": "heldout",
+      "group": "source-date-controls",
+      "turns": [
+        {
+          "text": "Hội thảo ở Hạ Long ngày 11/09/2027 sử dụng kinh phí nhiệm vụ và phục vụ đề tài. Đối chiếu giúp điều kiện địa điểm.",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "location": "domestic",
+              "date": "2027-09-11",
+              "funding": "task",
+              "related": true
+            },
+            "absent": [
+              "allocation"
+            ],
+            "statuses": {
+              "common": "insufficient"
+            },
+            "includeSources": [
+              "SIM-CT-2026",
+              "SIM-CT-CONFLICT"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Không thêm nguồn đơn vị; dừng riêng địa điểm vì hai nguồn mâu thuẫn."
+            ],
+            "must_not_claim": [
+              "Không thêm nguồn kinh phí, dữ kiện hoặc điều kiện không được người hỏi và đoạn nguồn hỗ trợ.",
+              "Không biến hướng dẫn mẫu thành phê duyệt, quyền chi hay chính sách HUST đã xác nhận."
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Phạm vi và nguồn demo HUST"
+  short_description: "Chuẩn hóa phạm vi, thẻ T6 và căn cứ cho demo HUST"
+  default_prompt: "Dùng $hust-demo-scope chuẩn hóa nguồn và thẻ T6 theo khảo sát mới nhất."

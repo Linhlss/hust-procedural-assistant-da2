@@ -1,0 +1,4 @@
+interface:
+  display_name: "Kiểm thử và triển khai Vercel"
+  short_description: "Kiểm chứng demo HUST và triển khai URL chia sẻ Vercel"
+  default_prompt: "Dùng $hust-demo-vercel kiểm thử demo rồi triển khai lên Vercel."

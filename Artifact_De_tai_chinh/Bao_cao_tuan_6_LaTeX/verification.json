@@ -1,0 +1,14 @@
+{
+  "at": "2026-11-11T00:37:12.150755+00:00",
+  "pages": 2,
+  "pageSize": "A4",
+  "visualReview": "both final rendered pages reviewed",
+  "authorPrinted": false,
+  "datePrinted": false,
+  "source": "main.tex",
+  "pdfSha256": "4afd3879c90a0c1b54970215325a0e7a40098e9f287363798d0aeb715b029894",
+  "latexWarnings": [],
+  "rootPdfIsSourceLink": true,
+  "protectedFiles": 37,
+  "protectedChanged": []
+}

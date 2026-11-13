@@ -1,0 +1,21 @@
+import {test,expect} from '@playwright/test';
+import {writeFile} from 'node:fs/promises';
+import {openContext,settleVisuals} from './helpers';
+test.skip(process.env.EXPECTED_CHAT_MODE!=='gemini','Explicit live Gemini Vercel verification only');
+test.use({video:'on'});
+for(const width of [1440,390])test(`anonymous Gemini, citation, direct edit and history at ${width}px`,async({page})=>{
+ test.setTimeout(120000);expect.configure({timeout:60000});
+ expect(process.env.PLAYWRIGHT_BASE_URL).toMatch(/^https:\/\//);
+ const dir=process.env.HUST_TEST_ARTIFACT_DIR!,events:unknown[]=[];const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));
+ await page.setViewportSize({width,height:1000});await page.addInitScript(theme=>localStorage.setItem('hust-ui-theme',theme),width===1440?'dark':'light');await page.goto('/');
+ const message=width===1440?'Tôi dự hội thảo tại Hà Nội ngày 18/11/2026, dùng kinh phí nhiệm vụ và có phục vụ nhiệm vụ.':'Tôi công tác tại Đà Nẵng ngày 19/11/2026, chỉ dùng kinh phí đơn vị.';
+ const response=page.waitForResponse(r=>r.url().endsWith('/api/chat')&&r.request().method()==='POST',{timeout:59000});await page.getByLabel('Nhập tình huống hoặc sửa dữ kiện').fill(message);await page.getByRole('button',{name:'Gửi câu hỏi',exact:true}).click();
+ const r=await response,body=await r.json();events.push({kind:'live-message',status:r.status(),body});await writeFile(`${dir}/live-${width}.json`,JSON.stringify(events,null,2));expect(r.status()).toBe(200);expect(body.answer.mode).toBe('gemini');expect(body.answer.narrative?.paragraphs.length).toBeGreaterThan(0);expect(body.answer.modelRun.stages.some((s:{phase:string})=>s.phase==='extract')).toBe(true);expect(body.answer.modelRun.stages.some((s:{phase:string})=>s.phase==='compose')).toBe(true);
+ await expect(page.locator('.conversation')).toHaveAttribute('data-message-count','1',{timeout:60000});await expect(page.locator('.assistant-mode').last()).toHaveText('Gemini');await expect(page.getByLabel('Phản hồi theo ngữ cảnh').last()).toBeVisible();
+ const citation=page.locator('.answer-narrative .citation-ref').first();if(await citation.count())await citation.click();else await page.locator('.answer-content .citation-ref').first().click();await expect(page.locator('.source:focus')).toBeVisible();await settleVisuals(page);await page.screenshot({path:`${dir}/gemini-live-${width}.png`});
+ await page.locator('#message').fill('Bản nháp cần giữ nguyên');await openContext(page);const row=page.locator('.current-fact[data-field="funding"]');await row.locator('.fact-edit-toggle').click();
+ const update=page.waitForResponse(r=>r.url().endsWith('/api/chat')&&r.request().method()==='POST');await row.getByRole('button',{name:width===1440?'Chỉ kinh phí đơn vị':'Chỉ kinh phí nhiệm vụ',exact:true}).click();const edited=await update,b=await edited.json();events.push({kind:'direct-edit',status:edited.status(),body:b});await writeFile(`${dir}/live-${width}.json`,JSON.stringify(events,null,2));expect(edited.status()).toBe(200);expect(b.answer.facts.funding).toBe(width===1440?'unit':'task');expect(b.answer.modelRun?.stages??[]).toHaveLength(0);
+ await expect(page.locator('.conversation')).toHaveAttribute('data-message-count','2');await expect(page.locator('#message')).toHaveValue('Bản nháp cần giữ nguyên');await page.reload();await expect(page.locator('.conversation')).toHaveAttribute('data-message-count','2');
+ const saved=await page.evaluate(()=>JSON.parse(localStorage.getItem('hust-conversations-v2')??'[]'));expect(saved[0].turns[0].answer.narrative.paragraphs.length).toBeGreaterThan(0);expect(saved[0].turns[1].input.kind).toBe('fact-edit');expect(saved[0].turns[1].answer.facts.funding).toBe(width===1440?'unit':'task');
+ if(width<768)await page.getByRole('button',{name:'Lịch sử',exact:true}).click();const history=width<768?page.locator('.mobile-history'):page.locator('.sidebar');await history.getByRole('searchbox',{name:'Tìm kiếm lịch sử hội thoại'}).fill(width===1440?'HA NOI':'DA NANG');await expect(history.locator('.history-open')).toHaveCount(1);await history.locator('.history-open').click();await expect(page.locator('.conversation')).toHaveAttribute('data-message-count','2');expect(errors).toEqual([]);
+});

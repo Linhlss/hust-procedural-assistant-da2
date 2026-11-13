@@ -1,0 +1,24 @@
+[
+  {
+    "archive_path": "originals/65a69a143f2ee2.rar",
+    "member_path": "unpacked/65a69a143f2ee2/tt15-2024-TT BGDĐT (20.11.2024)/20.11.2024. PHU LUC THONG TƯ.docx",
+    "sha256": "bad4e287c5ed95a176c93925c58c97c5703dac68c8b2dc41ae6766bd839dfe3c",
+    "bytes": 248036,
+    "source_status": "unverified_original_archive_member",
+    "text_path": "text/tt15-2024-phu-luc-tu-archive.txt"
+  },
+  {
+    "archive_path": "originals/65a69a143f2ee2.rar",
+    "member_path": "unpacked/65a69a143f2ee2/tt15-2024-TT BGDĐT (20.11.2024)/Thông tư 15.2024 - 20.11.2024 -QL đề tài KHCN cấp Bộ GD&ĐT.doc",
+    "sha256": "c1ed02714fe9b0864aea237e766f1a7b769f874466e14a0cfa24c3a1a4f53a41",
+    "bytes": 585728,
+    "source_status": "unverified_original_archive_member"
+  },
+  {
+    "archive_path": "originals/65a69a143f2ee2.rar",
+    "member_path": "unpacked/65a69a143f2ee2/tt15-2024-TT BGDĐT (20.11.2024)/15_2024_TT_BGDDT.signed.pdf",
+    "sha256": "7c45fb7cd60cb267943120e8ad90b0fb03faf30f845e6d6be128ac19002d17ac",
+    "bytes": 14635060,
+    "source_status": "unverified_original_archive_member"
+  }
+]

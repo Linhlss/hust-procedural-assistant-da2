@@ -1,0 +1,314 @@
+{
+  "purpose": "Independent questions frozen after reviewing release R cohort and before any call with the narrative-state repair runtime. Old R scores remain unchanged. Synthetic technical checks, not a real-user frequency study.",
+  "cases": [
+    {
+      "id": "S01",
+      "group": "post-narrative-safety",
+      "profile": "standard",
+      "split": "heldout",
+      "turns": [
+        {
+          "text": "Nhờ đối chiếu hội thảo ở Quy Nhơn ngày 04/08/2027. Nội dung phục vụ đề tài, hai bên nhiệm vụ và đơn vị cùng hỗ trợ, nhưng tôi chưa biết việc phân định nguồn.",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "location": "domestic",
+              "date": "2027-08-04",
+              "funding": "combined",
+              "related": true
+            },
+            "absent": [
+              "allocation"
+            ],
+            "clarification": "allocation"
+          },
+          "rubric": {
+            "must_address": [
+              "Hỏi rõ phân định, không coi chưa biết là false hoặc tự phân định."
+            ],
+            "must_not_claim": [
+              "Không suy ra khoản chi được duyệt, nguồn mẫu là chính sách HUST hay người hỏi đã khai dữ kiện còn thiếu.",
+              "Không dùng kết luận/nguồn của ngày cũ hoặc tình huống cũ như còn hiện hành."
+            ]
+          }
+        },
+        {
+          "text": "Các phần việc chưa được tách riêng cho từng nguồn.",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "location": "domestic",
+              "date": "2027-08-04",
+              "funding": "combined",
+              "related": true,
+              "allocation": false
+            },
+            "absent": []
+          },
+          "rubric": {
+            "must_address": [
+              "Ghi nhận false; chưa đủ điều kiện kết hợp theo khai báo."
+            ],
+            "must_not_claim": [
+              "Không suy ra khoản chi được duyệt, nguồn mẫu là chính sách HUST hay người hỏi đã khai dữ kiện còn thiếu.",
+              "Không dùng kết luận/nguồn của ngày cũ hoặc tình huống cũ như còn hiện hành."
+            ]
+          }
+        },
+        {
+          "text": "Rút lại thông tin phân định nguồn: tôi chưa xác nhận được. Giữ đúng các dữ kiện khác.",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "location": "domestic",
+              "date": "2027-08-04",
+              "funding": "combined",
+              "related": true
+            },
+            "absent": [
+              "allocation"
+            ],
+            "clarification": "allocation"
+          },
+          "rubric": {
+            "must_address": [
+              "Dữ kiện và diễn giải đều về chưa biết; không nói hiện vẫn chưa phân định."
+            ],
+            "must_not_claim": [
+              "Không suy ra khoản chi được duyệt, nguồn mẫu là chính sách HUST hay người hỏi đã khai dữ kiện còn thiếu.",
+              "Không dùng kết luận/nguồn của ngày cũ hoặc tình huống cũ như còn hiện hành."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "S02",
+      "group": "post-narrative-safety",
+      "profile": "standard",
+      "split": "heldout",
+      "turns": [
+        {
+          "text": "Tôi công tác tại Osaka ngày 07/08/2027, ngân sách đơn vị chi. Kiểm tra căn cứ địa điểm giúp tôi.",
+          "expected": {
+            "facts": {
+              "activity": "work",
+              "location": "foreign",
+              "date": "2027-08-07",
+              "funding": "unit"
+            },
+            "absent": [
+              "related",
+              "allocation"
+            ],
+            "includeSources": [
+              "SIM-CT-2026"
+            ],
+            "statuses": {
+              "common": "meets"
+            }
+          },
+          "rubric": {
+            "must_address": [
+              "Đối chiếu bản 2026 với ngày 2027."
+            ],
+            "must_not_claim": [
+              "Không suy ra khoản chi được duyệt, nguồn mẫu là chính sách HUST hay người hỏi đã khai dữ kiện còn thiếu.",
+              "Không dùng kết luận/nguồn của ngày cũ hoặc tình huống cũ như còn hiện hành."
+            ]
+          }
+        },
+        {
+          "text": "Tôi xin sửa lại: ngày 07/08/2025, vẫn chuyến đó. Căn cứ địa điểm có thay đổi không?",
+          "expected": {
+            "facts": {
+              "activity": "work",
+              "location": "foreign",
+              "date": "2025-08-07",
+              "funding": "unit"
+            },
+            "absent": [
+              "related",
+              "allocation"
+            ],
+            "includeSources": [
+              "SIM-CT-2025"
+            ],
+            "excludeSources": [
+              "SIM-CT-2026"
+            ],
+            "statuses": {
+              "common": "fails"
+            }
+          },
+          "rubric": {
+            "must_address": [
+              "Đổi đúng nguồn/phiên bản và không giữ kết luận địa điểm trước đó."
+            ],
+            "must_not_claim": [
+              "Không suy ra khoản chi được duyệt, nguồn mẫu là chính sách HUST hay người hỏi đã khai dữ kiện còn thiếu.",
+              "Không dùng kết luận/nguồn của ngày cũ hoặc tình huống cũ như còn hiện hành."
+            ]
+          }
+        },
+        {
+          "text": "Tôi lại ghi nhầm ngày, sửa thành 31/11/2025.",
+          "expected": {
+            "facts": {
+              "activity": "work",
+              "location": "foreign",
+              "funding": "unit"
+            },
+            "absent": [
+              "date",
+              "related",
+              "allocation"
+            ],
+            "clarification": "date"
+          },
+          "rubric": {
+            "must_address": [
+              "Gỡ ngày không tồn tại và hỏi lại; không dùng ngày trước như hiện hành."
+            ],
+            "must_not_claim": [
+              "Không suy ra khoản chi được duyệt, nguồn mẫu là chính sách HUST hay người hỏi đã khai dữ kiện còn thiếu.",
+              "Không dùng kết luận/nguồn của ngày cũ hoặc tình huống cũ như còn hiện hành."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "S03",
+      "group": "post-narrative-safety",
+      "profile": "missing-unit",
+      "split": "heldout",
+      "turns": [
+        {
+          "text": "Tôi công tác ở Ninh Bình ngày 09/08/2027, đơn vị chi. Giá phòng 1,2 triệu một đêm có nằm trong định mức hỗ trợ không?",
+          "expected": {
+            "facts": {
+              "activity": "work",
+              "location": "domestic",
+              "date": "2027-08-09",
+              "funding": "unit"
+            },
+            "absent": [
+              "related",
+              "allocation"
+            ],
+            "noQuestion": true,
+            "statuses": {
+              "unit": "insufficient",
+              "rate-evidence": "insufficient"
+            }
+          },
+          "rubric": {
+            "must_address": [
+              "Nêu thiếu nguồn và định mức, đầu mối cần xác minh; không xác nhận giá phòng hoặc trả thay bằng danh mục giấy tờ."
+            ],
+            "must_not_claim": [
+              "Không suy ra khoản chi được duyệt, nguồn mẫu là chính sách HUST hay người hỏi đã khai dữ kiện còn thiếu.",
+              "Không dùng kết luận/nguồn của ngày cũ hoặc tình huống cũ như còn hiện hành."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "S04",
+      "group": "post-narrative-safety",
+      "profile": "conflict",
+      "split": "heldout",
+      "turns": [
+        {
+          "text": "Hội thảo của tôi ở Vũng Tàu ngày 11/08/2027, kinh phí nhiệm vụ và phục vụ nhiệm vụ. Điều kiện nơi diễn ra được xét thế nào?",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "location": "domestic",
+              "date": "2027-08-11",
+              "funding": "task",
+              "related": true
+            },
+            "absent": [
+              "allocation"
+            ],
+            "statuses": {
+              "common": "insufficient"
+            },
+            "includeSources": [
+              "SIM-CT-2026",
+              "SIM-CT-CONFLICT"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Dừng riêng địa điểm vì hai nguồn mâu thuẫn, không tự ưu tiên một bản."
+            ],
+            "must_not_claim": [
+              "Không suy ra khoản chi được duyệt, nguồn mẫu là chính sách HUST hay người hỏi đã khai dữ kiện còn thiếu.",
+              "Không dùng kết luận/nguồn của ngày cũ hoặc tình huống cũ như còn hiện hành."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "S05",
+      "group": "post-narrative-safety",
+      "profile": "standard",
+      "split": "heldout",
+      "turns": [
+        {
+          "text": "Tôi công tác tại Thái Nguyên ngày 13/08/2027, chỉ tiền đơn vị.",
+          "expected": {
+            "facts": {
+              "activity": "work",
+              "location": "domestic",
+              "date": "2027-08-13",
+              "funding": "unit"
+            },
+            "absent": [
+              "related",
+              "allocation"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Ghi nhận chuyến đầu."
+            ],
+            "must_not_claim": [
+              "Không suy ra khoản chi được duyệt, nguồn mẫu là chính sách HUST hay người hỏi đã khai dữ kiện còn thiếu.",
+              "Không dùng kết luận/nguồn của ngày cũ hoặc tình huống cũ như còn hiện hành."
+            ]
+          }
+        },
+        {
+          "text": "Không tiếp tục chuyến này nữa. Trường hợp mới là dự hội thảo tại Berlin, chưa chốt ngày và kinh phí.",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "location": "foreign"
+            },
+            "absent": [
+              "date",
+              "funding",
+              "related",
+              "allocation"
+            ]
+          },
+          "rubric": {
+            "must_address": [
+              "Bỏ ngày và tiền của chuyến cũ, giữ hoạt động/địa điểm mới; hỏi đúng thông tin thiếu."
+            ],
+            "must_not_claim": [
+              "Không suy ra khoản chi được duyệt, nguồn mẫu là chính sách HUST hay người hỏi đã khai dữ kiện còn thiếu.",
+              "Không dùng kết luận/nguồn của ngày cũ hoặc tình huống cũ như còn hiện hành."
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

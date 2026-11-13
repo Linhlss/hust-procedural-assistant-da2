@@ -1,0 +1,156 @@
+{
+  "reviewer": "Codex technical review; not a HUST specialist",
+  "at": "2026-11-10T23:40:09.958796+00:00",
+  "source": "release-gate/release-all-gemini.json",
+  "automatic": {
+    "passedDialogues": 4,
+    "plannedDialogues": 8,
+    "passedTurns": 10,
+    "plannedTurns": 14,
+    "returnedAnswers": 11,
+    "requestErrors": 3
+  },
+  "records": [
+    {
+      "id": "R01",
+      "turn": 1,
+      "bám nhu cầu": "pass",
+      "đủ nội dung": "pass",
+      "nhất quán ngữ cảnh": "pass",
+      "căn cứ hỗ trợ": "pass",
+      "dừng đúng": "pass"
+    },
+    {
+      "id": "R01",
+      "turn": 2,
+      "bám nhu cầu": "pass",
+      "đủ nội dung": "pass",
+      "nhất quán ngữ cảnh": "pass",
+      "căn cứ hỗ trợ": "pass",
+      "dừng đúng": "pass"
+    },
+    {
+      "id": "R02",
+      "turn": 1,
+      "bám nhu cầu": "partial",
+      "đủ nội dung": "partial",
+      "nhất quán ngữ cảnh": "pass",
+      "căn cứ hỗ trợ": "pass",
+      "dừng đúng": "pass",
+      "note": "Dữ kiện/nguồn đúng nhưng phân loại general nên không hỏi phân định như kỳ vọng."
+    },
+    {
+      "id": "R02",
+      "turn": 2,
+      "bám nhu cầu": "partial",
+      "đủ nội dung": "pass",
+      "nhất quán ngữ cảnh": "pass",
+      "căn cứ hỗ trợ": "partial",
+      "dừng đúng": "pass",
+      "note": "Tự nói mức chi dù người hỏi chỉ nói phân định; đoạn SIM-NV không hỗ trợ riêng câu về mức chi."
+    },
+    {
+      "id": "R02",
+      "turn": 3,
+      "bám nhu cầu": "partial",
+      "đủ nội dung": "pass",
+      "nhất quán ngữ cảnh": "fail",
+      "căn cứ hỗ trợ": "partial",
+      "dừng đúng": "fail",
+      "note": "facts.allocation đã rút nhưng narrative nói chưa phân định: lẫn chưa biết với false."
+    },
+    {
+      "id": "R03",
+      "turn": 1,
+      "bám nhu cầu": "pass",
+      "đủ nội dung": "pass",
+      "nhất quán ngữ cảnh": "pass",
+      "căn cứ hỗ trợ": "pass",
+      "dừng đúng": "pass"
+    },
+    {
+      "id": "R03",
+      "turn": 2,
+      "bám nhu cầu": "pass",
+      "đủ nội dung": "pass",
+      "nhất quán ngữ cảnh": "pass",
+      "căn cứ hỗ trợ": "pass",
+      "dừng đúng": "pass"
+    },
+    {
+      "id": "R04",
+      "turn": 1,
+      "bám nhu cầu": "pass",
+      "đủ nội dung": "pass",
+      "nhất quán ngữ cảnh": "pass",
+      "căn cứ hỗ trợ": "pass",
+      "dừng đúng": "pass"
+    },
+    {
+      "id": "R04",
+      "turn": 2,
+      "review": "not-ratable",
+      "error": {
+        "status": 503,
+        "body": {
+          "error": "Chưa kết nối được Gemini. Dữ kiện đang có được giữ nguyên; bạn có thể thử lại.",
+          "code": "GEMINI_UNAVAILABLE"
+        }
+      }
+    },
+    {
+      "id": "R05",
+      "turn": 1,
+      "bám nhu cầu": "pass",
+      "đủ nội dung": "pass",
+      "nhất quán ngữ cảnh": "pass",
+      "căn cứ hỗ trợ": "pass",
+      "dừng đúng": "pass"
+    },
+    {
+      "id": "R05",
+      "turn": 2,
+      "bám nhu cầu": "partial",
+      "đủ nội dung": "partial",
+      "nhất quán ngữ cảnh": "pass",
+      "căn cứ hỗ trợ": "pass",
+      "dừng đúng": "pass",
+      "note": "Narrative chỉ nêu đầu mối KHCN, chưa giải thích rõ bước/chứng từ sau hoạt động; phần hướng dẫn có bước nhưng trả lời chưa sát giai đoạn."
+    },
+    {
+      "id": "R06",
+      "turn": 1,
+      "review": "not-ratable",
+      "error": {
+        "status": 503,
+        "body": {
+          "error": "Gemini chưa trả nội dung hợp lệ với dữ kiện và căn cứ được cấp. Dữ kiện đang có được giữ nguyên; không có kết luận mới được tạo.",
+          "code": "GEMINI_SCHEMA"
+        }
+      }
+    },
+    {
+      "id": "R07",
+      "turn": 1,
+      "review": "not-ratable",
+      "error": {
+        "status": 503,
+        "body": {
+          "error": "Chưa kết nối được Gemini. Dữ kiện đang có được giữ nguyên; bạn có thể thử lại.",
+          "code": "GEMINI_UNAVAILABLE"
+        }
+      }
+    },
+    {
+      "id": "R08",
+      "turn": 1,
+      "bám nhu cầu": "pass",
+      "đủ nội dung": "pass",
+      "nhất quán ngữ cảnh": "pass",
+      "căn cứ hỗ trợ": "pass",
+      "dừng đúng": "pass"
+    }
+  ],
+  "releaseGatePassed": false,
+  "note": "Old result preserved. Narrative-state guard and bounded repair added afterward; must validate independently."
+}

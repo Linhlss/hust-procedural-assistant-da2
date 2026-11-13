@@ -1,0 +1,17 @@
+{
+  "frozenAt": "2026-11-10T18:26:06.323432+00:00",
+  "sha256": "55a25af0b4253a8ca6ba52ec3eda3630bec8c563b918fec15de0be77b1370d13",
+  "dialogues": 8,
+  "turns": 14,
+  "deployment": "dpl_683LsUG6MaUayQHFD7G3zXrX3gYu",
+  "runtimeHashes": {
+    "src/lib/gemini.ts": "965cb4b2d3629cd0e5b10e8f4a01be4d2311a0ae56d888aaa9c3b047b3bf9f9e",
+    "src/lib/gemini-extraction.ts": "05d150b9e233047f7ef52cb20f1b73045b01cd9de2d06607fe2213bb03f97be0",
+    "src/lib/answer-coverage.ts": "30e1bebde42158c23b5be96569646ccb337d04da0df58ceaaf9f7996601a37e6",
+    "src/lib/engine.ts": "2810d5cf87321456f11916c68180ce7b508737ca25ac15955d29ae9c83f8c1f7",
+    "src/lib/conversation-inputs.ts": "20a509fa072be19a78f082a740605f600c8c8d4185e2a7c6d1cc25b7b1ddf1fb"
+  },
+  "note": "No runtime edits after freeze before gate; manual semantic review required.",
+  "previousDraftSha256": "6a41476967cf0a2ecd957ee6eff89f9572aaebe816db37ec1543d4fee8b4e56a",
+  "preRunCorrection": "Before any model call: use existing status enum fails instead of mistaken not-meets. No policy or expected behavior changed."
+}

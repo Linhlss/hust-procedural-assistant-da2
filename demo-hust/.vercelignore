@@ -1,0 +1,14 @@
+.agents/
+docs/
+AGENTS.md
+README.md
+.env*
+test-results/
+playwright-report/
+coverage/
+*.log
+artifacts/
+tests/
+scripts/
+playwright*.config.ts
+*.tsbuildinfo

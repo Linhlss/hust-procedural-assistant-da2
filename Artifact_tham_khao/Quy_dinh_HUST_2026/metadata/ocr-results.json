@@ -1,0 +1,114 @@
+[
+  {
+    "original_path": "originals/4ff386661edfae.pdf",
+    "original_sha256": "8e0ecfb268ab6edbb7f15804b6e4e168494c3d4c5931f1dc8cf379571a3b1d45",
+    "pages": 49,
+    "ocr_path": "text_ocr/4ff386661edfae.txt",
+    "method": "tesseract vie, --psm 3, scale-to 2400px",
+    "verification": "unreviewed_ocr_not_authoritative_quote"
+  },
+  {
+    "original_path": "originals/0a16231a660c0f.pdf",
+    "original_sha256": "54bbfb84be8f0d66bed35e87eda94bf808ea6318e10773714b038e657722c66b",
+    "pages": 63,
+    "ocr_path": "text_ocr/0a16231a660c0f.txt",
+    "method": "tesseract vie, --psm 3, scale-to 2400px",
+    "verification": "unreviewed_ocr_not_authoritative_quote"
+  },
+  {
+    "original_path": "originals/3227b82e7f3676.pdf",
+    "original_sha256": "46d07f05d7c7d696a9b6a0a378deefabf80bb31cbd0505b3e394b4a8eee0d7b7",
+    "pages": 16,
+    "ocr_path": "text_ocr/3227b82e7f3676.txt",
+    "method": "tesseract vie, --psm 3, scale-to 2400px",
+    "verification": "unreviewed_ocr_not_authoritative_quote"
+  },
+  {
+    "original_path": "originals/83f466669243b2.pdf",
+    "original_sha256": "2ead4dbd4531e4e9515b04fab18272b8c0b6ea9e6eafffc1101af47b38b9d334",
+    "pages": 15,
+    "ocr_path": "text_ocr/83f466669243b2.txt",
+    "method": "tesseract vie, --psm 3, scale-to 2400px",
+    "verification": "unreviewed_ocr_not_authoritative_quote"
+  },
+  {
+    "original_path": "originals/76b5db45a64e47.pdf",
+    "original_sha256": "dfc2f732738e6f7823589c70b6790d45321ba85cc04631cd02eca4b25a2dfd6a",
+    "pages": 31,
+    "ocr_path": "text_ocr/76b5db45a64e47.txt",
+    "method": "tesseract vie, --psm 3, scale-to 2400px",
+    "verification": "unreviewed_ocr_not_authoritative_quote"
+  },
+  {
+    "original_path": "originals/00112ef37b418f.pdf",
+    "original_sha256": "7c45fb7cd60cb267943120e8ad90b0fb03faf30f845e6d6be128ac19002d17ac",
+    "pages": 54,
+    "ocr_path": "text_ocr/00112ef37b418f.txt",
+    "method": "tesseract vie, --psm 3, scale-to 2400px",
+    "verification": "unreviewed_ocr_not_authoritative_quote"
+  },
+  {
+    "original_path": "originals/48ac56878cf56d.pdf",
+    "original_sha256": "b5654f528610a5c5d5b4dd76dbe367da4503c57981a86dda5de5585273012196",
+    "pages": 52,
+    "ocr_path": "text_ocr/48ac56878cf56d.txt",
+    "method": "tesseract vie, --psm 3, scale-to 2400px",
+    "verification": "unreviewed_ocr_not_authoritative_quote"
+  },
+  {
+    "original_path": "originals/d3e0816ad5f44f.pdf",
+    "original_sha256": "5abdf257a6cae9706bd4a089eed02db66c55c373b57f9babf1013081aab67774",
+    "pages": 12,
+    "ocr_path": "text_ocr/d3e0816ad5f44f.txt",
+    "method": "tesseract vie, --psm 3, scale-to 2400px",
+    "verification": "unreviewed_ocr_not_authoritative_quote"
+  },
+  {
+    "original_path": "originals/9269db9d4dee18.pdf",
+    "original_sha256": "a53f519d8fd7b3c6ee5d76561819aced8c18586c44104e8a67e3d91d337a6342",
+    "pages": 3,
+    "ocr_path": "text_ocr/9269db9d4dee18.txt",
+    "method": "tesseract vie, --psm 3, scale-to 2400px",
+    "verification": "unreviewed_ocr_not_authoritative_quote"
+  },
+  {
+    "original_path": "originals/0256e454d6e699.pdf",
+    "original_sha256": "db3d58819cdfb90732cb9a199446c5b44a0aca7f551c253fe92344997b299a6d",
+    "pages": 5,
+    "ocr_path": "text_ocr/0256e454d6e699.txt",
+    "method": "tesseract vie, --psm 3, scale-to 2400px",
+    "verification": "unreviewed_ocr_not_authoritative_quote"
+  },
+  {
+    "original_path": "originals/7306e5e0745cf1.pdf",
+    "original_sha256": "cdafda94822231edf0ca2cb59a11c801c74803171194a339f68f607ceee88ddd",
+    "pages": 18,
+    "ocr_path": "text_ocr/7306e5e0745cf1.txt",
+    "method": "tesseract vie, --psm 3, scale-to 2400px",
+    "verification": "unreviewed_ocr_not_authoritative_quote"
+  },
+  {
+    "original_path": "originals/c178e394de4e01.pdf",
+    "original_sha256": "95893a451323e4e260bfde7ede2a8db384426b7b3d48e191314fc650173ef43e",
+    "pages": 70,
+    "ocr_path": "text_ocr/c178e394de4e01.txt",
+    "method": "tesseract vie, --psm 3, scale-to 2400px",
+    "verification": "unreviewed_ocr_not_authoritative_quote"
+  },
+  {
+    "original_path": "originals/8af731c80794b0.pdf",
+    "original_sha256": "ed631a01b88d558604dad08c650c809192c4cc192981fcbfad7059ea9210b31d",
+    "pages": 30,
+    "ocr_path": "text_ocr/8af731c80794b0.txt",
+    "method": "tesseract vie, --psm 3, scale-to 2400px",
+    "verification": "unreviewed_ocr_not_authoritative_quote"
+  },
+  {
+    "original_path": "originals/9b1c9b1d123d18.pdf",
+    "original_sha256": "96f6026dda2638e988e6dcb1a6d3a7dc4e5cb5657187b1d521799a77bf41dc4b",
+    "pages": 2,
+    "ocr_path": "text_ocr/9b1c9b1d123d18.txt",
+    "method": "tesseract vie, --psm 3, scale-to 2400px",
+    "verification": "unreviewed_ocr_not_authoritative_quote"
+  }
+]

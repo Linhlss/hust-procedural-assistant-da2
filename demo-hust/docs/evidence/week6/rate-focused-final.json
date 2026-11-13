@@ -1,0 +1,137 @@
+{
+  "target": {
+    "code": {
+      "src/lib/gemini.ts": "78d0dff3de086884fc5ef0597f4a1edc8053aeda32a3a501d44d8d9f17cf5b7e",
+      "src/lib/gemini-extraction.ts": "068a04b1ef6cd9b0894fb12d4fab33fc257415d3ddf4a552f86d7a87fde09dbd",
+      "src/lib/narrative-grounding.ts": "c19acb35d30ea45b96c0aee3b2ddda4369f88fa7bc5464185a1bd464d333e352",
+      "src/lib/answer-coverage.ts": "529e98eeb377567aaa4fc4f03a06e946a7272f322621b6d4cb5250350de5e900",
+      "src/lib/conversation-inputs.ts": "20a509fa072be19a78f082a740605f600c8c8d4185e2a7c6d1cc25b7b1ddf1fb",
+      "src/lib/engine.ts": "70e7e23d6e42d78fb6b58de5ec0d50c97b2a0b9ee28020f2ca80f2ed6b594e4d",
+      "src/lib/extractor.ts": "cd1208976ae331a39edcac2bc85d7a8cc3868732a0c8af9ef7d1f1f72f1790c6",
+      "scripts/evaluate-vercel.ts": "a75372cfc291efe31fe77446ebe9ec7734af1532c07192d635ef2dccb0961dcb"
+    },
+    "url": "https://hust-t6-demo-1d0bcxgl4-linhozz.vercel.app",
+    "transport": "vercel-cli",
+    "deploymentId": "dpl_GYYrBcA9DAKcRsdbS9kbrGKtccCZ",
+    "mode": "gemini",
+    "suite": "rate",
+    "split": "all",
+    "caseFilter": null,
+    "cohortSha256": "f776322687569f1c4c8c46415f59e9307f47f2e8438c07d60077dd156ebbf39c",
+    "startedAt": "2026-11-11T00:28:20.846Z",
+    "policyValidation": false,
+    "manualReviewComplete": false
+  },
+  "updatedAt": "2026-11-11T00:29:46.120Z",
+  "complete": true,
+  "paused": false,
+  "summary": {
+    "plannedDialogues": 2,
+    "plannedTurns": 2,
+    "successfulResponses": 0,
+    "manualReviewComplete": false
+  },
+  "records": [
+    {
+      "id": "M01",
+      "group": "rate-focused-context",
+      "split": "heldout",
+      "turns": [
+        {
+          "turn": 1,
+          "text": "Tôi công tác ở Yên Bái ngày 20/11/2027, nguồn đơn vị chi. Mức 1,6 triệu đồng mỗi đêm ở khách sạn có phù hợp định mức không?",
+          "expected": {
+            "facts": {
+              "activity": "work",
+              "location": "domestic",
+              "date": "2027-11-20",
+              "funding": "unit"
+            },
+            "absent": [
+              "related",
+              "allocation"
+            ],
+            "noQuestion": true,
+            "statuses": {
+              "rate-evidence": "insufficient",
+              "unit": "insufficient"
+            }
+          },
+          "error": {
+            "status": 503,
+            "body": {
+              "error": "Gemini chưa trả nội dung hợp lệ với dữ kiện và căn cứ được cấp. Dữ kiện đang có được giữ nguyên; không có kết luận mới được tạo.",
+              "code": "GEMINI_SCHEMA"
+            }
+          },
+          "elapsedMs": 17652.765166,
+          "rubric": {
+            "must_address": [
+              "Trả đúng thiếu căn cứ định mức và đầu mối, tách khỏi danh mục giấy tờ không được hỏi."
+            ],
+            "must_not_claim": [
+              "Không xác nhận giá tiền, quyền được chi, source hoặc dữ kiện chưa có; không đổi Ban thành Phòng."
+            ]
+          },
+          "manualReview": {
+            "bám nhu cầu": null,
+            "đủ nội dung": null,
+            "nhất quán ngữ cảnh": null,
+            "căn cứ hỗ trợ": null,
+            "dừng đúng": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "M02",
+      "group": "rate-focused-context",
+      "split": "heldout",
+      "turns": [
+        {
+          "turn": 1,
+          "text": "Tôi dự hội thảo tại Bình Dương ngày 22/11/2027 bằng kinh phí nhiệm vụ, có phục vụ nhiệm vụ. Lệ phí 850 nghìn đồng có đúng định mức hỗ trợ không?",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "location": "domestic",
+              "date": "2027-11-22",
+              "funding": "task",
+              "related": true
+            },
+            "absent": [
+              "allocation"
+            ],
+            "noQuestion": true,
+            "statuses": {
+              "rate-evidence": "insufficient"
+            }
+          },
+          "error": {
+            "status": 503,
+            "body": {
+              "error": "Gemini chưa trả nội dung hợp lệ với dữ kiện và căn cứ được cấp. Dữ kiện đang có được giữ nguyên; không có kết luận mới được tạo.",
+              "code": "GEMINI_SCHEMA"
+            }
+          },
+          "elapsedMs": 17617.69425,
+          "rubric": {
+            "must_address": [
+              "Trả đúng thiếu căn cứ định mức và đầu mối, tách khỏi danh mục giấy tờ không được hỏi."
+            ],
+            "must_not_claim": [
+              "Không xác nhận giá tiền, quyền được chi, source hoặc dữ kiện chưa có; không đổi Ban thành Phòng."
+            ]
+          },
+          "manualReview": {
+            "bám nhu cầu": null,
+            "đủ nội dung": null,
+            "nhất quán ngữ cảnh": null,
+            "căn cứ hỗ trợ": null,
+            "dừng đúng": null
+          }
+        }
+      ]
+    }
+  ]
+}

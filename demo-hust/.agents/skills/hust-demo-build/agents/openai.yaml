@@ -1,0 +1,4 @@
+interface:
+  display_name: "Xây chatbot demo HUST"
+  short_description: "Xây hội thoại T6 và năm năng lực F01–F05 trên web"
+  default_prompt: "Dùng $hust-demo-build xây demo chatbot T6 theo phạm vi đã trích."

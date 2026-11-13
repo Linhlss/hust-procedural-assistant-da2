@@ -1,0 +1,45 @@
+{
+  "templateOnly": true,
+  "record": {
+    "id": "FAQ-REPLACE",
+    "question": "Điền nguyên cách hỏi sau khi đã ẩn danh",
+    "card": "unclassified",
+    "origin": "unknown",
+    "originEvidence": null,
+    "caseGroup": "GROUP-REPLACE",
+    "split": "unassigned",
+    "userGoal": null,
+    "neededFacts": [],
+    "answer": null,
+    "preparationSteps": [],
+    "sourceRefs": [],
+    "handoff": null,
+    "frequency": "unknown",
+    "frequencyEvidence": null,
+    "difficulty": null,
+    "commonMistakes": [],
+    "impactIfWrong": null,
+    "answerStatus": "pending",
+    "confirmationEvidence": null,
+    "eventDates": {},
+    "sourceVersion": null,
+    "permissions": {
+      "research": {
+        "state": "unknown",
+        "evidence": null
+      },
+      "quotation": {
+        "state": "unknown",
+        "evidence": null
+      },
+      "model": {
+        "state": "unknown",
+        "evidence": null
+      },
+      "public": {
+        "state": "unknown",
+        "evidence": null
+      }
+    }
+  }
+}

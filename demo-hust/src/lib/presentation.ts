@@ -1,0 +1,3 @@
+import type { Facts } from './types';
+export const labels:Record<keyof Facts,string>={activity:'Hoạt động',location:'Địa điểm',date:'Ngày hoạt động',funding:'Nguồn kinh phí',related:'Quan hệ nhiệm vụ',allocation:'Phân định nguồn'};
+export function factValue(key:keyof Facts,value:Facts[keyof Facts]) { if(value===undefined)return 'Chưa cung cấp'; const dictionary:Record<string,string>={conference:'Hội thảo',work:'Công tác',domestic:'Trong nước',foreign:'Nước ngoài',task:'Kinh phí nhiệm vụ',unit:'Kinh phí đơn vị',combined:'Kết hợp nhiệm vụ và đơn vị'}; if(typeof value==='boolean')return key==='related'?(value?'Có phục vụ nhiệm vụ':'Không phục vụ nhiệm vụ'):(value?'Đã phân định':'Chưa phân định'); return dictionary[value]??value; }

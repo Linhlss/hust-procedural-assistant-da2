@@ -1,0 +1,8 @@
+{
+  "reviewer": "Codex technical review",
+  "at": "2026-11-11T00:28:25.247769+00:00",
+  "policyValidation": false,
+  "returnedAnswers": 0,
+  "requestErrors": 2,
+  "note": "Hai lượt bị kiểm diễn giải từ chối. Log chỉ mã lý do xác nhận unsupported_document_claim; sau đó lọc ngữ cảnh khỏi phần giấy tờ không được hỏi. Không đổi điểm cũ."
+}

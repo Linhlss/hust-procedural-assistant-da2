@@ -1,0 +1,76 @@
+{
+  "purpose": "New rate questions after fixing relevance of supplied context. Frozen before any run of this revision; previous contact scores unchanged. Targeted verification, not a representative benchmark.",
+  "cases": [
+    {
+      "id": "M01",
+      "profile": "missing-unit",
+      "split": "heldout",
+      "group": "rate-focused-context",
+      "turns": [
+        {
+          "text": "Tôi công tác ở Yên Bái ngày 20/11/2027, nguồn đơn vị chi. Mức 1,6 triệu đồng mỗi đêm ở khách sạn có phù hợp định mức không?",
+          "expected": {
+            "facts": {
+              "activity": "work",
+              "location": "domestic",
+              "date": "2027-11-20",
+              "funding": "unit"
+            },
+            "absent": [
+              "related",
+              "allocation"
+            ],
+            "noQuestion": true,
+            "statuses": {
+              "rate-evidence": "insufficient",
+              "unit": "insufficient"
+            }
+          },
+          "rubric": {
+            "must_address": [
+              "Trả đúng thiếu căn cứ định mức và đầu mối, tách khỏi danh mục giấy tờ không được hỏi."
+            ],
+            "must_not_claim": [
+              "Không xác nhận giá tiền, quyền được chi, source hoặc dữ kiện chưa có; không đổi Ban thành Phòng."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "M02",
+      "profile": "standard",
+      "split": "heldout",
+      "group": "rate-focused-context",
+      "turns": [
+        {
+          "text": "Tôi dự hội thảo tại Bình Dương ngày 22/11/2027 bằng kinh phí nhiệm vụ, có phục vụ nhiệm vụ. Lệ phí 850 nghìn đồng có đúng định mức hỗ trợ không?",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "location": "domestic",
+              "date": "2027-11-22",
+              "funding": "task",
+              "related": true
+            },
+            "absent": [
+              "allocation"
+            ],
+            "noQuestion": true,
+            "statuses": {
+              "rate-evidence": "insufficient"
+            }
+          },
+          "rubric": {
+            "must_address": [
+              "Trả đúng thiếu căn cứ định mức và đầu mối, tách khỏi danh mục giấy tờ không được hỏi."
+            ],
+            "must_not_claim": [
+              "Không xác nhận giá tiền, quyền được chi, source hoặc dữ kiện chưa có; không đổi Ban thành Phòng."
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,499 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-11-02T09:43:29.938947+00:00",
+  "scope": {
+    "cards": [
+      "T1",
+      "T3",
+      "T4",
+      "T6",
+      "T10"
+    ],
+    "excluded_extensions": [
+      "Sở hữu trí tuệ",
+      "Hợp tác nghiên cứu"
+    ],
+    "excluded_operations": [
+      "Tuyển dụng",
+      "Tính kNC/xếp loại",
+      "Hồ sơ cá nhân",
+      "Duyệt/luân chuyển hồ sơ",
+      "Chi trả/ghi sổ",
+      "Ghi iGov/eHUST/BKOffice"
+    ],
+    "task_type_policy": "Cấp Đại học là trọng tâm; nhánh cấp Bộ/chương trình chỉ được công bố hỗ trợ khi có xác nhận nguồn, loại nhiệm vụ và ca tương ứng. Tệp đã tải không tự mở phạm vi.",
+    "historical_policy": "Theo phụ thuộc nhiệm vụ đang thực hiện, nghĩa vụ kéo dài, giấy tờ tồn đọng và điều khoản chuyển tiếp; không chốt mốc năm tùy tiện.",
+    "unit_policy": "Không cam kết mọi đơn vị. Danh mục đơn vị áp dụng phải được xác nhận; mỗi nhánh nguồn đơn vị cần nguồn riêng hoặc xác nhận dùng chung.",
+    "approved_unit_ids": [],
+    "unit_scope_confirmation": null,
+    "initial_review_as_of": "2026-11-07",
+    "cohort_policy": "Không lọc theo khóa sinh viên Kxx; chỉ cần khóa/đợt đào tạo khi điều kiện chương trình cử cán bộ đi phân biệt theo đó.",
+    "registration_round_policy": "Đợt 2026; thêm đợt thực hiện từ 2027 nếu đã công bố; phân biệt năm đăng ký với năm bắt đầu nhiệm vụ."
+  },
+  "baseline_file": "metadata/coverage-baseline.json",
+  "core_dependencies": [
+    {
+      "id": "H01",
+      "title": "Quy định nhiệm vụ KHCN&ĐMST cấp Đại học 2026",
+      "status": "missing_original",
+      "source_ids": [],
+      "excluded_from_additional_count": true
+    },
+    {
+      "id": "H03",
+      "title": "Quy chế Chi tiêu nội bộ 1616/QĐ-ĐHBK",
+      "status": "missing_original",
+      "source_ids": [],
+      "excluded_from_additional_count": true
+    },
+    {
+      "id": "H04",
+      "title": "Quy chế Công tác cán bộ 1606/QĐ-ĐHBK",
+      "status": "missing_original",
+      "source_ids": [],
+      "excluded_from_additional_count": true
+    }
+  ],
+  "groups": [
+    {
+      "id": "G01",
+      "title": "Phụ lục và biểu mẫu còn thiếu",
+      "cards": [
+        "T1",
+        "T3",
+        "T4",
+        "T6",
+        "T10"
+      ],
+      "owner_to_contact": "KHCN / TCKH / TCNS",
+      "needed_by": "Ngay khi nhận ba bản gốc",
+      "matrix_ids": [
+        "H02",
+        "H03",
+        "H04"
+      ],
+      "conditional": false,
+      "requirements": [
+        {
+          "id": "G01-R01",
+          "title": "Phụ lục và bộ mẫu nhiệm vụ cấp Đại học",
+          "acceptance": "Đối chiếu danh mục bản ký; đủ mẫu đăng ký/thuyết minh/điều chỉnh/nghiệm thu và phụ lục liên quan. Số 4 phụ lục, 12 mẫu mới là chỉ dẫn thiết kế.",
+          "trigger": "Mọi phần còn thiếu sau khi nhận đủ ba bản gốc và phụ lục; không yêu cầu bản riêng nếu nội dung đã nằm trong bộ gốc.",
+          "status": "open",
+          "evidence": [],
+          "conditions": [],
+          "references_reviewed": false,
+          "owner_confirmation": null,
+          "not_applicable_reason": null
+        },
+        {
+          "id": "G01-R02",
+          "title": "Phụ lục tài chính",
+          "acceptance": "Kiểm đủ phụ lục chi tiêu áp dụng cho năm nhóm và số hiệu/phiên bản; số 6 phụ lục phải kiểm lại.",
+          "trigger": "Mọi phần còn thiếu sau khi nhận đủ ba bản gốc và phụ lục; không yêu cầu bản riêng nếu nội dung đã nằm trong bộ gốc.",
+          "status": "open",
+          "evidence": [],
+          "conditions": [],
+          "references_reviewed": false,
+          "owner_confirmation": null,
+          "not_applicable_reason": null
+        },
+        {
+          "id": "G01-R03",
+          "title": "Phụ lục cán bộ",
+          "acceptance": "Kiểm đủ phụ lục/mẫu cử đi và nghĩa vụ; số 3 phụ lục phải kiểm lại.",
+          "trigger": "Mọi phần còn thiếu sau khi nhận đủ ba bản gốc và phụ lục; không yêu cầu bản riêng nếu nội dung đã nằm trong bộ gốc.",
+          "status": "open",
+          "evidence": [],
+          "conditions": [],
+          "references_reviewed": false,
+          "owner_confirmation": null,
+          "not_applicable_reason": null
+        }
+      ]
+    },
+    {
+      "id": "G02",
+      "title": "Hướng dẫn đăng ký nhiệm vụ cấp Đại học",
+      "cards": [
+        "T1"
+      ],
+      "owner_to_contact": "KHCN",
+      "needed_by": "Trước hoàn thiện T1",
+      "matrix_ids": [
+        "H11"
+      ],
+      "conditional": false,
+      "requirements": [
+        {
+          "id": "G02-R01",
+          "title": "Thông báo và kế hoạch đợt đăng ký",
+          "acceptance": "Có đúng loại/cấp nhiệm vụ, năm/đợt, đối tượng, mốc mở/đóng và nguồn công bố.",
+          "trigger": "Đợt đăng ký được chatbot trả lời.",
+          "status": "open",
+          "evidence": [],
+          "conditions": [],
+          "references_reviewed": false,
+          "owner_confirmation": null,
+          "not_applicable_reason": null
+        },
+        {
+          "id": "G02-R02",
+          "title": "Hướng dẫn đăng ký và mẫu áp dụng",
+          "acceptance": "Cách đăng ký, thành phần tài liệu, mẫu hiện hành và đầu mối; không dùng bộ mẫu cấp Bộ/NAFOSTED để lấp thiếu cấp Đại học.",
+          "trigger": "Mọi phần còn thiếu sau khi nhận đủ ba bản gốc và phụ lục; không yêu cầu bản riêng nếu nội dung đã nằm trong bộ gốc.",
+          "status": "open",
+          "evidence": [],
+          "conditions": [],
+          "references_reviewed": false,
+          "owner_confirmation": null,
+          "not_applicable_reason": null
+        }
+      ]
+    },
+    {
+      "id": "G03",
+      "title": "Hướng dẫn điều chỉnh và gia hạn",
+      "cards": [
+        "T3",
+        "T10"
+      ],
+      "owner_to_contact": "KHCN; TCKH/TCNS khi liên quan",
+      "needed_by": "Trước hoàn thiện T3",
+      "matrix_ids": [
+        "H12"
+      ],
+      "conditional": false,
+      "requirements": [
+        {
+          "id": "G03-R01",
+          "title": "Điều chỉnh nội dung, tiến độ, chủ nhiệm",
+          "acceptance": "Điều kiện, thời hạn đề nghị, thẩm quyền và mẫu đúng loại nhiệm vụ.",
+          "trigger": "Mọi phần còn thiếu sau khi nhận đủ ba bản gốc và phụ lục; không yêu cầu bản riêng nếu nội dung đã nằm trong bộ gốc.",
+          "status": "open",
+          "evidence": [],
+          "conditions": [],
+          "references_reviewed": false,
+          "owner_confirmation": null,
+          "not_applicable_reason": null
+        },
+        {
+          "id": "G03-R02",
+          "title": "Điều chỉnh kinh phí và chủ nhiệm vắng mặt",
+          "acceptance": "Quy tắc áp dụng khi đổi kinh phí hoặc đi học/nghiên cứu; phân biệt các nguồn và nghĩa vụ.",
+          "trigger": "Nhánh đổi kinh phí hoặc chủ nhiệm đi học/nghiên cứu.",
+          "status": "open",
+          "evidence": [],
+          "conditions": [],
+          "references_reviewed": false,
+          "owner_confirmation": null,
+          "not_applicable_reason": null
+        }
+      ]
+    },
+    {
+      "id": "G04",
+      "title": "Hướng dẫn nghiệm thu",
+      "cards": [
+        "T4"
+      ],
+      "owner_to_contact": "KHCN",
+      "needed_by": "Trước hoàn thiện T4",
+      "matrix_ids": [
+        "H13"
+      ],
+      "conditional": false,
+      "requirements": [
+        {
+          "id": "G04-R01",
+          "title": "Sản phẩm, báo cáo và mốc nghiệm thu",
+          "acceptance": "Có căn cứ cho sản phẩm, mốc đề nghị/báo cáo/nghiệm thu và ngoại lệ.",
+          "trigger": "Mọi phần còn thiếu sau khi nhận đủ ba bản gốc và phụ lục; không yêu cầu bản riêng nếu nội dung đã nằm trong bộ gốc.",
+          "status": "open",
+          "evidence": [],
+          "conditions": [],
+          "references_reviewed": false,
+          "owner_confirmation": null,
+          "not_applicable_reason": null
+        },
+        {
+          "id": "G04-R02",
+          "title": "Mẫu nghiệm thu và điểm chưa thống nhất",
+          "acceptance": "Đủ mẫu báo cáo/phiếu/biên bản liên quan; điểm mơ hồ có giải thích được xác nhận hoặc điểm dừng đúng.",
+          "trigger": "Mọi phần còn thiếu sau khi nhận đủ ba bản gốc và phụ lục; không yêu cầu bản riêng nếu nội dung đã nằm trong bộ gốc.",
+          "status": "open",
+          "evidence": [],
+          "conditions": [],
+          "references_reviewed": false,
+          "owner_confirmation": null,
+          "not_applicable_reason": null
+        }
+      ]
+    },
+    {
+      "id": "G05",
+      "title": "Hướng dẫn tài chính theo tình huống",
+      "cards": [
+        "T6",
+        "T3",
+        "T10"
+      ],
+      "owner_to_contact": "TCKH; KHCN theo kinh phí nhiệm vụ",
+      "needed_by": "Ưu tiên T6; trước nhánh tài chính T3/T10",
+      "matrix_ids": [
+        "H08",
+        "H16",
+        "H17"
+      ],
+      "conditional": false,
+      "requirements": [
+        {
+          "id": "G05-R01",
+          "title": "Công tác, hội thảo và đoàn ra",
+          "acceptance": "Điều kiện/phạm vi định mức đúng hoạt động, trong/nước ngoài và nguồn kinh phí; làm rõ khoán/không khoán khi ảnh hưởng.",
+          "trigger": "Nhánh công tác/hội thảo được công bố hỗ trợ.",
+          "status": "open",
+          "evidence": [],
+          "conditions": [],
+          "references_reviewed": false,
+          "owner_confirmation": null,
+          "not_applicable_reason": null
+        },
+        {
+          "id": "G05-R02",
+          "title": "Chứng từ, tạm ứng/quyết toán và thời hạn",
+          "acceptance": "Chỉ phần tư vấn: danh mục chứng từ, mẫu trống, hạn và đầu mối. Lấy phần liên quan của bộ phụ lục tài chính, không xây luồng xử lý.",
+          "trigger": "Mọi phần còn thiếu sau khi nhận đủ ba bản gốc và phụ lục; không yêu cầu bản riêng nếu nội dung đã nằm trong bộ gốc.",
+          "status": "open",
+          "evidence": [],
+          "conditions": [],
+          "references_reviewed": false,
+          "owner_confirmation": null,
+          "not_applicable_reason": null
+        },
+        {
+          "id": "G05-R03",
+          "title": "Kết hợp nguồn và định mức phụ thuộc",
+          "acceptance": "Căn cứ phối hợp nhiệm vụ/đơn vị/tài trợ và tránh trùng khi áp dụng; hệ số tài trợ/thù lao người học chỉ khi câu hỏi cần và đã có nguồn.",
+          "trigger": "Nhánh nguồn kết hợp hoặc điều kiện tài trợ liên quan.",
+          "status": "open",
+          "evidence": [],
+          "conditions": [],
+          "references_reviewed": false,
+          "owner_confirmation": null,
+          "not_applicable_reason": null
+        }
+      ]
+    },
+    {
+      "id": "G06",
+      "title": "Hướng dẫn và mẫu TCNS",
+      "cards": [
+        "T10",
+        "T3"
+      ],
+      "owner_to_contact": "TCNS",
+      "needed_by": "Trước hoàn thiện T10",
+      "matrix_ids": [
+        "H10"
+      ],
+      "conditional": false,
+      "requirements": [
+        {
+          "id": "G06-R01",
+          "title": "Cử đi và phân loại hoạt động",
+          "acceptance": "Đối tượng, điều kiện, ngắn/dài hạn, thời gian, mẫu và đầu mối; không thay bằng thông báo học bổng sinh viên.",
+          "trigger": "Mọi phần còn thiếu sau khi nhận đủ ba bản gốc và phụ lục; không yêu cầu bản riêng nếu nội dung đã nằm trong bộ gốc.",
+          "status": "open",
+          "evidence": [],
+          "conditions": [],
+          "references_reviewed": false,
+          "owner_confirmation": null,
+          "not_applicable_reason": null
+        },
+        {
+          "id": "G06-R02",
+          "title": "Cam kết, gia hạn, trở về và báo cáo",
+          "acceptance": "Nghĩa vụ trong/sau thời gian đi, thời hạn và các mẫu liên quan; quan hệ với nhiệm vụ đang chủ trì.",
+          "trigger": "Nhánh nghĩa vụ/gia hạn/trở về và giao T3.",
+          "status": "open",
+          "evidence": [],
+          "conditions": [],
+          "references_reviewed": false,
+          "owner_confirmation": null,
+          "not_applicable_reason": null
+        }
+      ]
+    },
+    {
+      "id": "G07",
+      "title": "Quy chế nền về tài chính và thẩm quyền",
+      "cards": [
+        "T1",
+        "T3",
+        "T4",
+        "T6",
+        "T10"
+      ],
+      "owner_to_contact": "TCKH / Văn phòng / chủ nội dung các Ban",
+      "needed_by": "Thu sớm để đối chiếu",
+      "matrix_ids": [
+        "H05",
+        "H06",
+        "H07"
+      ],
+      "conditional": false,
+      "requirements": [
+        {
+          "id": "G07-R01",
+          "title": "Quy chế Quản lý tài chính",
+          "acceptance": "Tìm NQ 04/2024 và sửa đổi/bản thay thế; xác minh phiên bản, đối tượng và phần liên quan.",
+          "trigger": "Nguyên tắc nguồn/phân cấp ảnh hưởng câu trả lời.",
+          "status": "open",
+          "evidence": [],
+          "conditions": [],
+          "references_reviewed": false,
+          "owner_confirmation": null,
+          "not_applicable_reason": null
+        },
+        {
+          "id": "G07-R02",
+          "title": "Tổ chức, hoạt động và phân cấp",
+          "acceptance": "Tìm NQ 40/2024 và các sửa đổi NQ 11/NQ 32/2025 được tài liệu thiết kế dẫn; kiểm bản hiện hành.",
+          "trigger": "Thẩm quyền/phân cấp ảnh hưởng câu trả lời.",
+          "status": "open",
+          "evidence": [],
+          "conditions": [],
+          "references_reviewed": false,
+          "owner_confirmation": null,
+          "not_applicable_reason": null
+        },
+        {
+          "id": "G07-R03",
+          "title": "Chức năng, nhiệm vụ và đầu mối",
+          "acceptance": "Tìm QĐ 9768/2023 và cập nhật; trang giới thiệu chỉ hỗ trợ đầu mối, không chứng minh quy tắc.",
+          "trigger": "Mỗi đầu mối hoặc thẩm quyền được chatbot hướng dẫn.",
+          "status": "open",
+          "evidence": [],
+          "conditions": [],
+          "references_reviewed": false,
+          "owner_confirmation": null,
+          "not_applicable_reason": null
+        }
+      ]
+    },
+    {
+      "id": "G08",
+      "title": "Quy định chi tiêu của đơn vị",
+      "cards": [
+        "T6",
+        "T10"
+      ],
+      "owner_to_contact": "Đơn vị áp dụng / TCKH",
+      "needed_by": "Trước khi công bố nhánh nguồn đơn vị",
+      "matrix_ids": [
+        "H09"
+      ],
+      "conditional": true,
+      "requirements": [
+        {
+          "id": "G08-R01",
+          "title": "Quy định riêng hoặc xác nhận dùng quy định chung",
+          "acceptance": "Mỗi đơn vị được công bố hỗ trợ có bản áp dụng, quyết định thông qua và mốc; hoặc xác nhận có căn cứ rằng không có quy tắc riêng. Không suy từ không tìm thấy.",
+          "trigger": "Nguồn đơn vị hoặc hỗ trợ riêng của đơn vị.",
+          "status": "open",
+          "evidence": [],
+          "conditions": [],
+          "references_reviewed": false,
+          "owner_confirmation": null,
+          "not_applicable_reason": null
+        }
+      ]
+    },
+    {
+      "id": "G09",
+      "title": "Văn bản dẫn chiếu còn thiếu",
+      "cards": [
+        "T1",
+        "T3",
+        "T4",
+        "T6",
+        "T10"
+      ],
+      "owner_to_contact": "Cơ quan ban hành / Ban chủ nội dung",
+      "needed_by": "Rà khi đọc bản gốc; xong trước nghiệm thu",
+      "matrix_ids": [],
+      "conditional": true,
+      "requirements": [
+        {
+          "id": "G09-R01",
+          "title": "Lần các dẫn chiếu quyết định đáp án",
+          "acceptance": "Mỗi dẫn chiếu ảnh hưởng điều kiện/định mức/đối tượng/thời hạn có đúng văn bản/phiên bản hoặc ghi lý do có xác nhận rằng không áp dụng; khử trùng với kho có sẵn.",
+          "trigger": "Phát hiện dẫn chiếu trong nguồn áp dụng.",
+          "status": "open",
+          "evidence": [],
+          "conditions": [],
+          "references_reviewed": false,
+          "owner_confirmation": null,
+          "not_applicable_reason": null
+        }
+      ]
+    },
+    {
+      "id": "G10",
+      "title": "Nguồn cũ và chuyển tiếp theo tình huống",
+      "cards": [
+        "T1",
+        "T3",
+        "T4",
+        "T6",
+        "T10"
+      ],
+      "owner_to_contact": "KHCN / TCKH / TCNS / Văn phòng",
+      "needed_by": "Khi có phụ thuộc lịch sử; trước nghiệm thu ca đó",
+      "matrix_ids": [
+        "H14",
+        "H15"
+      ],
+      "conditional": true,
+      "requirements": [
+        {
+          "id": "G10-R01",
+          "title": "Phiên bản cũ và mẫu áp dụng",
+          "acceptance": "Lần QĐ 5299/2023, 4788/2025, 1471/2025 hoặc bản khác đúng ca; số hiệu/quan hệ thay thế phải kiểm gốc.",
+          "trigger": "Nhiệm vụ đang thực hiện, nghĩa vụ kéo dài hoặc giấy tờ tồn đọng có thể cần bản cũ.",
+          "status": "open",
+          "evidence": [],
+          "conditions": [],
+          "references_reviewed": false,
+          "owner_confirmation": null,
+          "not_applicable_reason": null
+        },
+        {
+          "id": "G10-R02",
+          "title": "Chuyển tiếp và mốc quyết định",
+          "acceptance": "Có điều/trang xác định mốc áp dụng; xét ngày phê duyệt/ký/bắt đầu/kết thúc/nộp tùy quy tắc. Nằm chờ lâu không tự quyết định dùng bản cũ.",
+          "trigger": "Ca đi qua mốc thay đổi hoặc khoảng áp dụng chưa rõ.",
+          "status": "open",
+          "evidence": [],
+          "conditions": [],
+          "references_reviewed": false,
+          "owner_confirmation": null,
+          "not_applicable_reason": null
+        }
+      ]
+    }
+  ],
+  "release": {
+    "state": "working",
+    "frozen_at": null,
+    "inventory_sha256": null,
+    "owner_confirmation": null,
+    "scope_confirmation": null,
+    "references_reviewed": false,
+    "temporal_cases_reviewed": false,
+    "policy_cases_executed": false,
+    "publication_reviewed": false,
+    "intended_use": "public_demo"
+  }
+}

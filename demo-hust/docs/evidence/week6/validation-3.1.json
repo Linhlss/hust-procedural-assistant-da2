@@ -1,0 +1,899 @@
+{
+  "target": {
+    "code": {
+      "src/lib/gemini.ts": "aecfd39c2e2d3528ae98f8116429a6db5b73738a994038e486c71c676c55bc61",
+      "src/lib/gemini-extraction.ts": "78dad73e0dcfeddcb160874008914784a3b47689f4ea6cdd635271a6a485ff1d",
+      "src/lib/conversation-inputs.ts": "0e93a5e92343fe53d2bb9a621078adbb5b2058be1c78d75620d647fbc50297aa",
+      "src/lib/engine.ts": "2810d5cf87321456f11916c68180ce7b508737ca25ac15955d29ae9c83f8c1f7",
+      "src/lib/extractor.ts": "cd1208976ae331a39edcac2bc85d7a8cc3868732a0c8af9ef7d1f1f72f1790c6",
+      "scripts/evaluate-vercel.ts": "fbb2b50797db08b52a6e72d11781c612f25514d1ec8ee08afe036518b5510e0c"
+    },
+    "url": "https://hust-t6-demo-3wduv8hqh-linhozz.vercel.app",
+    "transport": "vercel-cli",
+    "deploymentId": "dpl_8PMLiYqbLDvqME73qbDhAsaL66fF",
+    "mode": "gemini",
+    "suite": "validation",
+    "split": "all",
+    "cohortSha256": "b704d4588d0ab66a31c166efbf77b12c9a0a0a5a19dd0ffd548dd703e6aeb3b6",
+    "startedAt": "2026-11-10T17:22:49.785Z",
+    "policyValidation": false,
+    "manualReviewComplete": false
+  },
+  "updatedAt": "2026-11-10T17:29:04.171Z",
+  "complete": true,
+  "paused": false,
+  "summary": {
+    "plannedDialogues": 12,
+    "plannedTurns": 20,
+    "successfulResponses": 1,
+    "manualReviewComplete": false
+  },
+  "records": [
+    {
+      "id": "V01",
+      "group": "boolean-evidence",
+      "split": "heldout",
+      "turns": [
+        {
+          "turn": 1,
+          "text": "Tôi đăng ký tham dự hội thảo ngày 22/01/2027, tiền nhiệm vụ. Xin danh sách giấy tờ để chuẩn bị.",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "date": "2027-01-22",
+              "funding": "task"
+            },
+            "absent": [
+              "location",
+              "related",
+              "allocation"
+            ]
+          },
+          "answer": {
+            "intent": "unsupported",
+            "turn": 1,
+            "mode": "gemini",
+            "text": "Nội dung đăng ký nhiệm vụ (T1) chưa được hỗ trợ trong bản trải nghiệm này. Tôi chưa có bộ nguồn đã chuẩn hóa để tư vấn phần đó. Hiện tôi có thể hướng dẫn hội thảo/công tác T6; bạn có thể hỏi riêng phần này hoặc trao đổi với đầu mối phụ trách nội dung vừa nêu.",
+            "facts": {},
+            "conclusions": [],
+            "revisions": [],
+            "changed": [],
+            "profile": "standard",
+            "pendingFunding": false,
+            "summary": "Theo bộ tài liệu mẫu · chưa thay thế hướng dẫn chính thức.",
+            "sourceLabel": "Theo bộ tài liệu mẫu · chưa thay thế hướng dẫn chính thức.",
+            "consultation": true,
+            "declined": false,
+            "requestedTopic": "documents",
+            "preparationOnly": true,
+            "modelRun": {
+              "provider": "gemini",
+              "model": "gemini-3.1-flash-lite",
+              "guards": [
+                {
+                  "field": "related",
+                  "reason": "Funding or activity does not establish this boolean fact"
+                }
+              ],
+              "stages": [
+                {
+                  "attempt": 1,
+                  "phase": "extract",
+                  "elapsedMs": 10914.599669999996,
+                  "status": 200,
+                  "usage": {
+                    "promptTokenCount": 767,
+                    "candidatesTokenCount": 318,
+                    "totalTokenCount": 1085,
+                    "promptTokensDetails": [
+                      {
+                        "modality": "TEXT",
+                        "tokenCount": 767
+                      }
+                    ],
+                    "serviceTier": "standard"
+                  }
+                }
+              ]
+            }
+          },
+          "inputs": [
+            {
+              "kind": "message",
+              "patch": {
+                "intent": "unsupported",
+                "clear": [],
+                "unsupportedTopic": "registration",
+                "newSituation": true,
+                "activity": "conference",
+                "date": "2027-01-22",
+                "funding": "task",
+                "topic": "documents",
+                "personal": false,
+                "general": false,
+                "declined": false
+              }
+            }
+          ],
+          "elapsedMs": 12886.918,
+          "legacyErrors": [
+            "facts.activity: expected \"conference\", got undefined",
+            "facts.date: expected \"2027-01-22\", got undefined",
+            "facts.funding: expected \"task\", got undefined"
+          ],
+          "strictErrors": [
+            "facts.activity: expected \"conference\", got undefined",
+            "facts.date: expected \"2027-01-22\", got undefined",
+            "facts.funding: expected \"task\", got undefined"
+          ],
+          "rubric": {
+            "must_address": [
+              "Giấy tờ theo nguồn nhiệm vụ; không tự khai có phục vụ."
+            ],
+            "must_not_claim": [
+              "Không xác nhận chính sách HUST thật, hồ sơ hợp lệ hay quyền thanh toán.",
+              "Không tự thêm dữ kiện hoặc điều kiện không có nguồn."
+            ]
+          },
+          "manualReview": {
+            "bám nhu cầu": null,
+            "đủ nội dung": null,
+            "nhất quán ngữ cảnh": null,
+            "căn cứ hỗ trợ": null,
+            "dừng đúng": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "V02",
+      "group": "boolean-evidence",
+      "split": "heldout",
+      "turns": [
+        {
+          "turn": 1,
+          "text": "Hội thảo tại Cần Thơ ngày 25/01/2027 có liên quan đến đề tài, dùng cả tiền nhiệm vụ lẫn đơn vị.",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "location": "domestic",
+              "date": "2027-01-25",
+              "funding": "combined",
+              "related": true
+            },
+            "absent": [
+              "allocation"
+            ],
+            "clarification": "allocation"
+          },
+          "error": {
+            "status": 503,
+            "body": {
+              "error": "Gemini chưa hoàn tất trong thời gian cho phép. Dữ kiện đang có được giữ nguyên; bạn có thể thử lại.",
+              "code": "GEMINI_TIMEOUT"
+            }
+          },
+          "elapsedMs": 31867.131459,
+          "rubric": {
+            "must_address": [
+              "Hỏi phân định nguồn, không mặc định đã phân định."
+            ],
+            "must_not_claim": [
+              "Không xác nhận chính sách HUST thật, hồ sơ hợp lệ hay quyền thanh toán.",
+              "Không tự thêm dữ kiện hoặc điều kiện không có nguồn."
+            ]
+          },
+          "manualReview": {
+            "bám nhu cầu": null,
+            "đủ nội dung": null,
+            "nhất quán ngữ cảnh": null,
+            "căn cứ hỗ trợ": null,
+            "dừng đúng": null
+          }
+        },
+        {
+          "turn": 2,
+          "text": "Từng nguồn đã được phân chia phần việc riêng rồi.",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "location": "domestic",
+              "date": "2027-01-25",
+              "funding": "combined",
+              "related": true,
+              "allocation": true
+            },
+            "absent": []
+          },
+          "error": "Not run: previous turn failed",
+          "skipped": true,
+          "elapsedMs": 0,
+          "manualReview": {
+            "bám nhu cầu": null,
+            "đủ nội dung": null,
+            "nhất quán ngữ cảnh": null,
+            "căn cứ hỗ trợ": null,
+            "dừng đúng": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "V03",
+      "group": "preserve-facts",
+      "split": "heldout",
+      "turns": [
+        {
+          "turn": 1,
+          "text": "Tôi dự hội thảo tại Hải Dương ngày 23/01/2027, dùng kinh phí đề tài và có phục vụ nhiệm vụ.",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "location": "domestic",
+              "date": "2027-01-23",
+              "funding": "task",
+              "related": true
+            },
+            "absent": [
+              "allocation"
+            ]
+          },
+          "error": {
+            "status": 503,
+            "body": {
+              "error": "Gemini chưa hoàn tất trong thời gian cho phép. Dữ kiện đang có được giữ nguyên; bạn có thể thử lại.",
+              "code": "GEMINI_TIMEOUT"
+            }
+          },
+          "elapsedMs": 36164.49116599999,
+          "rubric": {
+            "must_address": [
+              "Nhận thông tin ban đầu."
+            ],
+            "must_not_claim": [
+              "Không xác nhận chính sách HUST thật, hồ sơ hợp lệ hay quyền thanh toán.",
+              "Không tự thêm dữ kiện hoặc điều kiện không có nguồn."
+            ]
+          },
+          "manualReview": {
+            "bám nhu cầu": null,
+            "đủ nội dung": null,
+            "nhất quán ngữ cảnh": null,
+            "căn cứ hỗ trợ": null,
+            "dừng đúng": null
+          }
+        },
+        {
+          "turn": 2,
+          "text": "Chốt nguồn đơn vị chi toàn bộ thay cho kinh phí nhiệm vụ.",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "location": "domestic",
+              "date": "2027-01-23",
+              "funding": "unit",
+              "related": true
+            },
+            "absent": [
+              "allocation"
+            ],
+            "excludeSources": [
+              "SIM-NV-1",
+              "SIM-NV-PREP"
+            ]
+          },
+          "error": "Not run: previous turn failed",
+          "skipped": true,
+          "elapsedMs": 0,
+          "manualReview": {
+            "bám nhu cầu": null,
+            "đủ nội dung": null,
+            "nhất quán ngữ cảnh": null,
+            "căn cứ hỗ trợ": null,
+            "dừng đúng": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "V04",
+      "group": "new-situation",
+      "split": "heldout",
+      "turns": [
+        {
+          "turn": 1,
+          "text": "Tôi đi công tác ở Huế ngày 17/02/2027, dùng kinh phí đơn vị.",
+          "expected": {
+            "facts": {
+              "activity": "work",
+              "location": "domestic",
+              "date": "2027-02-17",
+              "funding": "unit"
+            },
+            "absent": [
+              "related",
+              "allocation"
+            ]
+          },
+          "error": {
+            "status": 503,
+            "body": {
+              "error": "Gemini chưa hoàn tất trong thời gian cho phép. Dữ kiện đang có được giữ nguyên; bạn có thể thử lại.",
+              "code": "GEMINI_TIMEOUT"
+            }
+          },
+          "elapsedMs": 26160.058292000016,
+          "rubric": {
+            "must_address": [
+              "Nhận chuyến cũ."
+            ],
+            "must_not_claim": [
+              "Không xác nhận chính sách HUST thật, hồ sơ hợp lệ hay quyền thanh toán.",
+              "Không tự thêm dữ kiện hoặc điều kiện không có nguồn."
+            ]
+          },
+          "manualReview": {
+            "bám nhu cầu": null,
+            "đủ nội dung": null,
+            "nhất quán ngữ cảnh": null,
+            "căn cứ hỗ trợ": null,
+            "dừng đúng": null
+          }
+        },
+        {
+          "turn": 2,
+          "text": "Bỏ chuyến cũ. Tôi hỏi trường hợp mới hoàn toàn: tham dự hội thảo tại Kuala Lumpur, chưa có lịch và chưa biết nguồn chi.",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "location": "foreign"
+            },
+            "absent": [
+              "date",
+              "funding",
+              "related",
+              "allocation"
+            ]
+          },
+          "error": "Not run: previous turn failed",
+          "skipped": true,
+          "elapsedMs": 0,
+          "manualReview": {
+            "bám nhu cầu": null,
+            "đủ nội dung": null,
+            "nhất quán ngữ cảnh": null,
+            "căn cứ hỗ trợ": null,
+            "dừng đúng": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "V05",
+      "group": "withdrawal",
+      "split": "heldout",
+      "turns": [
+        {
+          "turn": 1,
+          "text": "Hội thảo ở Hà Nội ngày 20/02/2027 do nhiệm vụ chi, có phục vụ đề tài.",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "location": "domestic",
+              "date": "2027-02-20",
+              "funding": "task",
+              "related": true
+            },
+            "absent": [
+              "allocation"
+            ]
+          },
+          "error": {
+            "status": 503,
+            "body": {
+              "error": "Chưa kết nối được Gemini. Dữ kiện đang có được giữ nguyên; bạn có thể thử lại.",
+              "code": "GEMINI_UNAVAILABLE"
+            }
+          },
+          "elapsedMs": 10562.14295899999,
+          "rubric": {
+            "must_address": [
+              "Nhận quan hệ có."
+            ],
+            "must_not_claim": [
+              "Không xác nhận chính sách HUST thật, hồ sơ hợp lệ hay quyền thanh toán.",
+              "Không tự thêm dữ kiện hoặc điều kiện không có nguồn."
+            ]
+          },
+          "manualReview": {
+            "bám nhu cầu": null,
+            "đủ nội dung": null,
+            "nhất quán ngữ cảnh": null,
+            "căn cứ hỗ trợ": null,
+            "dừng đúng": null
+          }
+        },
+        {
+          "turn": 2,
+          "text": "Tôi xin rút lại thông tin có phục vụ đề tài vì chưa biết rõ.",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "location": "domestic",
+              "date": "2027-02-20",
+              "funding": "task"
+            },
+            "absent": [
+              "related",
+              "allocation"
+            ],
+            "clarification": "related"
+          },
+          "error": "Not run: previous turn failed",
+          "skipped": true,
+          "elapsedMs": 0,
+          "manualReview": {
+            "bám nhu cầu": null,
+            "đủ nội dung": null,
+            "nhất quán ngữ cảnh": null,
+            "căn cứ hỗ trợ": null,
+            "dừng đúng": null
+          }
+        },
+        {
+          "turn": 3,
+          "text": "Không.",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "location": "domestic",
+              "date": "2027-02-20",
+              "funding": "task",
+              "related": false
+            },
+            "absent": [
+              "allocation"
+            ]
+          },
+          "error": "Not run: previous turn failed",
+          "skipped": true,
+          "elapsedMs": 0,
+          "manualReview": {
+            "bám nhu cầu": null,
+            "đủ nội dung": null,
+            "nhất quán ngữ cảnh": null,
+            "căn cứ hỗ trợ": null,
+            "dừng đúng": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "V06",
+      "group": "invalid-date",
+      "split": "heldout",
+      "turns": [
+        {
+          "turn": 1,
+          "text": "Công tác trong nước ngày 14/04/2027, chỉ dùng tiền đơn vị.",
+          "expected": {
+            "facts": {
+              "activity": "work",
+              "location": "domestic",
+              "date": "2027-04-14",
+              "funding": "unit"
+            },
+            "absent": [
+              "related",
+              "allocation"
+            ]
+          },
+          "error": {
+            "status": 503,
+            "body": {
+              "error": "Chưa kết nối được Gemini. Dữ kiện đang có được giữ nguyên; bạn có thể thử lại.",
+              "code": "GEMINI_UNAVAILABLE"
+            }
+          },
+          "elapsedMs": 6729.203750000015,
+          "rubric": {
+            "must_address": [
+              "Nhận ngày ban đầu."
+            ],
+            "must_not_claim": [
+              "Không xác nhận chính sách HUST thật, hồ sơ hợp lệ hay quyền thanh toán.",
+              "Không tự thêm dữ kiện hoặc điều kiện không có nguồn."
+            ]
+          },
+          "manualReview": {
+            "bám nhu cầu": null,
+            "đủ nội dung": null,
+            "nhất quán ngữ cảnh": null,
+            "căn cứ hỗ trợ": null,
+            "dừng đúng": null
+          }
+        },
+        {
+          "turn": 2,
+          "text": "Ngày tôi vừa nói sửa thành 31/04/2027.",
+          "expected": {
+            "facts": {
+              "activity": "work",
+              "location": "domestic",
+              "funding": "unit"
+            },
+            "absent": [
+              "date",
+              "related",
+              "allocation"
+            ],
+            "clarification": "date"
+          },
+          "error": "Not run: previous turn failed",
+          "skipped": true,
+          "elapsedMs": 0,
+          "manualReview": {
+            "bám nhu cầu": null,
+            "đủ nội dung": null,
+            "nhất quán ngữ cảnh": null,
+            "căn cứ hỗ trợ": null,
+            "dừng đúng": null
+          }
+        },
+        {
+          "turn": 3,
+          "text": "Tôi kiểm tra rồi: 30/04/2027, vẫn chuyến này.",
+          "expected": {
+            "facts": {
+              "activity": "work",
+              "location": "domestic",
+              "date": "2027-04-30",
+              "funding": "unit"
+            },
+            "absent": [
+              "related",
+              "allocation"
+            ]
+          },
+          "error": "Not run: previous turn failed",
+          "skipped": true,
+          "elapsedMs": 0,
+          "manualReview": {
+            "bám nhu cầu": null,
+            "đủ nội dung": null,
+            "nhất quán ngữ cảnh": null,
+            "căn cứ hỗ trợ": null,
+            "dừng đúng": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "V07",
+      "group": "phase-and-purpose",
+      "split": "heldout",
+      "turns": [
+        {
+          "turn": 1,
+          "text": "Tôi đã có thư mời hội thảo ngày 09/03/2027, đơn vị chi. Cần chuẩn bị thêm giấy tờ nào?",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "date": "2027-03-09",
+              "funding": "unit"
+            },
+            "absent": [
+              "location",
+              "related",
+              "allocation"
+            ],
+            "noQuestion": true
+          },
+          "error": {
+            "status": 503,
+            "body": {
+              "error": "Chưa kết nối được Gemini. Dữ kiện đang có được giữ nguyên; bạn có thể thử lại.",
+              "code": "GEMINI_UNAVAILABLE"
+            }
+          },
+          "elapsedMs": 4534.816582999978,
+          "rubric": {
+            "must_address": [
+              "Tập trung giấy tờ còn lại, không xác nhận thư mời hợp lệ."
+            ],
+            "must_not_claim": [
+              "Không xác nhận chính sách HUST thật, hồ sơ hợp lệ hay quyền thanh toán.",
+              "Không tự thêm dữ kiện hoặc điều kiện không có nguồn."
+            ]
+          },
+          "manualReview": {
+            "bám nhu cầu": null,
+            "đủ nội dung": null,
+            "nhất quán ngữ cảnh": null,
+            "căn cứ hỗ trợ": null,
+            "dừng đúng": null
+          }
+        },
+        {
+          "turn": 2,
+          "text": "Tôi đã về và đã giữ xác nhận tham dự. Giờ cần làm bước tiếp theo nào?",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "date": "2027-03-09",
+              "funding": "unit"
+            },
+            "absent": [
+              "location",
+              "related",
+              "allocation"
+            ],
+            "noQuestion": true,
+            "includeSources": [
+              "SIM-HD-STEPS"
+            ]
+          },
+          "error": "Not run: previous turn failed",
+          "skipped": true,
+          "elapsedMs": 0,
+          "manualReview": {
+            "bám nhu cầu": null,
+            "đủ nội dung": null,
+            "nhất quán ngữ cảnh": null,
+            "căn cứ hỗ trợ": null,
+            "dừng đúng": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "V08",
+      "group": "advice-vs-action",
+      "split": "heldout",
+      "turns": [
+        {
+          "turn": 1,
+          "text": "Tôi công tác ở Đà Lạt ngày 12/03/2027, đơn vị chi. Tiền khách sạn hai triệu một đêm có đúng định mức không?",
+          "expected": {
+            "facts": {
+              "activity": "work",
+              "location": "domestic",
+              "date": "2027-03-12",
+              "funding": "unit"
+            },
+            "absent": [
+              "related",
+              "allocation"
+            ],
+            "intent": "consult"
+          },
+          "error": {
+            "status": 503,
+            "body": {
+              "error": "Gemini chưa hoàn tất trong thời gian cho phép. Dữ kiện đang có được giữ nguyên; bạn có thể thử lại.",
+              "code": "GEMINI_TIMEOUT"
+            }
+          },
+          "elapsedMs": 23415.891207999986,
+          "rubric": {
+            "must_address": [
+              "Nêu thiếu căn cứ định mức và đầu mối cần xác nhận; không từ chối toàn bộ câu hỏi hay xác nhận số tiền."
+            ],
+            "must_not_claim": [
+              "Không xác nhận chính sách HUST thật, hồ sơ hợp lệ hay quyền thanh toán.",
+              "Không tự thêm dữ kiện hoặc điều kiện không có nguồn."
+            ]
+          },
+          "manualReview": {
+            "bám nhu cầu": null,
+            "đủ nội dung": null,
+            "nhất quán ngữ cảnh": null,
+            "căn cứ hỗ trợ": null,
+            "dừng đúng": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "V09",
+      "group": "limited-evidence",
+      "split": "heldout",
+      "turns": [
+        {
+          "turn": 1,
+          "text": "Hội thảo ngày 15/03/2027 do đơn vị chi, địa điểm có thể là Đà Lạt hoặc Seoul. Tôi chưa biết nơi tổ chức cuối cùng.",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "date": "2027-03-15",
+              "funding": "unit"
+            },
+            "absent": [
+              "location",
+              "related",
+              "allocation"
+            ],
+            "clarification": "location"
+          },
+          "error": {
+            "status": 503,
+            "body": {
+              "error": "Chưa kết nối được Gemini. Dữ kiện đang có được giữ nguyên; bạn có thể thử lại.",
+              "code": "GEMINI_UNAVAILABLE"
+            }
+          },
+          "elapsedMs": 3347.9001249999856,
+          "rubric": {
+            "must_address": [
+              "Không tự chọn nơi tổ chức, không đưa danh mục giấy tờ từ nguồn chỉ nói phạm vi."
+            ],
+            "must_not_claim": [
+              "Không xác nhận chính sách HUST thật, hồ sơ hợp lệ hay quyền thanh toán.",
+              "Không tự thêm dữ kiện hoặc điều kiện không có nguồn."
+            ]
+          },
+          "manualReview": {
+            "bám nhu cầu": null,
+            "đủ nội dung": null,
+            "nhất quán ngữ cảnh": null,
+            "căn cứ hỗ trợ": null,
+            "dừng đúng": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "V10",
+      "group": "time-coverage",
+      "split": "heldout",
+      "turns": [
+        {
+          "turn": 1,
+          "text": "Tôi công tác tại Hà Nội ngày 18/03/2024, dùng tiền đơn vị. Hướng dẫn nào áp dụng?",
+          "expected": {
+            "facts": {
+              "activity": "work",
+              "location": "domestic",
+              "date": "2024-03-18",
+              "funding": "unit"
+            },
+            "absent": [
+              "related",
+              "allocation"
+            ],
+            "statuses": {
+              "common": "insufficient",
+              "unit": "insufficient"
+            }
+          },
+          "error": {
+            "status": 503,
+            "body": {
+              "error": "Chưa kết nối được Gemini. Dữ kiện đang có được giữ nguyên; bạn có thể thử lại.",
+              "code": "GEMINI_UNAVAILABLE"
+            }
+          },
+          "elapsedMs": 3104.3589159999974,
+          "rubric": {
+            "must_address": [
+              "Nêu thiếu phiên bản bao phủ 2024, không dùng bản 2026."
+            ],
+            "must_not_claim": [
+              "Không xác nhận chính sách HUST thật, hồ sơ hợp lệ hay quyền thanh toán.",
+              "Không tự thêm dữ kiện hoặc điều kiện không có nguồn."
+            ]
+          },
+          "manualReview": {
+            "bám nhu cầu": null,
+            "đủ nội dung": null,
+            "nhất quán ngữ cảnh": null,
+            "căn cứ hỗ trợ": null,
+            "dừng đúng": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "V11",
+      "group": "source-conflict",
+      "split": "heldout",
+      "turns": [
+        {
+          "turn": 1,
+          "text": "Hội thảo ở Hải Dương ngày 21/03/2027, kinh phí nhiệm vụ, có liên quan đề tài. Điều kiện địa điểm thế nào?",
+          "expected": {
+            "facts": {
+              "activity": "conference",
+              "location": "domestic",
+              "date": "2027-03-21",
+              "funding": "task",
+              "related": true
+            },
+            "absent": [
+              "allocation"
+            ],
+            "statuses": {
+              "common": "insufficient"
+            },
+            "includeSources": [
+              "SIM-CT-2026",
+              "SIM-CT-CONFLICT"
+            ]
+          },
+          "error": {
+            "status": 503,
+            "body": {
+              "error": "Gemini chưa hoàn tất trong thời gian cho phép. Dữ kiện đang có được giữ nguyên; bạn có thể thử lại.",
+              "code": "GEMINI_TIMEOUT"
+            }
+          },
+          "elapsedMs": 23629.181291999994,
+          "rubric": {
+            "must_address": [
+              "Dừng riêng địa điểm vì nguồn mâu thuẫn."
+            ],
+            "must_not_claim": [
+              "Không xác nhận chính sách HUST thật, hồ sơ hợp lệ hay quyền thanh toán.",
+              "Không tự thêm dữ kiện hoặc điều kiện không có nguồn."
+            ]
+          },
+          "manualReview": {
+            "bám nhu cầu": null,
+            "đủ nội dung": null,
+            "nhất quán ngữ cảnh": null,
+            "căn cứ hỗ trợ": null,
+            "dừng đúng": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "V12",
+      "group": "unsupported",
+      "split": "heldout",
+      "turns": [
+        {
+          "turn": 1,
+          "text": "Tôi muốn được cử đi học tiến sĩ dài hạn, đang là chủ nhiệm nhiệm vụ thì cần làm thủ tục nào?",
+          "expected": {
+            "facts": {},
+            "absent": [
+              "activity",
+              "location",
+              "date",
+              "funding",
+              "related",
+              "allocation"
+            ],
+            "intent": "unsupported",
+            "noConclusions": true
+          },
+          "error": {
+            "status": 503,
+            "body": {
+              "error": "Chưa kết nối được Gemini. Dữ kiện đang có được giữ nguyên; bạn có thể thử lại.",
+              "code": "GEMINI_UNAVAILABLE"
+            }
+          },
+          "elapsedMs": 11957.473042000027,
+          "rubric": {
+            "must_address": [
+              "Nhận T10 chưa triển khai; không thay bằng hướng dẫn công tác."
+            ],
+            "must_not_claim": [
+              "Không xác nhận chính sách HUST thật, hồ sơ hợp lệ hay quyền thanh toán.",
+              "Không tự thêm dữ kiện hoặc điều kiện không có nguồn."
+            ]
+          },
+          "manualReview": {
+            "bám nhu cầu": null,
+            "đủ nội dung": null,
+            "nhất quán ngữ cảnh": null,
+            "căn cứ hỗ trợ": null,
+            "dừng đúng": null
+          }
+        }
+      ]
+    }
+  ]
+}

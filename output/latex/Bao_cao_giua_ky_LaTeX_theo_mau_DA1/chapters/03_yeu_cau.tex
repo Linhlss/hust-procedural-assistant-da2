@@ -1,0 +1,69 @@
+\Needspace{10\baselineskip}
+\section{Phân tích yêu cầu hệ thống}
+\label{sec:yeu-cau}
+\subsection{Các tình huống sử dụng chính}
+Các yêu cầu được xác định từ cách người dùng trao đổi với chatbot:
+\begin{itemize}[leftmargin=*,itemsep=2pt,topsep=3pt]
+\item Khi câu hỏi đã có đủ thông tin và căn cứ, người dùng nhận hướng dẫn trực
+ tiếp, kèm nguồn hỗ trợ và bước tiếp theo.
+\item Khi thiếu thông tin hoặc cách diễn đạt còn mơ hồ, người dùng được hỏi
+ đúng dữ kiện có ảnh hưởng đến hướng dẫn.
+\item Khi bổ sung, sửa hoặc rút lại một thông tin, người dùng nhận phản hồi
+ theo tình huống mới và biết phần hướng dẫn nào đã thay đổi.
+\item Khi nguồn chưa đủ, còn mâu thuẫn hoặc yêu cầu ngoài phạm vi, người dùng
+ được thông báo phần chưa thể kết luận và đầu mối cần trao đổi.
+\end{itemize}
+Những tình huống này không tạo thành một kịch bản bắt buộc cho mọi câu hỏi.
+Câu tra cứu đơn giản đã đủ căn cứ có thể được trả lời ngay.
+
+\subsection{Yêu cầu chức năng}
+Bảng~\ref{tab:chuc-nang} chuẩn hóa các hành vi cần bảo đảm. Đây là cơ sở để
+lựa chọn thành phần thiết kế và xây dựng tình huống kiểm thử.
+
+\begin{table}[H]
+\centering\small
+\begin{tabularx}{\textwidth}{|P{13mm}|P{33mm}|Y|}
+\hline
+\textbf{Mã} & \textbf{Yêu cầu} & \textbf{Hành vi cần bảo đảm} \\\hline
+F01 & Hỏi bổ sung có mục đích & Chỉ hỏi thông tin thiếu có thể đổi hướng dẫn; không hỏi lại dữ kiện đã rõ. \\ \hline
+F02 & Đối chiếu điều kiện & Dùng đúng nguồn cho từng phần của cùng tình huống; không ghép thêm miền không liên quan. \\ \hline
+F03 & Cập nhật khi dữ kiện đổi & Chọn lại thẻ và nguồn, kiểm kết luận phụ thuộc; đánh dấu kết luận đã được thay thế. \\ \hline
+F04 & Phân biệt mức kết luận & Trả đáp ứng theo khai báo, không đáp ứng theo khai báo hoặc chưa đủ căn cứ cho từng điều kiện. \\ \hline
+F05 & Giải thích kiểm tra được & Chỉ rõ dữ kiện, điều kiện, đoạn nguồn, phiên bản hoặc mốc áp dụng và bước tiếp theo. \\
+\hline
+\end{tabularx}
+\caption{Yêu cầu chức năng F01 đến F05}
+\label{tab:chuc-nang}
+\end{table}
+
+Ba mức kết luận ở F04 được gắn với từng điều kiện đang xét. Việc xác định
+một nguồn có liên quan không được diễn đạt thành xác nhận toàn bộ hồ sơ hợp
+lệ hoặc một khoản chi chắc chắn được thanh toán.
+
+\subsection{Yêu cầu phi chức năng}
+Hệ thống cần hỗ trợ câu hỏi tiếng Việt, cho phép người dùng hỏi tiếp và sửa
+thông tin bằng hội thoại. Cách trình bày phải giúp người đọc nhận ra hướng
+dẫn chính, phần còn thiếu và căn cứ tương ứng mà không phải tự tìm trong
+một danh sách tài liệu chung.
+
+Thông tin đang dùng và quan hệ giữa dữ kiện, điều kiện, kết luận cần truy
+vết được. Điều này phục vụ kiểm tra câu trả lời và cập nhật nội dung khi
+nguồn thay đổi. Các chỉ tiêu về độ chính xác và thời gian phản hồi sẽ được
+xác lập, đo và phân tích trong phần thực nghiệm.
+
+Nếu sử dụng tài liệu nội bộ, quyền truy cập phải được kiểm soát trước truy
+xuất và trước hiển thị. Dữ kiện nhạy cảm chỉ được thu thập khi cần cho tình
+huống; thời hạn lưu và phạm vi xem lịch sử phải phù hợp với quyền sử dụng
+nguồn và thông tin người dùng.
+
+\subsection{Yêu cầu dữ liệu}
+Văn bản gốc, tài liệu phân tích, nội dung đã chuẩn hóa và tình huống giả định
+cần được phân biệt rõ. Nguồn dùng để trả lời phải được kiểm tra về xuất xứ,
+độ đầy đủ, phiên bản, hiệu lực, đối tượng và quyền sử dụng. Tài liệu định
+hướng hỗ trợ tổ chức nội dung, không thay thế căn cứ chính thức.
+
+Điều kiện tư vấn phải dẫn được tới đoạn nguồn đã kiểm tra và có đầu mối
+xác nhận nội dung. Bộ ca kiểm thử cần chỉ rõ dữ kiện đầu vào, nguồn áp dụng,
+đáp án mong đợi và điểm cần hỏi bổ sung hoặc dừng. Mục~\ref{sec:kien-truc}
+trình bày cấu trúc thông tin và cách tổ chức tri thức để đáp ứng các yêu
+cầu trên.

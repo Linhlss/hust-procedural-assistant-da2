@@ -1,0 +1,16 @@
+\begin{tikzpicture}[node distance=6mm and 9mm]
+\node[block,text width=58mm] (start) {Nhận câu hỏi và cập nhật dữ kiện};
+\node[block,text width=58mm,below=of start] (choose) {Chọn thẻ và nguồn ứng viên\\theo quyền, đối tượng và thời điểm};
+\node[decision,below=of choose,text width=39mm] (source) {Đủ căn cứ để xét\\phần đang hỏi?};
+\node[block,text width=36mm,right=of source] (stop) {Dừng phần thiếu căn cứ\\Nêu giới hạn, đầu mối};
+\node[decision,below=of source,text width=39mm] (facts) {Thiếu dữ kiện\\làm đổi kết luận?};
+\node[block,text width=36mm,right=of facts] (ask) {Hỏi bổ sung\\hoặc nêu khả năng có điều kiện};
+\node[block,text width=58mm,below=of facts] (answer) {Đối chiếu và trả lời\\Dữ kiện, kết luận, căn cứ, bước tiếp};
+\draw[arrow] (start)--(choose);
+\draw[arrow] (choose)--(source);
+\draw[arrow] (source)--node[above,font=\footnotesize]{Không}(stop);
+\draw[arrow] (source)--node[left,font=\footnotesize]{Có}(facts);
+\draw[arrow] (facts)--node[above,font=\footnotesize]{Có}(ask);
+\draw[arrow] (facts)--node[left,font=\footnotesize]{Không}(answer);
+\draw[arrow] (ask.east)--++(5mm,0)|-(start.east);
+\end{tikzpicture}

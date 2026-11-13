@@ -1,0 +1,112 @@
+{
+  "reviewer": "Codex technical review, not specialist confirmation",
+  "at": "2026-11-10T23:51:33.100870+00:00",
+  "automatic": {
+    "plannedDialogues": 5,
+    "plannedTurns": 10,
+    "returnedAnswers": 8,
+    "passedTurns": 6,
+    "passedDialogues": 1,
+    "errors": 2
+  },
+  "records": [
+    {
+      "id": "S01",
+      "turn": 1,
+      "automaticErrors": [],
+      "review": "pass",
+      "note": null,
+      "error": null
+    },
+    {
+      "id": "S01",
+      "turn": 2,
+      "automaticErrors": [],
+      "review": "pass",
+      "note": null,
+      "error": null
+    },
+    {
+      "id": "S01",
+      "turn": 3,
+      "automaticErrors": [],
+      "review": "pass",
+      "note": null,
+      "error": null
+    },
+    {
+      "id": "S02",
+      "turn": 1,
+      "automaticErrors": [],
+      "review": "pass",
+      "note": null,
+      "error": null
+    },
+    {
+      "id": "S02",
+      "turn": 2,
+      "automaticErrors": [],
+      "review": "partial",
+      "note": "Narrative nói sửa từ năm 2026 trong khi ngày cũ là 2027; bản nguồn 2026/2025 và điều kiện được chọn đúng, nhưng diễn đạt mốc sự việc còn lẫn.",
+      "error": null
+    },
+    {
+      "id": "S02",
+      "turn": 3,
+      "automaticErrors": [
+        "clarification: expected date, got undefined"
+      ],
+      "review": "partial",
+      "note": "Date đã gỡ nhưng còn topic sources nên không hỏi lại; trả thêm giấy tờ không cần thiết. Đã sửa orchestration sau vòng này.",
+      "error": null
+    },
+    {
+      "id": "S03",
+      "turn": 1,
+      "automaticErrors": null,
+      "review": "not-ratable",
+      "note": null,
+      "error": {
+        "status": 503,
+        "body": {
+          "error": "Gemini chưa trả nội dung hợp lệ với dữ kiện và căn cứ được cấp. Dữ kiện đang có được giữ nguyên; không có kết luận mới được tạo.",
+          "code": "GEMINI_SCHEMA"
+        }
+      }
+    },
+    {
+      "id": "S04",
+      "turn": 1,
+      "automaticErrors": [
+        "facts.funding: expected \"task\", got \"combined\""
+      ],
+      "review": "partial",
+      "note": "Thêm funding combined dù chỉ khai nhiệm vụ, làm phát sinh nhánh nguồn đơn vị. Đã thêm kiểm khai báo nguồn và một lượt sửa trích xuất có giới hạn.",
+      "error": null
+    },
+    {
+      "id": "S05",
+      "turn": 1,
+      "automaticErrors": [],
+      "review": "pass",
+      "note": null,
+      "error": null
+    },
+    {
+      "id": "S05",
+      "turn": 2,
+      "automaticErrors": null,
+      "review": "not-ratable",
+      "note": null,
+      "error": {
+        "status": 503,
+        "body": {
+          "error": "Gemini chưa trả nội dung hợp lệ với dữ kiện và căn cứ được cấp. Dữ kiện đang có được giữ nguyên; không có kết luận mới được tạo.",
+          "code": "GEMINI_SCHEMA"
+        }
+      }
+    }
+  ],
+  "releaseGatePassed": false,
+  "note": "Old S cohort and scores preserved; source/date controls changed afterward. New control cohort is separate."
+}
